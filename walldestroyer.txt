@@ -836,7 +836,7 @@ Buildings
     gain 250 prePrestige
     gain 5 timeBricks
     gain 1 wallRequirement
-    gain 1 timeUpgradeProducer
+    gain 1 timeUpgradeProd
     hide this
   end
   tag:loseonreset
@@ -1193,7 +1193,7 @@ Buildings
     gain 1 finalityBricks
     gain 1 endBossBrick
     gain 1 wallRequirement
-    gain 1 timeUpgradeProducer2
+    gain 1 timeUpgradeProd2
     hide this
   end
   tag:loseonreset
@@ -1270,7 +1270,7 @@ Buildings
     gain 1 goldBricks
     gain 1 winBricks
     gain 1 wallRequirement
-    if (timesActuallyWon > 0) gain 1 timeUpgradeProducer3
+    if (timesActuallyWon > 0) gain 1 timeUpgradeProd3
     hide this
     show timeUpgrade2
     show timeUpgrade3
@@ -1296,7 +1296,7 @@ Buildings
   class:bonuswallboss
   name:Destroy Boss Finality Wall
 
-  *timeUpgradeProducer
+  *timeUpgradeProd
   always hidden
   passive:
     if (chance(0.005%)) gain 1 timeUpgradeRes2
@@ -1311,7 +1311,7 @@ Buildings
     if (chance(0.005%)) gain 1 timeUpgradeRes11
     if (chance(0.005%)) gain 1 timeUpgradeRes12
   end
-  *timeUpgradeProducer2
+  *timeUpgradeProd2
   always hidden
   passive:
     if (chance(0.005%)) gain 1 timeUpgradeRes13
@@ -1323,7 +1323,7 @@ Buildings
     if (chance(0.005%)) gain 1 timeUpgradeRes19
     if (chance(0.005%)) gain 1 timeUpgradeRes20
   end
-  *timeUpgradeProducer3
+  *timeUpgradeProd3
   always hidden
   passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
@@ -2948,7 +2948,7 @@ Upgrades
   name:Magically Enhanced Everything
   icon:http://i.imgur.com/aaFiNNp.png
   req:1 destroyBonusWall5
-  *productionMultMagic2
+  *productionMultMag2
   desc:"Everything is <b>20%</b> more efficient.<br><i>Teleportation spells, movement spells, telekinesis spells, pickle jar opening spells, you name it.</i>"
   cost:50000000000000000000000 money
   passive:
@@ -2958,7 +2958,7 @@ Upgrades
   name:Utility Spells 
   icon:http://i.imgur.com/xGhYI9W.png
   req:1 destroyBonusWall10
-  *productionMultMagic3
+  *productionMultMag3
   desc:"Everything is <b>20%</b> more efficient.<br><i>All the knowledge and history the wizards have, and it's only slightly biased towards them!</i>"
   cost:2000000000000000000000000 money
   passive:
@@ -3211,7 +3211,7 @@ Upgrades
   name:Team Up
   icon: http://i.imgur.com/K4S6bwX.png
 /*
-  *handAndPuncherUpgrade2
+  *handPuncherUpgrade2
   desc:"Hand punches do <b>2%</b> more damage per puncher.<br>Punchers do <b>50%</b> more damage.<br><i>The weak become strong(er).</i>"
   cost:21111111 money
   -multiplies efficiency of hitWall by 2% per puncher
@@ -3219,7 +3219,7 @@ Upgrades
   req:100 puncher
   name:Come Together
   icon:http://i.imgur.com/mpYQ0Cj.png
-  *handAndPuncherUpgrade3
+  *handPuncherUpgrade3
   desc:"Hand punches do <b>1%</b> more damage per puncher.<br>Punchers do <b>twice</b> as much damage.<br><i>After you gave a great inspiring speech about punching walls.</i>"
   cost:422222222222 money
   -multiplies efficiency of hitWall by 1% per puncher
@@ -3227,7 +3227,7 @@ Upgrades
   req:200 puncher
   name:Standing Ovation
   icon:http://i.imgur.com/zL6FPFt.png
-  *handAndPuncherUpgrade4
+  *handPuncherUpgrade4
   desc:"Hand punches do <b>0.8%</b> more damage per puncher.<br>Punchers do <b>twice</b> as much damage.<br><i>To destroy the wall with only your fists.</i>"
   cost:10555555555555555 money
   -multiplies efficiency of hitWall by 0.8% per puncher
@@ -3235,7 +3235,7 @@ Upgrades
   req:300 puncher
   name:The Challenge
   icon:http://i.imgur.com/REcsTwa.png
-  *handAndPuncherUpgrade5
+  *handPuncherUpgrade5
   desc:"Hand punches do <b>0.3%</b> more damage per puncher.<br>Punchers do <b>twice</b> as much damage.<br><i>To defeat the walls once and for all!</i>"
   cost:105555555555555555555 money
   -multiplies efficiency of hitWall by 0.3% per puncher
@@ -3243,7 +3243,7 @@ Upgrades
   req:400 puncher
   name:Final Team Up
   icon:http://i.imgur.com/7kwTlaV.png
-  *handAndPuncherUpgrade6
+  *handPuncherUpgrade6
   desc:"Hand punches do <b>0.2%</b> more damage per puncher.<br>Punchers do <b>twice</b> as much damage.<br><i>We lied about the last one being final, but it's not like we can just stop upgrading!</i>"
   cost:422222222222222222222222 money
   -multiplies efficiency of hitWall by 0.2% per puncher
@@ -3251,7 +3251,7 @@ Upgrades
   req:500 puncher
   name:Ultra Team Up
   icon:http://i.imgur.com/RmIVXGc.png
-  *handAndPuncherUpgrade7
+  *handPuncherUpgrade7
   desc:"Hand punches do <b>0.2%</b> more damage per puncher.<br>Punchers do <b>twice</b> as much damage.<br><i>With additional duplicating so the punchers don't lose any power. They'll complain, but you're clearly better than them.</i>"
   cost:42222222222222222222222222222222 money
   -multiplies efficiency of hitWall by 0.2% per puncher
@@ -3260,7 +3260,7 @@ Upgrades
   name:Energy Draining
   icon:http://i.imgur.com/LAaQh56.png
  
-  *handAndClubberUpgrade
+  *handClubberUpgrade
   desc:"Hand punches do <b>1%</b> more damage per clubber.<br><i>They're like clubs tied to your knuckles. Another brilliant invention from the Realistic Upgrades Corporation(RUC).</i>"
   cost:1000000 money
   -multiplies efficiency of hitWall by 1% per clubber
@@ -3268,7 +3268,7 @@ Upgrades
   name:Club Knuckles
   icon:http://i.imgur.com/xDZyr8d.png
 
-  *handAndSwordsmanUpgrade
+  *handSwordsUpgrade
   desc:"Hand punches do <b>1%</b> more damage per swordsman.<br><i>We're currently trying to figure out how to combine these with the club knuckles. Then, our work here will be done.</i>"
   cost:7500000 money
   -multiplies efficiency of hitWall by 1% per swordsman
@@ -3276,7 +3276,7 @@ Upgrades
   name:Sword Knuckles
   icon:http://i.imgur.com/9ZiSEAZ.png
 
-  *handAndGunnerUpgrade
+  *handGunnerUpgrade
   desc:"Hand punches do <b>1%</b> more damage per gunshooter.<br><i>An ancient technique passed down by the wall punching masters.</i>"
   cost:100000000 money
   -multiplies efficiency of hitWall by 1% per gunner
@@ -3284,7 +3284,7 @@ Upgrades
   name:Bullet Punch
   icon:http://i.imgur.com/fH9Bzpc.png
 
-  *handAndGrenadeUpgrade
+  *handGrenadeUpgrade
   desc:"Hand punches do <b>1%</b> more damage per grenademan.<br><i>I honestly don't know what these are. Feel free to imagine them how you want.</i>"
   cost:2500000000 money
   -multiplies efficiency of hitWall by 1% per grenade
@@ -3292,7 +3292,7 @@ Upgrades
   name:Fist Grenades
   icon:http://i.imgur.com/wdE5w9X.png
 
-  *handAndWreckingBallUpgrade
+  *handWreckingUpgrade
   desc:"Hand punches do <b>1%</b> more damage per wrecking ball.<br><i>Another legendary technique.</i>"
   cost:50000000000 money
   -multiplies efficiency of hitWall by 1% per wreckingBall
@@ -3300,7 +3300,7 @@ Upgrades
   name:Wrecking Ball Punch
   icon:http://i.imgur.com/eO38cOQ.png
 
-  *handAndBulldozerUpgrade
+  *handBulldozeUpgrade
   desc:"Hand punches do <b>1%</b> more damage per bulldozer.<br><i>This isn't actually a legendary technique, we just made it up.</i>"
   cost:500000000000 money
   -multiplies efficiency of hitWall by 1% per bulldozer
@@ -3308,7 +3308,7 @@ Upgrades
   name:Bulldozer Strike
   icon:http://i.imgur.com/4teEkYK.png
 
-  *handAndAirstrikeUpgrade
+  *handAirstrikUpgrade
   desc:"Hand punches do <b>1%</b> more damage per airstrike caller.<br><i>30,000 feet of DAMAGE!</i>"
   cost:20000000000000 money
   -multiplies efficiency of hitWall by 1% per airstrike
@@ -3316,7 +3316,7 @@ Upgrades
   name:Skydiving
   icon:http://i.imgur.com/2Os5vuG.png
 
-  *handAndNecromancerUpgrade
+  *handNecromanUpgrade
   desc:"Hand punches do <b>1%</b> more damage per necromancer.<br><i>Now you don't have to waste hours sleeping.</i>"
   cost:500000000000000 money, 500 bricks
   -multiplies efficiency of hitWall by 1% per necromancer
@@ -3324,7 +3324,7 @@ Upgrades
   name:Zombification
   icon:http://i.imgur.com/LXWPMiN.png
 
-  *handAndGiantUpgrade
+  *handGiantUpgrade
   desc:"Hand punches do <b>1%</b> more damage per titan.<br><i>The walls were around even in the Old World, and with the walls comes wall punching.</i>"
   cost:5000000000000000 money
   -multiplies efficiency of hitWall by 1% per giant
@@ -3340,7 +3340,7 @@ Upgrades
   name:Fist of Evil
   icon:http://i.imgur.com/8COb4Z5.png
 
-  *handAndCompromiserUpgrade
+  *handCompromUpgrade
   desc:"Hand punches do <b>0.5%</b> more damage per reality compromiser.<br><i>Sometimes it hurts to punch a brick wall. Not anymore!</i>"
   cost:600000000000000000 money, 60000 fourthWallMatter
   -multiplies efficiency of hitWall by 0.5% per compromiser
@@ -3348,7 +3348,7 @@ Upgrades
   name:Invulnerability
   icon:http://i.imgur.com/3tap4AJ.png
 
-  *handAndObliteratorUpgrade
+  *handObliterUpgrade
   desc:"Hand punches do <b>0.5%</b> more damage per Black obliterator.<br><i>Since you're invulnerable, you are the only person who can touch The Black without dying a horrible, painful death.</i>"
   cost:30000000000000000000000 money, 300000000 fourthWallMatter
   -multiplies efficiency of hitWall by 0.5% per lastBuilding
@@ -3356,7 +3356,7 @@ Upgrades
   name:Fist of The Black
   icon:http://i.imgur.com/pFyHQUx.png
 
-  *handBrickFactoryUpgrade
+  *handBrickFacUpgrade
   desc:"Hand punches do <b>0.5%</b> more damage per brick factory.<br>Manual brick creation creates <b>4%</b> more bricks per brick factory.<br><i>Fight fire with fire!</i>"
   cost:50000000000000000 money
   req:50 brickFactory
@@ -3652,7 +3652,7 @@ Upgrades
   name:Finality Rock Knuckles
   icon:http://i.imgur.com/TRuR1pM.png
 
-  *puncherUpgradeMagic1
+  *puncherUpgradeMag1
   desc:"Punchers do <b>three times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>A syringe filled with pure magic.</i>"
   cost:20202020202 money, 1 bricks
   -multiplies efficiency of puncher by 300%
@@ -3660,7 +3660,7 @@ Upgrades
   name:Magically Enhanced Fists
   icon:http://i.imgur.com/kRu3uU8.png
   req:have magicUnlock
-  *puncherUpgradeMagic2
+  *puncherUpgradeMag2
   desc:"Punchers do <b>four times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>These gauntlets magically enhance your magically enhanced fists.</i>"
   cost:20202020202020 money, 10 bricks
   req:250 puncher
@@ -3668,7 +3668,7 @@ Upgrades
   -multiplies efficiency of hitWall by 150%
   name:Maganium Gauntlets
   icon:http://i.imgur.com/PjH1TTm.png
-  *puncherUpgradeMagic3
+  *puncherUpgradeMag3
   desc:"Punchers do <b>five times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>"These may end up killing us all, but at least they'll take that damn wall down with us." ~CEO, RUC</i>"
   cost:202020202020202020 money, 200000 bricks
   req:350 puncher
@@ -3693,7 +3693,7 @@ Upgrades
   name:Chess Knuckles
   icon:http://i.imgur.com/wy0NkCV.png
 
-  *puncher4thWallUpgrade
+  *puncher4WallUpgrade
   desc:"Punchers do <b>four times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>Thanks to rewriting the universe, they can now lift up to 8000 tons.</i>"
   cost:22020020022020002 money, 50 fourthWallMatter
   -multiplies efficiency of puncher by 400%
@@ -3794,14 +3794,14 @@ Upgrades
   name:Magic Lava Clubs
   icon:http://i.imgur.com/JZbeJbZ.png
   req:have magicUnlock
-  *clubberUpgradeMagic2
+  *clubberUpgradeMag2
   desc:"Clubbers do <b>four times</b> as much damage.<br><i>As hot as the sun. Magic!</i>"
   cost:15015015015015 money, 1500 bricks
   req:250 clubber
   -multiplies efficiency of clubber by 400%
   name:Sun Clubs
   icon:http://i.imgur.com/Tb9Rpht.png
-  *clubberUpgradeMagic3
+  *clubberUpgradeMag3
   desc:"Clubbers do <b>five times</b> as much damage.<br><i>Thanks to the wizards we can now make something even more dangerous than the nuke clubs!</i>"
   cost:150150150150150150 money, 15000000 bricks
   req:350 clubber
@@ -3823,7 +3823,7 @@ Upgrades
   name:Perfect Clubs
   icon:http://i.imgur.com/RIWt6UD.png
 
-  *clubber4thWallUpgrade
+  *clubber4WallUpgrade
   desc:"Clubbers do <b>four times</b> as much damage.<br><i>You can whack someone 1000 feet into the air with a club now!</i>"
   cost:33030003033003330 money, 500 fourthWallMatter
   -multiplies efficiency of clubber by 400%
@@ -3916,7 +3916,7 @@ Upgrades
    name:The Nightmare Blade
   icon:http://i.imgur.com/WljzKK3.png
 
-  *swordsmanUpgradeMagic
+  *swordsUpgradeMag
   desc:"Swordsmen do <b>three times</b> as much damage.<br><i>We found this mineral that happens to be the perfect magic enhancer, so we named it maganium.</i>"
    cost:11001100110 money, 1 bricks
   -multiplies efficiency of swordsman by 300%
@@ -3924,28 +3924,28 @@ Upgrades
    name:Maganium Swords
   icon:http://i.imgur.com/1bc1Ufp.png
   req:have magicUnlock
-  *swordsmanUpgradeMagic2
+  *swordsUpgradeMag2
   desc:"Swordsmen do <b>four times</b> as much damage.<br><i>Thanks to the power of dark magic, we have finally made it.</i>"
    cost:110011001100110 money, 5000 bricks
   req:250 swordsman
   -multiplies efficiency of swordsman by 400%
    name:Sword That Cuts Through Everything
   icon:http://i.imgur.com/3xcSNC8.png
-  *swordsmanUpgradeMagic3
+  *swordsUpgradeMag3
   desc:"Swordsmen do <b>five times</b> as much damage.<br><i>These were created by accident when we told the wizards to pump as much magic as they possibly could into the swords. Declaration: worth.</i>"
    cost:1100110011001100110 money, 50000000 bricks
   req:350 swordsman
   -multiplies efficiency of swordsman by 500%
    name:Oblivion Blades
   icon:http://i.imgur.com/BVw5a9o.png
-  *swordsmanUpgradeBlack
+  *swordsUpgradeBlack
   desc:"Swordsmen do <b>six times</b> as much damage.<br><i>"All those complainers who said hiring someone to make a really cool sword design for these was stupid 'cause The Black would eat through and destroy them eventually were being dumb. Look at these things." ~CEO, RUC</i>"
    cost:66006600660066006600660066006 money, 6600660066006600660 bricks
   req:600 swordsman
   -multiplies efficiency of swordsman by 600%
    name:Black-Coated Swords
   icon:http://i.imgur.com/nYJudXF.png
-  *swordsmanUpgradeArmy
+  *swordsUpgradeArmy
   desc:"Swordsmen do <b>four times</b> as much damage.<br><i>According to a demon historian, 35,000 years ago "some masked asshole tried to sneak into the boss's HQ". This sword and the mask (made of the same strange material) are all that remain of the stranger, after "the boss taught him a lesson". This incident was one of the only times in history that demons were killed, and as said by the Devil, "the only time I ever got a real challenge".<br> <br>As a test of this sword's strength, Agent Johnson cut one of our swords that cuts through everything clean in half. He wanted to attempt chopping down a Finality Tree next, but the plan was vetoed by literally everyone else.</i>"
   cost:1.1e37 money, 1.1e26 bricks, 1.1e22 fourthwallmatter
   req:800 swordsman
@@ -3953,7 +3953,7 @@ Upgrades
   name:#7's Sword
   icon:http://i.imgur.com/ZiK08m9.png
 
-  *swordsman4thWallUpgrade
+  *swords4WallUpgrade
   desc:"Swordsmen do <b>four times</b> as much damage.<br><i>We can hold them because it's a damn idle game, it doesn't need to make sense.</i>"
   cost:55055005505000555 money, 2500 fourthWallMatter
   -multiplies efficiency of swordsman by 400%
@@ -3969,7 +3969,7 @@ Upgrades
   req:25 clubber, 25 swordsman
   name:Sword Clubs
   icon:http://i.imgur.com/LeWcVOs.png
-  *clubAndSwordUpgrade2
+  *clubSwordUpgrade2
   desc:"Clubbers do <b>4%</b> more damage per swordsman.<br>Swordsmen do <b>3%</b> more damage per clubber.<br><i>Genius.</i>"
   cost:302200000 money
   -multiplies efficiency of clubber by 4% per swordsman
@@ -3977,7 +3977,7 @@ Upgrades
   req:100 clubber, 100 swordsman
   name:Clubs Covered in Swords
   icon:http://i.imgur.com/f22Lrs4.png
-  *clubAndSwordUpgrade3
+  *clubSwordUpgrade3
   desc:"Clubbers do <b>2%</b> more damage per swordsman.<br>Swordsmen do <b>2%</b> more damage per clubber.<br><i>Don't even try to imagine what the hell these things are.</i>"
   cost:3022000000000 money
   -multiplies efficiency of clubber by 2% per swordsman
@@ -3985,7 +3985,7 @@ Upgrades
   req:200 clubber, 200 swordsman
   name:Rotating Chainsaw Sword Clubs
   icon:http://i.imgur.com/2L70O5v.png
-  *clubAndSwordUpgrade4
+  *clubSwordUpgrade4
   desc:"Clubbers do <b>1.5%</b> more damage per swordsman.<br>Swordsmen do <b>1.5%</b> more damage per clubber.<br><i>50% club, 50% sword. Perfect.</i>"
   cost:15110000000000000 money
   -multiplies efficiency of clubber by 1.5% per swordsman
@@ -3993,7 +3993,7 @@ Upgrades
   req:300 clubber, 300 swordsman
   name:The Perfect Combination
   icon:http://i.imgur.com/EYhxJLA.png
-  *clubAndSwordUpgrade5
+  *clubSwordUpgrade5
   desc:"Clubbers do <b>1.2%</b> more damage per swordsman.<br>Swordsmen do <b>1.2%</b> more damage per clubber.<br><i>Now our technology is up to par with the 17th century! [applause]</i>"
   cost:302200000000000000000 money
   -multiplies efficiency of clubber by 1.2% per swordsman
@@ -4001,7 +4001,7 @@ Upgrades
   req:400 clubber, 400 swordsman
   name:Bayonets
   icon:http://i.imgur.com/Mus5GU4.png
-  *clubAndSwordUpgrade6
+  *clubSwordUpgrade6
   desc:"Clubbers do <b>1%</b> more damage per swordsman.<br>Swordsmen do <b>1%</b> more damage per clubber.<br><i>It is said that Hyzem's Blades are unrecognizable as any one melee weapon; they are all at once.</i>" 
   cost:6044000000000000000000000 money
   -multiplies efficiency of clubber by 1% per swordsman
@@ -4009,7 +4009,7 @@ Upgrades
   req:500 clubber, 500 swordsman
   name:King Hyzem's Blades
   icon:http://i.imgur.com/sjjiH7m.png
-  *clubAndSwordUpgrade7
+  *clubSwordUpgrade7
   desc:"Clubbers do <b>0.5%</b> more damage per swordsman.<br>Swordsmen do <b>0.5%</b> more damage per clubber.<br><i>Reaefsek did something to his castle arena to make it extremely effective in improving fighting skill. We'd rather not know what, to be honest. The place is creepy enough as it is.</i>"
   cost:1511000000000000000000000000000000 money
   -multiplies efficiency of clubber by 0.5% per swordsman
@@ -4140,7 +4140,7 @@ Upgrades
   name:Consciousness Segmentation
   icon:http://i.imgur.com/zS1s1Fp.png
 
-  *gunner4thWallUpgrade
+  *gunner4WallUpgrade
   desc:"Gunshooters do <b>four times</b> as much damage.<br><i>Let's just reach over into other fictional universes and grab ourselves some good guns.</i>"
   cost:88800808800008008 money, 10000 fourthWallMatter
   -multiplies efficiency of gunner by 400%
@@ -4233,21 +4233,21 @@ Upgrades
   name:Hellfire Bombs
   icon:http://i.imgur.com/8EFEm0M.png
 
-  *grenadeUpgradeMagic
+  *grenadeUpgradeMag
   desc:"Grenademen do <b>three times</b> as much damage.<br><i>These are pretty self-explanatory.</i>"
   cost:2000200020002 money, 1 bricks
   req:125 grenade
   -multiplies efficiency of grenade by 300%
   name:Magical Lightning Grenades
   icon:http://i.imgur.com/Z4YDjVW.png
-  *grenadeUpgradeMagic2
+  *grenadeUpgradeMag2
   desc:"Grenademen do <b>four times</b> as much damage.<br><i>Instead of exploding, these transport what they hit into a magical pool of certain destruction.</i>"
   cost:40004000400040004 money, 4000000 bricks
   req:250 grenade
   -multiplies efficiency of grenade by 400%
   name:Portal Grenades
   icon:http://i.imgur.com/3QX7sbz.png
-  *grenadeUpgradeMagic3
+  *grenadeUpgradeMag3
   desc:"Grenademen do <b>five times</b> as much damage.<br><i>These skip the portal and just obliterate anything they hit.</i>"
   cost:400040004000400040004 money, 4000000000 bricks
   req:350 grenade
@@ -4269,7 +4269,7 @@ Upgrades
   name:Grenades
   icon:http://i.imgur.com/VcNgtva.png
 
-  *grenade4thWallUpgrade
+  *grenade4WallUpgrade
   desc:"Grenademen do <b>four times</b> as much damage.<br><i>Now that we can alter reality, we don't need reasons for things. Explosions are just really big now.</i>"
   cost:202002220020200002 money, 50000 fourthWallMatter
   -multiplies efficiency of grenade by 400%
@@ -4277,7 +4277,7 @@ Upgrades
   icon:http://i.imgur.com/ZTUASsk.png
   req:have fourthWallUnlock
 
-  *gunAndGrenadeUpgrade
+  *gunGrenadeUpgrade
   desc:"Gunshooters do <b>5%</b> more damage per grenademan.<br>Grenademen do <b>4%</b> more damage per Gunshooter.<br><i>Not to be confused with a grenade launcher.</i>"
   cost:41600000 money
   -multiplies efficiency of gunner by 5% per grenade
@@ -4285,7 +4285,7 @@ Upgrades
   req:25 gunner, 25 grenade
   name:Gun That Shoots Grenades
   icon:http://i.imgur.com/pAx5oIh.png
-  *gunAndGrenadeUpgrade2
+  *gunGrenadeUpgrade2
   desc:"Gunshooters do <b>2%</b> more damage per grenademan.<br>Grenademen do <b>1%</b> more damage per Gunshooter.<br><i>It shoots little grenades.</i>"
   cost:83200000000 money
   -multiplies efficiency of gunner by 2% per grenade
@@ -4293,7 +4293,7 @@ Upgrades
   req:100 gunner, 100 grenade
   name:Grenade That Shoots
   icon:http://i.imgur.com/OltGQgd.png
-  *gunAndGrenadeUpgrade3
+  *gunGrenadeUpgrade3
   desc:"Gunshooters do <b>1.5%</b> more damage per grenademan.<br>Grenademen do <b>1%</b> more damage per Gunshooter.<br><i>Whatever you're thinking these are, they're more ridiculous than that.</i>"
   cost:832000000000000 money
   -multiplies efficiency of gunner by 1.5% per grenade
@@ -4301,7 +4301,7 @@ Upgrades
   req:200 gunner, 200 grenade
   name:Giant Gun Grenades
   icon:http://i.imgur.com/U3cxHTY.png
-  *gunAndGrenadeUpgrade4
+  *gunGrenadeUpgrade4
   desc:"Gunshooters do <b>1%</b> more damage per grenademan.<br>Grenademen do <b>0.8%</b> more damage per Gunshooter.<br><i>It's hard to describe what exactly these are, but they're perfect.</i>"
   cost:8320000000000000000 money
   -multiplies efficiency of gunner by 1% per grenade
@@ -4309,7 +4309,7 @@ Upgrades
   req:300 gunner, 300 grenade
   name:Grenade Guns
   icon:http://i.imgur.com/S4dXGCa.png
-  *gunAndGrenadeUpgrade5
+  *gunGrenadeUpgrade5
   desc:"Gunshooters do <b>0.8%</b> more damage per grenademan.<br>Grenademen do <b>0.8%</b> more damage per Gunshooter.<br><i>"We just threw a bunch of space-age crap together and whaddya know, it works!" ~Chief of R&D, RUC</i>"
   cost:83200000000000000000000 money
   -multiplies efficiency of gunner by 0.8% per grenade
@@ -4317,7 +4317,7 @@ Upgrades
   req:400 gunner, 400 grenade
   name:Hyperbeam Laser Plasma Photon Fusion Gunnades
   icon:http://i.imgur.com/ELmdwkT.png
-  *gunAndGrenadeUpgrade6
+  *gunGrenadeUpgrade6
   desc:"Gunshooters do <b>0.7%</b> more damage per grenademan.<br>Grenademen do <b>0.7%</b> more damage per Gunshooter.<br><i>Hyzem's castle defenses were the stuff of legends: giant bombs, guns that shoot bombs, giant guns, bombs that explode into guns... And they're all extremely powerful with Old World magic!</i>"
   cost:1640000000000000000000000000 money
   -multiplies efficiency of gunner by 0.7% per grenade
@@ -4325,7 +4325,7 @@ Upgrades
   req:500 gunner, 500 grenade
   name:The Turrets of Bextic
   icon:http://i.imgur.com/K34d64L.png
-  *gunAndGrenadeUpgrade7
+  *gunGrenadeUpgrade7
   desc:"Gunshooters do <b>0.4%</b> more damage per grenademan.<br>Grenademen do <b>0.4%</b> more damage per Gunshooter.<br><i>"I'm impressed by their ability to even find movies this absolutely terrible." ~Agent Connor<br>"Quality is different from </i>inspirational level<i>." ~Gunner Project Leader</i>"
   cost:3.28e35 money
   -multiplies efficiency of gunner by 0.4% per grenade
@@ -4334,84 +4334,84 @@ Upgrades
   name:Inspirational War Films
   icon:http://i.imgur.com/ukER0vw.png
 
-  *wreckingBallUpgrade1
+  *wreckingUpgrade1
   desc:"Wrecking balls do <b>50%</b> more damage.<br><i>If you know what I mean.(I don't)</i>"
   cost:40000000 money
   req:1 wreckingBall
   -multiplies efficiency of wreckingBall by 150%
   name:Bigger Balls
   icon:http://i.imgur.com/yM8TEHL.png
-  *wreckingBallUpgrade2
+  *wreckingUpgrade2
   desc:"Wrecking balls do <b>twice</b> as much damage.<br><i>I'm not sure what the previous ones were made out of.</i>"
   cost:400000000 money
   req:5 wreckingBall
   -multiplies efficiency of wreckingBall by 200%
   name:Balls of Steel
   icon:http://i.imgur.com/mAr2vCg.png
-  *wreckingBallUpgrade3
+  *wreckingUpgrade3
   desc:"Wrecking balls do <b>twice</b> as much damage.<br><i>They're actually just titanium balls, but the "Titanium _______" upgrades were getting boring.</i>"
   cost:4000000000 money
   req:25 wreckingBall
   -multiplies efficiency of wreckingBall by 200%
   name:Reinforced Balls
   icon:http://i.imgur.com/G48Ecxn.png
-  *wreckingBallUpgrade4
+  *wreckingUpgrade4
   desc:"Wrecking balls do <b>twice</b> as much damage.<br><i>Yes, this totally works against a brick wall.</i>"
   cost:40000000000 money
   req:50 wreckingBall
   -multiplies efficiency of wreckingBall by 200%
   name:Flaming Balls
   icon:http://i.imgur.com/RiUfzHo.png
-  *wreckingBallUpgrade5
+  *wreckingUpgrade5
   desc:"Wrecking balls do <b>twice</b> as much damage.<br><i>Badass and more effective.</i>"
   cost:400000000000 money
   req:75 wreckingBall
   -multiplies efficiency of wreckingBall by 200%
   name:Spiked Balls
   icon:http://i.imgur.com/VUzXniN.png
-  *wreckingBallUpgrade6
+  *wreckingUpgrade6
   desc:"Wrecking balls do <b>three times</b> as much damage.<br><i>The strongest balls the world has to offer.</i>"
   cost:4000000000000 money
   req:100 wreckingBall
   -multiplies efficiency of wreckingBall by 300%
   name:Diamond Balls
   icon:http://i.imgur.com/AJ4EZ5y.png
-  *wreckingBallUpgrade7
+  *wreckingUpgrade7
   desc:"Wrecking balls do <b>three times</b> as much damage.<br><i>Three is better than one!</i>"
   cost:200000000000000 money
   req:150 wreckingBall
   -multiplies efficiency of wreckingBall by 300%
   name:Tri-Balls
   icon:http://i.imgur.com/0sEdsxd.png
-  *wreckingBallUpgrade8
+  *wreckingUpgrade8
   desc:"Wrecking balls do <b>four times</b> as much damage.<br><i>As dense as a neutron star and about the same potential of turning into a black hole.</i>"
   cost:8000000000000000 money
   req:200 wreckingBall
   -multiplies efficiency of wreckingBall by 400%
   name:Neutron Balls
   icon:http://i.imgur.com/sgAPNQT.png
-  *wreckingBallUpgrade9
+  *wreckingUpgrade9
   desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>They are all. They are one. They exist at all times at once.</i>"
   cost:80000000000000000000 money
   req:300 wreckingBall
   -multiplies efficiency of wreckingBall by 500%
   name:Singularity Balls
   icon:http://i.imgur.com/tWgYnpW.png
-  *wreckingBallUpgrade10
+  *wreckingUpgrade10
   desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>[REDACTED]<br>CHIEF OF R&D EDIT: Agent Johnson is no longer allowed near the demons.</i>"
   cost:1600000000000000000000000 money
   req:400 wreckingBall
   -multiplies efficiency of wreckingBall by 500%
   name:Agent Johnson is an Idiot
   icon:http://i.imgur.com/8CXUpDK.png
-  *wreckingBallUpgrade11
+  *wreckingUpgrade11
   desc:"Wrecking balls do <b>seven times</b> as much damage.<br><i>A large white ball made of an unknown substance found in the center of Sgapang, Lord Reaefsek's castle. Judging by its strange properties, it is unlikely Reaefsek or Hyzem created it. Especially since white is not at all Reaefsek's color.</i>"
   cost:32000000000000000000000000000 money
   req:500 wreckingBall
   -multiplies efficiency of wreckingBall by 700%
   name:The Sgapang Ball
   icon:http://i.imgur.com/3OYp1g4.png
-  *wreckingBallUpgrade12
+  *wreckingUpgrade12
   desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>"Couldn't we use this thing's crazy magic power to like, do something, instead of just smashing it into the wall?" ~Agent Carter<br>"Hah, good one." ~Wrecking Ball Project Leader</i>"
   cost:8e36 money
   req:700 wreckingBall
@@ -4419,28 +4419,28 @@ Upgrades
   name:Reaefsek's Crystal Ball
   icon:http://i.imgur.com/LmISELN.png
 
-  *wreckingBallUpgradeMagic
+  *wreckingUpgradeMag
   desc:"Wrecking balls do <b>three times</b> as much damage.<br><i>Yeah, magic can pretty much do anything. Endless explosions!</i>"
   cost:20002000200020 money, 5 bricks
   req:125 wreckingBall
   -multiplies efficiency of wreckingBall by 300%
   name:Magic Exploding Balls
   icon:http://i.imgur.com/0b76QvZ.png
-  *wreckingBallUpgradeMagic2
+  *wreckingUpgradeMag2
   desc:"Wrecking balls do <b>four times</b> as much damage.<br><i>The wizards can create antimatter with their magic. It's pretty damn cool.</i>"
   cost:800080008000800080 money, 80000000 bricks
   req:250 wreckingBall
   -multiplies efficiency of wreckingBall by 400%
   name:Antimatter Balls
   icon:http://i.imgur.com/WgKfsDM.png
-  *wreckingBallUpgradeMagic3
+  *wreckingUpgradeMag3
   desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>The fire of the underworld is hotter than anything else, so we got the wizards to make magic balls out of it.</i>"
   cost:8000800080008000800080 money, 80000000000 bricks
   req:350 wreckingBall
   -multiplies efficiency of wreckingBall by 500%
   name:Hellfire Balls
   icon:http://i.imgur.com/E8N1BEF.png
-  *wreckingBallUpgradeBlack
+  *wreckUpgradeBlack
   desc:"Wrecking balls do <b>seven times</b> as much damage.<br><i>"I support this because Agent Johnson doesn't." ~Agent Connor</i>"
   cost:480004800048000480004800048000480 money, 48000480004800048000 bricks
   req:600 wreckingBall
@@ -4448,7 +4448,7 @@ Upgrades
   name:Black-Absorbed Balls
   icon:http://i.imgur.com/2yFjtIa.png
 
-  *wreckingBall4thWallUpgrade
+  *wreck4WallUpgrade
   desc:"Wrecking balls do <b>four times</b> as much damage.<br><i>Ah, the things we can do when there's none of that "realism" nonsense!</i>"
   cost:440044400040440040 money, 250000 fourthWallMatter
   -multiplies efficiency of wreckingBall by 400%
@@ -4456,7 +4456,7 @@ Upgrades
   icon:http://i.imgur.com/fWDh6nT.png
   req:have fourthWallUnlock
 
-  *puncherAndWreckingBallUpgrade
+  *punchWreckUpgrade
   desc:"Punchers do <b>10%</b> more damage per wrecking ball.<br>Wrecking balls do <b>1%</b> more damage per puncher.<br><i>We have the strength.</i>"
   cost:2800000000 money
   -multiplies efficiency of puncher by 10% per wreckingBall
@@ -4464,7 +4464,7 @@ Upgrades
   req:100 puncher, 25 wreckingBall
   name:Wrecking Ball Fists
   icon:http://i.imgur.com/GOhAQbq.png
-  *puncherAndWreckingBallUpgrade2
+  *punchWreckUpgrade2
   desc:"Punchers do <b>4%</b> more damage for each wrecking ball.<br>Wrecking balls do <b>1%</b> more damage for each puncher.<br><i>Using the power of the wrecking balls to enhance the power of fists using physics or something.</i>"
   cost:2800000000000 money
   -multiplies efficiency of puncher by 4% per wreckingBall
@@ -4472,7 +4472,7 @@ Upgrades
   req:200 puncher, 100 wreckingBall
   name:Coordinated Wrecking
   icon:http://i.imgur.com/9uj2ciF.png
-  *puncherAndWreckingBallUpgrade3
+  *punchWreckUpgrade3
   desc:"Punchers do <b>2%</b> more damage for each wrecking ball.<br>Wrecking balls do <b>0.9%</b> more damage for each puncher.<br><i>Yes. Hell yes. Hell fucking yes.</i>"
   cost:8200000000000000 money
   -multiplies efficiency of puncher by 2% per wreckingBall
@@ -4480,7 +4480,7 @@ Upgrades
   req:300 puncher, 200 wreckingBall
   name:Wrecking Ball Riders
   icon:http://i.imgur.com/HVOtNiB.png
-  *puncherAndWreckingBallUpgrade4
+  *punchWreckUpgrade4
   desc:"Punchers do <b>1%</b> more damage for each wrecking ball.<br>Wrecking balls do <b>0.7%</b> more damage for each puncher.<br><i>Wrecking balls shaped like fists. The punchers do more damage because they like to see their symbol destroying the wall.</i>"
   cost:82000000000000000000 money
   -multiplies efficiency of puncher by 1% per wreckingBall
@@ -4488,7 +4488,7 @@ Upgrades
   req:400 puncher, 300 wreckingBall
   name:Ultimate Fist Balls
   icon:http://i.imgur.com/WMAG1Bb.png
-  *puncherAndWreckingBallUpgrade5
+  *punchWreckUpgrade5
   desc:"Punchers do <b>0.8%</b> more damage for each wrecking ball.<br>Wrecking balls do <b>0.7%</b> more damage for each puncher.<br><i>"Should have done this the first time." ~Puncher Project Leader, RUC</i>"
   cost:2800000000000000000000000 money
   -multiplies efficiency of puncher by 0.8% per wreckingBall
@@ -4496,7 +4496,7 @@ Upgrades
   req:500 puncher, 400 wreckingBall
   name:Literal Wrecking Ball Fists
   icon:http://i.imgur.com/u74hjiG.png
-  *puncherAndWreckingBallUpgrade6
+  *punchWreckUpgrade6
   desc:"Punchers do <b>0.8%</b> more damage per wrecking ball.<br>Wrecking balls do <b>0.6%</b> more damage per puncher.<br><i>"Many a man has asked what the Wrecking Fists are." ~Wrecking Ball Project Leader</i>"
   cost:28000000000000000000000000000 money
   -multiplies efficiency of puncher by 0.8% per wreckingBall
@@ -4504,7 +4504,7 @@ Upgrades
   req:600 puncher, 500 wreckingBall
   name:Wrecking Fists
   icon:http://i.imgur.com/WAEGG3I.png
-  *puncherAndWreckingBallUpgrade7
+  *punchWreckUpgrade7
   desc:"Punchers do <b>0.4%</b> more damage per wrecking ball.<br>Wrecking balls do <b>0.4%</b> more damage per puncher.<br><i>"Our mission is to create the most experimental, absurd, ridiculous, out-of-left-field upgrade we can." ~Head of R&D<br>"THE GAME IS ON." ~Agent Johnson</i>"
   cost:8.2e36 money
   -multiplies efficiency of puncher by 0.4% per wreckingBall
@@ -4598,28 +4598,28 @@ Upgrades
   name:Robotic Bulldozers
   icon:http://i.imgur.com/taZMkYw.png
 
-  *bulldozerUpgradeMagic
+  *bulldozeUpgradeMag
   desc:"Bulldozers do <b>three times</b> as much damage.<br><i>Magically-enhanced engines that allow the dozers to teleport.</i>"
   cost:300030003000300 money, 300 bricks
   req:125 bulldozer
   -multiplies efficiency of bulldozer by 300%
   name:Phasing Engines
   icon:http://i.imgur.com/DPbausO.png
-  *bulldozerUpgradeMagic2
+  *bulldozeUpgradeMag2
   desc:"Bulldozers do <b>four times</b> as much damage.<br><i>Antimatter is the new titanium.</i>"
   cost:12001200120012001200 money, 300000000 bricks
   req:250 bulldozer
   -multiplies efficiency of bulldozer by 400%
   name:Antimatter Blades
   icon:http://i.imgur.com/50pc780.png
-  *bulldozerUpgradeMagic3
+  *bulldozeUpgradeMag3
   desc:"Bulldozers do <b>five times</b> as much damage.<br><i>This wall better not be the immovable barrier.</i>"
   cost:120012001200120012001200 money, 120000000000 bricks
   req:350 bulldozer
   -multiplies efficiency of bulldozer by 500%
   name:The Unstoppable Force
   icon:http://i.imgur.com/lKRKuaD.png
-  *bulldozerUpgradeBlack
+  *bulldozUpgradeBlack
   desc:"Bulldozers do <b>six times</b> as much damage.<br><i>"How long until we run out of verbs?" ~Agent Carter<br>"Our best agents are browsing the thesaurus as we speak." ~Agent Connor</i>"
   cost:7200072000720007200072000720007200 money, 720007200072000720007 bricks
   req:600 bulldozer
@@ -4627,7 +4627,7 @@ Upgrades
   name:Black-Enhanced Blades
   icon:http://i.imgur.com/sfXVHT6.png
 
-  *bulldozer4thWallUpgrade
+  *bulldoz4WallUpgrade
   desc:"Bulldozers do <b>four times</b> as much damage.<br><i>No more scratches!</i>"
   cost:1201212000120012120 money, 1000000 fourthWallMatter
   -multiplies efficiency of bulldozer by 400%
@@ -4720,28 +4720,28 @@ Upgrades
   name:The Boxes of Relocation
   icon:http://i.imgur.com/pyvvTSj.png
 
-  *airstrikeUpgradeMagic
+  *airstrikUpgradeMag
   desc:"Airstrikes do <b>three times</b> as much damage.<br><i>How useful!</i>"
   cost:3000300030003000 money, 2500 bricks
   req:125 airstrike
   -multiplies efficiency of airstrike by 300%
   name:Density Spells
   icon:http://i.imgur.com/xxfcJIo.png
-  *airstrikeUpgradeMagic2
+  *airstrikUpgradeMag2
   desc:"Airstrikes do <b>four times</b> as much damage.<br><i>Now we can empty the contents of other dimensions onto the wall!</i>"
   cost:600060006000600060006 money, 6000000000 bricks
   req:250 airstrike
   -multiplies efficiency of airstrike by 400%
   name:Dimensional Portals
   icon:http://i.imgur.com/rEOQtOS.png
-  *airstrikeUpgradeMagic3
+  *airstrikUpgradeMag3
   desc:"Airstrikes do <b>five times</b> as much damage.<br><i>We have no idea what this stuff is, but it does the trick. Thanks, dark wizards!</i>"
   cost:6000600060006000600060006 money, 6000000000000 bricks
   req:350 airstrike
   -multiplies efficiency of airstrike by 500%
   name:???
   icon:http://i.imgur.com/2ySbj27.png
-  *airstrikeUpgradeBlack
+  *airstrkUpgradeBlack
   desc:"Airstrikes do <b>six times</b> as much damage.<br><i>"Is it time to buff the anvils? The answer is yes, always, forever." ~Agent Connor, in the BMA proposal<br>"Finally, we agree." ~Agent Johnson</i>"
   cost:3.000300030003000e+35 money, 30003000300030003000300 bricks
   req:600 airstrike
@@ -4749,7 +4749,7 @@ Upgrades
   name:Black-Merged Anvils
   icon:http://i.imgur.com/YqEx6Xx.png
 
-  *airstrike4thWallUpgrade
+  *airstrk4WallUpgrade
   desc:"Airstrikes do <b>four times</b> as much damage.<br><i>Yeah, we already used this, but it works here too.</i>"
   cost:5050550050000505550 money, 10000000 fourthWallMatter
   -multiplies efficiency of airstrike by 400%
@@ -4757,7 +4757,7 @@ Upgrades
   icon:http://i.imgur.com/CS5T9De.png
   req:have fourthWallUnlock
 
-  *bulldozerAndAirstrikeUpgrade
+  *bulldozeAirstrikUp
   desc:"Bulldozers do <b>3%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>3%</b> more damage for each bulldozer.<br><i>We gotta drop the stuff so that it bounces off the bulldozers in the perfect way to do the maximum damage.</i>"
   cost:36000000000000 money
   -multiplies efficiency of bulldozer by 3% per airstrike
@@ -4765,7 +4765,7 @@ Upgrades
   req:50 bulldozer, 50 airstrike
   name:Precision Strikes
   icon:http://i.imgur.com/PEvEBLp.png
-  *bulldozerAndAirstrikeUpgrade2
+  *bulldozeAirstrikUp2
   desc:"Bulldozers do <b>1%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>1%</b> more damage for each bulldozer.<br><i>The guy who thought of this was a shoe-in for Employee of The Month.</i>"
   cost:3600000000000000 money
   -multiplies efficiency of bulldozer by 1% per airstrike
@@ -4773,7 +4773,7 @@ Upgrades
   req:100 bulldozer, 100 airstrike
   name:Bulldozer Drop
   icon:http://i.imgur.com/8EjO4Pc.png
-  *bulldozerAndAirstrikeUpgrade3
+  *bulldozeAirstrikUp3
   desc:"Bulldozers do <b>1%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>0.8%</b> more damage for each bulldozer.<br><i>Tied big jets to the bulldozers so they fall faster.</i>"
   cost:6120000000000000000 money
   -multiplies efficiency of bulldozer by 1% per airstrike
@@ -4781,7 +4781,7 @@ Upgrades
   req:200 bulldozer, 200 airstrike
   name:Enhanced Bulldozer Drop
   icon:http://i.imgur.com/wZYXDls.png
-  *bulldozerAndAirstrikeUpgrade4
+  *bulldozeAirstrikUp4
   desc:"Bulldozers do <b>1%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>0.8%</b> more damage for each bulldozer.<br><i>The guy who came up with the bulldozer drop is a millionaire now.</i>"
   cost:61200000000000000000000 money
   -multiplies efficiency of bulldozer by 1% per airstrike
@@ -4789,7 +4789,7 @@ Upgrades
   req:300 bulldozer, 300 airstrike
   name:Ultimate Bulldozer Drop
   icon:http://i.imgur.com/2oO31SH.png
-  *bulldozerAndAirstrikeUpgrade5
+  *bulldozeAirstrikUp5
   desc:"Bulldozers do <b>0.8%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>0.8%</b> more damage for each bulldozer.<br><i>"More like epic FAIL." ~The walls, before getting wrecked with this</i>"
   cost:1260000000000000000000000000 money
   -multiplies efficiency of bulldozer by 0.8% per airstrike
@@ -4797,7 +4797,7 @@ Upgrades
   req:400 bulldozer, 400 airstrike
   name:Epic Bulldozer Drop
   icon:http://i.imgur.com/4vt1A6Q.png
-  *bulldozerAndAirstrikeUpgrade6
+  *bulldozeAirstrikUp6
   desc:"Bulldozers do <b>0.6%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>0.6%</b> more damage for each bulldozer.<br><i>"Basically we went with the most badass thing we could think of."  ~Head of R&D, on the process</i>"
   cost:12600000000000000000000000000000 money
   -multiplies efficiency of bulldozer by 0.6% per airstrike
@@ -4805,7 +4805,7 @@ Upgrades
   req:500 bulldozer, 500 airstrike
   name:Bulldozer Planes
   icon:http://i.imgur.com/jIhkyDF.png
-  *bulldozerAndAirstrikeUpgrade7
+  *bulldozeAirstrikUp7
   desc:"Bulldozers do <b>0.5%</b> more damage for each airstrike caller.<br>Airstrike callers do <b>0.5%</b> more damage for each bulldozer.<br><i>A set of spells devised by a famous evil wizard. Cast them on two objects or beings and they are bound to each other, their strength becomes entwined and increases massively through some sort of mutual copying reality exploit.<br>"Planes and bulldozers, anyone? No one? Whatever, we're doing it anyway." ~Head of R&D</i>"
   cost:6.12e39 money
   -multiplies efficiency of bulldozer by 0.5% per airstrike
@@ -4814,77 +4814,77 @@ Upgrades
   name:The Dark Bindings
   icon:http://i.imgur.com/eDyhOUN.png
 
-  *necromancerUpgrade1
+  *necromanceUpgrade1
   desc:"Necromancers do <b>50%</b> more damage.<br><i>Gives them more of an incentive.</i>"
   cost:333333333333 money, 2 bricks
   req:1 necromancer
   -multiplies efficiency of necromancer by 150%
   name:Polished Bricks
   icon:http://i.imgur.com/v1AK3rT.png
-  *necromancerUpgrade2
+  *necromanceUpgrade2
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>If there's one thing the wizards value other than bricks, it's big hats.</i>"
   cost:3333333333333 money, 4 bricks
   req:5 necromancer
   -multiplies efficiency of necromancer by 200%
   name:Giant Hats
   icon:http://i.imgur.com/TFn4qy8.png
-  *necromancerUpgrade3
+  *necromanceUpgrade3
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>We find these while mining, so we might as well finally put them to use.</i>"
   cost:33333333333333 money, 33 bricks
   req:25 necromancer
   -multiplies efficiency of necromancer by 200%
   name:Ancient Scrolls
   icon:http://i.imgur.com/Rcq67yT.png
-  *necromancerUpgrade4
+  *necromanceUpgrade4
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>They're demanding these. Necromancers are assholes.</i>"
   cost:333333333333333 money, 333 bricks
   req:50 necromancer
   -multiplies efficiency of necromancer by 200%
   name:Thrones
   icon:http://i.imgur.com/9zBRNek.png
-  *necromancerUpgrade5
+  *necromanceUpgrade5
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>Keeps them from rotting too fast.</i>"
   cost:3333333333333333 money, 3333 bricks
   req:75 necromancer
   -multiplies efficiency of necromancer by 200%
   name:Zombie Preservatives
   icon:http://i.imgur.com/oR9MbS5.png
-  *necromancerUpgrade6
+  *necromanceUpgrade6
   desc:"Necromancers do <b>three times</b> as much damage.<br><i>They were using some pretty low-class wizard graveyards before.</i>"
   cost:33333333333333333 money, 333333 bricks
   req:100 necromancer
   -multiplies efficiency of necromancer by 300%
   name:Better Graveyards
   icon:http://i.imgur.com/8eam0qT.png
-  *necromancerUpgrade7
+  *necromanceUpgrade7
   desc:"Necromancers do <b>three times</b> as much damage.<br><i>The guys we hired before turned out to be scrubs.</i>"
   cost:3333333333333333333 money, 33333333 bricks
   req:150 necromancer
   -multiplies efficiency of necromancer by 300%
   name:Higher-Classed Necromancers
   icon:http://i.imgur.com/qXqoMU6.png
-  *necromancerUpgrade8
+  *necromanceUpgrade8
   desc:"Necromancers do <b>four times</b> as much damage.<br><i>So they can clean out the world's graveyards faster.</i>"
   cost:66666666666666666666 money, 666666666 bricks
   req:200 necromancer
   -multiplies efficiency of necromancer by 400%
   name:Teleportation Spells
   icon:http://i.imgur.com/RnCc5dn.png
-  *necromancerUpgrade9
+  *necromanceUpgrade9
   desc:"Necromancers do <b>five times</b> as much damage.<br><i>To multiply the zombification spells for cheap.</i>"
   cost:3333333333333333333333333 money, 33333333333333 bricks
   req:300 necromancer
   -multiplies efficiency of necromancer by 500%
   name:Duplication Spells
   icon:http://i.imgur.com/OZnAMmh.png
-  *necromancerUpgrade10
+  *necromanceUpgrade10
   desc:"Necromancers do <b>five times</b> as much damage.<br><i>"All ancient tombs have tons of useful magical stuff and only the highest quality corpses. We've never really thought why; it's just a fact." ~A necromancer</i>"
   cost:33333333333333333333333333333 money, 333333333333333333 bricks
   req:400 necromancer
   -multiplies efficiency of necromancer by 500%
   name:Ancient Tombs
   icon:http://i.imgur.com/Q42Qlh5.png
-  *necromancerUpgrade11
+  *necromanceUpgrade11
   desc:"Necromancers do <b>seven times</b> as much damage.<br><i>A few centuries ago, some demons snuck into the Great Wizard Library, took all the First Wizards' scrolls, and sent the wizards on the greatest treasure hunt ever constructed to get them back. The scrolls were never found. We're just going to cheat and use the compromisers to hunt them down.<br> <br>"I propose we send everyone we have out on the hunt instead of cheating." ~Agent Johnson<br>"No." ~Everyone</i>"
   cost:333333333333333333333333333333333 money, 3333333333333333333333 bricks
   req:500 necromancer
@@ -4892,28 +4892,28 @@ Upgrades
   name:First Wizard Scrolls
   icon:http://i.imgur.com/2nlwuwZ.png
 
-  *necromancerUpgradeHell
+  *necromanceUpHell
   desc:"Necromancers do <b>three times</b> as much damage.<br><i>Demon healing magic is so strong it can bring them back from the dead. It's part of the reason they're such assholes, because they know they can never really be killed.</i>"
   cost:333333333333333333 money, 3333333 bricks
   req:125 necromancer
   -multiplies efficiency of necromancer by 300%
   name:Demon Healing Magic
   icon:http://i.imgur.com/tFOnOWj.png
-  *necromancerUpgradeHell2
+  *necromanceUpHell2
   desc:"Necromancers do <b>four times</b> as much damage.<br><i>So powerful with hell magic they can bring people back to life easily. And Satan's janitor is willing to sell some to us!</i>"
   cost:66666666666666666666666 money, 66666666666 bricks
   req:250 necromancer
   -multiplies efficiency of necromancer by 400%
   name:The Devil's Fingernail Clippings
   icon:http://i.imgur.com/xOeWjYX.png
-  *necromancerUpgradeHell3
+  *necromanceUpHell3
   desc:"Necromancers do <b>five times</b> as much damage.<br><i>The Boneyards hold the corpses of many famous wizards, and even deceased demons. The Devil has stated he doesn't really care about them, giving us the perfect entrance. He'll still make us pay a shitload for them, because after all he is a businessman.</i>"
   cost:333333333333333333333333333 money, 3333333333333333 bricks
   req:350 necromancer
   -multiplies efficiency of necromancer by 500%
   name:The Cursed Boneyards of Hell
   icon:http://i.imgur.com/woP7jN7.png
-  *necromancerUpgradeBlack
+  *necromanceUpBlack
   desc:"Necromancers do <b>six times</b> as much damage.<br><i>It sounds cool, but really they only last a couple minutes before The Black is done with the bones. Black-melded zombies: actually kind of lame.</i>"
   cost:4.9999999999999999e36 money, 4.9999999999999999e25 bricks
   req:600 necromancer
@@ -5029,7 +5029,7 @@ Upgrades
   name:Black-Encrusted Knuckles
   icon:http://i.imgur.com/hAPByUt.png
 
-  *necromancerAndTitanUpgrade
+  *necromanceTitanUp
   desc:"Necromancers do <b>2.5%</b> more damage per titan.<br>Titans do <b>2%</b> more damage per necromancer.<br><i>The necromancers' thrones now sit atop the titans, so they can infuse the titans with greater magic(and look awesome).</i>"
   cost:4777777777777777 money, 477 bricks
   -multiplies efficiency of necromancer by 2.5% per giant
@@ -5037,7 +5037,7 @@ Upgrades
   req:50 necromancer, 50 giant
   name:Titan Thrones
   icon:http://i.imgur.com/ENs5xQl.png
-  *necromancerAndTitanUpgrade2
+  *necromanceTitanUp2
   desc:"Necromancers do <b>2%</b> more damage per titan.<br>Titans do <b>1.5%</b> more damage per necromancer.<br><i>The necromancers gain enormous power and the titans gain the ability to raise the dead.</i>"
   cost:277777777777777777 money, 27777 bricks
   -multiplies efficiency of necromancer by 2% per giant
@@ -5045,7 +5045,7 @@ Upgrades
   req:100 necromancer, 100 giant
   name:Magic Swap
   icon:http://i.imgur.com/KWgN54C.png
-  *necromancerAndTitanUpgrade3
+  *necromanceTitanUp3
   desc:"Necromancers do <b>1.5%</b> more damage per titan.<br>Titans do <b>1.5%</b> more damage per necromancer.<br><i>Necromancers merge with titans to create almighty dead-rising wall-smashing monsters!</i>"
   cost:1777777777777777777777 money, 177777777 bricks
   -multiplies efficiency of necromancer by 1.5% per giant
@@ -5053,7 +5053,7 @@ Upgrades
   req:200 necromancer, 200 giant
   name:Merge Form
   icon:http://i.imgur.com/Zp3cflT.png
-  *necromancerAndTitanUpgrade4
+  *necromanceTitanUp4
   desc:"Necromancers do <b>1.5%</b> more damage per titan.<br>Titans do <b>1%</b> more damage per necromancer.<br><i>[REDACTED, REDACTED SO HARD]<br>"NEVER AGAIN." ~Head of Demon Relations, RUC</i>"
   cost:17777777777777777777777777 money, 17777777777777 bricks
   -multiplies efficiency of necromancer by 1.5% per giant
@@ -5061,7 +5061,7 @@ Upgrades
   req:300 necromancer, 300 giant
   name:Incident 073X
   icon:http://i.imgur.com/xc5KMYP.png
-  *necromancerAndTitanUpgrade5
+  *necromanceTitanUp5
   desc:"Necromancers do <b>0.8%</b> more damage per titan.<br>Titans do <b>0.6%</b> more damage per necromancer.<br><i>After a long search, we have found the resting place of the greatest titan king who ever lived.<br> <br>Unfortunately*, Lord Reaefsek's body was never found, as explained in the description of his hand. <br>EDIT: *fucking fortunately.</i>"
   cost:277777777777777777777777777777 money, 277777777777777777 bricks
   -multiplies efficiency of necromancer by 0.8% per giant
@@ -5069,7 +5069,7 @@ Upgrades
   req:400 necromancer, 400 giant
   name:King Hyzem
   icon:http://i.imgur.com/CSalqxT.png
-  *necromancerAndTitanUpgrade6
+  *necromanceTitanUp6
   desc:"Necromancers do <b>0.6%</b> more damage per titan.<br>Titans do <b>0.5%</b> more damage per necromancer.<br><i>Time to finally question him about his unusual knowledge! He says that much of his knowledge came from a stranger to the land, who always wore a white mask and told of many things. When questioned about a name, this stranger asked to be referred to as '#16'.</i>"
   cost:4777777777777777777777777777777777 money, 4777777777777777777777 bricks
   -multiplies efficiency of necromancer by 0.6% per giant
@@ -5185,77 +5185,77 @@ Upgrades
   name:Black-Amalgamated Pitchforks
   icon:http://i.imgur.com/lqdvoH6.png
 
-  *compromiserUpgrade
+  *compromiseUpgrade
   desc:"Reality compromisers do <b>50%</b> more damage.<br><i>Reality code is written in some weird language. We only speak AMERICAN!</i>"
   cost:500500550005550 money, 100 fourthWallMatter
   req:1 compromiser
   -multiplies efficiency of compromiser by 150%
   name:Universal Translators
   icon:http://i.imgur.com/gRgl3DR.png
-  *compromiserUpgrade2
+  *compromiseUpgrade2
   desc:"Reality compromisers do <b>twice</b> as much damage.<br><i>To break through all of reality's firewalls.</i>"
   cost:5000055505005505 money, 1000 fourthWallMatter
   req:5 compromiser
   -multiplies efficiency of compromiser by 200%
   name:Hackers
   icon:http://i.imgur.com/Au6TbeN.png
-  *compromiserUpgrade3
+  *compromiseUpgrade3
   desc:"Reality compromisers do <b>twice</b> as much damage.<br><i>They type at 300 words a minute, and can team up on the same keyboard for better efficiency!</i>"
   cost:50000555050055050 money, 5000 fourthWallMatter
   req:25 compromiser
   -multiplies efficiency of compromiser by 200%
   name:TV Hackers
   icon:http://i.imgur.com/s0e1Pk1.png
-  *compromiserUpgrade4
+  *compromiseUpgrade4
   desc:"Reality compromisers do <b>twice</b> as much damage.<br><i>"More gears! More pistons!" ~RC project leader</i>"
   cost:500005550500550550 money, 50000 fourthWallMatter
   req:50 compromiser
   -multiplies efficiency of compromiser by 200%
   name:Overcomplication
   icon:http://i.imgur.com/mpvRvBz.png
-  *compromiserUpgrade5
+  *compromiseUpgrade5
   desc:"Reality compromisers do <b>twice</b> as much damage.<br><i>They rip through the unhackable fabric to get to the deeper layers of code.</i>"
   cost:5000055505005505500 money, 500000 fourthWallMatter
   req:75 compromiser
   -multiplies efficiency of compromiser by 200%
   name:Reality Sawblades
   icon:http://i.imgur.com/8BWPao1.png
-  *compromiserUpgrade6
+  *compromiseUpgrade6
   desc:"Reality compromisers do <b>three times</b> as much damage.<br><i>Really it's the 8th secret ingredient. All the materials it takes to break reality are secrets.</i>"
   cost:50000555050055055005 money, 5000000 fourthWallMatter
   req:100 compromiser
   -multiplies efficiency of compromiser by 300%
   name:Secret Ingredient
   icon:http://i.imgur.com/vWe5dwK.png
-  *compromiserUpgrade7
+  *compromiseUpgrade7
   desc:"Reality compromisers do <b>three times</b> as much damage.<br><i>Now our guys can reprogram reality with their minds. Hell yes.</i>"
   cost:1101000101001101100010 money, 500000000 fourthwallMatter
   req:150 compromiser
   -multiplies efficiency of compromiser by 300%
   name:Thought-to-Text Translators
   icon:http://i.imgur.com/3QMurit.png
-  *compromiserUpgrade8
+  *compromiseUpgrade8
   desc:"Reality compromisers do <b>four times</b> as much damage.<br><i>"If the hugely important machines aren't as big as a small city, you're doing it wrong." ~Head of Tech, RUC</i>"
   cost:110100010100110110001010 money, 50000000000 fourthwallMatter
   req:200 compromiser
   -multiplies efficiency of compromiser by 400%
   name:Extreme Overcomplication
   icon:http://i.imgur.com/qxa1Na2.png
-  *compromiserUpgrade9
+  *compromiseUpgrade9
   desc:"Reality compromisers do <b>five times</b> as much damage.<br><i>According to the hackers, the custom operating system that we had to make for handling reality code "is a sack of garbage", and "it's like you told the programmers to spend the minimum possible amount of time on it". Hopefully the latter was a joke, or they know our strategy.</i>"
   cost:1100101100100110111000010000 money, 2000000000000 fourthWallMatter
   req:300 compromiser
   -multiplies efficiency of compromiser by 500%
   name:Way Better Interface
   icon:http://i.imgur.com/NFNQ3zk.png
-  *compromiserUpgrade10
+  *compromiseUpgrade10
   desc:"Reality compromisers do <b>five times</b> as much damage.<br><i>"Investigating the Sgapang Ball with the compromisers has led to a discovery... It was made by editing reality code.<br> <br>80,000 years ago.<br> <br>Let's be safe." ~Hacker #21 in the Firewall proposal</i>"
   cost:20020222020022022200002002022020 money, 10000000000000000 fourthWallMatter
   req:400 compromiser
   -multiplies efficiency of compromiser by 500%
   name:Firewalls
   icon:http://i.imgur.com/DJUqiov.png
-  *compromiserUpgrade11
+  *compromiseUpgrade11
   desc:"Reality compromisers do <b>seven times</b> as much damage.<br><i>A bunch of carvings in the dungeons of Sauthir, the first titan castle. The titans couldn't make head or tail of them, but we can see that they are instructions to write some extremely useful reality scripts. When questioned of who carved them, Optuqui said that #16 did, saying they were an order from "the king himself".</i>"
   cost:500505055050550505005050050500505550 money, 10000000000000000000000 fourthWallMatter
   req:500 compromiser
@@ -5263,28 +5263,28 @@ Upgrades
   name:The Divine Instructions
   icon:http://i.imgur.com/KkLNQv0.png
 
-  *compromiserMagicUpgrade
+  *compromiseMagicUp
   desc:"Reality compromisers do <b>three times</b> as much damage.<br><i>Magically breaking through reality is a lot easier.</i>"
   cost:505050505050505050505 money, 50000000 fourthWallMatter
   req:125 compromiser
   -multiplies efficiency of compromiser by 300%
   name:Code-to-Magic Conversion
   icon:http://i.imgur.com/3aOpWd3.png
-  *compromiserMagicUpgrade2
+  *compromiseMagicUp2
   desc:"Reality compromisers do <b>four times</b> as much damage.<br><i>Closer to the "hack and slash" definition of hacker than the programming one.</i>"
   cost:20202020202020202020202020 money, 200000000000 fourthWallMatter
   req:250 compromiser
   -multiplies efficiency of compromiser by 400%
   name:Demon Hackers
   icon:http://i.imgur.com/lBojsEA.png
-  *compromiserMagicUpgrade3
+  *compromiseMagicUp3
   desc:"Reality compromisers do <b>five times</b> as much damage.<br><i>That unknown substance the wizards gave us blows through reality fabric very well. What a useful super dangerous explosive acid! Yes it is!</i>"
   cost:202020202020202020202020202020 money, 200000000000000 fourthWallMatter
   req:350 compromiser
   -multiplies efficiency of compromiser by 500%
   name:???
   icon:http://i.imgur.com/rCKPdfD.png
-  *compromiserUpgradeBlack
+  *compromiseUpBlack
   desc:"Reality compromisers do <b>six times</b> as much damage.<br><i>"I thought they said mixing the Black with reality editing was a terrible idea." ~Agent Carter<br>"Clearly you do not understand upgrade themes." ~Head of R&D</i>"
   cost:5.005050550505550e39 money, 5.005050550505550e28 bricks, 500000000000000000000000000 fourthWallMatter
   req:600 compromiser
@@ -5292,70 +5292,70 @@ Upgrades
   name:Black-Coalesced Reality Sawblades
   icon:http://i.imgur.com/VeoBNKx.png
 
-  *lastBuildingUpgrade
+  *lastBuildingUp
   desc:"Black obliterators do <b>50%</b> more damage.<br><i>Rules of The Black<br>#1: Do not touch it.<br>#2: Do not do anything relating to it without level 10 permission.<br>#3: DO NOT TOUCH IT.</i>"
   cost:260000000000000000000 money, 260000 fourthWallMatter
   req:1 lastBuilding
   -multiplies efficiency of lastBuilding by 150%
   name:The Rules
   icon:http://i.imgur.com/PqwDNQa.png
-  *lastBuildingUpgrade2
+  *lastBuildingUp2
   desc:"Black obliterators do <b>50%</b> more damage.<br><i>"Way, way, waaaaay more." ~Agent Lawrence, in the WMS proposal</i>"
   cost:520000000000000000000 money, 520000 fourthWallMatter
   req:5 lastBuilding
   -multiplies efficiency of lastBuilding by 150%
   name:Way More Safeguards
   icon:http://i.imgur.com/zjWBTj1.png
-  *lastBuildingUpgrade3
+  *lastBuildingUp3
   desc:"Black obliterators do <b>twice</b> as much damage.<br><i>The wizards have much knowledge relating to supernatural things, and The Black is kind of like something called Bodjsia, only "Bodjsia is nothing in comparison, before this it was one of the most feared substances".</i>"
   cost:5200000000000000000000 money, 5200000 fourthWallMatter
   req:25 lastBuilding
   -multiplies efficiency of lastBuilding by 200%
   name:Wizard Research
   icon:http://i.imgur.com/2lFDykJ.png
-  *lastBuildingUpgrade4
+  *lastBuildingUp4
   desc:"Black obliterators do <b>twice</b> as much damage.<br><i>The titans can help a lot more. Old World magic is way more powerful than modern magic, and as the 1337 sn1p3rs would say, "for the pros".</i>"
   cost:52000000000000000000000 money, 52000000 fourthWallMatter
   req:50 lastBuilding
   -multiplies efficiency of lastBuilding by 200%
   name:Titan Research
   icon:http://i.imgur.com/Sb9XPog.png
-  *lastBuildingUpgrade5
+  *lastBuildingUp5
   desc:"Black obliterators do <b>twice</b> as much damage.<br><i>The demons are very interested in The Black, because it is the only thing they have ever found that they have no records of.</i>"
   cost:520000000000000000000000 money, 520000000 fourthWallMatter
   req:75 lastBuilding
   -multiplies efficiency of lastBuilding by 200%
   name:Demon Research
   icon:http://i.imgur.com/8dQt7Qe.png
-  *lastBuildingUpgrade6
+  *lastBuildingUp6
   desc:"Black obliterators do <b>twice</b> as much damage.<br><i>The Big Man is very interested in The Black, because it is the only thing he has ever encountered that emanates more pure evil and power than him.</i>"
   cost:5200000000000000000000000 money, 5200000000 fourthWallMatter
   req:100 lastBuilding
   -multiplies efficiency of lastBuilding by 200%
   name:Wisdom From The Devil
   icon:http://i.imgur.com/nJNDKGD.png
-  *lastBuildingUpgrade7
+  *lastBuildingUp7
   desc:"Black obliterators do <b>three times</b> as much damage.<br><i>The wizards say The Black defies everything they know about magic and the laws of the universe, and we should not be using it but finding a way to destroy it. Screw those guys, right?</i>"
   cost:260000000000000000000000000 money, 260000000000 fourthWallMatter
   req:150 lastBuilding
   -multiplies efficiency of lastBuilding by 300%
   name:Wizard Bribes
   icon:http://i.imgur.com/A056Mob.png
-  *lastBuildingUpgrade8
+  *lastBuildingUp8
   desc:"Black obliterators do <b>three times</b> as much damage.<br><i>"The Black's power is unspeakable... The amount you have been using is only scratching the surface. It is so absolute, in fact, that The Boss is requesting you not use it, as it could very possibly obliterate all of existence if you misuse it." ~The Head Demon</i>"
   cost:52000000000000000000000000000 money, 52000000000000 fourthWallMatter
   req:200 lastBuilding
   -multiplies efficiency of lastBuilding by 300%
   name:Demon Bribes
   icon:http://i.imgur.com/zQpS4F8.png
-  *lastBuildingUpgrade9
+  *lastBuildingUp9
   desc:"Black obliterators do <b>four times</b> as much damage.<br><i>"We took an expedition back to [REDACTED], and guess what we found in the temple? You'll be just as surprised as we were..." ~Agent Connor</i>"
   cost:520000000000000000000000000000000 money, 520000000000000000 fourthWallMatter
   req:300 lastBuilding
   -multiplies efficiency of lastBuilding by 400%
   name:Guide To Properly Handling The Black
   icon:http://i.imgur.com/jFpYzHt.png
-  *lastBuildingUpgrade10
+  *lastBuildingUp10
   desc:"Black obliterators do <b>four times</b> as much damage.<br><i>"More complex metal parts we have to replace every day? UGH. UUUUUGGGGHHHHH." ~Head of Maintanence</i>"
   cost:2.6e+37 money, 2.6e+22 fourthwallmatter
   req:400 lastBuilding
@@ -5363,21 +5363,21 @@ Upgrades
   name:Black Distributors
   icon:http://i.imgur.com/9ICkBB1.png
 
-  *lastBuildingUpgradeMagic
+  *lastBuildingUpMag
   desc:"Black obliterators do <b>twice</b> as much damage.<br><i>Teleportation spells are basically the duct tape of magic.</i>"
   cost:52000520005200052000520005 money, 52000520005 fourthWallMatter, 260000000000000 bricks
   req:125 lastBuilding
   -multiplies efficiency of lastBuilding by 200%
   name:Teleportation Spells
   icon:http://i.imgur.com/UDpQHgY.png
-  *lastBuildingUpgradeMagic2
+  *lastBuildingUpMag2
   desc:"Black obliterators do <b>three times</b> as much damage.<br><i>As does anything, The Black has more trouble eating through pure magic than the unobtainium plating we were using before.</i>"
   cost:5200052000520005200052000520005 money, 5200052000520005 fourthWallMatter, 52000000000000000000 bricks
   req:250 lastBuilding
   -multiplies efficiency of lastBuilding by 300%
   name:Pure Magic Robots
   icon:http://i.imgur.com/5vGNs1i.png
-  *lastBuildingUpgradeMagic3
+  *lastBuildingUpMag3
   desc:"Black obliterators do <b>three times</b> as much damage.<br><i>"We may be making the robots last longer, but it really just makes the replacements even more expensive." ~Head of Finance<br>"MONEY IS NO CONCERN FOR THE RUC" ~Automated RUC complaint responder</i>"
   cost:52000520005200052000520005200052000 money, 52000520005200052000 fourthWallMatter, 520000000000000000000000 bricks
   req:350 lastBuilding
@@ -5385,7 +5385,7 @@ Upgrades
   name:Pure Antimatter Robots
   icon:http://i.imgur.com/jvDmXhB.png
 
-  *compromiserAndLastBuildingUpgrade
+  *compromiseLastUp
   desc:"Reality compromisers do <b>2%</b> more damage per black obliterator.<br>Black obliterators do <b>1%</b> more damage per reality compromiser.<br><i>Agent Johnson has sent in a request to be made indestructible and turned into a Black obliterator. This is quite possibly the worst idea we've ever heard.</i>"
   cost:52600000000000000000000 money, 52600000 fourthWallMatter
   req:100 compromiser, 50 lastBuilding
@@ -5393,7 +5393,7 @@ Upgrades
   -multiplies efficiency of lastBuilding by 1% per compromiser
   name:Agent Johnson
   icon:http://i.imgur.com/IM9TZkN.png
-  *compromiserAndLastBuildingUpgrade2
+  *compromiseLastUp2
   desc:"Reality compromisers do <b>2%</b> more damage per black obliterator.<br>Black obliterators do <b>0.5%</b> more damage per reality compromiser.<br><i>The compromisers can keep The Black from destroying the robots as fast, and The Black eats through reality fabric faster than anything else.</i>"
   cost:5260000000000000000000000 money, 5260000000 fourthWallMatter
   req:200 compromiser, 100 lastBuilding
@@ -5401,7 +5401,7 @@ Upgrades
   -multiplies efficiency of lastBuilding by 0.5% per compromiser
   name:Working Together
   icon:http://i.imgur.com/7BosjQJ.png
-  *compromiserAndLastBuildingUpgrade3
+  *compromiseLastUp3
   desc:"Reality compromisers do <b>1.5%</b> more damage per black obliterator.<br>Black obliterators do <b>0.3%</b> more damage per reality compromiser.<br><i>"So, mixing The Black with reality code is like... Mixing The Black with anything, really: A TERRIBLE IDEA." ~RC Project Leader, in the NWT proposal</i>"
   cost:52600000000000000000000000000 money, 52600000000000 fourthWallMatter
   req:300 compromiser, 200 lastBuilding
@@ -5409,7 +5409,7 @@ Upgrades
   -multiplies efficiency of lastBuilding by 0.3% per compromiser
   name:Not Working Together
   icon:http://i.imgur.com/n7blHpS.png
-  *compromiserAndLastBuildingUpgrade4
+  *compromiseLastUp4
   desc:"Reality compromisers do <b>1%</b> more damage per black obliterator.<br>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<br><i>"why dont you just give them god mode" ~1337 sn1p3r #73, before being assigned Co-Head of R&D</i>"
   cost:526000000000000000000000000000000 money, 526000000000000000 fourthWallMatter
   req:400 compromiser, 300 lastBuilding
@@ -5417,7 +5417,7 @@ Upgrades
   -multiplies efficiency of lastBuilding by 0.2% per compromiser
   name:Indestructible Robots
   icon:http://i.imgur.com/sphsdEU.png
-  *compromiserAndLastBuildingUpgrade5
+  *compromiseLastUp5
   desc:"Reality compromisers do <b>1%</b> more damage per black obliterator.<br>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<br><i>The ones before weren't really, just as strong as we could possibly make them; The Black took a few days to finish them off. We didn't know how to make something 100% indestructible, but the Divine Instructions conveniently contained the indestructibility script!<br> <br>"I'm throwing in a joke to make this description more interesting." ~Agent Johnson<br>"Pointing out the lack of a joke isn't a joke." ~Agent Connor</i>"
   cost:1.52e+37 money, 1.52e+22 fourthwallmatter
   req:500 compromiser, 400 lastBuilding
@@ -5426,28 +5426,28 @@ Upgrades
   name:Actually Indestructible Robots
   icon:http://i.imgur.com/kBznWvd.png
 
-  *brickFactoryUpgrade
+  *brickFactoryUp
   desc:"Brick factories produce <b>50%</b> more bricks.<br><i>The dark magic tablets we're using can talk, so we need to learn more about them to use them better. They sound really creepy, and talk about really disturbing stuff.</i>"
   cost:66666666666666 money
   req:1 brickFactory
   -multiplies efficiency of brickFactory by 150%
   name:Interviewers
   icon:http://i.imgur.com/aCU88Ro.png
-  *brickFactoryUpgrade2
+  *brickFactoryUp2
   desc:"Brick factories produce <b>50%</b> more bricks.<br><i>The tablets like evil, so this is the first step. You can imagine the recruitment process for this.</i>"
   cost:266666666666666 money
   req:5 brickFactory
   -multiplies efficiency of brickFactory by 150%
   name:Assholes
   icon:http://i.imgur.com/tpCfx3P.png
-  *brickFactoryUpgrade3
+  *brickFactoryUp3
   desc:"Brick factories produce <b>twice</b> as many bricks.<br><i>The next step.</i>"
   cost:2666666666666666 money
   req:25 brickFactory
   -multiplies efficiency of brickFactory by 200%
   name:Convicts
   icon:http://i.imgur.com/DzNqcUh.png
-  *brickFactoryUpgrade4
+  *brickFactoryUp4
   desc:"Brick factories and manual brick creation produce <b>twice</b> as many bricks.<br><i>We need the real cream of the crop here, not those guys in for possessing drugs.</i>"
   cost:46666666666666666 money
   req:50 brickFactory
@@ -5455,7 +5455,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 200%
   name:Convict Filtering
   icon:http://i.imgur.com/e6dtWjK.png
-  *brickFactoryUpgrade5
+  *brickFactoryUp5
   desc:"Brick factories produce <b>twice</b> as many bricks.<br>Manual brick creation produces <b>three times</b> as many bricks.<br><i>Let's make our own evil! Nothing could go wrong with this.</i>"
   cost:466666666666666666 money
   req:75 brickFactory
@@ -5463,7 +5463,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 300%
   name:Evil Robots
   icon:http://i.imgur.com/eTfuby4.png
-  *brickFactoryUpgrade6
+  *brickFactoryUp6
   desc:"Brick factories produce <b>three times</b> as many bricks.<br>Manual brick creation produces <b>four times</b> as many bricks.<br><i>They're evil, and they know stuff about illegal brick production! It's perfect!</i>"
   cost:8666666666666666666 money
   req:100 brickFactory
@@ -5471,7 +5471,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 400%
   name:Evil Alchemists
   icon:http://i.imgur.com/AuwAJ6i.png
-  *brickFactoryUpgrade7
+  *brickFactoryUp7
   desc:"Brick factories produce <b>three times</b> as many bricks.<br>Manual brick creation produces <b>four times</b> as many bricks.<br><i>The prime export of hell, bought it off some demons. Now all we're missing for the ingredients is child blood.</i>"
   cost:433333333333333333333 money, 33333333 bricks
   req:150 brickFactory
@@ -5479,7 +5479,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 400%
   name:Evilium
   icon:http://i.imgur.com/WAMfl5a.png
-  *brickFactoryUpgrade8
+  *brickFactoryUp8
   desc:"Brick factories produce <b>four times</b> as many bricks.<br>Manual brick creation produces <b>five times</b> as many bricks.<br><i>The demons always come through. For a price, of course.</i>"
   cost:46666666666666666666666 money, 6666666666 bricks
   req:200 brickFactory
@@ -5487,7 +5487,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 500%
   name:Child Blood
   icon:http://i.imgur.com/aJfezqc.png
-  *brickFactoryUpgrade9
+  *brickFactoryUp9
   desc:"Brick factories produce <b>five times</b> as many bricks.<br>Manual brick creation produces <b>six times</b> as many bricks.<br><i>Brought in the reality compromisers for this one. We found the reality code for good & evil. I'm sure you can guess what we did with that.</i>"
   cost:266666666666666666666666666 money, 66666666666666 fourthWallMatter
   req:300 brickFactory
@@ -5495,7 +5495,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 600%
   name:Alignment Sliders
   icon:http://i.imgur.com/kEcAqB6.png
-  *brickFactoryUpgrade10
+  *brickFactoryUp10
   desc:"Brick factories produce <b>five times</b> as many bricks.<br>Manual brick creation produces <b>six times</b> as many bricks.<br><i>The factories have reached the point where normal people can't really go in anymore, at the risk of being corrupted. We can make suits with the alignment slid all the way over to 'good' to be able to collect the bricks, instead of actually having to do something about it.</i>"
   cost:2666666666666666666666666666666 money, 666666666666666 fourthWallMatter
   req:400 brickFactory
@@ -5503,7 +5503,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 600%
   name:Evil-Proof Suits
   icon:http://i.imgur.com/v1FFhA9.png
-  *brickFactoryUpgrade11
+  *brickFactoryUp11
   desc:"Brick factories and manual brick creation produce <b>seven times</b> as many bricks.<br><i>Said to be blessed by the gods, the Holy Brick was first found 37,000 years ago on Vywheir, an uninhabited island.<br> <br>"It doesn't look anything like a brick." ~BF Project Leader<br>"Would you want a magical artifact called 'The Big White Cube' or 'The Holy Brick of Vywheir'?" ~Agent Connor</i>"
   cost:86666666666666666666666666666666666 money
   req:500 brickFactory
@@ -5512,7 +5512,7 @@ Upgrades
   name:The Holy Brick of Vywheir
   icon:http://i.imgur.com/CVVcmHj.png
 
-  *brickFactoryMagicUpgrade
+  *brickFactoryMagUp
   desc:"Brick factories and manual brick creation produce <b>three times</b> as many bricks.<br><i>We've asked the wizards what exactly makes some magic "evil", and they said that the First Wizards who invented all the spells just kinda decided that certain spells were "evil". The First Wizards are pretty widely hated among magic users.</i>"
   cost:86666666666666666666 money, 466666666 bricks
   req:125 brickFactory
@@ -5520,7 +5520,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 400%
   name:Evil Magic
   icon:http://i.imgur.com/eN3zjjZ.png
-  *brickFactoryMagicUpgrade2
+  *brickFactoryMagUp2
   desc:"Brick factories and manual brick creation produce <b>four times</b> as many bricks.<br><i>As similar as they sound, Black magic is actually unrelated to dark magic. Dark magic is magic that is frowned upon for general use, whereas Black magic comes from The Black, which is absolute pure evil.</i>"
   cost:1666666666666666666666666 money, 46666666666666 bricks
   req:250 brickFactory
@@ -5528,7 +5528,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 400%
   name:Black Magic
   icon:http://i.imgur.com/XqIMXQp.png
-  *brickFactoryMagicUpgrade3
+  *brickFactoryMagUp3
   desc:"Brick factories and manual brick creation produce <b>five times</b> as many bricks.<br><i>Might as well just make the entire factories out of it, for maximal usage.</i>"
   cost:46666666666666666666666666666 money, 46666666666666666 bricks
   req:350 brickFactory
@@ -5536,7 +5536,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 500%
   name:Pure Evil Magic
   icon:http://i.imgur.com/jEDWowF.png
-  *brickFactoryUpgradeBlack
+  *brickFactoryUpBlack
   desc:"Brick factories and manual brick creation produce <b>six times</b> as many bricks.<br><i>We really should've done this sooner, seeing as the tablets love evil and that The Black is 100% evil.<br>And that since the demons are in charge, we don't have to be the ones to handle that shit.</i>"
   cost:1.6666666666666666e39 money, 366666666666666666666666666 bricks
   req:600 brickFactory
@@ -5545,7 +5545,7 @@ Upgrades
   name:Black-Imbued Factory Walls
   icon:http://i.imgur.com/ufqnZaV.png
 
-  *brickFactoryAndDemonUpgrade
+  *brickFactorDemonUp
   desc:"Brick factories produce <b>4%</b> more bricks per demon.<br>Demons do <b>4%</b> more damage per brick factory.<br><i>The demons agreed to visit the dark magic tablets, and they actually get along really well. Now they come over all the time.</i>"
   cost:19999999999999999 money, 99999 bricks
   -multiplies efficiency of brickFactory by 4% per demon
@@ -5553,7 +5553,7 @@ Upgrades
   req:25 demon, 25 brickFactory
   name:Demon Visits
   icon:http://i.imgur.com/VSLFI8U.png
-  *brickFactoryAndDemonUpgrade2
+  *brickFactorDemonUp2
   desc:"Brick factories produce <b>2.5%</b> more bricks per demon.<br>Demons do <b>1.5%</b> more damage per brick factory.<br><i>The demons will take over all the positions at the brick factories, at the dark magic tablets' request.</i>"
   cost:6666666666666666666 money, 33333333 bricks
   -multiplies efficiency of brickFactory by 2.5% per demon
@@ -5561,7 +5561,7 @@ Upgrades
   req:100 demon, 100 brickFactory
   name:Demon Managers
   icon:http://i.imgur.com/w3bmw1m.png
-  *brickFactoryAndDemonUpgrade3
+  *brickFactorDemonUp3
   desc:"Brick factories produce <b>1.5%</b> more bricks per demon.<br>Demons do <b>1%</b> more damage per brick factory.<br><i>The demons and the tablets work together to enhance their magic. All we can do is hope they aren't conspiring behind our backs.</i>"
   cost:199999999999999999999999 money, 666666666666 bricks
   -multiplies efficiency of brickFactory by 1.5% per demon
@@ -5569,7 +5569,7 @@ Upgrades
   req:200 demon, 200 brickFactory
   name:Dark Magic Enhancing
   icon:http://i.imgur.com/ElLXy2O.png
-  *brickFactoryAndDemonUpgrade4
+  *brickFactorDemonUp4
   desc:"Brick factories produce <b>1%</b> more bricks per demon.<br>Demons do <b>0.8%</b> more damage per brick factory.<br><i>If there's anyone the tablets will like even more than the demons... And if there's anyone who can actually arrange a video chat with the Big Man, it's the demons.</i>"
   cost:399999999999999999999999999 money, 13333333333333333 bricks
   -multiplies efficiency of brickFactory by 1% per demon
@@ -5577,7 +5577,7 @@ Upgrades
   req:300 demon, 300 brickFactory
   name:Video Chat With Satan
   icon:http://i.imgur.com/eT14Ml4.png
-  *brickFactoryAndDemonUpgrade5
+  *brickFactorDemonUp5
   desc:"Brick factories produce <b>1%</b> more bricks per demon.<br>Demons do <b>0.5%</b> more damage per brick factory.<br><i>Open 24 hours, 365 days a year!</i>"
   cost:3999999999999999999999999999999 money, 133333333333333333333 bricks
   -multiplies efficiency of brickFactory by 1% per demon
@@ -5585,7 +5585,7 @@ Upgrades
   req:400 demon, 400 brickFactory
   name:Giant Portals to Hell
   icon:http://i.imgur.com/5VX1Hgp.png
-  *brickFactoryAndDemonUpgrade6
+  *brickFactorDemonUp6
   desc:"Brick factories produce <b>0.6%</b> more bricks per demon.<br>Demons do <b>0.4%</b> more damage per brick factory.<br><i>"Nooo. Don't give it to them. For all that is holy, don't let the demons near that thing. WE DON'T WANT TO KNOW WHAT THEIR DREAMS LOOK LIKE." ~Head of Demon Relations</i>"
   cost:79999999999999999999999999999999999 money, 3333333333333333333333333 bricks
   -multiplies efficiency of brickFactory by 0.6% per demon
@@ -6515,7 +6515,7 @@ Achievements
   name:A Sock In The Park
   req:700 puncher
   icon:http://i.imgur.com/PhxmHqr.png
-  *puncherDamageAchieve
+  *puncherDmgAchieve
   desc:"Deal <b>1,000,000,000</b> damage to the wall with your punchers."
   name:No Such Thing as a Free Punch
   req:1000000000 puncherDamage
@@ -6571,7 +6571,7 @@ Achievements
   name:Club-Niggurath
   req:700 clubber
   icon:http://i.imgur.com/20i38CD.png
-  *clubberDamageAchieve
+  *clubberDmgAchieve
   desc:"Deal <b>10,000,000,000</b> damage to the wall with your clubbers."
   name:Clubbed to Death
   req:10000000000 clubberDamage
@@ -6739,63 +6739,63 @@ Achievements
   name:Grenademan Achievement #10
   req:700 grenade
   icon:http://i.imgur.com/8EFEm0M.png
-  *grenadeDamageAchieve
+  *grenadeDmgAchieve
   desc:"Deal <b>10,000,000,000,000</b> damage to the wall with your grenademen."
   name:Endless War
   req:10000000000000 grenadeDamage
   icon:http://i.imgur.com/IiBqHel.png
 
-  *wreckingBallAchieve1
+  *wreckingAchieve1
   desc:"Hire <b>1</b> wrecking ball."
   name:I'm Gonna Wreck It
   req:1 wreckingBall
   icon:http://i.imgur.com/yM8TEHL.png
-  *wreckingBallAchieve2
+  *wreckingAchieve2
   desc:"Hire <b>10</b> wrecking balls."
   name:Ball Busters
   req:10 wreckingBall
   icon:http://i.imgur.com/mAr2vCg.png
-  *wreckingBallAchieve3
+  *wreckingAchieve3
   desc:"Hire <b>50</b> wrecking balls."
   name:Deconstruction Team
   req:50 wreckingBall
   icon:http://i.imgur.com/G48Ecxn.png
-  *wreckingBallAchieve4
+  *wreckingAchieve4
   desc:"Hire <b>100</b> wrecking balls."
   name:Deconstruction Army
   req:100 wreckingBall
   icon:http://i.imgur.com/RiUfzHo.png
-  *wreckingBallAchieve5
+  *wreckingAchieve5
   desc:"Hire <b>150</b> wrecking balls."
   name:The Wreck Republic
   req:150 wreckingBall
   icon:http://i.imgur.com/0sEdsxd.png
-  *wreckingBallAchieve6
+  *wreckingAchieve6
   desc:"Hire <b>200</b> wrecking balls."
   name:Wrecktacular
   req:200 wreckingBall
   icon:http://i.imgur.com/sgAPNQT.png
-  *wreckingBallAchieve7
+  *wreckingAchieve7
   desc:"Hire <b>300</b> wrecking balls."
   name:The Wreckoning
   req:300 wreckingBall
   icon:http://i.imgur.com/tWgYnpW.png
-  *wreckingBallAchieve8
+  *wreckingAchieve8
   desc:"Hire <b>400</b> wrecking balls."
   name:Wreck is Love, Wreck is Life
   req:400 wreckingBall
   icon:http://i.imgur.com/8CXUpDK.png
-  *wreckingBallAchieve9
+  *wreckingAchieve9
   desc:"Hire <b>500</b> wrecking balls."
   name:Reality Wreck
   req:500 wreckingBall
   icon:http://i.imgur.com/3OYp1g4.png
-  *wreckingBallAchieve10
+  *wreckingAchieve10
   desc:"Hire <b>700</b> wrecking balls.<br><i>"I think you ran out of fitting ones." ~Agent Carter<br>"Round this wreck of the woods, we don't question my puns." ~Chief of Puns</i>"
   name:Round This Wreck of The Woods
   req:700 wreckingBall
   icon:http://i.imgur.com/LmISELN.png
-  *wreckingballDamageAchieve
+  *wreckingDmgAchieve
   desc:"Deal <b>100,000,000,000,000</b> damage to the wall with your wrecking balls."
   name:Get Wrecked
   req:100000000000000 wreckingBallDamage
@@ -6851,7 +6851,7 @@ Achievements
   name:Bullshit
   req:700 bulldozer
   icon:http://i.imgur.com/taZMkYw.png
-  *bulldozerDamageAchieve
+  *bulldozerDmgAchieve
   desc:"Deal <b>200,000,000,000,000</b> damage to the wall with your bulldozers."
   name:Crack n Smash
   req:200000000000000 bulldozerDamage
@@ -6902,7 +6902,7 @@ Achievements
   name:God's On The Other Line
   req:500 airstrike
   icon:http://i.imgur.com/KqdTHwt.png
-  *airstrikeDamageAchieve
+  *airstrikeDmgAchieve
   desc:"Deal <b>2,000,000,000,000,000</b> damage to the wall with your airstrike callers."
   name:Death Called
   req:2000000000000000 airstrikeDamage
@@ -7000,47 +7000,47 @@ Achievements
   req:500 giant
   icon:http://i.imgur.com/enLETzJ.png
 
-  *brickFactoryAchieve1
+  *brickFactorAchieve1
   desc:"Build <b>1</b> brick factory."
   name:They'll Never Find Out
   req:1 brickFactory
   icon:http://i.imgur.com/aCU88Ro.png
-  *brickFactoryAchieve2
+  *brickFactorAchieve2
   desc:"Build <b>10</b> brick factories."
   name:Secret Production
   req:10 brickFactory
   icon:http://i.imgur.com/tpCfx3P.png
-  *brickFactoryAchieve3
+  *brickFactorAchieve3
   desc:"Build <b>50</b> brick factories."
   name:Area 51
   req:50 brickFactory
   icon:http://i.imgur.com/DzNqcUh.png
-  *brickFactoryAchieve4
+  *brickFactorAchieve4
   desc:"Build <b>100</b> brick factories."
   name:Blissful Secrecy
   req:100 brickFactory
   icon:http://i.imgur.com/e6dtWjK.png
-  *brickFactoryAchieve5
+  *brickFactorAchieve5
   desc:"Build <b>150</b> brick factories.<br><i>Not enough.</i>"
   name:How Many Bricks Does It Take
   req:150 brickFactory
   icon:http://i.imgur.com/WAMfl5a.png
-  *brickFactoryAchieve6
+  *brickFactorAchieve6
   desc:"Build <b>200</b> brick factories."
   name:Artificial City
   req:200 brickFactory
   icon:http://i.imgur.com/aJfezqc.png
-  *brickFactoryAchieve7
+  *brickFactorAchieve7
   desc:"Build <b>300</b> brick factories.<br><i>He comes down your chimney, but instead of giving you presents he dismantles the chimney and takes all the bricks.</i>"
   name:St. Brick
   req:300 brickFactory
   icon:http://i.imgur.com/kEcAqB6.png
-  *brickFactoryAchieve8
+  *brickFactorAchieve8
   desc:"Build <b>400</b> brick factories.<br><i>"I regret writing that last description. Now the demons dress up as St. Brick every Christmas and act the part." ~Agent Connor</i>"
   name:Brickrolled
   req:400 brickFactory
   icon:http://i.imgur.com/v1FFhA9.png
-  *brickFactoryAchieve9
+  *brickFactorAchieve9
   desc:"Build <b>500</b> brick fatories.<br><i>"Did we run out of fitting ones?" ~Agent Carter<br>"If you had a brick of sense in you, you wouldn't question my puns." ~Chief of Puns</i>"
   name:A Brick of Sense
   req:500 brickFactory
@@ -7143,37 +7143,37 @@ Achievements
   name:The Reaper
   req:1 lastBuilding
   icon:http://i.imgur.com/PqwDNQa.png
-  *lastBuildingAchieve2
+  *lastBuildAchieve2
   desc:"Build <b>10</b> black obliterators."
   name:Back In Black
   req:10 lastBuilding
   icon:http://i.imgur.com/zjWBTj1.png
-  *lastBuildingAchieve3
+  *lastBuildAchieve3
   desc:"Build <b>50</b> black obliterators."
   name:The Black Plague
   req:50 lastBuilding
   icon:http://i.imgur.com/2lFDykJ.png
-  *lastBuildingAchieve4
+  *lastBuildAchieve4
   desc:"Build <b>100</b> black obliterators."
   name:Paint It Black
   req:100 lastBuilding
   icon:http://i.imgur.com/Sb9XPog.png
-  *lastBuildingAchieve5
+  *lastBuildAchieve5
   desc:"Build <b>150</b> black obliterators."
   name:Blackbird 
   req:150 lastBuilding
   icon:http://i.imgur.com/A056Mob.png
-  *lastBuildingAchieve6
+  *lastBuildAchieve6
   desc:"Build <b>200</b> black obliterators."
   name:Blackout
   req:200 lastBuilding
   icon:http://i.imgur.com/zQpS4F8.png
-  *lastBuildingAchieve7
+  *lastBuildAchieve7
   desc:"Build <b>300</b> black obliterators."
   name:Oblivion
   req:300 lastBuilding
   icon:http://i.imgur.com/jFpYzHt.png
-  *lastBuildingAchieve8
+  *lastBuildAchieve8
   desc:"Build <b>400</b> Black obliterators.<br><i>"400 is not equal to infinity." ~Agent Lawrence<br>"Wrong." ~Agent Johnson</i>"
   name:Infinity
   req:400 lastBuilding
