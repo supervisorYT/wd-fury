@@ -1299,33 +1299,33 @@ Buildings
   *timeUpgradeProducer
   always hidden
   passive:
-    if (chance(0.005%)) gain 1 timeUpgradeResource2
-    if (chance(0.005%)) gain 1 timeUpgradeResource3
-    if (chance(0.005%)) gain 1 timeUpgradeResource4
-    if (chance(0.005%)) gain 1 timeUpgradeResource5
-    if (chance(0.005%)) gain 1 timeUpgradeResource6
-    if (chance(0.005%)) gain 1 timeUpgradeResource7
-    if (chance(0.005%)) gain 1 timeUpgradeResource8
-    if (chance(0.005%)) gain 1 timeUpgradeResource9
-    if (chance(0.005%)) gain 1 timeUpgradeResource10
-    if (chance(0.005%)) gain 1 timeUpgradeResource11
-    if (chance(0.005%)) gain 1 timeUpgradeResource12
+    if (chance(0.005%)) gain 1 timeUpgradeRes2
+    if (chance(0.005%)) gain 1 timeUpgradeRes3
+    if (chance(0.005%)) gain 1 timeUpgradeRes4
+    if (chance(0.005%)) gain 1 timeUpgradeRes5
+    if (chance(0.005%)) gain 1 timeUpgradeRes6
+    if (chance(0.005%)) gain 1 timeUpgradeRes7
+    if (chance(0.005%)) gain 1 timeUpgradeRes8
+    if (chance(0.005%)) gain 1 timeUpgradeRes9
+    if (chance(0.005%)) gain 1 timeUpgradeRes10
+    if (chance(0.005%)) gain 1 timeUpgradeRes11
+    if (chance(0.005%)) gain 1 timeUpgradeRes12
   end
   *timeUpgradeProducer2
   always hidden
   passive:
-    if (chance(0.005%)) gain 1 timeUpgradeResource13
-    if (chance(0.005%)) gain 1 timeUpgradeResource14
-    if (chance(0.005%)) gain 1 timeUpgradeResource15
-    if (chance(0.005%)) gain 1 timeUpgradeResource16
-    if (chance(0.005%)) gain 1 timeUpgradeResource17
-    if (chance(0.005%)) gain 1 timeUpgradeResource18
-    if (chance(0.005%)) gain 1 timeUpgradeResource19
-    if (chance(0.005%)) gain 1 timeUpgradeResource20
+    if (chance(0.005%)) gain 1 timeUpgradeRes13
+    if (chance(0.005%)) gain 1 timeUpgradeRes14
+    if (chance(0.005%)) gain 1 timeUpgradeRes15
+    if (chance(0.005%)) gain 1 timeUpgradeRes16
+    if (chance(0.005%)) gain 1 timeUpgradeRes17
+    if (chance(0.005%)) gain 1 timeUpgradeRes18
+    if (chance(0.005%)) gain 1 timeUpgradeRes19
+    if (chance(0.005%)) gain 1 timeUpgradeRes20
   end
   *timeUpgradeProducer3
   always hidden
-  passive:if (chance(0.005%)) gain 1 timeUpgradeResource21
+  passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
   *puncher
     desc:"Melee building<br>Does <b>0.1</b> base damage.<br><i>Punches the wall for you.</i> 
@@ -1823,7 +1823,7 @@ Upgrades
   *timeUpgrade2
   desc:"Hand punches do <b>45%</b> more damage.<br>Punchers do <b>50%</b> more damage.<br><i>Punching, more than other things, takes well to ridiculous speeds.</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource2
+  req:1 timeUpgradeRes2
   name:Hyperspeed Punching
   passive:
     multiply yield of hitWall by 1.45
@@ -1833,7 +1833,7 @@ Upgrades
   *timeUpgrade3
   desc:"Melee buildings do <b>0.4%</b> more damage <b>per magic building</b>.<br><i>Magic is like other useful forces, only magic.</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource3
+  req:1 timeUpgradeRes3
 //  -multiplies efficiency of puncher by 0.4% per necromancer
 //  -multiplies efficiency of clubber by 0.4% per necromancer
 //  -multiplies efficiency of swordsman by 0.4% per necromancer
@@ -1848,21 +1848,21 @@ Upgrades
   *timeUpgrade4
   desc:"Gunners do <b>4%</b> more damage <b>per reality compromiser</b>.<br><i>"We've always wanted to shoot hundreds of bullets with each shot, but never had the bullets for it." ~Gunner Project Leader in the ATB proposal</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource4
+  req:1 timeUpgradeRes4
 //  -multiplies efficiency of gunner by 4% per compromiser
   name:All The Bullets
   icon:http://i.imgur.com/HKL2QpN.png
   *timeUpgrade5
   desc:"Grenademen do <b>1.5%</b> more damage <b>per wrecking ball</b>.<br><i>"I approve any proposal with a really boss name, of course." ~RUC CEO on the proposal process</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource5
+  req:1 timeUpgradeRes5
 //  -multiplies efficiency of grenade by 1.5% per wreckingBall
   name:Time-Wrecking Grenades
   icon:http://i.imgur.com/5kTlqj8.png
   *timeUpgrade6
   desc:"Heavy buildings do <b>0.1%</b> more damage <b>per 10 minutes since reset</b>.<br><i>There is much wisdom to be found in the art of smashing things.</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource6
+  req:1 timeUpgradeRes6
 //  -multiplies efficiency of wreckingBall by 0.01 per timeSinceReset
 //  -multiplies efficiency of bulldozer by 0.01 per timeSinceReset
 //  -multiplies efficiency of airstrike by 0.01 per timeSinceReset
@@ -1870,14 +1870,14 @@ Upgrades
   icon:http://i.imgur.com/bnJorFQ.png
   *timeUpgrade7
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>Makes for stronger and less zombie-like zombies, which the necromancers are saying totally cramps their style. (Too bad, we're in charge)</i>"
-  req:1 timeUpgradeResource7
+  req:1 timeUpgradeRes7
   cost:5 timeBricks
   passive:multiply yield of necromancer by 2
   name:Biological Clock Rewinders
   icon:http://i.imgur.com/w5BGKUZ.png
   *timeUpgrade8
   desc:"Titans do <b>twice</b> as much damage.<br><i>Giant things move too slow. The time bricks can help!</i>"
-  req:1 timeUpgradeResource8
+  req:1 timeUpgradeRes8
   cost:5 timeBricks
   passive:multiply yield of giant by 2
   name:Fast Forward
@@ -1885,14 +1885,14 @@ Upgrades
   *timeUpgrade9
   desc:"Demons do <b>twice</b> as much damage.<br><i>Past demons are less tech-savvy, but better with their evil magic. The present demons have fun showing them all the new trolling methods they've invented.<br>EDIT: we may have made another mistake.</i>"
   cost:5 timeBricks
-  req:1 timeUpgradeResource9
+  req:1 timeUpgradeRes9
   passive:multiply yield of demon by 2
   name:Demons From The Past
   icon:http://i.imgur.com/cESUAsi.png
   *timeUpgrade10
   desc:"Dream buildings are <b>10%</b> more efficient <b>per boss brick</b>.<br><i>"If we explore into the past, each boss brick has a ton of reality secrets stored in it. It's like whoever constructed the walls is trying to help us destroy them!" ~RC Project Leader</i>"
   cost:10 timeBricks
-  req:1 timeUpgradeResource10
+  req:1 timeUpgradeRes10
 //  -multiplies efficiency of compromiser by 10% per goldBricks
 //  -multiplies efficiency of lastBuilding by 10% per goldBricks
   name:Boss Research
@@ -1900,7 +1900,7 @@ Upgrades
   *timeUpgrade11
   desc:"Brick factories and hand bricks produce <b>twice</b> as many bricks.</b><br><i>This plan may have its critics, but it's totally safe to assume we will be making thousands of times more bricks in the future and the amount we're taking will be nothing. Yes. This is a good plan.</i>"
   cost:10 timeBricks
-  req:1 timeUpgradeResource11
+  req:1 timeUpgradeRes11
   passive:
     multiply yield of brickFactory by 2
     multiply yield of makeBricks by 2
@@ -1910,7 +1910,7 @@ Upgrades
   *timeUpgrade12
   desc:"Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><br><i>Had to convince the 1337 sn1p3rs that this is a timestacking technique and not the act of spying on them to reveal what they're doing to the enemy team.</i>"
   cost:10 timeBricks
-  req:1 timeUpgradeResource12
+  req:1 timeUpgradeRes12
 //  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
 //  -multiplies efficiency of puncher by 0.002% per timeSinceReset
 //  -multiplies efficiency of clubber by 0.002% per timeSinceReset
@@ -1933,57 +1933,57 @@ Upgrades
   *timeUpgrade13
   desc:"Hand punches do <b>30%</b> more damage <b>per random bonus punching point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>The demons revealed that they stole some time bricks and gathered much more knowledge than we did. So of course they find a way to annoy us with it: they give us really useful knowledge, but only at random times, usually when inconvenient.</i>"
   cost:75 timeBricks
-  req:1 timeUpgradeResource13
-//  -multiplies efficiency of hitWall by 30% per timeUpgradeResource13
+  req:1 timeUpgradeRes13
+//  -multiplies efficiency of hitWall by 30% per timeUpgradeRes13
   name:Random Punching Bonus
   icon:http://i.imgur.com/6WTh07Z.png
   *timeUpgrade14
   desc:"Melee buildings do <b>40%</b> more damage <b>per random bonus melee point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"The demons are kind of like Agent Johnson, only even bigger assholes." ~Agent Connor</i>"
   cost:50 timeBricks
-  req:1 timeUpgradeResource14
-//  -multiplies efficiency of puncher by 40% per timeUpgradeResource14
-//  -multiplies efficiency of clubber by 40% per timeUpgradeResource14
-//  -multiplies efficiency of swordsman by 40% per timeUpgradeResource14
+  req:1 timeUpgradeRes14
+//  -multiplies efficiency of puncher by 40% per timeUpgradeRes14
+//  -multiplies efficiency of clubber by 40% per timeUpgradeRes14
+//  -multiplies efficiency of swordsman by 40% per timeUpgradeRes14
   name:Random Melee Bonus
   icon:http://i.imgur.com/EOAFOpK.png
   *timeUpgrade15
   desc:"Ranged buildings do <b>40%</b> more damage <b>per random bonus ranged point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I'm playing Cookie Clicker, and I get an elder frenzy, when a demon appears and tapes a piece of paper with deep time information written on it over my screen. It's semi-transparent and I actually see a reindeer come on screen during the elder frenzy, when the demon takes my mouse and spends all my cookies on farms." ~Grenademan Project Leader</i>"
   cost:50 timeBricks
-  req:1 timeUpgradeResource15
-//  -multiplies efficiency of gunner by 40% per timeUpgradeResource15
-//  -multiplies efficiency of grenade by 40% per timeUpgradeResource15
+  req:1 timeUpgradeRes15
+//  -multiplies efficiency of gunner by 40% per timeUpgradeRes15
+//  -multiplies efficiency of grenade by 40% per timeUpgradeRes15
   name:Random Ranged Bonus
   icon:http://i.imgur.com/C0FN0FI.png
   *timeUpgrade16
   desc:"Heavy duty buildings do <b>35%</b> more damage <b>per random bonus heavy point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I was watching TV, and a demon jumps through the window and starts dishing out advanced time knowledge! I had to scramble for a pen with my greasy chip fingers because the assholes never repeat it. He then told me which characters die that season, took my chips, and left." ~Agent Carter<br>"I am so done." ~Head of Demon Relations</i>"
   cost:75 timeBricks
-  req:1 timeUpgradeResource16
-//  -multiplies efficiency of wreckingBall by 35% per timeUpgradeResource16
-//  -multiplies efficiency of bulldozer by 35% per timeUpgradeResource16
-//  -multiplies efficiency of airstrike by 35% per timeUpgradeResource16
+  req:1 timeUpgradeRes16
+//  -multiplies efficiency of wreckingBall by 35% per timeUpgradeRes16
+//  -multiplies efficiency of bulldozer by 35% per timeUpgradeRes16
+//  -multiplies efficiency of airstrike by 35% per timeUpgradeRes16
   name:Random Heavy Duty Bonus
   icon:http://i.imgur.com/kzkBClB.png
   *timeUpgrade17
   desc:"Magic buildings do <b>25%</b> more damage <b>per random bonus magic point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I need to step up my game. The demons are freaking MASTERS." ~Agent Johnson</i>"
   cost:100 timeBricks
-  req:1 timeUpgradeResource17
-//  -multiplies efficiency of necromancer by 25% per timeUpgradeResource17
-//  -multiplies efficiency of giant by 25% per timeUpgradeResource17
-//  -multiplies efficiency of demon by 25% per timeUpgradeResource17
+  req:1 timeUpgradeRes17
+//  -multiplies efficiency of necromancer by 25% per timeUpgradeRes17
+//  -multiplies efficiency of giant by 25% per timeUpgradeRes17
+//  -multiplies efficiency of demon by 25% per timeUpgradeRes17
   name:Random Magic Bonus
   icon:http://i.imgur.com/y3XeTNm.png
   *timeUpgrade18
   desc:"Brick factories and manual brick creation are <b>30%</b> more efficient <b>per random bonus brick point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"The worst part is that you can't complain that much, because they are giving you super useful info. Even if they tie a tape that repeats it only once to a brick and throw it through your window while you're taking a shower." ~Brick Factory Project Leader</i>"
   cost:150 timeBricks
-  req:1 timeUpgradeResource18
-//  -multiplies efficiency of brickFactory by 30% per timeUpgradeResource18
-//  -multiplies efficiency of makeBricks by 30% per timeUpgradeResource18
+  req:1 timeUpgradeRes18
+//  -multiplies efficiency of brickFactory by 30% per timeUpgradeRes18
+//  -multiplies efficiency of makeBricks by 30% per timeUpgradeRes18
   name:Random Brick Bonus
   icon:http://i.imgur.com/VKCIKOq.png
   *timeUpgrade19
   desc:"Magic & dream buildings are <b>0.7%</b> more efficient <b>per wall destroyed</b>.<br><i>The walls have an incredible amount of power inside them, and we finally have a way to use it to our advantage. They sure don't seem to have any reason for having so much power inside them, as they just sit there doing nothing.</i>"
   cost:200 timeBricks
-  req:1 timeUpgradeResource19
+  req:1 timeUpgradeRes19
 //  -multiplies efficiency of necromancer by 0.7% per wallsDestroyed
 //  -multiplies efficiency of giant by 0.7% per wallsDestroyed
 //  -multiplies efficiency of demon by 0.7% per wallsDestroyed
@@ -1994,7 +1994,7 @@ Upgrades
   *timeUpgrade20
   desc:"Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><br><i>"The deep time theories involved in this project are pretty dense. HAHAHAHAHAHA" ~Agent Johnson's only comment on the DTS proposal</i>"
   cost:300 timeBricks
-  req:1 timeUpgradeResource20
+  req:1 timeUpgradeRes20
 //  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
 //  -multiplies efficiency of puncher by 0.002% per timeSinceReset
 //  -multiplies efficiency of clubber by 0.002% per timeSinceReset
@@ -2016,9 +2016,9 @@ Upgrades
   *timeUpgrade21
   desc:"Dream buildings are <b>20%</b> more efficient <b>per random bonus dream point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"Okay, so there was a bonus to giving them The Amsora. IT WASN'T FUCKING WORTH IT." ~RC Project Leader, seconded by basically everyone<br> <br>"The demons are hilarious, you guys all need to chill." ~Agent Johnson<br>"My problem with the demons is this: They are horrible, garnished with awful, with a Satan on top." ~Agent Connor</i>"
   cost:1000 timeBricks, 1.23456789e37 money 
-  req:1 timeUpgradeResource21, 1 timesActuallyWon
-//  -multiplies efficiency of compromiser by 20% per timeUpgradeResource21
-//  -multiplies efficiency of lastBuilding by 20% per timeUpgradeResource21
+  req:1 timeUpgradeRes21, 1 timesActuallyWon
+//  -multiplies efficiency of compromiser by 20% per timeUpgradeRes21
+//  -multiplies efficiency of lastBuilding by 20% per timeUpgradeRes21
   name:Random Dream Bonus
   icon:http://i.imgur.com/zq20OLd.png
 /*  
