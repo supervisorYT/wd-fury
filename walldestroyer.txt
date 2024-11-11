@@ -360,7 +360,7 @@ Buttons
   name:Create Bricks
   tag:clickable
   icon:http://i.imgur.com/Tdh80P1.png
-  hidden
+  req:have handBrickUnlock
 
   *reset
   on click:
@@ -1546,7 +1546,6 @@ Upgrades
   req:100000000000000000000000000000000000 handDamage, 5000000 prestige
   req:1 winBricks
   name:The End
-  on earn:show won
   passive:
     $mult = (1 + (winBricks * 0.25))*(1 + (timesActuallyWon*0.2))
     multiply yield of tag:clickable by $mult
@@ -2582,7 +2581,6 @@ Upgrades
   desc:"Everything is <b>5%</b> more efficient.<br><i>The wizards report feeling the power of the Time Bear upon their magic, and tell us not to manipulate time further. They can create wards that may steer the Time Bear in a different direction, making our guys less scared, therefore raising their productivity.</i>"
   cost:9876543 fourthWallMatter, 987654321 bricks
   req:30 prestige
-  -unlocks timeBearAchieve
   -multiplies efficiency of hitWall by 105%
   -multiplies efficiency of puncher by 105%
   -multiplies efficiency of clubber by 105%
@@ -2825,7 +2823,6 @@ Upgrades
   desc:"Everything is <b>7%</b> more efficient.<br><i>"This is the last ward the wizards can make. I do not know where we should go from this. I am going to remove myself from anywhere that could be associated with time travel. This is a farewell message. The Time Bear is coming."<br>~CEO, RUC</i>"
   cost:9876543210123456789 fourthWallMatter, 987654321012345678900 bricks
   req:1500000 prestige, 11 resetTimes
-  -unlocks timeBearAchieve2
   -multiplies efficiency of hitWall by 107%
   -multiplies efficiency of puncher by 107%
   -multiplies efficiency of clubber by 107%
@@ -2940,202 +2937,94 @@ Upgrades
   name:Victory Dance
   icon:http://i.imgur.com/piFqUdL.png
  
-/*
+
   *productionMultiplierMagic
   desc:"Everything is <b>20%</b> more efficient.<br><i>"Yeah." ~The MEE proposal </i>"
   cost:1000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Magically Enhanced Everything
   icon:http://i.imgur.com/aaFiNNp.png
   req:1 destroyBonusWall5
   *productionMultiplierMagic2
   desc:"Everything is <b>20%</b> more efficient.<br><i>Teleportation spells, movement spells, telekinesis spells, pickle jar opening spells, you name it.</i>"
   cost:50000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Utility Spells 
   icon:http://i.imgur.com/xGhYI9W.png
   req:1 destroyBonusWall10
   *productionMultiplierMagic3
   desc:"Everything is <b>20%</b> more efficient.<br><i>All the knowledge and history the wizards have, and it's only slightly biased towards them!</i>"
   cost:2000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Access to The Great Wizard Library 
   icon:http://i.imgur.com/WL4ZfF1.png
   req:1 destroyBonusWall15
   *productionMultiplier6
   desc:"Everything is <b>25%</b> more efficient.<br><i>When the RUC becomes the sole power on Earth, we can finally continue our work uninterrupted by whiners. Whiners that can actually do anything to us, that is.</i>"
   cost:100000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 125%
-  -multiplies efficiency of makeBricks by 125%
-  -multiplies efficiency of hitWall by 125%
-  -multiplies efficiency of puncher by 125%
-  -multiplies efficiency of clubber by 125%
-  -multiplies efficiency of swordsman by 125%
-  -multiplies efficiency of gunner by 125%
-  -multiplies efficiency of grenade by 125%
-  -multiplies efficiency of wreckingBall by 125%
-  -multiplies efficiency of bulldozer by 125%
-  -multiplies efficiency of airstrike by 125%
-  -multiplies efficiency of necromancer by 125%
-  -multiplies efficiency of giant by 125%
-  -multiplies efficiency of demon by 125%
-  -multiplies efficiency of compromiser by 125%
-  -multiplies efficiency of lastBuilding by 125%
+  passive:
+    multiply yield of tag:building by 1.25
+    multiply yield of tag:clickable by 1.25
+  end
   name:World Domination
   icon:http://i.imgur.com/fGDPekC.png
   req:1 destroyBonusWall20
   *productionMultiplierHell
   desc:"Everything is <b>20%</b> more efficient.<br><i>Since they are immortal, the demons have learned a lot over the years. Lucky for us, a lot of that knowledge has to do with destroying things!</i>"
   cost:5000000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Demon Advice
   icon:http://i.imgur.com/2Dd5II9.png
   req:1 destroyBonusWall25
   *productionMultiplierHell2
   desc:"Everything is <b>20%</b> more efficient.<br><i>According to the head demon, membership costs one animal sacrifice/month, or one human sacrifice/month for Premium.</i>"
   cost:150000000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Library of Hell Membership
   icon:http://i.imgur.com/iSfb0Ls.png
   req:1 destroyBonusWall35
   *productionMultiplierHell3
   desc:"Everything is <b>20%</b> more efficient.<br><i>He'll give us a sample of his magic for only 666 human souls!</i>"
   cost:10000000000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 120%
-  -multiplies efficiency of makeBricks by 120%
-  -multiplies efficiency of hitWall by 120%
-  -multiplies efficiency of puncher by 120%
-  -multiplies efficiency of clubber by 120%
-  -multiplies efficiency of swordsman by 120%
-  -multiplies efficiency of gunner by 120%
-  -multiplies efficiency of grenade by 120%
-  -multiplies efficiency of wreckingBall by 120%
-  -multiplies efficiency of bulldozer by 120%
-  -multiplies efficiency of airstrike by 120%
-  -multiplies efficiency of necromancer by 120%
-  -multiplies efficiency of giant by 120%
-  -multiplies efficiency of demon by 120%
-  -multiplies efficiency of compromiser by 120%
-  -multiplies efficiency of lastBuilding by 120%
+  passive:
+    multiply yield of tag:building by 1.2
+    multiply yield of tag:clickable by 1.2
+  end
   name:Deal With The Devil
   icon:http://i.imgur.com/a6zYL1I.png
   req:1 destroyBonusWall35
   *productionMultiplier7
   desc:"Everything is <b>20%</b> more efficient.<br><i>All the titan kings had scrolls of knowledge under their name, but Optuqui, the first titan king, somehow knew many things the later ones did not.</i>"
   cost:300000000000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 125%
-  -multiplies efficiency of makeBricks by 125%
-  -multiplies efficiency of hitWall by 125%
-  -multiplies efficiency of puncher by 125%
-  -multiplies efficiency of clubber by 125%
-  -multiplies efficiency of swordsman by 125%
-  -multiplies efficiency of gunner by 125%
-  -multiplies efficiency of grenade by 125%
-  -multiplies efficiency of wreckingBall by 125%
-  -multiplies efficiency of bulldozer by 125%
-  -multiplies efficiency of airstrike by 125%
-  -multiplies efficiency of necromancer by 125%
-  -multiplies efficiency of giant by 125%
-  -multiplies efficiency of demon by 125%
-  -multiplies efficiency of compromiser by 125%
-  -multiplies efficiency of lastBuilding by 125%
+  passive:
+    multiply yield of tag:building by 1.25
+    multiply yield of tag:clickable by 1.25
+  end
   name:Optuqui's Scrolls of Knowledge
   icon:http://i.imgur.com/gszdkb6.png
   req:1 destroyBonusWall40
   *productionMultiplierBlack
   desc:"Everything is <b>30%</b> more efficient.<br><i>Since The Black's power is practically infinite, we can draw some out without the Obliterators losing any power. The question is whether we can do it without killing everyone involved.</i>"
   cost:1500000000000000000000000000000000000 money
-  -multiplies efficiency of brickFactory by 130%
-  -multiplies efficiency of makeBricks by 130%
-  -multiplies efficiency of hitWall by 130%
-  -multiplies efficiency of puncher by 130%
-  -multiplies efficiency of clubber by 130%
-  -multiplies efficiency of swordsman by 130%
-  -multiplies efficiency of gunner by 130%
-  -multiplies efficiency of grenade by 130%
-  -multiplies efficiency of wreckingBall by 130%
-  -multiplies efficiency of bulldozer by 130%
-  -multiplies efficiency of airstrike by 130%
-  -multiplies efficiency of necromancer by 130%
-  -multiplies efficiency of giant by 130%
-  -multiplies efficiency of demon by 130%
-  -multiplies efficiency of compromiser by 130%
-  -multiplies efficiency of lastBuilding by 130%
+  passive:
+    multiply yield of tag:building by 1.3
+    multiply yield of tag:clickable by 1.3
+  end
   name:Power Extraction
   icon:http://i.imgur.com/bN8UwLa.png
   req:1 destroyBonusWall45
@@ -3143,91 +3032,43 @@ Upgrades
   desc:"Everything is <b>30%</b> more efficient.<br><i>Locked in a Sgapang vault that we could only manage to get open by using the compromisers. It's like he wrote it just for us!<br>EDIT: The first page translation is "Thanks to #17 for the idea". That might be worth noting. ~Agent Taylor</i>"
   cost:6.66e36 money
   req:1 timesActuallyWon, 1 winBricks
-  -multiplies efficiency of brickFactory by 130%
-  -multiplies efficiency of makeBricks by 130%
-  -multiplies efficiency of hitWall by 130%
-  -multiplies efficiency of puncher by 130%
-  -multiplies efficiency of clubber by 130%
-  -multiplies efficiency of swordsman by 130%
-  -multiplies efficiency of gunner by 130%
-  -multiplies efficiency of grenade by 130%
-  -multiplies efficiency of wreckingBall by 130%
-  -multiplies efficiency of bulldozer by 130%
-  -multiplies efficiency of airstrike by 130%
-  -multiplies efficiency of necromancer by 130%
-  -multiplies efficiency of giant by 130%
-  -multiplies efficiency of demon by 130%
-  -multiplies efficiency of compromiser by 130%
-  -multiplies efficiency of lastBuilding by 130%
+  passive:
+    multiply yield of tag:building by 1.3
+    multiply yield of tag:clickable by 1.3
+  end
   name:Lord Reaefsek's Guide To Destruction
   icon:http://i.imgur.com/M4nj67A.png
   *productionMultiplierArmy
   desc:"Everything is <b>35%</b> more efficient.<br><i>Found locked in Sauthir Castle's vault.<br>Author: "#3, as ordered by The King".<br>Dimensions: 10" by 12".<br>Pages: 873.<br>Age: ~35,000 years.<br>Language: Old World.<br>Binding: Scaly striped black and white hide, unknown creature of origin.<br>Reality code enhancement(s): Indestructability.<br>Usefulness: INTENSE EXTREME.<br> <br>"...Intense extreme?" ~Agent Brown<br>"You're intense extreme-LY STUPID. ABSOLUTELY DEVESTATED." ~Agent Johnson</i>"
   cost:3.7e37 money
   req:2 timesActuallyWon, 1 winBricks
-  -multiplies efficiency of brickFactory by 135%
-  -multiplies efficiency of makeBricks by 135%
-  -multiplies efficiency of hitWall by 135%
-  -multiplies efficiency of puncher by 135%
-  -multiplies efficiency of clubber by 135%
-  -multiplies efficiency of swordsman by 135%
-  -multiplies efficiency of gunner by 135%
-  -multiplies efficiency of grenade by 135%
-  -multiplies efficiency of wreckingBall by 135%
-  -multiplies efficiency of bulldozer by 135%
-  -multiplies efficiency of airstrike by 135%
-  -multiplies efficiency of necromancer by 135%
-  -multiplies efficiency of giant by 135%
-  -multiplies efficiency of demon by 135%
-  -multiplies efficiency of compromiser by 135%
-  -multiplies efficiency of lastBuilding by 135%
+  passive:
+    multiply yield of tag:building by 1.35
+    multiply yield of tag:clickable by 1.35
+  end
   name:The Guide To Furthering Progress
   icon:http://i.imgur.com/WBts5e6.png
   *productionMultiplier9
   desc:"Everything is <b>40%</b> more efficient.<br><i>Finally found a good way to exploit the Trees: hold a container next to one for a while, close it and some of their power stays in. Apply it to anything and it becomes more powerful!<br> <br>EDIT: Okay, more security on the extract jars. The 1337 sn1p3rs are not allowed to apply them to their computers to "enhance MLG levels".<br>EDIT 2: Agent Johnson is not allowed to play any sort of first person shooter with the 1337 sn1p3rs while at the RUC.</i>"
   cost:8.8e37 money
   req:3 timesActuallyWon, 1 winBricks
-  -multiplies efficiency of brickFactory by 140%
-  -multiplies efficiency of makeBricks by 140%
-  -multiplies efficiency of hitWall by 140%
-  -multiplies efficiency of puncher by 140%
-  -multiplies efficiency of clubber by 140%
-  -multiplies efficiency of swordsman by 140%
-  -multiplies efficiency of gunner by 140%
-  -multiplies efficiency of grenade by 140%
-  -multiplies efficiency of wreckingBall by 140%
-  -multiplies efficiency of bulldozer by 140%
-  -multiplies efficiency of airstrike by 140%
-  -multiplies efficiency of necromancer by 140%
-  -multiplies efficiency of giant by 140%
-  -multiplies efficiency of demon by 140%
-  -multiplies efficiency of compromiser by 140%
-  -multiplies efficiency of lastBuilding by 140%
+  passive:
+    multiply yield of tag:building by 1.4
+    multiply yield of tag:clickable by 1.4
+  end
   name:Finality Tree Extract
   icon:http://i.imgur.com/xvVrdJg.png
   *productionMultiplier10
   desc:"Everything is <b>50%</b> more efficient.<br><i>"I'm surprised we can get it, given Johnson's bitching." ~Agent Connor<br>"You know you hate self-inserts too. </i>You know it deep in your heart<i>." ~Agent Johnson</i>"
   cost:5.2e38 money
   req:4 timesActuallyWon, 1 winBricks
-  -multiplies efficiency of brickFactory by 150%
-  -multiplies efficiency of makeBricks by 150%
-  -multiplies efficiency of hitWall by 150%
-  -multiplies efficiency of puncher by 150%
-  -multiplies efficiency of clubber by 150%
-  -multiplies efficiency of swordsman by 150%
-  -multiplies efficiency of gunner by 150%
-  -multiplies efficiency of grenade by 150%
-  -multiplies efficiency of wreckingBall by 150%
-  -multiplies efficiency of bulldozer by 150%
-  -multiplies efficiency of airstrike by 150%
-  -multiplies efficiency of necromancer by 150%
-  -multiplies efficiency of giant by 150%
-  -multiplies efficiency of demon by 150%
-  -multiplies efficiency of compromiser by 150%
-  -multiplies efficiency of lastBuilding by 150%
+  passive:
+    multiply yield of tag:building by 1.5
+    multiply yield of tag:clickable by 1.5
+  end
   name:God's Blessing
   icon:http://i.imgur.com/YmHkXGF.png
-*/
+
 
 //legend of the fourth wall written by MasterSparky
   *fourthWallLegend1
@@ -3250,254 +3091,122 @@ Upgrades
   end
   req:have fourthWallLegend1
   icon: http://i.imgur.com/B6IdD2m.png
-/*
+
   *fourthWallLegend3
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"And thus, after many anxious days, a user MasterSparky of the Forum resolveth to find this most esteemed Member, and he destroyed the Fourth Wall soon after."</i>"
   cost:4004 fourthWallMatter
   name:Story Page Two
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend4
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend2
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend4
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"Entereth he into a portal most peculiar, and he doth found himself in a strange place with skies of purple. He met a man who doth decree, 'this is the Arcane Rift.'"</i>"
   cost:40004 fourthWallMatter
   name:Story Page Three
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend5
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend3
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend5
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"The man did speaketh of the dangers ahead: of the Descent, the Depths, and the Inner Heart. He sayeth, 'you may earn Infinite Knowability.'"</i>"
   cost:400004 fourthWallMatter
   name:Story Page Four
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend6
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend4
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend6
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"MasterSparky ventured forth, battling unspeakably horrific beasts. And he doth realize: 'I senseth the basketofpuppies's life signal.'"</i>"
   cost:1000001 fourthWallMatter
   name:Story Page Five
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend7
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend5
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend7
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"Hurry he did among the levels of the Rift, and in the Depths findeth the basketofpuppies, in the grip of Death, but still living."</i>"
   cost:4000004 fourthWallMatter
   name:Story Page Six
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend8
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend6
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend8
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"And so he did forget the allure of Infinite Knowability, and rusheth back among the Rift, but could not exit; the monsters did move in front of the exit."</i>"
   cost:10000001 fourthWallMatter
   name:Story Page Seven
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend9
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend7
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend9
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"A shield he called over them, and missiles down from the heavens to smiteth the creatures, while the basketofpuppies lay with life fading away."</i>"
   cost:40000004 fourthWallMatter
   name:Story Page Eight
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend10
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend8
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend10
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"The life signal of the esteemed Member doth fade away, and MasterSparky ran to the lifedock most renowned; and the doctor reassureth: 'the basketofpuppies shall returneth when ready.'"</i>"
   cost:100000001 fourthWallMatter
   name:Story Page Nine
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend11
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend9
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend11
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"MasterSparky soon doth recalleth himself in full to the Forum, and reporteth his deeds."</i>"
   cost:400000004 fourthWallMatter
   name:Story Page Ten
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend12
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend10
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend12
   desc:"Everything is <b>5%</b> more efficient.<br> <br><i>"The Members of the Forum doth wait in anxiety until the basketofpuppies came back to the Forum, and all was well for a long while."</i>"
   cost:1000000001 fourthWallMatter
   name:Story Page Eleven
-  -multiplies efficiency of hitWall by 105%
-  -multiplies efficiency of puncher by 105%
-  -multiplies efficiency of clubber by 105%
-  -multiplies efficiency of swordsman by 105%
-  -multiplies efficiency of gunner by 105%
-  -multiplies efficiency of grenade by 105%
-  -multiplies efficiency of wreckingBall by 105%
-  -multiplies efficiency of bulldozer by 105%
-  -multiplies efficiency of airstrike by 105%
-  -multiplies efficiency of necromancer by 105%
-  -multiplies efficiency of giant by 105%
-  -multiplies efficiency of demon by 105%
-  -multiplies efficiency of compromiser by 105%
-  -multiplies efficiency of lastBuilding by 105%
-  -multiplies efficiency of makeBricks by 105%
-  -multiplies efficiency of brickFactory by 105%
-  -unlocks fourthWallLegend13
+  passive:
+    multiply yield of tag:building by 1.05
+    multiply yield of tag:clickable by 1.05
+  end
+  req:have fourthWallLegend11
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend13
   desc:"Everything is <b>10%</b> more efficient.<br> <br><i>"The End."</i>"
   cost:4000000004 fourthWallMatter
   name:The Essence of The Basket
-  -multiplies efficiency of hitWall by 110%
-  -multiplies efficiency of puncher by 110%
-  -multiplies efficiency of clubber by 110%
-  -multiplies efficiency of swordsman by 110%
-  -multiplies efficiency of gunner by 110%
-  -multiplies efficiency of grenade by 110%
-  -multiplies efficiency of wreckingBall by 110%
-  -multiplies efficiency of bulldozer by 110%
-  -multiplies efficiency of airstrike by 110%
-  -multiplies efficiency of necromancer by 110%
-  -multiplies efficiency of giant by 110%
-  -multiplies efficiency of demon by 110%
-  -multiplies efficiency of compromiser by 110%
-  -multiplies efficiency of lastBuilding by 110%
-  -multiplies efficiency of makeBricks by 110%
-  -multiplies efficiency of brickFactory by 110%
-  -unlocks bookworm
+  passive:
+    multiply yield of tag:building by 1.1
+    multiply yield of tag:clickable by 1.1
+  end
   icon:http://i.imgur.com/5NmG1EU.png
-*/
+  req:have fourthWallLegend12
+
   *handPuncherUpgrade1
   desc:"Hand punches do <b>4%</b> more damage per puncher.<br><i>Get a morale boost from the fact that you're hiring people to punch a wall.</i>"
   cost:21111 money
-  passive:multiply yield of hitWall by 1 + (0.04 * puncher)
+  passive:multiply yield of hitWall by (1 + (0.04 * puncher))
   req:50 puncher
   name:Team Up
   icon: http://i.imgur.com/K4S6bwX.png
@@ -3660,7 +3369,6 @@ Upgrades
   desc:"Unlocks <b>manual brick creation</b>.<br><i>Now you will be able to create bricks yourself, even if the dark magic tablets don't like you.</i>"
   cost:3777777777777777 money, 200 bricks
   req:25 brickFactory
-  -unlocks makeBricks
   name:Dark Magic Training
   icon:http://i.imgur.com/LeHD80E.png
   *handBrickUpgrade
@@ -6012,7 +5720,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+10%</b>.<br><i>Technically it's a dirt and water trophy, because we couldn't make a trophy out of just dirt.</i><br> <br>Next trophy: <b>20</b> capsules"
   cost:7777777777777777777 money, 777777 bricks, 777 fourthWallMatter
   req:10 prestige
-  -unlocks thropyAchieve
   -multiplies efficiency of brickFactory by 110%
   -multiplies efficiency of makeBricks by 110%
   -multiplies efficiency of hitWall by 110%
@@ -6101,7 +5808,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+15%</b>.<br><i>You better not say it's 'aluminium'. Didn't I say we only speak AMERICAN?</i><br> <br>Next trophy: <b>500</b> capsules, defeat of the <b>Boss Bonus Wall</b>"
   cost:7.777777777777777e22 money, 7777777777 bricks, 77777777 fourthWallMatter
   req:200 prestige
-  -unlocks thropyAchieve2
   -multiplies efficiency of brickFactory by 115%
   -multiplies efficiency of makeBricks by 115%
   -multiplies efficiency of hitWall by 115%
@@ -6233,8 +5939,7 @@ Upgrades
   *trophy12
   desc:"Damage and brick production multipliers <b>+20%</b>.<br><i>"I'm going to RUBy this in all of your faces!" ~CEO, RUC</i><br> <br>Next trophy: <b>20,000</b> capsules"
   cost:7.777777777777777e28 money, 7777777777777777 bricks, 77777777777777 fourthWallMatter
-  req:10000 prestige, 1 spaceBossPoint 
-  -unlocks thropyAchieve3
+  req:10000 prestige, 1 spaceBossPoint
   -multiplies efficiency of brickFactory by 120%
   -multiplies efficiency of makeBricks by 120%
   -multiplies efficiency of hitWall by 120%
@@ -6323,7 +6028,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+25%</b>.<br><i>"more like BADamantium........ OWNED" ~1337 sn1p3r #33</i><br> <br>Next trophy: <b>200,000</b> capsules"
   cost:7.777777777777777e30 money, 777777777777777777 bricks, 7777777777777777 fourthWallMatter
   req:100000 prestige, 1 timeBossPoint 
-  -unlocks thropyAchieve4
   -multiplies efficiency of brickFactory by 125%
   -multiplies efficiency of makeBricks by 125%
   -multiplies efficiency of hitWall by 125%
@@ -6434,7 +6138,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+35%</b>.<br><i>More like TRYHARD tier.</i><br> <br>Next trophy: <b>5,000,000</b> capsules, defeat of the <b>Boss Finality Wall</b>"
   cost:7.777777777777777e35 money, 7.777777777777777e22 bricks, 777777777777777777777 fourthWallMatter
   req:3000000 prestige, 1 endBossPoint 
-  -unlocks thropyAchieve5
   -multiplies efficiency of brickFactory by 135%
   -multiplies efficiency of makeBricks by 135%
   -multiplies efficiency of hitWall by 135%
@@ -6479,7 +6182,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+40%</b>.<br><i><b>REPORT: Incident 088Y</b><br>Agent Johnson attempted to chop down a Finality Tree with an adamantium axe to build this trophy. Nearly microscopic shards of adamantium were everywhere, and a large crater was found 21 miles away. The Tree was unscratched. Johnson arrived to the RUC the next day, and reportedly said "I'm gonna need a bigger axe."<br>He was banned from The Finality Plateaus, on the grounds that it took a complex reality script to remove the adamantium shards.</i><br> <br>Final trophy: <b>10,000,000</b> capsules, <b>5</b> defeats of the <b>Boss Finality Wall</b>"
   cost:7.777777777777777e37 money, 7.777777777777777e24 bricks, 7.777777777777777e22 fourthWallMatter
   req:7000000 prestige, 1 timesActuallyWon
-  -unlocks thropyAchieve6
   -multiplies efficiency of brickFactory by 140%
   -multiplies efficiency of makeBricks by 140%
   -multiplies efficiency of hitWall by 140%
@@ -6502,7 +6204,6 @@ Upgrades
   desc:"Everything is <b>0.005%</b> more efficient <b>per 1,000 future knowledge capsules.</b><br><i>"God. What an egotist." ~Agent Johnson</i>"
   cost:7.777777777777777e38 money, 7.777777777777777e25 bricks, 7.777777777777777e23 fourthWallMatter
   req:10000000 prestige, 5 timesActuallyWon
-  -unlocks thropyAchieve7
   -multiplies efficiency of brickFactory by 0.000005% per prestige
   -multiplies efficiency of makeBricks by 0.000005% per prestige
   -multiplies efficiency of hitWall by 0.000005% per prestige
@@ -6528,6 +6229,7 @@ Achievements
   desc:"Bring forth The End.<br><i>There goes a rapture.</i>"
   name:That's All Folks
   icon:http://i.imgur.com/hgI8sX0.png
+  req:have win
 
   *Overnab
   desc:"Damage the wall."
@@ -6599,6 +6301,7 @@ Achievements
   desc:"Destroy <b>5</b> bonus walls."
   name:Wall Master
   icon:http://i.imgur.com/czaaw31.png
+  req:1 destroyBonusWall5
   *wallDestroyer7
   desc:"Destroy the <b>10 bonus walls</b>."
   name:Wall Overlord
@@ -6634,45 +6337,55 @@ Achievements
   desc:"Ward against the Time Bear.<br><i>As if you can.</i>"
   name:Hide From Eternity
   icon:http://i.imgur.com/DSMRgWX.png
+  req:have timeBearWard1
   *timeBearAchieve2
   desc:"Ward against the Time Bear for the last time.<br><i>"The Time Bear is upon us. Run, hide, but you will only delay the inevitable. All involved in time-defiling experiments will be purged." ~The head demon, before retreating into the underworld</i>"
   name:This Is Our End
   icon:http://i.imgur.com/pBrcGq5.png
+  req:have timeBearWard12
 
   *thropyAchieve
   desc:"Achieve <b>22nd</b> place.<br><i>"wow" ~1337 sn1p3r #37</i>"
   name:Dirtlord
   icon:http://i.imgur.com/01o3S8e.png
+  req:have trophy2
   *thropyAchieve2
   desc:"Achieve <b>18th</b> place.<br><i>Entering the tiers of trophies that you can actually be proud to earn.</i>"
   name:So Metal
   icon:http://i.imgur.com/Uo7wAgm.png
+  req: have trophy6
   *thropyAchieve3
   desc:"Achieve <b>12th</b> place.<br><i>"I couldn't think of any good gem puns." ~RUC Chief of Puns</i>"
   name:Gemeration
   icon:http://i.imgur.com/6cCAFNV.png
+  req:have trophy12
   *thropyAchieve4
   desc:"Achieve <b>8th</b> place.<br><i>These tiers are so good the materials don't even exist in real life.<br> <br>"Wait, but some of them do." ~Agent Taylor<br>"THE DESCRIPTIONS DO NOT GIVE TO QUESTIONING" ~Automated RUC complaint responder</i>"
   name:The Fantasy Zone
   icon:http://i.imgur.com/K48TdKj.png
+  req:have trophy16
   *thropyAchieve5
   desc:"Achieve <b>3rd</b> place.<br><i>"This title isn't correct in any capacity." ~Agent Lawrence<br>"Why would you quote a negative comment?" ~Agent Lawrence<br>CEO EDIT: Agent Johnson is no longer allowed to write titles or descriptions.</i>"
   name:Literally God
   icon:http://i.imgur.com/iCvoC54.png
+  req:have trophy21
   *thropyAchieve6
   desc:"Achieve <b>1st</b> place.<br><i>"tryhard" ~1337 sn1p3r #21</i>"
   name:Congratulations
-  icon:http://i.imgur.com/ySJTkaS.png 
+  icon:http://i.imgur.com/ySJTkaS.png
+  req:have trophy23
   *thropyAchieve7
   desc:"Earn <b>every trophy</b>.<br><i>EDIT: You're never done.</i>"
   name:You're Done
   icon:http://i.imgur.com/hfmclY6.png
+  req:have trophy24
 
   *bookworm
   desc:"Read the Legend of The Fourth Wall in its entirety.<br><i>"cool story bro" ~1337 sn1p3r #52</i>"
   name:Bookworm
   icon:http://i.imgur.com/04PTUqi.png
-*/
+  req:have fourthWallLegend13
+
   *handDamage1
   desc:"Deal <b>100</b> damage by hand."
   req:100 handDamage
@@ -6683,7 +6396,7 @@ Achievements
   req:10000 handDamage
   name:Boxer
   icon:http://i.imgur.com/1VAyqoa.png
-/*
+
   *handDamage3
   desc:"Deal <b>1,000,000</b> damage by hand."
   req:1000000 handDamage
@@ -6749,7 +6462,7 @@ Achievements
   req:10000000000000000000000000000000 handDamage
   name:Missionary of The Divine
   icon:http://i.imgur.com/0WGwFSJ.png
-*/
+
 
   *puncherAchieve1
   desc:"Hire <b>1</b> puncher."
@@ -6761,7 +6474,7 @@ Achievements
   name:Get The Fist Of It
   req:10 puncher
   icon:http://i.imgur.com/uwEoJ22.png
-/*
+
   *puncherAchieve3
   desc:"Hire <b>50</b> punchers."
   name:Unarmed Army
