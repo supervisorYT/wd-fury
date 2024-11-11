@@ -1272,25 +1272,25 @@ Buildings
     gain 1 wallRequirement
     if (timesActuallyWon > 0) gain 1 timeUpgradeProducer3
     hide this
-//    show timeUpgrade2
-//    show timeUpgrade3
-//    show timeUpgrade4
-//    show timeUpgrade5
-//    show timeUpgrade6
-//    show timeUpgrade7
-//    show timeUpgrade8
-//    show timeUpgrade9
-//    show timeUpgrade10
-//    show timeUpgrade11
-//    show timeUpgrade12
-//    show timeUpgrade13
-//    show timeUpgrade14
-//    show timeUpgrade15
-//    show timeUpgrade16
-//    show timeUpgrade17
-//    show timeUpgrade18
-//    show timeUpgrade19
-//    show timeUpgrade20
+    show timeUpgrade2
+    show timeUpgrade3
+    show timeUpgrade4
+    show timeUpgrade5
+    show timeUpgrade6
+    show timeUpgrade7
+    show timeUpgrade8
+    show timeUpgrade9
+    show timeUpgrade10
+    show timeUpgrade11
+    show timeUpgrade12
+    show timeUpgrade13
+    show timeUpgrade14
+    show timeUpgrade15
+    show timeUpgrade16
+    show timeUpgrade17
+    show timeUpgrade18
+    show timeUpgrade19
+    show timeUpgrade20
   end
   tag:loseonreset
   class:bonuswallboss
@@ -1809,27 +1809,15 @@ Upgrades
   name:Alternate Reality Forcestacking
   icon:http://i.imgur.com/uFTByUI.png
   req:have deepSpaceResearch
-
+*/
   *timeUpgrade1
   desc:"Everything is <b>10%</b> more efficient.<br><i>The other time upgrades unlock randomly over time. You'll just have to wait. Possibly a long time, if you are not a lucker.</i>"
   cost:5 timeBricks
   name:Chronological Improvements
-  -multiplies efficiency of hitWall by 110%
-  -multiplies efficiency of puncher by 110%
-  -multiplies efficiency of clubber by 110%
-  -multiplies efficiency of swordsman by 110%
-  -multiplies efficiency of gunner by 110%
-  -multiplies efficiency of grenade by 110%
-  -multiplies efficiency of wreckingBall by 110%
-  -multiplies efficiency of bulldozer by 110%
-  -multiplies efficiency of airstrike by 110%
-  -multiplies efficiency of necromancer by 110%
-  -multiplies efficiency of giant by 110%
-  -multiplies efficiency of demon by 110%
-  -multiplies efficiency of compromiser by 110%
-  -multiplies efficiency of lastBuilding by 110%
-  -multiplies efficiency of brickFactory by 110%
-  -multiplies efficiency of makeBricks by 110%
+  passive:
+    multiply yield of tag:building by 1.1
+    multiply yield of tag:clickable by 1.1
+  end
   icon:http://i.imgur.com/U84N3WY.png
   req:1 destroyBonusWall21
   *timeUpgrade2
@@ -1837,104 +1825,108 @@ Upgrades
   cost:5 timeBricks
   req:1 timeUpgradeResource2
   name:Hyperspeed Punching
-  -multiplies efficiency of hitWall by 145%
-  -multiplies efficiency of puncher by 150%
+  passive:
+    multiply yield of hitWall by 1.45
+    multiply yield of puncher by 1.5
+  end
   icon:http://i.imgur.com/wCv7CDx.png
   *timeUpgrade3
   desc:"Melee buildings do <b>0.4%</b> more damage <b>per magic building</b>.<br><i>Magic is like other useful forces, only magic.</i>"
   cost:5 timeBricks
   req:1 timeUpgradeResource3
-  -multiplies efficiency of puncher by 0.4% per necromancer
-  -multiplies efficiency of clubber by 0.4% per necromancer
-  -multiplies efficiency of swordsman by 0.4% per necromancer
-  -multiplies efficiency of puncher by 0.4% per giant
-  -multiplies efficiency of clubber by 0.4% per giant
-  -multiplies efficiency of swordsman by 0.4% per giant
-  -multiplies efficiency of puncher by 0.4% per demon
-  -multiplies efficiency of clubber by 0.4% per demon
-  -multiplies efficiency of swordsman by 0.4% per demon
+//  -multiplies efficiency of puncher by 0.4% per necromancer
+//  -multiplies efficiency of clubber by 0.4% per necromancer
+//  -multiplies efficiency of swordsman by 0.4% per necromancer
+//  -multiplies efficiency of puncher by 0.4% per giant
+//  -multiplies efficiency of clubber by 0.4% per giant
+//  -multiplies efficiency of swordsman by 0.4% per giant
+//  -multiplies efficiency of puncher by 0.4% per demon
+//  -multiplies efficiency of clubber by 0.4% per demon
+//  -multiplies efficiency of swordsman by 0.4% per demon
   name:Past Magic Residue
   icon:http://i.imgur.com/O5SW3NU.png
   *timeUpgrade4
   desc:"Gunners do <b>4%</b> more damage <b>per reality compromiser</b>.<br><i>"We've always wanted to shoot hundreds of bullets with each shot, but never had the bullets for it." ~Gunner Project Leader in the ATB proposal</i>"
   cost:5 timeBricks
   req:1 timeUpgradeResource4
-  -multiplies efficiency of gunner by 4% per compromiser
+//  -multiplies efficiency of gunner by 4% per compromiser
   name:All The Bullets
   icon:http://i.imgur.com/HKL2QpN.png
   *timeUpgrade5
   desc:"Grenademen do <b>1.5%</b> more damage <b>per wrecking ball</b>.<br><i>"I approve any proposal with a really boss name, of course." ~RUC CEO on the proposal process</i>"
   cost:5 timeBricks
   req:1 timeUpgradeResource5
-  -multiplies efficiency of grenade by 1.5% per wreckingBall
+//  -multiplies efficiency of grenade by 1.5% per wreckingBall
   name:Time-Wrecking Grenades
   icon:http://i.imgur.com/5kTlqj8.png
   *timeUpgrade6
   desc:"Heavy buildings do <b>0.1%</b> more damage <b>per 10 minutes since reset</b>.<br><i>There is much wisdom to be found in the art of smashing things.</i>"
   cost:5 timeBricks
   req:1 timeUpgradeResource6
-  -multiplies efficiency of wreckingBall by 0.01 per timeSinceReset
-  -multiplies efficiency of bulldozer by 0.01 per timeSinceReset
-  -multiplies efficiency of airstrike by 0.01 per timeSinceReset
+//  -multiplies efficiency of wreckingBall by 0.01 per timeSinceReset
+//  -multiplies efficiency of bulldozer by 0.01 per timeSinceReset
+//  -multiplies efficiency of airstrike by 0.01 per timeSinceReset
   name:Wisdom From Age
   icon:http://i.imgur.com/bnJorFQ.png
   *timeUpgrade7
   desc:"Necromancers do <b>twice</b> as much damage.<br><i>Makes for stronger and less zombie-like zombies, which the necromancers are saying totally cramps their style. (Too bad, we're in charge)</i>"
   req:1 timeUpgradeResource7
   cost:5 timeBricks
-  -multiplies efficiency of necromancer by 200%
+  passive:multiply yield of necromancer by 2
   name:Biological Clock Rewinders
   icon:http://i.imgur.com/w5BGKUZ.png
   *timeUpgrade8
   desc:"Titans do <b>twice</b> as much damage.<br><i>Giant things move too slow. The time bricks can help!</i>"
   req:1 timeUpgradeResource8
   cost:5 timeBricks
-  -multiplies efficiency of giant by 200%
+  passive:multiply yield of giant by 2
   name:Fast Forward
   icon:http://i.imgur.com/vG0W03L.png
   *timeUpgrade9
   desc:"Demons do <b>twice</b> as much damage.<br><i>Past demons are less tech-savvy, but better with their evil magic. The present demons have fun showing them all the new trolling methods they've invented.<br>EDIT: we may have made another mistake.</i>"
   cost:5 timeBricks
   req:1 timeUpgradeResource9
-  -multiplies efficiency of demon by 200%
+  passive:multiply yield of demon by 2
   name:Demons From The Past
   icon:http://i.imgur.com/cESUAsi.png
   *timeUpgrade10
   desc:"Dream buildings are <b>10%</b> more efficient <b>per boss brick</b>.<br><i>"If we explore into the past, each boss brick has a ton of reality secrets stored in it. It's like whoever constructed the walls is trying to help us destroy them!" ~RC Project Leader</i>"
   cost:10 timeBricks
   req:1 timeUpgradeResource10
-  -multiplies efficiency of compromiser by 10% per goldBricks
-  -multiplies efficiency of lastBuilding by 10% per goldBricks
+//  -multiplies efficiency of compromiser by 10% per goldBricks
+//  -multiplies efficiency of lastBuilding by 10% per goldBricks
   name:Boss Research
   icon:http://i.imgur.com/n6j2v6z.png
   *timeUpgrade11
   desc:"Brick factories and hand bricks produce <b>twice</b> as many bricks.</b><br><i>This plan may have its critics, but it's totally safe to assume we will be making thousands of times more bricks in the future and the amount we're taking will be nothing. Yes. This is a good plan.</i>"
   cost:10 timeBricks
   req:1 timeUpgradeResource11
-  -multiplies efficiency of brickFactory by 200%
-  -multiplies efficiency of makeBricks by 200%
+  passive:
+    multiply yield of brickFactory by 2
+    multiply yield of makeBricks by 2
+  end
   name:Future Bricks
   icon:http://i.imgur.com/cxmIElt.png
   *timeUpgrade12
   desc:"Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><br><i>Had to convince the 1337 sn1p3rs that this is a timestacking technique and not the act of spying on them to reveal what they're doing to the enemy team.</i>"
   cost:10 timeBricks
   req:1 timeUpgradeResource12
-  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
-  -multiplies efficiency of puncher by 0.002% per timeSinceReset
-  -multiplies efficiency of clubber by 0.002% per timeSinceReset
-  -multiplies efficiency of swordsman by 0.002% per timeSinceReset
-  -multiplies efficiency of gunner by 0.002% per timeSinceReset
-  -multiplies efficiency of grenade by 0.002% per timeSinceReset
-  -multiplies efficiency of wreckingBall by 0.002% per timeSinceReset
-  -multiplies efficiency of bulldozer by 0.002% per timeSinceReset
-  -multiplies efficiency of airstrike by 0.002% per timeSinceReset
-  -multiplies efficiency of necromancer by 0.002% per timeSinceReset
-  -multiplies efficiency of giant by 0.002% per timeSinceReset
-  -multiplies efficiency of demon by 0.002% per timeSinceReset
-  -multiplies efficiency of compromiser by 0.002% per timeSinceReset
-  -multiplies efficiency of lastBuilding by 0.002% per timeSinceReset
-  -multiplies efficiency of brickFactory by 0.002% per timeSinceReset
-  -multiplies efficiency of makeBricks by 0.002% per timeSinceReset
+//  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
+//  -multiplies efficiency of puncher by 0.002% per timeSinceReset
+//  -multiplies efficiency of clubber by 0.002% per timeSinceReset
+//  -multiplies efficiency of swordsman by 0.002% per timeSinceReset
+//  -multiplies efficiency of gunner by 0.002% per timeSinceReset
+//  -multiplies efficiency of grenade by 0.002% per timeSinceReset
+//  -multiplies efficiency of wreckingBall by 0.002% per timeSinceReset
+//  -multiplies efficiency of bulldozer by 0.002% per timeSinceReset
+//  -multiplies efficiency of airstrike by 0.002% per timeSinceReset
+//  -multiplies efficiency of necromancer by 0.002% per timeSinceReset
+//  -multiplies efficiency of giant by 0.002% per timeSinceReset
+//  -multiplies efficiency of demon by 0.002% per timeSinceReset
+//  -multiplies efficiency of compromiser by 0.002% per timeSinceReset
+//  -multiplies efficiency of lastBuilding by 0.002% per timeSinceReset
+//  -multiplies efficiency of brickFactory by 0.002% per timeSinceReset
+//  -multiplies efficiency of makeBricks by 0.002% per timeSinceReset
   name:Ghosting
   icon:http://i.imgur.com/M4T5Aol.png
 
@@ -1942,94 +1934,94 @@ Upgrades
   desc:"Hand punches do <b>30%</b> more damage <b>per random bonus punching point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>The demons revealed that they stole some time bricks and gathered much more knowledge than we did. So of course they find a way to annoy us with it: they give us really useful knowledge, but only at random times, usually when inconvenient.</i>"
   cost:75 timeBricks
   req:1 timeUpgradeResource13
-  -multiplies efficiency of hitWall by 30% per timeUpgradeResource13
+//  -multiplies efficiency of hitWall by 30% per timeUpgradeResource13
   name:Random Punching Bonus
   icon:http://i.imgur.com/6WTh07Z.png
   *timeUpgrade14
   desc:"Melee buildings do <b>40%</b> more damage <b>per random bonus melee point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"The demons are kind of like Agent Johnson, only even bigger assholes." ~Agent Connor</i>"
   cost:50 timeBricks
   req:1 timeUpgradeResource14
-  -multiplies efficiency of puncher by 40% per timeUpgradeResource14
-  -multiplies efficiency of clubber by 40% per timeUpgradeResource14
-  -multiplies efficiency of swordsman by 40% per timeUpgradeResource14
+//  -multiplies efficiency of puncher by 40% per timeUpgradeResource14
+//  -multiplies efficiency of clubber by 40% per timeUpgradeResource14
+//  -multiplies efficiency of swordsman by 40% per timeUpgradeResource14
   name:Random Melee Bonus
   icon:http://i.imgur.com/EOAFOpK.png
   *timeUpgrade15
   desc:"Ranged buildings do <b>40%</b> more damage <b>per random bonus ranged point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I'm playing Cookie Clicker, and I get an elder frenzy, when a demon appears and tapes a piece of paper with deep time information written on it over my screen. It's semi-transparent and I actually see a reindeer come on screen during the elder frenzy, when the demon takes my mouse and spends all my cookies on farms." ~Grenademan Project Leader</i>"
   cost:50 timeBricks
   req:1 timeUpgradeResource15
-  -multiplies efficiency of gunner by 40% per timeUpgradeResource15
-  -multiplies efficiency of grenade by 40% per timeUpgradeResource15
+//  -multiplies efficiency of gunner by 40% per timeUpgradeResource15
+//  -multiplies efficiency of grenade by 40% per timeUpgradeResource15
   name:Random Ranged Bonus
   icon:http://i.imgur.com/C0FN0FI.png
   *timeUpgrade16
   desc:"Heavy duty buildings do <b>35%</b> more damage <b>per random bonus heavy point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I was watching TV, and a demon jumps through the window and starts dishing out advanced time knowledge! I had to scramble for a pen with my greasy chip fingers because the assholes never repeat it. He then told me which characters die that season, took my chips, and left." ~Agent Carter<br>"I am so done." ~Head of Demon Relations</i>"
   cost:75 timeBricks
   req:1 timeUpgradeResource16
-  -multiplies efficiency of wreckingBall by 35% per timeUpgradeResource16
-  -multiplies efficiency of bulldozer by 35% per timeUpgradeResource16
-  -multiplies efficiency of airstrike by 35% per timeUpgradeResource16
+//  -multiplies efficiency of wreckingBall by 35% per timeUpgradeResource16
+//  -multiplies efficiency of bulldozer by 35% per timeUpgradeResource16
+//  -multiplies efficiency of airstrike by 35% per timeUpgradeResource16
   name:Random Heavy Duty Bonus
   icon:http://i.imgur.com/kzkBClB.png
   *timeUpgrade17
   desc:"Magic buildings do <b>25%</b> more damage <b>per random bonus magic point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"I need to step up my game. The demons are freaking MASTERS." ~Agent Johnson</i>"
   cost:100 timeBricks
   req:1 timeUpgradeResource17
-  -multiplies efficiency of necromancer by 25% per timeUpgradeResource17
-  -multiplies efficiency of giant by 25% per timeUpgradeResource17
-  -multiplies efficiency of demon by 25% per timeUpgradeResource17
+//  -multiplies efficiency of necromancer by 25% per timeUpgradeResource17
+//  -multiplies efficiency of giant by 25% per timeUpgradeResource17
+//  -multiplies efficiency of demon by 25% per timeUpgradeResource17
   name:Random Magic Bonus
   icon:http://i.imgur.com/y3XeTNm.png
   *timeUpgrade18
   desc:"Brick factories and manual brick creation are <b>30%</b> more efficient <b>per random bonus brick point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"The worst part is that you can't complain that much, because they are giving you super useful info. Even if they tie a tape that repeats it only once to a brick and throw it through your window while you're taking a shower." ~Brick Factory Project Leader</i>"
   cost:150 timeBricks
   req:1 timeUpgradeResource18
-  -multiplies efficiency of brickFactory by 30% per timeUpgradeResource18
-  -multiplies efficiency of makeBricks by 30% per timeUpgradeResource18
+//  -multiplies efficiency of brickFactory by 30% per timeUpgradeResource18
+//  -multiplies efficiency of makeBricks by 30% per timeUpgradeResource18
   name:Random Brick Bonus
   icon:http://i.imgur.com/VKCIKOq.png
   *timeUpgrade19
   desc:"Magic & dream buildings are <b>0.7%</b> more efficient <b>per wall destroyed</b>.<br><i>The walls have an incredible amount of power inside them, and we finally have a way to use it to our advantage. They sure don't seem to have any reason for having so much power inside them, as they just sit there doing nothing.</i>"
   cost:200 timeBricks
   req:1 timeUpgradeResource19
-  -multiplies efficiency of necromancer by 0.7% per wallsDestroyed
-  -multiplies efficiency of giant by 0.7% per wallsDestroyed
-  -multiplies efficiency of demon by 0.7% per wallsDestroyed
-  -multiplies efficiency of compromiser by 0.7% per wallsDestroyed
-  -multiplies efficiency of lastBuilding by 0.7% per wallsDestroyed
+//  -multiplies efficiency of necromancer by 0.7% per wallsDestroyed
+//  -multiplies efficiency of giant by 0.7% per wallsDestroyed
+//  -multiplies efficiency of demon by 0.7% per wallsDestroyed
+//  -multiplies efficiency of compromiser by 0.7% per wallsDestroyed
+//  -multiplies efficiency of lastBuilding by 0.7% per wallsDestroyed
   name:Temporal Power Extraction
   icon:http://i.imgur.com/QV85c3k.png
   *timeUpgrade20
   desc:"Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><br><i>"The deep time theories involved in this project are pretty dense. HAHAHAHAHAHA" ~Agent Johnson's only comment on the DTS proposal</i>"
   cost:300 timeBricks
   req:1 timeUpgradeResource20
-  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
-  -multiplies efficiency of puncher by 0.002% per timeSinceReset
-  -multiplies efficiency of clubber by 0.002% per timeSinceReset
-  -multiplies efficiency of swordsman by 0.002% per timeSinceReset
-  -multiplies efficiency of gunner by 0.002% per timeSinceReset
-  -multiplies efficiency of grenade by 0.002% per timeSinceReset
-  -multiplies efficiency of wreckingBall by 0.002% per timeSinceReset
-  -multiplies efficiency of bulldozer by 0.002% per timeSinceReset
-  -multiplies efficiency of airstrike by 0.002% per timeSinceReset
-  -multiplies efficiency of necromancer by 0.002% per timeSinceReset
-  -multiplies efficiency of giant by 0.002% per timeSinceReset
-  -multiplies efficiency of demon by 0.002% per timeSinceReset
-  -multiplies efficiency of compromiser by 0.002% per timeSinceReset
-  -multiplies efficiency of lastBuilding by 0.002% per timeSinceReset
-  -multiplies efficiency of brickFactory by 0.002% per timeSinceReset
-  -multiplies efficiency of makeBricks by 0.002% per timeSinceReset
+//  -multiplies efficiency of hitWall by 0.002% per timeSinceReset
+//  -multiplies efficiency of puncher by 0.002% per timeSinceReset
+//  -multiplies efficiency of clubber by 0.002% per timeSinceReset
+//  -multiplies efficiency of swordsman by 0.002% per timeSinceReset
+//  -multiplies efficiency of gunner by 0.002% per timeSinceReset
+//  -multiplies efficiency of grenade by 0.002% per timeSinceReset
+//  -multiplies efficiency of wreckingBall by 0.002% per timeSinceReset
+//  -multiplies efficiency of bulldozer by 0.002% per timeSinceReset
+//  -multiplies efficiency of airstrike by 0.002% per timeSinceReset
+//  -multiplies efficiency of necromancer by 0.002% per timeSinceReset
+//  -multiplies efficiency of giant by 0.002% per timeSinceReset
+//  -multiplies efficiency of demon by 0.002% per timeSinceReset
+//  -multiplies efficiency of compromiser by 0.002% per timeSinceReset
+//  -multiplies efficiency of lastBuilding by 0.002% per timeSinceReset
+//  -multiplies efficiency of brickFactory by 0.002% per timeSinceReset
+//  -multiplies efficiency of makeBricks by 0.002% per timeSinceReset
   name:Density Timestacking
   icon:http://i.imgur.com/Q6oG66i.png
   *timeUpgrade21
   desc:"Dream buildings are <b>20%</b> more efficient <b>per random bonus dream point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<br><i>"Okay, so there was a bonus to giving them The Amsora. IT WASN'T FUCKING WORTH IT." ~RC Project Leader, seconded by basically everyone<br> <br>"The demons are hilarious, you guys all need to chill." ~Agent Johnson<br>"My problem with the demons is this: They are horrible, garnished with awful, with a Satan on top." ~Agent Connor</i>"
   cost:1000 timeBricks, 1.23456789e37 money 
   req:1 timeUpgradeResource21, 1 timesActuallyWon
-  -multiplies efficiency of compromiser by 20% per timeUpgradeResource21
-  -multiplies efficiency of lastBuilding by 20% per timeUpgradeResource21
+//  -multiplies efficiency of compromiser by 20% per timeUpgradeResource21
+//  -multiplies efficiency of lastBuilding by 20% per timeUpgradeResource21
   name:Random Dream Bonus
   icon:http://i.imgur.com/zq20OLd.png
-  
+/*  
   *specialBrickBonus
   desc:"Everything is <b>0.001%</b> more efficient per <b>space brick</b> and <b>0.007%</b> per <b>time brick</b>.<br><i>"I can barely contain my excitement." ~Agent Johnson<br>"There's something about the massive concentration of sarcasm in your voice that makes me think otherwise." ~Agent Lawrence<br>"Look, I just want more interesting upgrades, okay?" ~Agent Johnson</i>"
   cost:8e24 bricks
