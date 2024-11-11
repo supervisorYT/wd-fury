@@ -3364,7 +3364,7 @@ Upgrades
   -multiplies efficiency of makeBricks by 4% per brickFactory
   name:Brick Knuckles
   icon:http://i.imgur.com/pcHLrGL.png
-
+*/
   *handBrickUnlock
   desc:"Unlocks <b>manual brick creation</b>.<br><i>Now you will be able to create bricks yourself, even if the dark magic tablets don't like you.</i>"
   cost:3777777777777777 money, 200 bricks
@@ -3375,66 +3375,66 @@ Upgrades
   desc:"Manual brick creation creates <b>three times</b> as many bricks.<br><i>To find out why you and the dark magic tablets aren't getting along.</i>"
   cost:6777777777777777 money, 1000 bricks
   req:1000 handBricks
-  -multiplies efficiency of makeBricks by 300% 
+  passive:multiply yield of makeBricks by 3
   name:Psychiatrists
   icon:http://i.imgur.com/BLAoizu.png
   *handBrickUpgrade2
   desc:"Manual brick creation creates <b>1.5%</b> as many bricks per <b>necromancer</b>.<br><i>They can give you lessons in dark magic, and as a bonus, being an asshole.</i>"
   cost:37777777777777777 money, 100000 bricks
   req:100000 handBricks
-  -multiplies efficiency of makeBricks by 1.5% per necromancer
+  passive:multiply yield of makeBricks by (1+ (0.015 * necromancer))
   name:Necromancer Lessons
   icon:http://i.imgur.com/vZmmM5e.png
   *handBrickUpgrade3
   desc:"Manual brick creation creates <b>1.5%</b> more bricks <b>per demon</b>.<br><i>Much better at dark magic and at being assholes than the necromancers.</i>"
   cost:377777777777777777 money, 10000000 bricks
   req:10000000 handBricks
-  -multiplies efficiency of makeBricks by 1.5% per demon
+  passive:multiply yield of makeBricks by (1+ (0.015 * demon))
   name:Demon Lessons
   icon:http://i.imgur.com/WohZpox.png
   *handBrickUpgrade4
   desc:"Manual brick creation creates <b>four times</b> as many bricks.<br><i>They fight a lot, but you somehow learn best when they teach at the same time.</i>"
   cost:37777777777777777777 money, 1000000000 bricks
   req:1000000000 handBricks
-  -multiplies efficiency of makeBricks by 400%
+  passive:multiply yield of makeBricks by 4
   name:Joint Necromancer-Demon Lessons
   icon:http://i.imgur.com/1n3yBA4.png
   *handBrickUpgrade5
   desc:"Manual brick creation creates <b>1%</b> more bricks <b>per titan</b>.<br><i>After smashing the walls a ton, they have learned a lot about the inner workings of bricks.</i>"
   cost:3777777777777777777777 money, 100000000000 bricks
   req:100000000000 handBricks
-  -multiplies efficiency of makeBricks by 1% per giant
+  passive:multiply yield of makeBricks by (1 + (0.01 * giant))
   name:Wisdom of The Titans
   icon:http://i.imgur.com/mLO2JCX.png
   *handBrickUpgrade6
   desc:"Manual brick creation creates <b>0.8%</b> more bricks <b>per titan</b>.<br><i>Now with the added benefit of actually being able to understand the titans.</i>"
   cost:3777777777777777777777777 money, 10000000000000 bricks
   req:10000000000000 handBricks
-  -multiplies efficiency of makeBricks by 0.8% per giant
+  passive:multiply yield of makeBricks by (1 + (0.008 * giant))
   name:Necromancer Translators
   icon:http://i.imgur.com/m5peORa.png
   *handBrickUpgrade7
   desc:"Manual brick creation creates <b>0.8%</b> more bricks <b>per titan</b>.<br><i>They know the tablets very well, so they innately know what the titans are talking about.</i>"
   cost:377777777777777777777777777 money, 1000000000000000 bricks
   req:1000000000000000 handBricks
-  -multiplies efficiency of makeBricks by 0.8% per giant
+  passive:multiply yield of makeBricks by (1 + (0.008 * giant))
   name:Demon Translators
   icon:http://i.imgur.com/3vgirnY.png
   *handBrickUpgrade8
   desc:"Manual brick creation creates <b>four times</b> as many bricks.<br><i>"It's an assembly line in your palm and a conveyor belt in your wrist! Perfect!" ~CEO, RUC</i>"
   cost:37777777777777777777777777777 money, 100000000000000000 bricks
   req:100000000000000000 handBricks
-  -multiplies efficiency of makeBricks by 400%
+  passive:multiply yield of makeBricks by 4
   name:Factory Hand
   icon:http://i.imgur.com/FDoBvUl.png
   *handBrickUpgrade9
   desc:"Manual brick creation creates <b>five times</b> as many bricks.<br><i>"i call hax" ~1337 sn1p3r #10</i>"
   cost:3777777777777777777777777777777 money, 10000000000000000000 bricks
   req:10000000000000000000 handBricks
-  -multiplies efficiency of makeBricks by 500%
+  passive:multiply yield of makeBricks by 5
   name:Omnimagic
   icon:http://i.imgur.com/IDv4G9r.png
-*/
+
   *handUpgrade1
   desc:"Hand punches do <b>3 times</b> as much damage.<br><i>Caffeine obviously gives you the ability to punch faster.</i>"
   cost:11111 money
