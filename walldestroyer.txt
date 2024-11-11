@@ -5599,7 +5599,6 @@ Upgrades
   desc:"Damage and brick production multipliers <b>+40%</b>.<br><i><b>REPORT: Incident 088Y</b><br>Agent Johnson attempted to chop down a Finality Tree with an adamantium axe to build this trophy. Nearly microscopic shards of adamantium were everywhere, and a large crater was found 21 miles away. The Tree was unscratched. Johnson arrived to the RUC the next day, and reportedly said "I'm gonna need a bigger axe."<br>He was banned from The Finality Plateaus, on the grounds that it took a complex reality script to remove the adamantium shards.</i><br> <br>Final trophy: <b>10,000,000</b> capsules, <b>5</b> defeats of the <b>Boss Finality Wall</b>"
   cost:7.777777777777777e37 money, 7.777777777777777e24 bricks, 7.777777777777777e22 fourthWallMatter
   req:7000000 prestige, 1 timesActuallyWon
-  -multiply yield of brickFactory by 140%
   passive:
     multiply yield of tag:building by 1.4
     multiply yield of tag:clickable by 1.4
