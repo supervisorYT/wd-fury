@@ -2938,7 +2938,7 @@ Upgrades
   icon:http://i.imgur.com/piFqUdL.png
  
 
-  *productionMultiplierMagic
+  *productionMultMagic
   desc:"Everything is <b>20%</b> more efficient.<br><i>"Yeah." ~The MEE proposal </i>"
   cost:1000000000000000000000 money
   passive:
@@ -2948,7 +2948,7 @@ Upgrades
   name:Magically Enhanced Everything
   icon:http://i.imgur.com/aaFiNNp.png
   req:1 destroyBonusWall5
-  *productionMultiplierMagic2
+  *productionMultMagic2
   desc:"Everything is <b>20%</b> more efficient.<br><i>Teleportation spells, movement spells, telekinesis spells, pickle jar opening spells, you name it.</i>"
   cost:50000000000000000000000 money
   passive:
@@ -2958,7 +2958,7 @@ Upgrades
   name:Utility Spells 
   icon:http://i.imgur.com/xGhYI9W.png
   req:1 destroyBonusWall10
-  *productionMultiplierMagic3
+  *productionMultMagic3
   desc:"Everything is <b>20%</b> more efficient.<br><i>All the knowledge and history the wizards have, and it's only slightly biased towards them!</i>"
   cost:2000000000000000000000000 money
   passive:
@@ -2968,7 +2968,7 @@ Upgrades
   name:Access to The Great Wizard Library 
   icon:http://i.imgur.com/WL4ZfF1.png
   req:1 destroyBonusWall15
-  *productionMultiplier6
+  *productionMult6
   desc:"Everything is <b>25%</b> more efficient.<br><i>When the RUC becomes the sole power on Earth, we can finally continue our work uninterrupted by whiners. Whiners that can actually do anything to us, that is.</i>"
   cost:100000000000000000000000000 money
   passive:
@@ -2978,7 +2978,7 @@ Upgrades
   name:World Domination
   icon:http://i.imgur.com/fGDPekC.png
   req:1 destroyBonusWall20
-  *productionMultiplierHell
+  *productionMultHell
   desc:"Everything is <b>20%</b> more efficient.<br><i>Since they are immortal, the demons have learned a lot over the years. Lucky for us, a lot of that knowledge has to do with destroying things!</i>"
   cost:5000000000000000000000000000 money
   passive:
@@ -2988,7 +2988,7 @@ Upgrades
   name:Demon Advice
   icon:http://i.imgur.com/2Dd5II9.png
   req:1 destroyBonusWall25
-  *productionMultiplierHell2
+  *productionMultHell2
   desc:"Everything is <b>20%</b> more efficient.<br><i>According to the head demon, membership costs one animal sacrifice/month, or one human sacrifice/month for Premium.</i>"
   cost:150000000000000000000000000000 money
   passive:
@@ -2998,7 +2998,7 @@ Upgrades
   name:Library of Hell Membership
   icon:http://i.imgur.com/iSfb0Ls.png
   req:1 destroyBonusWall35
-  *productionMultiplierHell3
+  *productionMultHell3
   desc:"Everything is <b>20%</b> more efficient.<br><i>He'll give us a sample of his magic for only 666 human souls!</i>"
   cost:10000000000000000000000000000000 money
   passive:
@@ -3008,7 +3008,7 @@ Upgrades
   name:Deal With The Devil
   icon:http://i.imgur.com/a6zYL1I.png
   req:1 destroyBonusWall35
-  *productionMultiplier7
+  *productionMult7
   desc:"Everything is <b>20%</b> more efficient.<br><i>All the titan kings had scrolls of knowledge under their name, but Optuqui, the first titan king, somehow knew many things the later ones did not.</i>"
   cost:300000000000000000000000000000000 money
   passive:
@@ -3018,7 +3018,7 @@ Upgrades
   name:Optuqui's Scrolls of Knowledge
   icon:http://i.imgur.com/gszdkb6.png
   req:1 destroyBonusWall40
-  *productionMultiplierBlack
+  *productionMultBlack
   desc:"Everything is <b>30%</b> more efficient.<br><i>Since The Black's power is practically infinite, we can draw some out without the Obliterators losing any power. The question is whether we can do it without killing everyone involved.</i>"
   cost:1500000000000000000000000000000000000 money
   passive:
@@ -3028,7 +3028,7 @@ Upgrades
   name:Power Extraction
   icon:http://i.imgur.com/bN8UwLa.png
   req:1 destroyBonusWall45
-  *productionMultiplier8
+  *productionMult8
   desc:"Everything is <b>30%</b> more efficient.<br><i>Locked in a Sgapang vault that we could only manage to get open by using the compromisers. It's like he wrote it just for us!<br>EDIT: The first page translation is "Thanks to #17 for the idea". That might be worth noting. ~Agent Taylor</i>"
   cost:6.66e36 money
   req:1 timesActuallyWon, 1 winBricks
@@ -3038,7 +3038,7 @@ Upgrades
   end
   name:Lord Reaefsek's Guide To Destruction
   icon:http://i.imgur.com/M4nj67A.png
-  *productionMultiplierArmy
+  *productionMultArmy
   desc:"Everything is <b>35%</b> more efficient.<br><i>Found locked in Sauthir Castle's vault.<br>Author: "#3, as ordered by The King".<br>Dimensions: 10" by 12".<br>Pages: 873.<br>Age: ~35,000 years.<br>Language: Old World.<br>Binding: Scaly striped black and white hide, unknown creature of origin.<br>Reality code enhancement(s): Indestructability.<br>Usefulness: INTENSE EXTREME.<br> <br>"...Intense extreme?" ~Agent Brown<br>"You're intense extreme-LY STUPID. ABSOLUTELY DEVESTATED." ~Agent Johnson</i>"
   cost:3.7e37 money
   req:2 timesActuallyWon, 1 winBricks
@@ -3048,7 +3048,7 @@ Upgrades
   end
   name:The Guide To Furthering Progress
   icon:http://i.imgur.com/WBts5e6.png
-  *productionMultiplier9
+  *productionMult9
   desc:"Everything is <b>40%</b> more efficient.<br><i>Finally found a good way to exploit the Trees: hold a container next to one for a while, close it and some of their power stays in. Apply it to anything and it becomes more powerful!<br> <br>EDIT: Okay, more security on the extract jars. The 1337 sn1p3rs are not allowed to apply them to their computers to "enhance MLG levels".<br>EDIT 2: Agent Johnson is not allowed to play any sort of first person shooter with the 1337 sn1p3rs while at the RUC.</i>"
   cost:8.8e37 money
   req:3 timesActuallyWon, 1 winBricks
@@ -3058,7 +3058,7 @@ Upgrades
   end
   name:Finality Tree Extract
   icon:http://i.imgur.com/xvVrdJg.png
-  *productionMultiplier10
+  *productionMult10
   desc:"Everything is <b>50%</b> more efficient.<br><i>"I'm surprised we can get it, given Johnson's bitching." ~Agent Connor<br>"You know you hate self-inserts too. </i>You know it deep in your heart<i>." ~Agent Johnson</i>"
   cost:5.2e38 money
   req:4 timesActuallyWon, 1 winBricks
