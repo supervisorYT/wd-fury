@@ -1272,25 +1272,25 @@ Buildings
     gain 1 wallRequirement
     if (timesActuallyWon > 0) gain 1 timeUpgradeProducer3
     hide this
-    show timeUpgrade2
-    show timeUpgrade3
-    show timeUpgrade4
-    show timeUpgrade5
-    show timeUpgrade6
-    show timeUpgrade7
-    show timeUpgrade8
-    show timeUpgrade9
-    show timeUpgrade10
-    show timeUpgrade11
-    show timeUpgrade12
-    show timeUpgrade13
-    show timeUpgrade14
-    show timeUpgrade15
-    show timeUpgrade16
-    show timeUpgrade17
-    show timeUpgrade18
-    show timeUpgrade19
-    show timeUpgrade20
+//    show timeUpgrade2
+//    show timeUpgrade3
+//    show timeUpgrade4
+//    show timeUpgrade5
+//    show timeUpgrade6
+//    show timeUpgrade7
+//    show timeUpgrade8
+//    show timeUpgrade9
+//    show timeUpgrade10
+//    show timeUpgrade11
+//    show timeUpgrade12
+//    show timeUpgrade13
+//    show timeUpgrade14
+//    show timeUpgrade15
+//    show timeUpgrade16
+//    show timeUpgrade17
+//    show timeUpgrade18
+//    show timeUpgrade19
+//    show timeUpgrade20
   end
   tag:loseonreset
   class:bonuswallboss
