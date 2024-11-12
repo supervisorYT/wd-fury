@@ -422,7 +422,6 @@ Buildings
     gain 1 prePrestige
     gain 1 wallRequirement
     hide this
-    show wallMultiplier
   end
   name:Destroy wall
   tag:loseonreset
@@ -438,8 +437,6 @@ Buildings
     gain 1 prePrestige
     gain 1 wallRequirement
     hide this
-    show magicLevel2
-    show giantUnlock
   end
   name:Destroy 2nd wall
   req:1 destroyWall
@@ -1584,7 +1581,7 @@ Upgrades
   cost:16 bricks
   name:Summon Titans
   icon: http://i.imgur.com/YYCAyYr.png
-  req:1 destroyHugeWall
+  req:1 destroyBigWall
   *fourthWallUnlock
   desc:"Unlocks <b>reality compromisers</b>.<br>Unlocks the <b>4th wall upgrade tier</b>.<br>We have discovered with the breaking of the 4th wall that we are all inside a stupid idle game. Not even a <i>real</i> game! But we can use this knowledge to our advantage..."
   cost:404400040440040440 money, 4004404 bricks
@@ -2415,6 +2412,7 @@ Upgrades
   end
   name:The Chronicle
   icon:http://i.imgur.com/zqNeRti.png
+  req:1 destroyWall
   
   *productionMult1
   desc:"Everything does <b>5%</b> more damage.<br><i>To destroy the big wall, we may need to actually train our guys.</i>"
