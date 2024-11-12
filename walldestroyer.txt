@@ -1594,6 +1594,7 @@ Upgrades
   cost:1000 fourthWallMatter
   name:Time Rewinders
   icon:http://i.imgur.com/T2QFa2N.png
+  req:1 destroyMassiveWall
   
   *damageConvUnlock
   desc:"Unlocks the ability to convert damage to cosmic knowledge, at the rate of 2 decillion to 1.<br><i>The hackers decided there was an easier way to go about this.<br> <br>"hacking??? lol overnab" ~1337 sn1p3r #4</i>"
