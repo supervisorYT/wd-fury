@@ -101,17 +101,13 @@ body
 	top: 5px;
 	font-size: 18px;
 	font-weight: bold;}
-.wall .cost, .bonuswall .cost, .bonuswallboss .cost, .tag-building .cost
-	{font-size: 0px;}
-.wall .cost:nth-child(2), .bonuswall .cost:nth-child(2), .bonuswallboss .cost:nth-child(2)
-	{display: none;}
 .wall .cost, .bonuswall .cost, .bonuswallboss .cost
 	{position: static;
 	float: left;
 	font-size: 12px;
 	font-weight: normal;
 	padding-left: 4px;}
-.tag-building .cost .amount
+.tag-building .cost
 	{position: static;
 	float: left;
 	font-size: 12px;
@@ -197,4 +193,6 @@ body
 	{color: #664439;
 	background: #a2cfc4;
 	width: 300px;
-	height: 15px;}
+	height: 15px;
+	position: fixed;
+	bottom: 10px;}
