@@ -3070,7 +3070,7 @@ Upgrades
   *handUpgrade15
   desc:"Hand punches do <b>four times</b> as much damage.<br><i>"Did he seriously put himself in as the last tier? Oh my god. Oh my fucking god. </i>Disgusting.<i>" ~Agent Johnson</i>"
   cost:11111111111111111111111111111111111 money
-  req:1e+33 handDamage
+  req:1000000000000000000000000000000000 handDamage
   passive:multiply yield of hitWall by 4
   name:The Hand of God
   icon:http://i.imgur.com/0WGwFSJ.png
@@ -4352,7 +4352,7 @@ Upgrades
   icon:http://i.imgur.com/2ySbj27.png
   *airstrkUpgradeBlack
   desc:"Airstrikes do <b>six times</b> as much damage.<br><i>"Is it time to buff the anvils? The answer is yes, always, forever." ~Agent Connor, in the BMA proposal<br>"Finally, we agree." ~Agent Johnson</i>"
-  cost:3.000300030003000e+35 money, 30003000300030003000300 bricks
+  cost:300030003000300000000000000000000000 money, 30003000300030003000300 bricks
   req:600 airstrike
   passive:multiply yield of airstrike by 6
   name:Black-Merged Anvils
@@ -4994,7 +4994,7 @@ Upgrades
   icon:http://i.imgur.com/jFpYzHt.png
   *lastBuildingUp10
   desc:"Black obliterators do <b>four times</b> as much damage.<br><i>"More complex metal parts we have to replace every day? UGH. UUUUUGGGGHHHHH." ~Head of Maintanence</i>"
-  cost:2.6e+37 money, 2.6e+22 fourthwallmatter
+  cost:26000000000000000000000000000000000000 money, 26000000000000000000000 fourthwallmatter
   req:400 lastBuilding
   passive:multiply yield of lastBuilding by 4
   name:Black Distributors
@@ -5064,7 +5064,7 @@ Upgrades
   icon:http://i.imgur.com/sphsdEU.png
   *compromiseLastUp5
   desc:"Reality compromisers do <b>1%</b> more damage per black obliterator.<br>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<br><i>The ones before weren't really, just as strong as we could possibly make them; The Black took a few days to finish them off. We didn't know how to make something 100% indestructible, but the Divine Instructions conveniently contained the indestructibility script!<br> <br>"I'm throwing in a joke to make this description more interesting." ~Agent Johnson<br>"Pointing out the lack of a joke isn't a joke." ~Agent Connor</i>"
-  cost:1.52e+37 money, 1.52e+22 fourthwallmatter
+  cost:15200000000000000000000000000000000000 money, 15200000000000000000000 fourthwallmatter
   req:500 compromiser, 400 lastBuilding
   passive:
     multiply yield of compromiser by (1 + (0.01 * lastBuilding))
