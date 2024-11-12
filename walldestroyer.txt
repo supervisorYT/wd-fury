@@ -3,7 +3,7 @@ Let's make a game!
   by:Tellurium
   created:04/21/2014
   updated:11/10/2024
-  version:2.3.5
+  version:3.1
 
 Settings
   building cost increase:110%
@@ -265,13 +265,9 @@ Resources
  
         *versionNumber
         shown
-        text:Version 2.3.5
+        text:Version 3.1
  
   //abstract stuff
-
-  *wallRequirement
-  always hidden
-  start with:1
 
   *bonusBossBrick
   always hidden
@@ -412,15 +408,14 @@ Buildings
 
   *destroyWall
   desc:"Destroy the wall and move on to a bigger one.<br>Gives <b>25</b> bricks.<br>Awards <b>250,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
-  cost:1000000000000 totalMoney, 1 wallRequirement
+  cost:1000000000000 totalMoney
   on earn:
     gain 250000000000 money
     gain 25 bricks
     gain 25 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   name:Destroy wall
   tag:loseonreset
@@ -428,15 +423,14 @@ Buildings
   shown
   *destroyBigWall
   desc:"Destroy the big 2nd wall and move on to a bigger one.<br>Gives <b>100</b> bricks.<br>Awards <b>25,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
-  cost:100000000000000 totalMoney, 1 wallRequirement
+  cost:100000000000000 totalMoney
   on earn:
     gain 25000000000000 money
     gain 100 bricks
     gain 100 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   name:Destroy 2nd wall
   req:1 destroyWall
@@ -444,15 +438,14 @@ Buildings
   class:wall
   *destroyHugeWall
   desc:"Destroy the huge 3rd wall and move on to a bigger one.<br>Gives <b>10,000</b> bricks.<br>Awards <b>2,500,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
-  cost:10000000000000000 totalMoney, 1 wallRequirement
+  cost:10000000000000000 totalMoney
   on earn:
     gain 2500000000000000 money
     gain 10000 bricks
     gain 10000 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   name:Destroy 3rd wall
   req:1 destroyBigWall
@@ -460,15 +453,14 @@ Buildings
   class:wall
   *destroyMassiveWall
   desc:"Destroy the massive 4th wall and move on to the final one.<br>Gives <b>250,000</b> bricks.<br>Awards <b>250,000,000,000,000,000</b> cash.<br>Worth <b>2</b> cosmic knowledge."
-  cost:1000000000000000000 totalMoney, 1 wallRequirement
+  cost:1000000000000000000 totalMoney
   on earn:
     gain 250000000000000000 money
     gain 250000 bricks
     gain 250000 totalBricks
     gain 1 wallsDestroyed
     gain 2 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
 //        show fourthWallUnlock
   end
   tag:loseonreset
@@ -476,7 +468,7 @@ Buildings
   req:1 destroyHugeWall
   *destroyFinalWall
   desc:"Destroy the 5th and final wall.<br>Gives <b>10,000,000</b> bricks.<br>Awards <b>25,000,000,000,000,000,000</b> cash; <b>1</b> boss brick.<br>Worth <b>5</b> cosmic knowledge."
-  cost:100000000000000000000 totalMoney, 1 wallRequirement
+  cost:100000000000000000000 totalMoney
   on earn:
     gain 25000000000000000000 money
     gain 10000000 bricks
@@ -484,8 +476,7 @@ Buildings
     gain 1 goldBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:wall
@@ -493,15 +484,14 @@ Buildings
   req:1 destroyMassiveWall
   *destroyBonusWall
   desc:"<i>You win, but you can keep going anyway.</i><br> <br>Destroy bonus wall #9 and move on to the next.<br>Gives <b>100,000,000</b> bricks and <b>100 quintillion</b> cash.<br>Worth <b>5</b> cosmic knowledge."
-  cost:200000000000000000000 totalMoney, 1 wallRequirement
+  cost:200000000000000000000 totalMoney
   on earn:
     gain 100000000000000000000 money
     gain 100000000 bricks
     gain 100000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -509,15 +499,14 @@ Buildings
   req:1 destroyFinalWall
   *destroyBonusWall2
   desc:"Destroy bonus wall #8 and move on to the next.<br>Gives <b>250,000,000</b> bricks and <b>200 quintillion</b> cash.<br>Worth <b>5</b> cosmic knowledge."
-  cost:400000000000000000000 totalMoney, 1 wallRequirement
+  cost:400000000000000000000 totalMoney
   on earn:
     gain 200000000000000000000 money
     gain 250000000 bricks
     gain 250000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -525,15 +514,14 @@ Buildings
   req:1 destroyBonusWall
   *destroyBonusWall3
   desc:"Destroy bonus wall #7 and move on to the next.<br>Gives <b>500,000,000</b> bricks and <b>400 quintillion</b> cash.<br>Worth <b>6</b> cosmic knowledge."
-  cost:800000000000000000000 totalMoney, 1 wallRequirement
+  cost:800000000000000000000 totalMoney
   on earn:
     gain 400000000000000000000 money
     gain 500000000 bricks
     gain 500000000 totalBricks
     gain 1 wallsDestroyed
     gain 6 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -541,15 +529,14 @@ Buildings
   req:1 destroyBonusWall2
   *destroyBonusWall4
   desc:"Destroy bonus wall #6 and move on to the next.<br>Gives <b>1,000,000,000</b> bricks and <b>800 quintillion</b> cash.<br>Worth <b>7</b> cosmic knowledge."
-  cost:1600000000000000000000 totalMoney, 1 wallRequirement
+  cost:1600000000000000000000 totalMoney
   on earn:
     gain 800000000000000000000 money
     gain 1000000000 bricks
     gain 1000000000 totalBricks
     gain 1 wallsDestroyed
     gain 7 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -557,15 +544,14 @@ Buildings
   req:1 destroyBonusWall3
   *destroyBonusWall5
   desc:"Destroy bonus wall #5 and move on to the next.<br>Gives <b>2,000,000,000</b> bricks and <b>1.6 sextillion</b> cash.<br>Worth <b>8</b> cosmic knowledge."
-  cost:3200000000000000000000 totalMoney, 1 wallRequirement
+  cost:3200000000000000000000 totalMoney
   on earn:
     gain 1600000000000000000000 money
     gain 2000000000 bricks
     gain 2000000000 totalBricks
     gain 1 wallsDestroyed
     gain 8 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -573,15 +559,14 @@ Buildings
   req:1 destroyBonusWall4
   *destroyBonusWall6
   desc:"Destroy bonus wall #4 and move on to the next.<br>Gives <b>4,000,000,000</b> bricks and <b>3.2 sextillion</b> cash.<br>Worth <b>9</b> cosmic knowledge."
-  cost:6400000000000000000000 totalMoney, 1 wallRequirement
+  cost:6400000000000000000000 totalMoney
   on earn:
     gain 3200000000000000000000 money
     gain 4000000000 bricks
     gain 4000000000 totalBricks
     gain 1 wallsDestroyed
     gain 9 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -589,15 +574,14 @@ Buildings
   req:1 destroyBonusWall5
   *destroyBonusWall7
   desc:"Destroy bonus wall #3 and move on to the next.<br>Gives <b>8,000,000,000</b> bricks and <b>6.4 sextillion</b> cash.<br>Worth <b>10</b> cosmic knowledge."
-  cost:12800000000000000000000 totalMoney, 1 wallRequirement
+  cost:12800000000000000000000 totalMoney
   on earn:
     gain 6400000000000000000000 money
     gain 8000000000 bricks
     gain 8000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -605,15 +589,14 @@ Buildings
   req:1 destroyBonusWall6
   *destroyBonusWall8
   desc:"Destroy bonus wall #2 and move on to the next.<br>Gives <b>16,000,000,000</b> bricks and <b>12.8 sextillion</b> cash.<br>Worth <b>10</b> cosmic knowledge."
-  cost:25600000000000000000000 totalMoney, 1 wallRequirement
+  cost:25600000000000000000000 totalMoney
   on earn:
     gain 12800000000000000000000 money
     gain 16000000000 bricks
     gain 16000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -621,15 +604,14 @@ Buildings
   req:1 destroyBonusWall7
   *destroyBonusWall9
   desc:"Destroy bonus wall #1 and move on to the boss.<br>Gives <b>32,000,000,000</b> bricks and <b>25.6 sextillion</b> cash.<br>Worth <b>10</b> cosmic knowledge."
-  cost:51200000000000000000000 totalMoney, 1 wallRequirement
+  cost:51200000000000000000000 totalMoney
   on earn:
     gain 25600000000000000000000 money
     gain 32000000000 bricks
     gain 32000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -637,7 +619,7 @@ Buildings
   req:1 destroyBonusWall8
   *destroyBonusWall10
   desc:"Destroy the boss bonus wall.<br>Gives <b>100 billion</b> bricks and <b>75 sextillion</b> cash; <b>1</b> boss brick.<br>Worth <b>20</b> cosmic knowledge."
-  cost:150000000000000000000000 totalMoney, 1 wallRequirement
+  cost:150000000000000000000000 totalMoney
   on earn:
     gain 75000000000000000000000 money
     gain 100000000000 bricks
@@ -646,8 +628,7 @@ Buildings
     gain 20 prePrestige
     gain 1 goldBricks
     gain 1 bonusBossBrick
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -655,7 +636,7 @@ Buildings
   req:1 destroyBonusWall9
   *destroyBonusWall11
   desc:"<i>Turns out the bonus walls weren't the last thing we have to face, for the Ten Walls of Space lie beyond them.</i><br> <br>Destroy space wall #9 and move on to the next one.<br>Gives <b>200 billion</b> bricks and <b>100 sextillion</b> cash.<br>Gives <b>10</b> space bricks and unlocks <b>space research</b>.<br> <br>Note: space bricks cannot be kept through resets.<br>Worth <b>25</b> cosmic knowledge."
-  cost:400000000000000000000000 totalMoney, 1 wallRequirement
+  cost:400000000000000000000000 totalMoney
   on earn:
     gain 100000000000000000000000 money
     gain 200000000000 bricks
@@ -663,8 +644,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -672,7 +652,7 @@ Buildings
   req:1 destroyBonusWall10
   *destroyBonusWall12
   desc:"Destroy space wall #8 and move on to the next one.<br>Gives <b>400 billion</b> bricks and <b>200 sextillion</b> cash.<br>Gives <b>10</b> space bricks.<br>Worth <b>25</b> cosmic knowledge."
-  cost:800000000000000000000000 totalMoney, 1 wallRequirement
+  cost:800000000000000000000000 totalMoney
   on earn:
     gain 200000000000000000000000 money
     gain 400000000000 bricks
@@ -680,8 +660,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -689,7 +668,7 @@ Buildings
   req:1 destroyBonusWall11
   *destroyBonusWall13
   desc:"Destroy space wall #7 and move on to the next one.<br>Gives <b>800 billion</b> bricks and <b>400 sextillion</b> cash.<br>Gives <b>10</b> space bricks.<br>Worth <b>50</b> cosmic knowledge."
-  cost:1600000000000000000000000 totalMoney, 1 wallRequirement
+  cost:1600000000000000000000000 totalMoney
   on earn:
     gain 400000000000000000000000 money
     gain 800000000000 bricks
@@ -697,8 +676,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -706,7 +684,7 @@ Buildings
   req:1 destroyBonusWall12
   *destroyBonusWall14
   desc:"Destroy space wall #6 and move on to the next one.<br>Gives <b>1.6 trillion</b> bricks and <b>800 sextillion</b> cash.<br>Gives <b>10</b> space bricks.<br>Worth <b>50</b> cosmic knowledge."
-  cost:3200000000000000000000000 totalMoney, 1 wallRequirement
+  cost:3200000000000000000000000 totalMoney
   on earn:
     gain 800000000000000000000000 money
     gain 1600000000000 bricks
@@ -714,8 +692,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -723,7 +700,7 @@ Buildings
   req:1 destroyBonusWall13
   *destroyBonusWall15
   desc:"Destroy space wall #5 and move on to the next one.<br>Gives <b>3.2 trillion</b> bricks and <b>1.6 septillion</b> cash.<br>Gives <b>10</b> space bricks.<br>Worth <b>75</b> cosmic knowledge."
-  cost:6400000000000000000000000 totalMoney, 1 wallRequirement
+  cost:6400000000000000000000000 totalMoney
   on earn:
     gain 1600000000000000000000000 money
     gain 3200000000000 bricks
@@ -731,8 +708,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -740,7 +716,7 @@ Buildings
   req:1 destroyBonusWall14
   *destroyBonusWall16
   desc:"Destroy space wall #4 and move on to the next one.<br>Gives <b>6.4 trillion</b> bricks and <b>3.2 septillion</b> cash.<br>Gives <b>10</b> space bricks.<br>Worth <b>75</b> cosmic knowledge."
-  cost:12800000000000000000000000 totalMoney, 1 wallRequirement
+  cost:12800000000000000000000000 totalMoney
   on earn:
     gain 3200000000000000000000000 money
     gain 6400000000000 bricks
@@ -748,8 +724,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -757,7 +732,7 @@ Buildings
   req:1 destroyBonusWall15
   *destroyBonusWall17
   desc:"Destroy space wall #3 and move on to the next one.<br>Gives <b>12.8 trillion</b> bricks and <b>6.4 septillion</b> cash.<br>Gives <b>15</b> space bricks.<br>Worth <b>100</b> cosmic knowledge."
-  cost:25600000000000000000000000 totalMoney, 1 wallRequirement
+  cost:25600000000000000000000000 totalMoney
   on earn:
     gain 6400000000000000000000000 money
     gain 12800000000000 bricks
@@ -765,8 +740,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -774,7 +748,7 @@ Buildings
   req:1 destroyBonusWall16
   *destroyBonusWall18
   desc:"Destroy space wall #2 and move on to the next one.<br>Gives <b>25 trillion</b> bricks and <b>12.8 septillion</b> cash.<br>Gives <b>15</b> space bricks.<br>Worth <b>100</b> cosmic knowledge."
-  cost:51200000000000000000000000 totalMoney, 1 wallRequirement
+  cost:51200000000000000000000000 totalMoney
   on earn:
     gain 12800000000000000000000000 money
     gain 25600000000000 bricks
@@ -782,8 +756,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -791,7 +764,7 @@ Buildings
   req:1 destroyBonusWall17
   *destroyBonusWall19
   desc:"Destroy space wall #1 and move on to the boss.<br>Gives <b>50 trillion</b> bricks and <b>25 septillion</b> cash.<br>Gives <b>20</b> space bricks.<br>Worth <b>150</b> cosmic knowledge."
-  cost:102400000000000000000000000 totalMoney, 1 wallRequirement
+  cost:102400000000000000000000000 totalMoney
   on earn:
     gain 25600000000000000000000000 money
     gain 51200000000000 bricks
@@ -799,8 +772,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 150 prePrestige
     gain 20 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -808,7 +780,7 @@ Buildings
   req:1 destroyBonusWall18
   *destroyBonusWall20
   desc:"Destroy the boss space wall.<br>Gives <b>150 trillion</b> bricks and <b>75 septillion</b> cash.<br>Gives <b>40</b> space bricks; <b>1</b> boss brick.<br>Worth <b>250</b> cosmic knowledge."
-  cost:300000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:300000000000000000000000000 totalMoney
   on earn:
     gain 75000000000000000000000000 money
     gain 150000000000000 bricks
@@ -818,8 +790,7 @@ Buildings
     gain 1 goldBricks
     gain 1 spaceBossBrick
     gain 40 spaceBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -827,7 +798,7 @@ Buildings
   req:1 destroyBonusWall19
   *destroyBonusWall21
   desc:"<i>"What lunatic built all these walls, anyway?!" ~Agent Carter<br>We now face the Ten Walls of Time.<br>These better be the last ones.</i><br> <br>Destroy time wall #9 and move on to the next.<br>Gives <b>400 trillion</b> bricks and <b>200 septillion</b> cash.<br>Gives <b>5</b> time bricks and unlocks the <b>time upgrades</b>.<br>Worth <b>250</b> cosmic knowledge.<br> <br>Note: time bricks also cannot be kept through resets."
-  cost:800000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:800000000000000000000000000 totalMoney
   on earn:
     gain 200000000000000000000000000 money
     gain 400000000000000 bricks
@@ -835,8 +806,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 250 prePrestige
     gain 5 timeBricks
-    gain 1 wallRequirement
-    gain 1 timeUpgradeProd
+      gain 1 timeUpgradeProd
     hide this
   end
   tag:loseonreset
@@ -845,7 +815,7 @@ Buildings
   req:1 destroyBonusWall20
   *destroyBonusWall22
   desc:"Destroy time wall #8 and move on to the next.<br>Gives <b>800 trillion</b> bricks and <b>400 septillion</b> cash.<br>Gives <b>5</b> time bricks.<br>Worth <b>250</b> cosmic knowledge."
-  cost:1600000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:1600000000000000000000000000 totalMoney
   on earn:
     gain 400000000000000000000000000 money
     gain 800000000000000 bricks
@@ -853,8 +823,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 250 prePrestige
     gain 5 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -862,7 +831,7 @@ Buildings
   req:1 destroyBonusWall21
   *destroyBonusWall23
   desc:"Destroy time wall #7 and move on to the next.<br>Gives <b>1.6 quadrillion</b> bricks and <b>800 septillion</b> cash.<br>Gives <b>5</b> time bricks.<br>Worth <b>500</b> cosmic knowledge."
-  cost:3200000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:3200000000000000000000000000 totalMoney
   on earn:
     gain 800000000000000000000000000 money
     gain 1600000000000000 bricks
@@ -870,8 +839,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -879,7 +847,7 @@ Buildings
   req:1 destroyBonusWall22
   *destroyBonusWall24
   desc:"Destroy time wall #6 and move on to the next.<br>Gives <b>3.2 quadrillion</b> bricks and <b>1.6 octillion</b> cash.<br>Gives <b>5</b> time bricks.<br>Worth <b>500</b> cosmic knowledge."
-  cost:6400000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:6400000000000000000000000000 totalMoney
   on earn:
     gain 1600000000000000000000000000 money
     gain 3200000000000000 bricks
@@ -887,8 +855,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -896,7 +863,7 @@ Buildings
   req:1 destroyBonusWall23
   *destroyBonusWall25
   desc:"Destroy time wall #5 and move on to the next.<br>Gives <b>6.4 quadrillion</b> bricks and <b>3.2 octillion</b> cash.<br>Gives <b>6</b> time bricks.<br>Worth <b>750</b> cosmic knowledge."
-  cost:12800000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:12800000000000000000000000000 totalMoney
   on earn:
     gain 3200000000000000000000000000 money
     gain 6400000000000000 bricks
@@ -904,8 +871,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 6 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -913,7 +879,7 @@ Buildings
   req:1 destroyBonusWall24
   *destroyBonusWall26
   desc:"Destroy time wall #4 and move on to the next.<br>Gives <b>12.8 quadrillion</b> bricks and <b>6.4 octillion</b> cash.<br>Gives <b>7</b> time bricks.<br>Worth <b>750</b> cosmic knowledge."
-  cost:25600000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:25600000000000000000000000000 totalMoney
   on earn:
     gain 6400000000000000000000000000 money
     gain 12800000000000000 bricks
@@ -921,8 +887,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 7 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -930,7 +895,7 @@ Buildings
   req:1 destroyBonusWall25
   *destroyBonusWall27
   desc:"Destroy time wall #3 and move on to the next.<br>Gives <b>25 quadrillion</b> bricks and <b>12.8 octillion</b> cash.<br>Gives <b>8</b> time bricks.<br>Worth <b>1,000</b> cosmic knowledge."
-  cost:51200000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:51200000000000000000000000000 totalMoney
   on earn:
     gain 12800000000000000000000000000 money
     gain 25600000000000000 bricks
@@ -938,8 +903,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 8 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -947,7 +911,7 @@ Buildings
   req:1 destroyBonusWall26
   *destroyBonusWall28
   desc:"Destroy time wall #2 and move on to the next.<br>Gives <b>50 quadrillion</b> bricks and <b>25 octillion</b> cash.<br>Gives <b>9</b> time bricks.<br>Worth <b>1,000</b> cosmic knowledge."
-  cost:102400000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:102400000000000000000000000000 totalMoney
   on earn:
     gain 25600000000000000000000000000 money
     gain 51200000000000000 bricks
@@ -955,8 +919,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 9 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -964,7 +927,7 @@ Buildings
   req:1 destroyBonusWall27
   *destroyBonusWall29
   desc:"Destroy time wall #1 and move on to the boss.<br>Gives <b>102 quadrillion</b> bricks and <b>51 octillion</b> cash.<br>Gives <b>10</b> time bricks.<br>Worth <b>1,500</b> cosmic knowledge."
-  cost:204800000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:204800000000000000000000000000 totalMoney
   on earn:
     gain 51200000000000000000000000000 money
     gain 102400000000000000 bricks
@@ -972,8 +935,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1500 prePrestige
     gain 10 timeBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -981,7 +943,7 @@ Buildings
   req:1 destroyBonusWall28
   *destroyBonusWall30
   desc:"Destroy the boss time wall.<br>Gives <b>250 quadrillion</b> bricks and <b>150 octillion</b> cash.<br>Gives <b>15</b> time bricks and <b>1</b> boss brick.<br>Worth <b>2,500</b> cosmic knowledge."
-  cost:500000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:500000000000000000000000000000 totalMoney
   on earn:
     gain 150000000000000000000000000000 money
     gain 250000000000000000 bricks
@@ -991,8 +953,7 @@ Buildings
     gain 15 timeBricks
     gain 1 goldBricks
     gain 1 timeBossBrick
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -1000,7 +961,7 @@ Buildings
   req:1 destroyBonusWall29
   *destroyBonusWall31
   desc:"<i>Nope. The Ten Walls of The End rise up over the rubble of time. At least these are clearly the last ones.</i><br> <br>Destroy End Wall #9 and move on to the next one.<br>Gives <b>800 quadrillion</b> bricks and <b>400 octillion</b> cash.<br>Gives <b>2</b> End bricks and <b>100</b> space bricks; unlocks the <b>Deep Space Upgrades</b> and <b>The End Scrolls</b>.<br>Worth <b>2,500</b> cosmic knowledge.<br> <br>Note: End bricks cannot be kept through resets either."
-  cost:1600000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:1600000000000000000000000000000 totalMoney
   on earn:
     gain 400000000000000000000000000000 money
     gain 800000000000000000 bricks
@@ -1009,8 +970,7 @@ Buildings
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1018,7 +978,7 @@ Buildings
   req:1 destroyBonusWall30
   *destroyBonusWall32
   desc:"<i>We tried scanning the scrolls for age, and got "73 hours" from the scanner. The temple gave the same result. Probably had a broken scanner, especially since there are records of the temple dating back to 8,000 years ago.</i><br> <br>Destroy End Wall #8 and move on to the next one.<br>Gives <b>1.6 quintillion</b> bricks and <b>800 octillion</b> cash.<br>Gives <b>2</b> End bricks and <b>100</b> space bricks.<br>Worth <b>2,500</b> cosmic knowledge."
-  cost:3200000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:3200000000000000000000000000000 totalMoney
   on earn:
     gain 800000000000000000000000000000 money
     gain 1600000000000000000 bricks
@@ -1027,8 +987,7 @@ Buildings
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1036,7 +995,7 @@ Buildings
   req:1 destroyBonusWall31
   *destroyBonusWall33
   desc:"<i>Scanning shows that the scrolls are made of regular fabric, making it strange that they are perfectly preserved.</i><br> <br>Destroy End Wall #7 and move on to the next one.<br>Gives <b>3.2 quintillion</b> bricks and <b>1.6 nonillion</b> cash.<br>Gives <b>2</b> End bricks and <b>100</b> space bricks.<br>Worth <b>5,000</b> cosmic knowledge."
-  cost:6400000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:6400000000000000000000000000000 totalMoney
   on earn:
     gain 1600000000000000000000000000000 money
     gain 3200000000000000000 bricks
@@ -1045,8 +1004,7 @@ Buildings
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1054,7 +1012,7 @@ Buildings
   req:1 destroyBonusWall32
   *destroyBonusWall34
   desc:"<i>There's text on the outside of the temple that says "MIRRORAGE". Research suggests that it isn't even a real word.</i><br> <br>Destroy End Wall #6 and move on to the next one.<br>Gives <b>6.4 quintillion</b> bricks and <b>3.2 nonillion</b> cash.<br>Gives <b>2</b> End bricks and <b>100</b> space bricks.<br>Worth <b>5,000</b> cosmic knowledge."
-  cost:12800000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:12800000000000000000000000000000 totalMoney
   on earn:
     gain 3200000000000000000000000000000 money
     gain 6400000000000000000 bricks
@@ -1063,8 +1021,7 @@ Buildings
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1072,7 +1029,7 @@ Buildings
   req:1 destroyBonusWall33
   *destroyBonusWall35
   desc:"<i>Along with the scrolls, there were also sheets of paper with quotes written on them. We can list some of those here.</i><br> <br>Destroy End Wall #5 and move on to the next one.<br>Gives <b>12.8 quintillion</b> bricks and <b>6.4 nonillion</b> cash.<br>Gives <b>2</b> End bricks and <b>150</b> space bricks.<br>Worth <b>7,500</b> cosmic knowledge."
-  cost:25600000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:25600000000000000000000000000000 totalMoney
   on earn:
     gain 6400000000000000000000000000000 money
     gain 12800000000000000000 bricks
@@ -1081,8 +1038,7 @@ Buildings
     gain 7500 prePrestige
     gain 150 spaceBricks
     gain 2 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1090,7 +1046,7 @@ Buildings
   req:1 destroyBonusWall34
   *destroyBonusWall36
   desc:"<i>"Where's logic in this equation?" ~#8</i><br> <br>Destroy End Wall #4 and move on to the next one.<br>Gives <b>25 quintillion</b> bricks and <b>12.8 nonillion</b> cash.<br>Gives <b>2</b> End bricks and <b>150</b> space bricks.<br>Worth <b>10,000</b> cosmic knowledge."
-  cost:51200000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:51200000000000000000000000000000 totalMoney
   on earn:
     gain 12800000000000000000000000000000 money
     gain 25600000000000000000 bricks
@@ -1099,8 +1055,7 @@ Buildings
     gain 10000 prePrestige
     gain 150 spaceBricks
     gain 3 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1108,7 +1063,7 @@ Buildings
   req:1 destroyBonusWall35
   *destroyBonusWall37
   desc:"<i>"If you think about it, everything is unfinished. Nothing is truly left without questions." ~Lord Reaefsek</i><br> <br>Destroy End Wall #3 and move on to the next one.<br>Gives <b>51 quintillion</b> bricks and <b>25 nonillion</b> cash.<br>Gives <b>3</b> End bricks and <b>200</b> space bricks.<br>Worth <b>10,000</b> cosmic knowledge."
-  cost:102400000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:102400000000000000000000000000000 totalMoney
   on earn:
     gain 25600000000000000000000000000000 money
     gain 51200000000000000000 bricks
@@ -1117,8 +1072,7 @@ Buildings
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 3 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1126,7 +1080,7 @@ Buildings
   req:1 destroyBonusWall36
   *destroyBonusWall38
   desc:"<i>"It's pretty clear The King is insane, but what are we gonna do, fight him?" ~#14</i><br> <br>Destroy End Wall #2 and move on to the next one.<br>Gives <b>102 quintillion</b> bricks and <b>51 nonillion</b> cash.<br>Gives <b>3</b> End bricks and <b>200</b> space bricks.<br>Worth <b>10,000</b> cosmic knowledge."
-  cost:204800000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:204800000000000000000000000000000 totalMoney
   on earn:
     gain 51200000000000000000000000000000 money
     gain 102400000000000000000 bricks
@@ -1135,8 +1089,7 @@ Buildings
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 4 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1144,7 +1097,7 @@ Buildings
   req:1 destroyBonusWall37
   *destroyBonusWall39
   desc:"<i>"What, his face broke? I can fix that." ~#10</i><br> <br>Destroy End Wall #1 and move on to the boss.<br>Gives <b>204 quintillion</b> bricks and <b>102 nonillion</b> cash.<br>Gives <b>4</b> End bricks and <b>250</b> space bricks.<br>Worth <b>12,500</b> cosmic knowledge."
-  cost:409600000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:409600000000000000000000000000000 totalMoney
   on earn:
     gain 102400000000000000000000000000000 money
     gain 204800000000000000000 bricks
@@ -1153,8 +1106,7 @@ Buildings
     gain 12500 prePrestige
     gain 250 spaceBricks
     gain 4 endBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1162,7 +1114,7 @@ Buildings
   req:1 destroyBonusWall38
   *destroyBonusWall40
   desc:"<i>"There goes a rapture." ~#17</i><br> <br>Destroy the Boss End Wall.<br>Gives <b>500 quintillion</b> bricks and <b>250 nonillion</b> cash.<br>Gives <b>5</b> End bricks, <b>500</b> space bricks and <b>1</b> boss brick.<br>Worth <b>25,000</b> cosmic knowledge."
-  cost:1000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:1000000000000000000000000000000000 totalMoney
   on earn:
     gain 250000000000000000000000000000000 money
     gain 500000000000000000000 bricks
@@ -1173,8 +1125,7 @@ Buildings
     gain 9 endBricks
     gain 1 goldBricks
     gain 1 endBossBrick
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -1182,7 +1133,7 @@ Buildings
   req:1 destroyBonusWall39
   *destroyBonusWall41
   desc:"<i>Should've seen this coming.</i><br> <br>Destroy Finality Wall Delta and move on to the next.<br>Gives <b>2 sextillion</b> bricks and <b>1 decillion</b> cash.<br>Gives <b>1</b> Finality Brick and <b>50</b> time bricks; unlocks the <b>deep time upgrades</b> (which unlock randomly over time, again) and <b>The Finality Scrolls</b>.<br>Worth <b>25,000</b> cosmic knowledge.<br> <br>Note: You guessed it, Finality Bricks cannot be kept through resets."
-  cost:4000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:4000000000000000000000000000000000 totalMoney
   on earn:
     gain 1000000000000000000000000000000000 money
     gain 2000000000000000000000 bricks
@@ -1192,8 +1143,7 @@ Buildings
     gain 50 timeBricks
     gain 1 finalityBricks
     gain 1 endBossBrick
-    gain 1 wallRequirement
-    gain 1 timeUpgradeProd2
+      gain 1 timeUpgradeProd2
     hide this
   end
   tag:loseonreset
@@ -1202,7 +1152,7 @@ Buildings
   req:1 destroyBonusWall40
   *destroyBonusWall42
   desc:"Destroy Finality Wall Gamma and move on to the next.<br>Gives <b>8 sextillion</b> bricks and <b>4 decillion</b> cash.<br>Gives <b>1</b> Finality Brick and <b>75</b> time bricks.<br>Worth <b>50,000</b> cosmic knowledge."
-  cost:16000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:16000000000000000000000000000000000 totalMoney
   on earn:
     gain 1000000000000000000000000000000000 money
     gain 2000000000000000000000 bricks
@@ -1211,8 +1161,7 @@ Buildings
     gain 50000 prePrestige
     gain 75 timeBricks
     gain 1 finalityBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1220,7 +1169,7 @@ Buildings
   req:1 destroyBonusWall41
   *destroyBonusWall43
   desc:"Destroy Finality Wall Beta and move on to the next.<br>Gives <b>32 sextillion</b> bricks and <b>16 decillion</b> cash.<br>Gives <b>1</b> Finality Brick and <b>125</b> time bricks.<br>Worth <b>75,000</b> cosmic knowledge."
-  cost:64000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:64000000000000000000000000000000000 totalMoney
   on earn:
     gain 16000000000000000000000000000000000 money
     gain 32000000000000000000000 bricks
@@ -1229,8 +1178,7 @@ Buildings
     gain 75000 prePrestige
     gain 125 timeBricks
     gain 1 finalityBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1238,7 +1186,7 @@ Buildings
   req:1 destroyBonusWall42
   *destroyBonusWall44
   desc:"Destroy Finality Wall Alpha and move on to the final boss.<br>Gives <b>128 sextillion</b> bricks and <b>64 decillion</b> cash.<br>Gives <b>2</b> Finality Bricks and <b>175</b> time bricks.<br>Worth <b>150,000</b> cosmic knowledge."
-  cost:256000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:256000000000000000000000000000000000 totalMoney
   on earn:
     gain 64000000000000000000000000000000000 money
     gain 128000000000000000000000 bricks
@@ -1247,8 +1195,7 @@ Buildings
     gain 150000 prePrestige
     gain 175 timeBricks
     gain 2 finalityBricks
-    gain 1 wallRequirement
-    hide this
+      hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1256,7 +1203,7 @@ Buildings
   req:1 destroyBonusWall43
   *destroyBonusWall45
   desc:"Destroy the Boss Finality Wall, and claim true victory.<br>Gives <b>2 septillion</b> bricks and <b>1 undecillion</b> cash.<br>Gives <b>1</b> boss brick, <b>4</b> Finality Bricks, <b>40</b> End bricks, <b>500</b> time bricks, and <b>5,000</b> space bricks.<br>Worth <b>600,000</b> cosmic knowledge.<br>Unlocks any time upgrades that were not already unlocked."
-  cost:5000000000000000000000000000000000000 totalMoney, 1 wallRequirement
+  cost:5000000000000000000000000000000000000 totalMoney
   on earn:
     gain 1000000000000000000000000000000000000 money
     gain 2000000000000000000000000 bricks
@@ -1269,8 +1216,7 @@ Buildings
     gain 4 finalityBricks
     gain 1 goldBricks
     gain 1 winBricks
-    gain 1 wallRequirement
-    if (timesActuallyWon > 0) gain 1 timeUpgradeProd3
+      if (timesActuallyWon > 0) gain 1 timeUpgradeProd3
     hide this
     show timeUpgrade2
     show timeUpgrade3
@@ -1295,6 +1241,7 @@ Buildings
   tag:loseonreset
   class:bonuswallboss
   name:Destroy Boss Finality Wall
+  req:1 destroyBonusWall44
 
   *timeUpgradeProd
   always hidden
@@ -1340,6 +1287,7 @@ Buildings
   name:Puncher|Punchers
   tags:building loseonreset
   class:puncher
+  icon:http://i.imgur.com/amBI8wT.png
   shown
 
   *clubber
@@ -1414,7 +1362,7 @@ Buildings
   on lose:lose 1 building
   tags:building loseonreset
   name:Wrecking Ball|Wrecking Balls
-  class:wreckingBall
+  class:wreckingball
   shown
 
   *bulldozer
