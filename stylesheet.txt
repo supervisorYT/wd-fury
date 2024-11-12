@@ -1,5 +1,5 @@
-body
-	{background:#58c4b1;
+#game
+	{background-color:#58c4b1;
 	color:#a2cfc4;
 	font-family: Kavoon;}
 #title
