@@ -6,6 +6,10 @@ body
 	{position: fixed;
 	width: 250px;
 	left: 320px;}
+.box
+   {
+	float: left;
+   }
 #box-clickables
 	{position: fixed;
 	width: 250px;

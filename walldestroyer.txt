@@ -1286,7 +1286,6 @@ Buildings
   name:Puncher|Punchers
   tags:building loseonreset
   class:puncher
-  icon:http://i.imgur.com/amBI8wT.png
   shown
 
   *clubber
