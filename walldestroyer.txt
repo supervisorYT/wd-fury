@@ -8,7 +8,7 @@ Let's make a game!
 Settings
   building cost increase:110%
   building cost refund:75%
-  stylesheet:https://raw.githubusercontent.com/Qjuh/walldestroyer/refs/head/main/walldestroyer.css
+  stylesheet:https://raw.githubusercontent.com/Qjuh/walldestroyer/refs/head/main/stylesheet.txt
 
 Layout
   *main

@@ -1,7 +1,6 @@
 body
 	{background:#58c4b1;
 	color:#a2cfc4;
-	text-color:black;
 	font-family: Kavoon;}
 #title
 	{position: fixed;
@@ -98,7 +97,7 @@ body
 	top: 5px;
 	font-size: 18px;
 	font-weight: bold;}
-.wall .cost, .bonuswall .cost, .bonuswallboss .cost, .tag-building .cost,
+.wall .cost, .bonuswall .cost, .bonuswallboss .cost, .tag-building .cost
 	{font-size: 0px;}
 .wall .cost:nth-child(2), .bonuswall .cost:nth-child(2), .bonuswallboss .cost:nth-child(2)
 	{display: none;}
