@@ -27,7 +27,7 @@ Layout
     contains:upgrades, buildings
   
   *buildings
-    contains:Items, BulkDisplay, Buildings
+    contains:BulkDisplay, Buildings
   
   *upgrades
     contains:Upgrades
@@ -396,7 +396,15 @@ Buttons
   name:Convert all damage to cosmic knowledge
   req:have damageConvUnlock
 
-Items
+Buildings
+
+  *timeCounter
+  on tick:
+    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
+    gain 0.016666666666666666666666666666 timePlayed
+  end
+  always hidden
+  start with:1
 
   *destroyWall
   desc:"Destroy the wall and move on to a bigger one.<br>Gives <b>25</b> bricks.<br>Awards <b>250,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
@@ -407,7 +415,7 @@ Items
     gain 25 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-      hide this
+    hide this
   end
   name:Destroy wall
   tag:loseonreset
@@ -422,7 +430,7 @@ Items
     gain 100 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-      hide this
+    hide this
   end
   name:Destroy 2nd wall
   req:1 destroyWall
@@ -437,7 +445,7 @@ Items
     gain 10000 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-      hide this
+    hide this
   end
   name:Destroy 3rd wall
   req:1 destroyBigWall
@@ -452,8 +460,7 @@ Items
     gain 250000 totalBricks
     gain 1 wallsDestroyed
     gain 2 prePrestige
-      hide this
-//        show fourthWallUnlock
+    hide this
   end
   tag:loseonreset
   name:Destroy 4th wall
@@ -468,7 +475,7 @@ Items
     gain 1 goldBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:wall
@@ -483,7 +490,7 @@ Items
     gain 100000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -498,7 +505,7 @@ Items
     gain 250000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -513,7 +520,7 @@ Items
     gain 500000000 totalBricks
     gain 1 wallsDestroyed
     gain 6 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -528,7 +535,7 @@ Items
     gain 1000000000 totalBricks
     gain 1 wallsDestroyed
     gain 7 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -543,7 +550,7 @@ Items
     gain 2000000000 totalBricks
     gain 1 wallsDestroyed
     gain 8 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -558,7 +565,7 @@ Items
     gain 4000000000 totalBricks
     gain 1 wallsDestroyed
     gain 9 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -573,7 +580,7 @@ Items
     gain 8000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -588,7 +595,7 @@ Items
     gain 16000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -603,7 +610,7 @@ Items
     gain 32000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -620,7 +627,7 @@ Items
     gain 20 prePrestige
     gain 1 goldBricks
     gain 1 bonusBossBrick
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -636,7 +643,7 @@ Items
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -652,7 +659,7 @@ Items
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -668,7 +675,7 @@ Items
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -684,7 +691,7 @@ Items
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -700,7 +707,7 @@ Items
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -716,7 +723,7 @@ Items
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -732,7 +739,7 @@ Items
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -748,7 +755,7 @@ Items
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -764,7 +771,7 @@ Items
     gain 1 wallsDestroyed
     gain 150 prePrestige
     gain 20 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -782,7 +789,7 @@ Items
     gain 1 goldBricks
     gain 1 spaceBossBrick
     gain 40 spaceBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -815,7 +822,7 @@ Items
     gain 1 wallsDestroyed
     gain 250 prePrestige
     gain 5 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -831,7 +838,7 @@ Items
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -847,7 +854,7 @@ Items
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -863,7 +870,7 @@ Items
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 6 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -879,7 +886,7 @@ Items
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 7 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -895,7 +902,7 @@ Items
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 8 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -911,7 +918,7 @@ Items
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 9 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -927,7 +934,7 @@ Items
     gain 1 wallsDestroyed
     gain 1500 prePrestige
     gain 10 timeBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -945,7 +952,7 @@ Items
     gain 15 timeBricks
     gain 1 goldBricks
     gain 1 timeBossBrick
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -962,7 +969,7 @@ Items
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -979,7 +986,7 @@ Items
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -996,7 +1003,7 @@ Items
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1013,7 +1020,7 @@ Items
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1030,7 +1037,7 @@ Items
     gain 7500 prePrestige
     gain 150 spaceBricks
     gain 2 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1047,7 +1054,7 @@ Items
     gain 10000 prePrestige
     gain 150 spaceBricks
     gain 3 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1064,7 +1071,7 @@ Items
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 3 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1081,7 +1088,7 @@ Items
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 4 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1098,7 +1105,7 @@ Items
     gain 12500 prePrestige
     gain 250 spaceBricks
     gain 4 endBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1117,7 +1124,7 @@ Items
     gain 9 endBricks
     gain 1 goldBricks
     gain 1 endBossBrick
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswallboss
@@ -1153,7 +1160,7 @@ Items
     gain 50000 prePrestige
     gain 75 timeBricks
     gain 1 finalityBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1170,7 +1177,7 @@ Items
     gain 75000 prePrestige
     gain 125 timeBricks
     gain 1 finalityBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1187,7 +1194,7 @@ Items
     gain 150000 prePrestige
     gain 175 timeBricks
     gain 2 finalityBricks
-      hide this
+    hide this
   end
   tag:loseonreset
   class:bonuswall
@@ -1234,16 +1241,6 @@ Items
   class:bonuswallboss
   name:Destroy Boss Finality Wall
   req:1 destroyBonusWall44
-
-Buildings
-
-  *timeCounter
-  on tick:
-    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
-    gain 0.016666666666666666666666666666 timePlayed
-  end
-  always hidden
-  start with:1
 
   *timeUpgradeProd
   always hidden
