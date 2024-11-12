@@ -16,14 +16,12 @@ Layout
 
   *clickables
     contains:Buttons
+    names:hide
 
   *resources
     contains:Resources
     header:Resources
-  
-  *stats
-    contains:Achievements
-    header:Achievements
+    no tooltip
    
   *store
     contains:upgrades, buildings
@@ -44,6 +42,7 @@ Resources
         name:cash
         tag:loseonreset
         shown
+        class:money
  
         *totalMoney
         name:damage
@@ -425,6 +424,7 @@ Buildings
   end
   name:Destroy wall
   tag:loseonreset
+  class:wall
   shown
   *destroyBigWall
   desc:"Destroy the big 2nd wall and move on to a bigger one.<br>Gives <b>100</b> bricks.<br>Awards <b>25,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
@@ -441,6 +441,7 @@ Buildings
   name:Destroy 2nd wall
   req:1 destroyWall
   tag:loseonreset
+  class:wall
   *destroyHugeWall
   desc:"Destroy the huge 3rd wall and move on to a bigger one.<br>Gives <b>10,000</b> bricks.<br>Awards <b>2,500,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
   cost:10000000000000000 totalMoney, 1 wallRequirement
@@ -456,6 +457,7 @@ Buildings
   name:Destroy 3rd wall
   req:1 destroyBigWall
   tag:loseonreset
+  class:wall
   *destroyMassiveWall
   desc:"Destroy the massive 4th wall and move on to the final one.<br>Gives <b>250,000</b> bricks.<br>Awards <b>250,000,000,000,000,000</b> cash.<br>Worth <b>2</b> cosmic knowledge."
   cost:1000000000000000000 totalMoney, 1 wallRequirement
@@ -486,6 +488,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   name:Destroy final wall
   req:1 destroyMassiveWall
   *destroyBonusWall
@@ -1335,8 +1338,8 @@ Buildings
   on earn:gain 1 building
   on lose:lose 1 building
   name:Puncher|Punchers
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
+  class:puncher
   shown
 
   *clubber
@@ -1349,9 +1352,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Clubber|Clubbers
+  class:clubber
   shown
 
   *swordsman
@@ -1364,9 +1367,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Swordsman|Swordsmen
+  class:swordsman
   shown
 
     *gunner
@@ -1379,9 +1382,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Gunshooter|Gunshooters
+  class:gunner
   shown
 
   *grenade
@@ -1394,9 +1397,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Grenademan|Grenademen
+  class:grenade
   shown
 
   *wreckingBall
@@ -1409,9 +1412,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Wrecking Ball|Wrecking Balls
+  class:wreckingBall
   shown
 
   *bulldozer
@@ -1424,9 +1427,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Bulldozer|Bulldozers
+  class:bulldozer
   shown
 
   *airstrike
@@ -1439,9 +1442,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Airstrike Caller|Airstrike Callers
+  class:airstrike
   shown
 
   *necromancer
@@ -1454,9 +1457,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Necromancer|Necromancers
+  class:necromancer
   req:magicUnlock
   
   *giant
@@ -1469,9 +1472,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Titan|Titans
+  class:giant
   req:giantUnlock
 
   *demon
@@ -1484,9 +1487,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Demon|Demons
+  class:demon
   req:magicLevel3
 
   *compromiser
@@ -1501,8 +1504,8 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
+  class:compromiser
   name:Reality Compromiser|Reality Compromisers
   req:fourthWallUnlock
 
@@ -1516,9 +1519,9 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Black Obliterator|Black Obliterators
+  class:lastBuilding
   req:finalWallUnlock
 
   *brickFactory
@@ -1530,10 +1533,10 @@ Buildings
   end
   on earn:gain 1 building
   on lose:lose 1 building
-  tag:building
-  tag:loseonreset
+  tags:building loseonreset
   name:Brick Factory|Brick Factories
   req:3 wallsDestroyed
+  class:brickFactory
   req:magicLevel2
 
 Upgrades

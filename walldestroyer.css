@@ -7,7 +7,7 @@ body
 	{position: fixed;
 	width: 250px;
 	left: 320px;}
-#clickables
+#box-clickables
 	{position: fixed;
 	width: 250px;
 	left: 320px;
@@ -15,9 +15,7 @@ body
 	bottom: 48%;
 	overflow-x: none;
 	overflow-y: auto;}
-#clickableTitle
-	{display: none;}
-#resources
+#box-resources
 	{position: fixed;
 	left: 590px;
 	right: 300px;
@@ -27,26 +25,26 @@ body
 	background:#a2cfc4;
 	color:#304846;
 	overflow: auto;}
-#resource-money
+.money
 	{font-size: 20px;}
 .veryimportantresource
 	{font-size: 18px;}
 .importantresource
 	{font-size: 16px;}
-#upgrades
+#box-upgrades
 	{background:#a2cfc4;
 	color:#304846;
 	height: auto;
 	right: 1%;
 	top: 2%;
 	padding-bottom: 200px;}
-.upgrade
+.box-things-Upgrades .thing
 	{margin: 1px;}
-.bought
+.box-things-Upgrades .owned
 	{font-size: 0px;
 	margin: 2px;
 	padding: 0px;}
-.upgrade .upgradeType
+.box-things-Upgrades .thing-text
 	{font-weight: bold;}
 #achievements
  	{position: fixed;
@@ -73,7 +71,7 @@ body
 #achievement-dummy:active
 	{background: rgba(0, 0, 0, 0);
 	box-shadow: none;}
-#buildings
+#box-buildings
 	{position: fixed;
 	top: 28px;
 	bottom: 30px;
@@ -84,35 +82,33 @@ body
 	color:#304846;
 	overflow-x: none;
 	overflow-y: auto;}
-#buildingTitle
-	{display:none;}
-#building-destroywall .amount, #building-destroybigwall .amount, #building-destroyhugewall .amount, #building-destroymassivewall .amount, #building-destroyfinalwall .amount, .bonuswall .amount, .bonuswallboss .amount
+.wall .amount, .bonuswall .amount, .bonuswallboss .amount
 	{font-size: 0px;}
-#building-puncher .buildingType, #building-clubber .buildingType, #building-swordsman .buildingType, #building-gunner .buildingType, #building-grenade .buildingType, #building-wreckingball .buildingType, #building-bulldozer .buildingType, #building-airstrike .buildingType, #building-necromancer .buildingType, #building-giant .buildingType, #building-demon .buildingType, #building-lastbuilding .buildingType, #building-brickfactory .buildingType
+.tag-building .thing-text
 	{font-size: 18px;
 	font-weight: bold;}
-#building-compromiser .buildingType
+.compromiser .thing-text
 	{font-size: 16px; 
 	font-weight: bold;
 	padding-top: 2px;}
-#building-puncher .amount, #building-clubber .amount, #building-swordsman .amount, #building-gunner .amount, #building-grenade .amount, #building-wreckingball .amount, #building-bulldozer .amount, #building-airstrike .amount, #building-necromancer .amount, #building-giant .amount, #building-demon .amount, #building-compromiser .amount, #building-lastbuilding .amount, #building-brickfactory .amount
+.tag-building .amount
 	{position: absolute;
 	float:right;
 	right: 5px;
 	top: 5px;
 	font-size: 18px;
 	font-weight: bold;}
-#building-destroywall .cost, #building-destroybigwall .cost, #building-destroyhugewall .cost, #building-destroymassivewall .cost, #building-destroyfinalwall .cost, .bonuswall .cost, .bonuswallboss .cost, #building-puncher .cost, #building-clubber .cost, #building-swordsman .cost, #building-gunner .cost, #building-grenade .cost, #building-wreckingball .cost, #building-bulldozer .cost, #building-airstrike .cost, #building-necromancer .cost, #building-giant .cost, #building-demon .cost, #building-compromiser .cost, #building-lastbuilding .cost, #building-brickfactory .cost
+.wall .cost, .bonuswall .cost, .bonuswallboss .cost, .tag-building .cost,
 	{font-size: 0px;}
-#building-destroywall .costs-wallrequirement, #building-destroybigwall .costs-wallrequirement, #building-destroyhugewall .costs-wallrequirement, #building-destroymassivewall .costs-wallrequirement, #building-destroyfinalwall .costs-wallrequirement, .bonuswall .costs-wallrequirement, .bonuswallboss .costs-wallrequirement
+.wall .cost:nth-child(2), .bonuswall .cost:nth-child(2), .bonuswallboss .cost:nth-child(2)
 	{display: none;}
-#building-destroywall .cost .amount, #building-destroybigwall .cost .amount, #building-destroyhugewall .cost .amount, #building-destroymassivewall .cost .amount, #building-destroyfinalwall .cost .amount, .bonuswall .cost .amount, .bonuswallboss .cost .amount
+.wall .cost, .bonuswall .cost, .bonuswallboss .cost
 	{position: static;
 	float: left;
 	font-size: 12px;
 	font-weight: normal;
 	padding-left: 4px;}
-#building-puncher .cost .amount, #building-clubber .cost .amount, #building-swordsman .cost .amount, #building-gunner .cost .amount, #building-grenade .cost .amount, #building-wreckingball .cost .amount, #building-bulldozer .cost .amount, #building-airstrike .cost .amount, #building-necromancer .cost .amount, #building-giant .cost .amount, #building-demon .cost .amount, #building-compromiser .cost .amount, #building-lastbuilding .cost .amount, #building-brickfactory .cost .amount
+.tag-building .cost .amount
 	{position: static;
 	float: left;
 	font-size: 12px;
@@ -126,26 +122,26 @@ body
 .sell
 	{position: absolute;
 	bottom: 5px;}
-#building-puncher, #building-clubber, #building-swordsman, #building-gunner, #building-grenade, #building-wreckingball, #building-bulldozer, #building-airstrike, #building-necromancer, #building-giant, #building-demon, #building-compromiser, #building-lastbuilding, #building-brickfactory
+.building
 	{background-repeat: no-repeat;
 	background-position: 3px 3px;
 	padding-left: 70px;
 	width: 217px;
 	min-height: 55px;}
-#building-puncher {background-image: url(http://i.imgur.com/amBI8wT.png);}
-#building-clubber {background-image: url(http://i.imgur.com/HVaisVj.png);}
-#building-swordsman {background-image: url(http://i.imgur.com/aPQuEKp.png);}
-#building-gunner {background-image: url(http://i.imgur.com/gCp304H.png);}
-#building-grenade {background-image: url(http://i.imgur.com/qW3aKwb.png);}
-#building-wreckingball {background-image: url(http://i.imgur.com/KfckHOw.png);}
-#building-bulldozer {background-image: url(http://i.imgur.com/U0GNz9b.png);}
-#building-airstrike {background-image: url(http://i.imgur.com/lnlhkQA.png);}
-#building-necromancer {background-image: url(http://i.imgur.com/A5USN4I.png);}
-#building-giant {background-image: url(http://i.imgur.com/zGpqQjB.png);}
-#building-demon {background-image: url(http://i.imgur.com/vf31RkB.png);}
-#building-compromiser {background-image: url(http://i.imgur.com/QRg0cK4.png);}
-#building-lastbuilding {background-image: url(http://i.imgur.com/mSWDezW.png);}
-#building-brickfactory {background-image: url(http://i.imgur.com/tjOxaGs.png);}
+.puncher {background-image: url(http://i.imgur.com/amBI8wT.png);}
+.clubber {background-image: url(http://i.imgur.com/HVaisVj.png);}
+.swordsman {background-image: url(http://i.imgur.com/aPQuEKp.png);}
+.gunner {background-image: url(http://i.imgur.com/gCp304H.png);}
+.grenade {background-image: url(http://i.imgur.com/qW3aKwb.png);}
+.wreckingball {background-image: url(http://i.imgur.com/KfckHOw.png);}
+.bulldozer {background-image: url(http://i.imgur.com/U0GNz9b.png);}
+.airstrike {background-image: url(http://i.imgur.com/lnlhkQA.png);}
+.necromancer {background-image: url(http://i.imgur.com/A5USN4I.png);}
+.giant {background-image: url(http://i.imgur.com/zGpqQjB.png);}
+.demon {background-image: url(http://i.imgur.com/vf31RkB.png);}
+.compromiser {background-image: url(http://i.imgur.com/QRg0cK4.png);}
+.lastbuilding {background-image: url(http://i.imgur.com/mSWDezW.png);}
+.brickfactory {background-image: url(http://i.imgur.com/tjOxaGs.png);}
 #building-destroywall, #building-destroybigwall, #building-destroyhugewall
 	{background-image: url(http://i.imgur.com/KfG2xNP.png);}
 #building-destroymassivewall {background-image: url(http://i.imgur.com/M88cRwn.png);}
@@ -183,18 +179,18 @@ body
 #building-destroybonuswall45
 	{color: #2b2b2b;
 	background-image: url(http://i.imgur.com/Ra5ULVg.png);}
-#building-destroywall, #building-destroybigwall, #building-destroyhugewall, #building-destroymassivewall, #building-destroyfinalwall, #building-destroybonuswall, #building-destroybonuswall2, #building-destroybonuswall3, #building-destroybonuswall4, #building-destroybonuswall5, #building-destroybonuswall6, #building-destroybonuswall7, #building-destroybonuswall8, #building-destroybonuswall9, #building-destroybonuswall10, #building-destroybonuswall11, #building-destroybonuswall12, #building-destroybonuswall13, #building-destroybonuswall14, #building-destroybonuswall15, #building-destroybonuswall16, #building-destroybonuswall17, #building-destroybonuswall18, #building-destroybonuswall19, #building-destroybonuswall20, #building-destroybonuswall21, #building-destroybonuswall22, #building-destroybonuswall23, #building-destroybonuswall24, #building-destroybonuswall25, #building-destroybonuswall26, #building-destroybonuswall27, #building-destroybonuswall28, #building-destroybonuswall29, #building-destroybonuswall30, #building-destroybonuswall31, #building-destroybonuswall32, #building-destroybonuswall33, #building-destroybonuswall34, #building-destroybonuswall35, #building-destroybonuswall36, #building-destroybonuswall37, #building-destroybonuswall38, #building-destroybonuswall39, #building-destroybonuswall40, #building-destroybonuswall41, #building-destroybonuswall42, #building-destroybonuswall43, #building-destroybonuswall44, #building-destroybonuswall45
+.wall, .bonuswall, .bonuswallboss
 	{background-repeat: no-repeat;
 	background-position: 5px 1px;
 	min-height: 100px;
 	width: 281px;}
-#building-destroywall .buildingType, #building-destroybigwall .buildingType, #building-destroyhugewall .buildingType, #building-destroymassivewall .buildingType, #building-destroyfinalwall .buildingType, .bonuswall .buildingType, .bonuswallboss .buildingType 
+.wall .thing-text, .bonuswall .thing-text, .bonuswallboss .thing-text
 	{font-size: 20px;
 	font-weight: bold;
 	padding-left: 4px;}
-#building-destroywall .cost .amount:after, #building-destroybigwall .cost .amount:after, #building-destroyhugewall .cost .amount:after, #building-destroymassivewall .cost .amount:after, #building-destroyfinalwall .cost .amount:after, .bonuswall .cost .amount:after, .bonuswallboss .cost .amount:after
+.wall .cost .amount:after, .bonuswall .cost .amount:after, .bonuswallboss .cost .amount:after
 	{content: " damage"}
-#log
+#box-log
 	{color: #664439;
 	background: #a2cfc4;
 	width: 300px;
