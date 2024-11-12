@@ -1714,7 +1714,7 @@ Upgrades
   name:Weight Relocation
   icon:http://i.imgur.com/frFPqZn.png
   req:have spaceResearch
-/*
+
   *deepSpaceResearch
   desc:"Unlocks the <b>deep space upgrades</b>.<br><i>"I can't even hold all these cosmic revelations!" ~Agent Johnson</i>"
   cost:500000000000000000000000000000 money, 50000000000000000 fourthWallMatter
@@ -1724,91 +1724,89 @@ Upgrades
   *spaceUpgrade11
   desc:"Melee buildings do <b>0.5%</b> more damage <b>per dream building</b>.<br><i>"Using more theoretical assumptions and dubious workarounds than any upgrade before, it is truly an RUC accomplishment." ~Agent Brown in the DCT proposal</i>"
   cost:100 spaceBricks
-  -multiply yield of puncher by 0.5% per compromiser
-  -multiply yield of clubber by 0.5% per compromiser
-  -multiply yield of swordsman by 0.5% per compromiser
-  -multiply yield of puncher by 0.5% per lastBuilding
-  -multiply yield of clubber by 0.5% per lastBuilding
-  -multiply yield of swordsman by 0.5% per lastBuilding
+  passive:
+    multiply yield of puncher by (1 + (0.005 * compromiser))
+    multiply yield of clubber by (1 + (0.005 * compromiser))
+    multiply yield of swordsman by (1 + (0.005 * compromiser))
+    multiply yield of puncher by (1 + (0.005 * lastBuilding))
+    multiply yield of clubber by (1 + (0.005 * lastBuilding))
+    multiply yield of swordsman by (1 + (0.005 * lastBuilding))
+  end
   name:Dreams Come True
   icon:http://i.imgur.com/uILIfAo.png
   req:have deepSpaceResearch
   *spaceUpgrade12
   desc:"Ranged buildings do <b>1.5%</b> more damage <b>per brick factory</b>.<br><i>A lost project we managed to recover. We don't know how it works, and our only documentation on it is the planned flavor text:<br>"Why does this require deep space knowledge, you ask? Well, [DATA CORRUPTED]"</i>"
   cost:100 spaceBricks
-  -multiply yield of gunner by 1.5% per brickFactory
-  -multiply yield of grenade by 1.5% per brickFactory
+  passive:
+    multiply yield of gunner by (1 + (0.015 * brickFactory))
+    multiply yield of grenade by (1 + (0.015 * brickFactory))
+  end
   name:Brickshot
   icon:http://i.imgur.com/kUbZIrt.png
   req:have deepSpaceResearch
   *spaceUpgrade13
   desc:"Wrecking balls do <b>0.1%</b> more damage <b>per building owned</b>.<br><i>Give or take.</i>"
   cost:100 spaceBricks
-  -multiply yield of wreckingBall by 0.1% per building
+  passive:multiply yield of wreckingBall by (1 + (0.001 * building))
   name:The Force Of A Thousand Balls
   icon:http://i.imgur.com/nESKwg1.png
   req:have deepSpaceResearch
   *spaceUpgrade14
   desc:"Melee, ranged, and heavy duty buildings do <b>0.3%</b> more damage <b>per reality compromiser</b>.<br><i>"Gravity? Physics? This is laaame." ~RC Project Leader in the FFR proposal</i>"
   cost:150 spaceBricks
-  -multiply yield of puncher by 0.3% per compromiser
-  -multiply yield of clubber by 0.3% per compromiser
-  -multiply yield of swordsman by 0.3% per compromiser
-  -multiply yield of gunner by 0.3% per compromiser
-  -multiply yield of grenade by 0.3% per compromiser
-  -multiply yield of wreckingBall by 0.3% per compromiser
-  -multiply yield of bulldozer by 0.3% per compromiser
-  -multiply yield of airstrike by 0.3% per compromiser
+  passive:
+    multiply yield of puncher by (1 + (0.003 * compromiser)
+    multiply yield of clubber by (1 + (0.003 * compromiser)
+    multiply yield of swordsman by (1 + (0.003 * compromiser)
+    multiply yield of gunner by (1 + (0.003 * compromiser)
+    multiply yield of grenade by (1 + (0.003 * compromiser)
+    multiply yield of wreckingBall by (1 + (0.003 * compromiser)
+    multiply yield of bulldozer by (1 + (0.003 * compromiser)
+    multiply yield of airstrike by (1 + (0.003 * compromiser)
+  end
   name:Freedom From Reality
   icon:http://i.imgur.com/ctiz8NH.png
   req:have deepSpaceResearch
   *spaceUpgrade15
   desc:"Brick factories are <b>25%</b> more efficient <b>per boss brick</b>.<br>Manual brick creation is <b>50%</b> more efficient <b>per boss brick</b>.<br><i>Of course the boss bricks are worth a ton of normal bricks. And of course it takes deep space understanding to know how to draw out that worth. This is just how these things work.</i>"
   cost:250 spaceBricks
-  -multiply yield of brickFactory by 25% per goldBricks
-  -multiply yield of makeBricks by 50% per goldBricks
+  passive:
+    multiply yield of brickFactory by (1 + (0.25 * goldBricks))
+    multiply yield of makeBricks by (1 + (0.5 * goldBricks))
+  end
   name:Boss Power
   icon:http://i.imgur.com/9mZst2L.png
   req:have deepSpaceResearch
   *spaceUpgrade16
   desc:"Hand punches do <b>0.03%</b> more damage <b>per melee building</b>.<br><i>"Ladies and gentlemen, we are gathered here today because we have finally done it. It took the ability to manipulate reality, space and time, but we have finally combined the club knuckles with the sword knuckles." ~RUC CEO at the grand SCK presentation.</i>"
   cost:250 spaceBricks
-  -multiply yield of hitWall by 0.03% per puncher
-  -multiply yield of hitWall by 0.03% per clubber
-  -multiply yield of hitWall by 0.03% per swordsman
+  passive:
+    multiply yield of hitWall by (1 + (0.0003 * puncher))
+    multiply yield of hitWall by (1 + (0.0003 *  clubber))
+    multiply yield of hitWall by (1 + (0.0003 *  swordsman))
+  end
   name:Sword Club Knuckles
   icon:http://i.imgur.com/Wf0lExe.png
   req:have deepSpaceResearch
   *spaceUpgrade17
   desc:"Black obliterators do <b>50%</b> more damage.<br><i>With our new deep knowledge of space, we can understand a bit better just how many craps The Black gives. The answer: literally none. It has even been theorized that The Black could give negative craps.</i>"
   cost:350 spaceBricks
-  -multiply yield of lastBuilding by 150%
+  passive:multiply yield of lastBuilding by 1.5
   name:Improved Handling
   icon:http://i.imgur.com/ascYTTw.png
   req:have deepSpaceResearch
   *spaceUpgrade18
   desc:"Everything is <b>0.004%</b> more efficient <b>per building owned</b>.<br><i>Yeah, there are totally alternate realities. The code for them is very complex, but luckily deep space knowledge gets us just far enough to be able to steal force and density from them.</i>"
   cost:700 spaceBricks
-  -multiply yield of hitWall by 0.004% per building
-  -multiply yield of puncher by 0.004% per building
-  -multiply yield of clubber by 0.004% per building
-  -multiply yield of swordsman by 0.004% per building
-  -multiply yield of gunner by 0.004% per building
-  -multiply yield of grenade by 0.004% per building
-  -multiply yield of wreckingBall by 0.004% per building
-  -multiply yield of bulldozer by 0.004% per building
-  -multiply yield of airstrike by 0.004% per building
-  -multiply yield of necromancer by 0.004% per building
-  -multiply yield of giant by 0.004% per building
-  -multiply yield of demon by 0.004% per building
-  -multiply yield of compromiser by 0.004% per building
-  -multiply yield of lastBuilding by 0.004% per building
-  -multiply yield of brickFactory by 0.004% per building
-  -multiply yield of makeBricks by 0.004% per building
+  passive:
+    multiply yield of tag:building by (1 + (0.00004 * building))
+    multiply yield of tag:clickable by (1 + (0.00004 * building))
+  end
   name:Alternate Reality Forcestacking
   icon:http://i.imgur.com/uFTByUI.png
   req:have deepSpaceResearch
-*/
+
   *timeUpgrade1
   desc:"Everything is <b>10%</b> more efficient.<br><i>The other time upgrades unlock randomly over time. You'll just have to wait. Possibly a long time, if you are not a lucker.</i>"
   cost:5 timeBricks
@@ -1833,38 +1831,42 @@ Upgrades
   desc:"Melee buildings do <b>0.4%</b> more damage <b>per magic building</b>.<br><i>Magic is like other useful forces, only magic.</i>"
   cost:5 timeBricks
   req:1 timeUpgradeRes3
-//  -multiply yield of puncher by 0.4% per necromancer
-//  -multiply yield of clubber by 0.4% per necromancer
-//  -multiply yield of swordsman by 0.4% per necromancer
-//  -multiply yield of puncher by 0.4% per giant
-//  -multiply yield of clubber by 0.4% per giant
-//  -multiply yield of swordsman by 0.4% per giant
-//  -multiply yield of puncher by 0.4% per demon
-//  -multiply yield of clubber by 0.4% per demon
-//  -multiply yield of swordsman by 0.4% per demon
+  passive:
+    multiply yield of puncher by (1 + (0.004 * necromancer))
+    multiply yield of clubber by (1 + (0.004 * necromancer))
+    multiply yield of swordsman by (1 + (0.004 * necromancer))
+    multiply yield of puncher by (1 + (0.004 * giant))
+    multiply yield of clubber by (1 + (0.004 * giant))
+    multiply yield of swordsman by (1 + (0.004 * giant))
+    multiply yield of puncher by (1 + (0.004 * demon))
+    multiply yield of clubber by (1 + (0.004 * demon))
+    multiply yield of swordsman by (1 + (0.004 * demon))
+  end
   name:Past Magic Residue
   icon:http://i.imgur.com/O5SW3NU.png
   *timeUpgrade4
   desc:"Gunners do <b>4%</b> more damage <b>per reality compromiser</b>.<br><i>"We've always wanted to shoot hundreds of bullets with each shot, but never had the bullets for it." ~Gunner Project Leader in the ATB proposal</i>"
   cost:5 timeBricks
   req:1 timeUpgradeRes4
-//  -multiply yield of gunner by 4% per compromiser
+  passive:multiply yield of gunner by (1 + (0.04 * compromiser))
   name:All The Bullets
   icon:http://i.imgur.com/HKL2QpN.png
   *timeUpgrade5
   desc:"Grenademen do <b>1.5%</b> more damage <b>per wrecking ball</b>.<br><i>"I approve any proposal with a really boss name, of course." ~RUC CEO on the proposal process</i>"
   cost:5 timeBricks
   req:1 timeUpgradeRes5
-//  -multiply yield of grenade by 1.5% per wreckingBall
+  passive:multiply yield of grenade by (1 + (0.015 * wreckingBall))
   name:Time-Wrecking Grenades
   icon:http://i.imgur.com/5kTlqj8.png
   *timeUpgrade6
   desc:"Heavy buildings do <b>0.1%</b> more damage <b>per 10 minutes since reset</b>.<br><i>There is much wisdom to be found in the art of smashing things.</i>"
   cost:5 timeBricks
   req:1 timeUpgradeRes6
-//  -multiply yield of wreckingBall by 0.01 per timeSinceReset
-//  -multiply yield of bulldozer by 0.01 per timeSinceReset
-//  -multiply yield of airstrike by 0.01 per timeSinceReset
+  passive:
+    multiply yield of wreckingBall by (1 + (0.0001 * timeSinceReset))
+    multiply yield of bulldozer by (1 + (0.0001 * timeSinceReset))
+    multiply yield of airstrike by (1 + (0.0001 * timeSinceReset))
+  end
   name:Wisdom From Age
   icon:http://i.imgur.com/bnJorFQ.png
   *timeUpgrade7
@@ -1892,8 +1894,10 @@ Upgrades
   desc:"Dream buildings are <b>10%</b> more efficient <b>per boss brick</b>.<br><i>"If we explore into the past, each boss brick has a ton of reality secrets stored in it. It's like whoever constructed the walls is trying to help us destroy them!" ~RC Project Leader</i>"
   cost:10 timeBricks
   req:1 timeUpgradeRes10
-//  -multiply yield of compromiser by 10% per goldBricks
-//  -multiply yield of lastBuilding by 10% per goldBricks
+  passive:
+    multiply yield of compromiser by (1 + (0.1 * goldBricks))
+    multiply yield of lastBuilding by (1 + (0.1 * goldBricks))
+  end
   name:Boss Research
   icon:http://i.imgur.com/n6j2v6z.png
   *timeUpgrade11
@@ -3143,14 +3147,14 @@ Upgrades
   name:Adamantium Gauntlets
   icon:http://i.imgur.com/ZWHQHkW.png
   *puncherUpgrade8
-  desc:"Punchers do <b>four times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>We brought back an old experiment to make gloves made out of [REDACTED].<br>CHIEF OF R&D EDIT: that's top secret, you idiot.</i>"
+  desc:"Punchers do <b>four times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>We brought back an old experiment to make gloves made out of |REDACTED|.<br>CHIEF OF R&D EDIT: that's top secret, you idiot.</i>"
   cost:200000000000 money
   req:200 puncher
   passive:
     multiply yield of puncher by 4
     multiply yield of hitWall by 1.5
   end
-  name:[REDACTED] Gloves
+  name:|REDACTED| Gloves
   icon:http://i.imgur.com/rVykEWs.png
   *puncherUpgrade9
   desc:"Punchers do <b>five times</b> as much damage.<br>Hand punches do <b>50%</b> more damage.<br><i>The RUC is not responsible for any deaths/implosions caused by the Antimatter Gauntlets(TM).</i>"
@@ -3565,7 +3569,7 @@ Upgrades
   name:The Perfect Combination
   icon:http://i.imgur.com/EYhxJLA.png
   *clubSwordUpgrade5
-  desc:"Clubbers do <b>1.2%</b> more damage per swordsman.<br>Swordsmen do <b>1.2%</b> more damage per clubber.<br><i>Now our technology is up to par with the 17th century! [applause]</i>"
+  desc:"Clubbers do <b>1.2%</b> more damage per swordsman.<br>Swordsmen do <b>1.2%</b> more damage per clubber.<br><i>Now our technology is up to par with the 17th century! |applause|</i>"
   cost:302200000000000000000 money
   passive:
     multiply yield of clubber by (1 + (0.012 * swordsman))
@@ -3989,7 +3993,7 @@ Upgrades
   name:Singularity Balls
   icon:http://i.imgur.com/tWgYnpW.png
   *wreckingUpgrade10
-  desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>[REDACTED]<br>CHIEF OF R&D EDIT: Agent Johnson is no longer allowed near the demons.</i>"
+  desc:"Wrecking balls do <b>five times</b> as much damage.<br><i>|REDACTED|<br>CHIEF OF R&D EDIT: Agent Johnson is no longer allowed near the demons.</i>"
   cost:1600000000000000000000000 money
   req:400 wreckingBall
   passive:multiply yield of wreckingBall by 5
@@ -4681,7 +4685,7 @@ Upgrades
   name:Merge Form
   icon:http://i.imgur.com/Zp3cflT.png
   *necromanceTitanUp4
-  desc:"Necromancers do <b>1.5%</b> more damage per titan.<br>Titans do <b>1%</b> more damage per necromancer.<br><i>[REDACTED, REDACTED SO HARD]<br>"NEVER AGAIN." ~Head of Demon Relations, RUC</i>"
+  desc:"Necromancers do <b>1.5%</b> more damage per titan.<br>Titans do <b>1%</b> more damage per necromancer.<br><i>|REDACTED, REDACTED SO HARD|<br>"NEVER AGAIN." ~Head of Demon Relations, RUC</i>"
   cost:17777777777777777777777777 money, 17777777777777 bricks
   passive:
     multiply yield of necromancer by (1 + (0.015 * giant))
@@ -4982,7 +4986,7 @@ Upgrades
   name:Demon Bribes
   icon:http://i.imgur.com/zQpS4F8.png
   *lastBuildingUp9
-  desc:"Black obliterators do <b>four times</b> as much damage.<br><i>"We took an expedition back to [REDACTED], and guess what we found in the temple? You'll be just as surprised as we were..." ~Agent Connor</i>"
+  desc:"Black obliterators do <b>four times</b> as much damage.<br><i>"We took an expedition back to |REDACTED|, and guess what we found in the temple? You'll be just as surprised as we were..." ~Agent Connor</i>"
   cost:520000000000000000000000000000000 money, 520000000000000000 fourthWallMatter
   req:300 lastBuilding
   passive:multiply yield of lastBuilding by 4
@@ -5416,7 +5420,7 @@ Upgrades
   name:Wood-Tier Trophy
   icon:http://i.imgur.com/IAzM4cM.png
   *trophy5
-  desc:"Damage and brick production multipliers <b>+10%</b>.<br><i>[Insert joke about being stoned here]</i><br> <br>Next trophy: <b>200</b> capsules"
+  desc:"Damage and brick production multipliers <b>+10%</b>.<br><i>|Insert joke about being stoned here|</i><br> <br>Next trophy: <b>200</b> capsules"
   cost:7.777777777777777e21 money, 777777777 bricks, 7777777 fourthWallMatter
   req:100 prestige
   passive:
