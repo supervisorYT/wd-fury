@@ -1756,14 +1756,14 @@ Upgrades
   desc:"Melee, ranged, and heavy duty buildings do <b>0.3%</b> more damage <b>per reality compromiser</b>.<br><i>"Gravity? Physics? This is laaame." ~RC Project Leader in the FFR proposal</i>"
   cost:150 spaceBricks
   passive:
-    multiply yield of puncher by (1 + (0.003 * compromiser)
-    multiply yield of clubber by (1 + (0.003 * compromiser)
-    multiply yield of swordsman by (1 + (0.003 * compromiser)
-    multiply yield of gunner by (1 + (0.003 * compromiser)
-    multiply yield of grenade by (1 + (0.003 * compromiser)
-    multiply yield of wreckingBall by (1 + (0.003 * compromiser)
-    multiply yield of bulldozer by (1 + (0.003 * compromiser)
-    multiply yield of airstrike by (1 + (0.003 * compromiser)
+    multiply yield of puncher by (1 + (0.003 * compromiser))
+    multiply yield of clubber by (1 + (0.003 * compromiser))
+    multiply yield of swordsman by (1 + (0.003 * compromiser))
+    multiply yield of gunner by (1 + (0.003 * compromiser))
+    multiply yield of grenade by (1 + (0.003 * compromiser))
+    multiply yield of wreckingBall by (1 + (0.003 * compromiser))
+    multiply yield of bulldozer by (1 + (0.003 * compromiser))
+    multiply yield of airstrike by (1 + (0.003 * compromiser))
   end
   name:Freedom From Reality
   icon:http://i.imgur.com/ctiz8NH.png
