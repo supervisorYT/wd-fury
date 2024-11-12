@@ -27,7 +27,7 @@ Layout
     contains:upgrades, buildings
   
   *buildings
-    contains:BulkDisplay, Buildings
+    contains:Items, BulkDisplay, Buildings
   
   *upgrades
     contains:Upgrades
@@ -396,15 +396,7 @@ Buttons
   name:Convert all damage to cosmic knowledge
   req:have damageConvUnlock
 
-Buildings
-
-  *timeCounter
-  on tick:
-    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
-    gain 0.016666666666666666666666666666 timePlayed
-  end
-  always hidden
-  start with:1
+Items
 
   *destroyWall
   desc:"Destroy the wall and move on to a bigger one.<br>Gives <b>25</b> bricks.<br>Awards <b>250,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
@@ -1242,6 +1234,16 @@ Buildings
   class:bonuswallboss
   name:Destroy Boss Finality Wall
   req:1 destroyBonusWall44
+
+Buildings
+
+  *timeCounter
+  on tick:
+    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
+    gain 0.016666666666666666666666666666 timePlayed
+  end
+  always hidden
+  start with:1
 
   *timeUpgradeProd
   always hidden
