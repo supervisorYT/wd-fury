@@ -1736,7 +1736,7 @@ Upgrades
   icon:http://i.imgur.com/uILIfAo.png
   req:have deepSpaceResearch
   *spaceUpgrade12
-  desc:"Ranged buildings do <b>1.5%</b> more damage <b>per brick factory</b>.<br><i>A lost project we managed to recover. We don't know how it works, and our only documentation on it is the planned flavor text:<br>"Why does this require deep space knowledge, you ask? Well, [DATA CORRUPTED]"</i>"
+  desc:"Ranged buildings do <b>1.5%</b> more damage <b>per brick factory</b>.<br><i>A lost project we managed to recover. We don't know how it works, and our only documentation on it is the planned flavor text:<br>"Why does this require deep space knowledge, you ask? Well, |DATA CORRUPTED|"</i>"
   cost:100 spaceBricks
   passive:
     multiply yield of gunner by (1 + (0.015 * brickFactory))
