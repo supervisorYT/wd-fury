@@ -210,7 +210,7 @@ Resources
         hidden when 0
         *timePlayed
         text:Total minutes played: [this]
-        shown
+        hidden
  
         *menuItem3
         text:────────────Prestige────────────
