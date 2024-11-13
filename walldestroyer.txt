@@ -334,6 +334,7 @@ Buttons
   end
   shown
   name:Punch wall
+  class:hitwall
   tag:clickable
   icon:http://i.imgur.com/108BtPH.png
 
@@ -345,6 +346,7 @@ Buttons
   end
   name:Create Bricks
   tag:clickable
+  class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
   hidden
   req:have handBrickUnlock
