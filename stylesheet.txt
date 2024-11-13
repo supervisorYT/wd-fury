@@ -67,9 +67,10 @@
 	overflow-y: auto;}
 .wall .amount
 	{font-size: 0px;}
-.building, .box, .upgrade.not-owned, .textbutton
+.building, .box, .upgrade.notOwned, .textbutton
 	{  border: 1px solid #000;
-		box-shadow: 0px 1px 0px #fff inset,0px -1px 0px rgba(0,0,0,0.25) inset,0px 0px 6px rgba(255,255,255,0.2) inset,0px 0px 6px rgba(0,0,0,0.2);}
+		box-shadow: 0px 1px 0px #fff inset,0px -1px 0px rgba(0,0,0,0.25) inset,0px 0px 6px rgba(255,255,255,0.2) inset,0px 0px 6px rgba(0,0,0,0.2);
+		margin: -1px;}
 .tag-building .thing-text
 	{font-size: 18px;
 	font-weight: bold;}
@@ -101,8 +102,7 @@
 	background-position: 3px 3px;
 	padding-left: 70px;
 	width: 280px;
-	min-height: 55px;
-    margin: -1px;}
+	min-height: 55px;}
 .puncher {background-image: url(http://i.imgur.com/amBI8wT.png);}
 .clubber {background-image: url(http://i.imgur.com/HVaisVj.png);}
 .swordsman {background-image: url(http://i.imgur.com/aPQuEKp.png);}
@@ -156,9 +156,9 @@
 	background-image: url(http://i.imgur.com/Ra5ULVg.png);}
 .wall
 	{background-repeat: no-repeat;
-	background-position: 5px 1px;
-	min-height: 100px;
-	width: 281px;}
+	background-position: 1px 1px;
+	min-height: 110px;
+	width: 290px;}
 .wall .thing-text
 	{font-size: 20px;
 	font-weight: bold;
