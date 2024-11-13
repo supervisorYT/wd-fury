@@ -63,7 +63,7 @@
 	{width: 290px;
 	font-size: 12px;
 	background:#a2cfc4;
-	padding-left: px;
+	padding-left: 0;
 	color:#304846;
 	overflow-x: none;
 	overflow-y: auto;}
@@ -161,8 +161,6 @@
 	{font-size: 20px;
 	font-weight: bold;
 	padding-left: 4px;}
-.wall .thing-costs .amount:after
-	{content: " damage"}
 #box-log
 	{color: #664439;
 	background: #a2cfc4;
