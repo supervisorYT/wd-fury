@@ -202,6 +202,7 @@ Resources
         *building
         text:Buildings: [this]
         tag:loseonreset
+        on update:this is puncher + clubber + swordsman + gunner + grenade + wreckingBall + bulldozer + airstrike + necromancer + giant + demon + compromiser + lastBuilding + brickFactory
         shown
  
         *timeSinceReset
@@ -1277,8 +1278,8 @@ Buildings
     gain 0.1 totalMoney
     gain 0.1 puncherDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   name:Puncher|Punchers
   tags:building loseonreset
   class:puncher
@@ -1292,8 +1293,8 @@ Buildings
     gain 0.5 totalMoney
     gain 0.5 clubberDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Clubber|Clubbers
   class:clubber
@@ -1307,8 +1308,8 @@ Buildings
     gain 2.5 totalMoney
     gain 2.5 swordsmanDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Swordsman|Swordsmen
   class:swordsman
@@ -1322,8 +1323,8 @@ Buildings
     gain 30 totalMoney
     gain 30 gunnerDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Gunshooter|Gunshooters
   class:gunner
@@ -1337,8 +1338,8 @@ Buildings
     gain 500 totalMoney
     gain 500 grenadeDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Grenademan|Grenademen
   class:grenade
@@ -1352,8 +1353,8 @@ Buildings
     gain 7000 totalMoney
     gain 7000 wreckingBallDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Wrecking Ball|Wrecking Balls
   class:wreckingball
@@ -1367,8 +1368,8 @@ Buildings
     gain 80000 totalMoney
     gain 80000 bulldozerDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Bulldozer|Bulldozers
   class:bulldozer
@@ -1382,8 +1383,8 @@ Buildings
     gain 2500000 totalMoney
     gain 2500000 airstrikeDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Airstrike Caller|Airstrike Callers
   class:airstrike
@@ -1397,8 +1398,8 @@ Buildings
     gain 33333333 totalMoney
     gain 33333333 necromancerDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Necromancer|Necromancers
   class:necromancer
@@ -1412,8 +1413,8 @@ Buildings
     gain 250000000 totalMoney
     gain 250000000 giantDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Titan|Titans
   class:giant
@@ -1427,8 +1428,8 @@ Buildings
     gain 3666666666 totalMoney
     gain 3666666666 demonDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Demon|Demons
   class:demon
@@ -1444,8 +1445,8 @@ Buildings
     gain 0.1 fourthWallMatter
     gain 0.1 total4thWallMatter
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   class:compromiser
   name:Reality Compromiser|Reality Compromisers
@@ -1459,8 +1460,8 @@ Buildings
     gain 1000000000000000 totalMoney
     gain 1000000000000000 lastDamage
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Black Obliterator|Black Obliterators
   class:lastBuilding
@@ -1473,8 +1474,8 @@ Buildings
     gain 0.05 bricks
     gain 0.05 totalBricks
   end
-  on earn:gain 1 building
-  on lose:lose 1 building
+  on earn:do update with building
+  on earn:do update with building
   tags:building loseonreset
   name:Brick Factory|Brick Factories
   req:3 wallsDestroyed
