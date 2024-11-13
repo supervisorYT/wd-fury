@@ -58,7 +58,7 @@
 	color:#304846;
 	overflow-x: none;
 	overflow-y: auto;}
-.wall .amount, .bonuswall .amount, .bonuswallboss .amount
+.wall .amount
 	{font-size: 0px;}
 .building, .box
 	{  border: 1px solid #000;
@@ -77,19 +77,13 @@
 	top: 5px;
 	font-size: 18px;
 	font-weight: bold;}
-.wall .cost, .bonuswall .cost, .bonuswallboss .cost
+.wall .cost
 	{padding-left: 4px;}
 .building .cost
 	{position: static;
 	float: left;
 	font-size: 12px;
 	font-weight: normal;}
-.building .cost .amount:after
-	{content: " cash";}
-#building-necromancer .costs-bricks .amount:after, #building-demon .cost .amount:after
-	{content: " bricks";}
-#building-lastbuilding .costs-fourthwallmatter .amount:after
-	{content: " 4th wall bricks";}
 .sell
 	{position: absolute;
 	bottom: 5px;}
@@ -113,53 +107,53 @@
 .compromiser {background-image: url(http://i.imgur.com/QRg0cK4.png);}
 .lastbuilding {background-image: url(http://i.imgur.com/mSWDezW.png);}
 .brickfactory {background-image: url(http://i.imgur.com/tjOxaGs.png);}
-#building-destroywall, #building-destroybigwall, #building-destroyhugewall
+.plainwall
 	{background-image: url(http://i.imgur.com/KfG2xNP.png);}
-#building-destroymassivewall {background-image: url(http://i.imgur.com/M88cRwn.png);}
-#building-destroyfinalwall {background-image: url(http://i.imgur.com/Ht0bANN.png);}
-#building-destroybonuswall, #building-destroybonuswall2, #building-destroybonuswall3, #building-destroybonuswall4, #building-destroybonuswall5 {background-image: url(http://i.imgur.com/VDKRDeM.png);}
-#building-destroybonuswall6, #building-destroybonuswall7, #building-destroybonuswall8, #building-destroybonuswall9 {background-image: url(http://i.imgur.com/GduWup8.png);}
-#building-destroybonuswall10 {background-image: url(http://i.imgur.com/7m6rr3R.png);}
-#building-destroybonuswall11, #building-destroybonuswall12, #building-destroybonuswall13, #building-destroybonuswall14, #building-destroybonuswall15
+.massivewall {background-image: url(http://i.imgur.com/M88cRwn.png);}
+.finalwall {background-image: url(http://i.imgur.com/Ht0bANN.png);}
+.bonuswall {background-image: url(http://i.imgur.com/VDKRDeM.png);}
+.bonuswall2 {background-image: url(http://i.imgur.com/GduWup8.png);}
+.bonuswallboss {background-image: url(http://i.imgur.com/7m6rr3R.png);}
+.spacewall
 	{color: #b1e6df;
 	background-image: url(http://i.imgur.com/7Jrkcqa.png);}
-#building-destroybonuswall16, #building-destroybonuswall17, #building-destroybonuswall18, #building-destroybonuswall19
+.spacewall2
 	{color: #b1e6df;
 	background-image: url(http://i.imgur.com/GvATKrf.png);}
-#building-destroybonuswall20
+.spacewallboss
 	{color: #b1e6df;
 	background-image: url(http://i.imgur.com/PVs7sjl.png);}
-#building-destroybonuswall21, #building-destroybonuswall22, #building-destroybonuswall23, #building-destroybonuswall24, #building-destroybonuswall25, #building-destroybonuswall26 {background-image: url(http://i.imgur.com/eIvRDP3.png);}
-#building-destroybonuswall27, #building-destroybonuswall28, #building-destroybonuswall29 {background-image: url(http://i.imgur.com/pYoTDdF.png);}
-#building-destroybonuswall30 {background-image: url(http://i.imgur.com/k3RGPw4.png);}
-#building-destroybonuswall31, #building-destroybonuswall32, #building-destroybonuswall33, #building-destroybonuswall34, #building-destroybonuswall35 {color: #292929;
+.timewall {background-image: url(http://i.imgur.com/eIvRDP3.png);}
+.timewall2 {background-image: url(http://i.imgur.com/pYoTDdF.png);}
+.timewallboss {background-image: url(http://i.imgur.com/k3RGPw4.png);}
+.endwall {color: #292929;
 	background-image: url(http://i.imgur.com/4HY7NBt.png);}
-#building-destroybonuswall36, #building-destroybonuswall37, #building-destroybonuswall38, #building-destroybonuswall39 {color: #292929;
+.endwall2 {color: #292929;
 	background-image: url(http://i.imgur.com/qfVvCqs.png);}
-#building-destroybonuswall40 {color: #000000;
+.endwallboss {color: #000000;
 	background-image: url(http://i.imgur.com/L1abRfJ.png);}
-#building-destroybonuswall41, #building-destroybonuswall42
+.finalitywall
 	{color: #3e3e3e;
 	background-image: url(http://i.imgur.com/12NN0MA.png);}
-#building-destroybonuswall43
+.finalitywall2
 	{color: #3e3e3e;
 	background-image: url(http://i.imgur.com/xisIxYa.png);}
-#building-destroybonuswall44
+.finalitywall3
 	{color: #3e3e3e;
 	background-image: url(http://i.imgur.com/6FM3czn.png);}
-#building-destroybonuswall45
+.finalitywall4
 	{color: #2b2b2b;
 	background-image: url(http://i.imgur.com/Ra5ULVg.png);}
-.wall, .bonuswall, .bonuswallboss
+.wall
 	{background-repeat: no-repeat;
 	background-position: 5px 1px;
 	min-height: 100px;
 	width: 281px;}
-.wall .thing-text, .bonuswall .thing-text, .bonuswallboss .thing-text
+.wall .thing-text
 	{font-size: 20px;
 	font-weight: bold;
 	padding-left: 4px;}
-.wall .cost .amount:after, .bonuswall .cost .amount:after, .bonuswallboss .cost .amount:after
+.wall .cost .amount:after
 	{content: " damage"}
 #box-log
 	{color: #664439;

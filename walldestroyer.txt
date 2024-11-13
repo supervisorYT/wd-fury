@@ -324,13 +324,6 @@ Resources
         *timeUpgradeRes20
         always hidden
         tag:loseonreset
- 
-        *nothing
-        always hidden
- 
-        *never
-        always hidden
-        //just don't
 
 Buttons
   *hitWall
@@ -421,6 +414,7 @@ Buildings
   name:Destroy wall
   tag:loseonreset
   class:wall
+  class:plainwall
   shown
   *destroyBigWall
   desc:"Destroy the big 2nd wall and move on to a bigger one.<br>Gives <b>100</b> bricks.<br>Awards <b>25,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
@@ -437,6 +431,7 @@ Buildings
   req:1 destroyWall
   tag:loseonreset
   class:wall
+  class:plainwall
   *destroyHugeWall
   desc:"Destroy the huge 3rd wall and move on to a bigger one.<br>Gives <b>10,000</b> bricks.<br>Awards <b>2,500,000,000,000,000</b> cash.<br>Worth <b>1</b> cosmic knowledge."
   cost:10000000000000000 totalMoney
@@ -452,6 +447,7 @@ Buildings
   req:1 destroyBigWall
   tag:loseonreset
   class:wall
+  class:plainwall
   *destroyMassiveWall
   desc:"Destroy the massive 4th wall and move on to the final one.<br>Gives <b>250,000</b> bricks.<br>Awards <b>250,000,000,000,000,000</b> cash.<br>Worth <b>2</b> cosmic knowledge."
   cost:1000000000000000000 totalMoney
@@ -464,6 +460,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:massivewall
   name:Destroy 4th wall
   req:1 destroyHugeWall
   *destroyFinalWall
@@ -480,6 +477,7 @@ Buildings
   end
   tag:loseonreset
   class:wall
+  class:finalwall
   name:Destroy final wall
   req:1 destroyMassiveWall
   *destroyBonusWall
@@ -494,6 +492,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswall
   name:Destroy bonus wall #9
   req:1 destroyFinalWall
@@ -509,6 +508,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswall
   name:Destroy bonus wall #8
   req:1 destroyBonusWall
@@ -524,6 +524,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswall
   name:Destroy bonus wall #7
   req:1 destroyBonusWall2
@@ -539,6 +540,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswall
   name:Destroy bonus wall #6
   req:1 destroyBonusWall3
@@ -554,6 +556,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswall
   name:Destroy bonus wall #5
   req:1 destroyBonusWall4
@@ -569,7 +572,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:bonuswall2
   name:Destroy bonus wall #4
   req:1 destroyBonusWall5
   *destroyBonusWall7
@@ -584,7 +588,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:bonuswall2
   name:Destroy bonus wall #3
   req:1 destroyBonusWall6
   *destroyBonusWall8
@@ -599,7 +604,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:bonuswall2
   name:Destroy bonus wall #2
   req:1 destroyBonusWall7
   *destroyBonusWall9
@@ -614,7 +620,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:bonuswall2
   name:Destroy bonus wall #1
   req:1 destroyBonusWall8
   *destroyBonusWall10
@@ -631,6 +638,7 @@ Buildings
     hide this
   end
   tag:loseonreset
+  class:wall
   class:bonuswallboss
   name:Destroy boss bonus wall
   req:1 destroyBonusWall9
@@ -647,7 +655,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall
   name:Destroy space wall #9
   req:1 destroyBonusWall10
   *destroyBonusWall12
@@ -663,7 +672,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall
   name:Destroy space wall #8
   req:1 destroyBonusWall11
   *destroyBonusWall13
@@ -679,7 +689,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall
   name:Destroy space wall #7
   req:1 destroyBonusWall12
   *destroyBonusWall14
@@ -695,7 +706,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall
   name:Destroy space wall #6
   req:1 destroyBonusWall13
   *destroyBonusWall15
@@ -711,7 +723,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall
   name:Destroy space wall #5
   req:1 destroyBonusWall14
   *destroyBonusWall16
@@ -727,7 +740,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall2
   name:Destroy space wall #4
   req:1 destroyBonusWall15
   *destroyBonusWall17
@@ -743,7 +757,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall2
   name:Destroy space wall #3
   req:1 destroyBonusWall16
   *destroyBonusWall18
@@ -759,7 +774,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall2
   name:Destroy space wall #2
   req:1 destroyBonusWall17
   *destroyBonusWall19
@@ -775,7 +791,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:spacewall2
   name:Destroy space wall #1
   req:1 destroyBonusWall18
   *destroyBonusWall20
@@ -793,7 +810,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswallboss
+  class:wall
+  class:spacewallboss
   name:Destroy boss space wall
   req:1 destroyBonusWall19
   *destroyBonusWall21
@@ -810,7 +828,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #9
   req:1 destroyBonusWall20
   *destroyBonusWall22
@@ -826,7 +845,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #8
   req:1 destroyBonusWall21
   *destroyBonusWall23
@@ -842,7 +862,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #7
   req:1 destroyBonusWall22
   *destroyBonusWall24
@@ -858,7 +879,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #6
   req:1 destroyBonusWall23
   *destroyBonusWall25
@@ -874,7 +896,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #5
   req:1 destroyBonusWall24
   *destroyBonusWall26
@@ -890,7 +913,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall
   name:Destroy time wall #4
   req:1 destroyBonusWall25
   *destroyBonusWall27
@@ -906,7 +930,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall2
   name:Destroy time wall #3
   req:1 destroyBonusWall26
   *destroyBonusWall28
@@ -922,7 +947,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall2
   name:Destroy time wall #2
   req:1 destroyBonusWall27
   *destroyBonusWall29
@@ -938,7 +964,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:timewall2
   name:Destroy time wall #1
   req:1 destroyBonusWall28
   *destroyBonusWall30
@@ -956,7 +983,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswallboss
+  class:wall
+  class:timewallboss
   name:Destroy boss time wall
   req:1 destroyBonusWall29
   *destroyBonusWall31
@@ -973,7 +1001,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall
   name:Destroy End Wall #9
   req:1 destroyBonusWall30
   *destroyBonusWall32
@@ -990,7 +1019,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall
   name:Destroy End Wall #8
   req:1 destroyBonusWall31
   *destroyBonusWall33
@@ -1007,7 +1037,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall
   name:Destroy End Wall #7
   req:1 destroyBonusWall32
   *destroyBonusWall34
@@ -1024,7 +1055,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall
   name:Destroy End Wall #6
   req:1 destroyBonusWall33
   *destroyBonusWall35
@@ -1041,7 +1073,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall
   name:Destroy End Wall #5
   req:1 destroyBonusWall34
   *destroyBonusWall36
@@ -1058,7 +1091,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall2
   name:Destroy End Wall #4
   req:1 destroyBonusWall35
   *destroyBonusWall37
@@ -1075,7 +1109,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall2
   name:Destroy End Wall #3
   req:1 destroyBonusWall36
   *destroyBonusWall38
@@ -1092,7 +1127,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall2
   name:Destroy End Wall #2
   req:1 destroyBonusWall37
   *destroyBonusWall39
@@ -1109,7 +1145,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:endwall2
   name:Destroy End Wall #1
   req:1 destroyBonusWall38
   *destroyBonusWall40
@@ -1128,7 +1165,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswallboss
+  class:wall
+  class:endwallboss
   name:Destroy Boss End Wall
   req:1 destroyBonusWall39
   *destroyBonusWall41
@@ -1147,7 +1185,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:finalitywall
   name:Destroy Finality Wall Delta
   req:1 destroyBonusWall40
   *destroyBonusWall42
@@ -1164,7 +1203,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:finalitywall
   name:Destroy Finality Wall Gamma
   req:1 destroyBonusWall41
   *destroyBonusWall43
@@ -1181,7 +1221,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:finalitywall2
   name:Destroy Finality Wall Beta
   req:1 destroyBonusWall42
   *destroyBonusWall44
@@ -1198,7 +1239,8 @@ Buildings
     hide this
   end
   tag:loseonreset
-  class:bonuswall
+  class:wall
+  class:finalitywall3
   name:Destroy Finality Wall Alpha
   req:1 destroyBonusWall43
   *destroyBonusWall45
@@ -1239,7 +1281,8 @@ Buildings
     show timeUpgrade20
   end
   tag:loseonreset
-  class:bonuswallboss
+  class:wall
+  class:finalitywall4boss
   name:Destroy Boss Finality Wall
   req:1 destroyBonusWall44
 
