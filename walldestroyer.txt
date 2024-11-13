@@ -348,7 +348,6 @@ Buttons
   tag:clickable
   class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
-  hidden
   req:have handBrickUnlock
 
   *reset
@@ -379,7 +378,7 @@ Buttons
     toast The Time Bear is coming.
   end
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
-  hidden
+  class:textbutton
   req:have resetUnlock
   
   *damageConverter
@@ -389,7 +388,7 @@ Buttons
     lose totalMoney
   end
   name:Convert all damage to cosmic knowledge
-  hidden
+  class:textbutton
   req:have damageConvUnlock
 
 Buildings
