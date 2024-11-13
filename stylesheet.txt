@@ -141,7 +141,7 @@
 .finalitywall3
 	{color: #3e3e3e;
 	background-image: url(http://i.imgur.com/6FM3czn.png);}
-.finalitywall4
+.finalitywallboss
 	{color: #2b2b2b;
 	background-image: url(http://i.imgur.com/Ra5ULVg.png);}
 .wall
