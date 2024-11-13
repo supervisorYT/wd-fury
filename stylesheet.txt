@@ -14,6 +14,7 @@
 	display: flex;
 	align-items: stretch;
 	gap: 10px;
+	height: 95%;
    }
 #box-clickables
 	{
@@ -59,10 +60,10 @@
 .upgrade.owned .thing-text, .upgrade.owned .cost
     {display: none;}
 #box-buildings
-	{width: 300px;
+	{width: 290px;
 	font-size: 12px;
 	background:#a2cfc4;
-	padding-left: 0;
+	padding-left: px;
 	color:#304846;
 	overflow-x: none;
 	overflow-y: auto;}
