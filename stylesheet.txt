@@ -94,13 +94,9 @@
 	top: 18px;
     left: 8px;}
 .tag-building .thing-costs
-	{position: static;
-	float: left;
+	{display: block;
 	font-size: 12px;
 	font-weight: normal;}
-.sell
-	{position: absolute;
-	bottom: 5px;}
 .tag-building
 	{background-repeat: no-repeat;
 	background-position: 3px 3px;
