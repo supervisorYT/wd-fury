@@ -79,8 +79,10 @@
 	font-size: 18px;
 	font-weight: bold;}
 .wall .thing-costs
-	{padding-left: 4px;}
-.building .thing-costs
+	{position: absolute;
+	top: 18px;
+    left: 8px;}
+.building:not(.wall) .thing-costs
 	{position: static;
 	float: left;
 	font-size: 12px;
@@ -88,7 +90,7 @@
 .sell
 	{position: absolute;
 	bottom: 5px;}
-.building
+.building:not(.wall)
 	{background-repeat: no-repeat;
 	background-position: 3px 3px;
 	padding-left: 70px;
