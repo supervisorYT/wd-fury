@@ -49,6 +49,8 @@
 	{font-size: 0px;
 	margin: 2px;
 	padding: 0px;}
+.upgrade.not-owned, .button, .res
+    {display: block;}
 .upgrade .thing-text
 	{font-weight: bold;}
 .upgrade.owned .thing-text, .upgrade.owned .cost
