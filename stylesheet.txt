@@ -20,6 +20,11 @@
 	width: 250px;
 	overflow-x: none;
 	overflow-y: auto;}
+.button .thing-icon
+    {width:auto;
+	height:auto;}
+#tooltipContent .thing-icon
+    {background-size: contain;}
 #box-resources
 	{
 	bottom: 48%;
@@ -82,7 +87,7 @@
 	{position: absolute;
 	top: 18px;
     left: 8px;}
-.building:not(.wall) .thing-costs
+.tag-building .thing-costs
 	{position: static;
 	float: left;
 	font-size: 12px;
@@ -90,12 +95,13 @@
 .sell
 	{position: absolute;
 	bottom: 5px;}
-.building:not(.wall)
+.tag-building
 	{background-repeat: no-repeat;
 	background-position: 3px 3px;
 	padding-left: 70px;
 	width: 217px;
-	min-height: 55px;}
+	min-height: 55px;
+    margin: -1px;}
 .puncher {background-image: url(http://i.imgur.com/amBI8wT.png);}
 .clubber {background-image: url(http://i.imgur.com/HVaisVj.png);}
 .swordsman {background-image: url(http://i.imgur.com/aPQuEKp.png);}
