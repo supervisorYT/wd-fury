@@ -12,7 +12,7 @@ Settings
 
 Layout
   *main
-    contains:buildings, clickables, resource, upgrades
+    contains:buildings, clickables, resources, upgrades
   
   *clickables
     contains:Buttons
