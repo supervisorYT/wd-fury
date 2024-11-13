@@ -12,10 +12,7 @@ Settings
 
 Layout
   *main
-    contains:buildings, center, upgrades
-
-  *center
-    contains:clickables, resources
+    contains:buildings, clickables, resource, upgrades
   
   *clickables
     contains:Buttons
@@ -6568,9 +6565,5 @@ Achievements
   name:The King
   icon:http://i.imgur.com/xvVrdJg.png
   req:10000 building
-
-  *dummy
-  name:
-  owned
 
 //hi people who scrolled all the way to the bottom! here's your secret message.
