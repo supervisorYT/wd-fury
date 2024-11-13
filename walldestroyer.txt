@@ -12,8 +12,11 @@ Settings
 
 Layout
   *main
-    contains:clickables, resources
+    contains:buildings, center, upgrades
 
+  *center
+    contains:clickables, resources
+  
   *clickables
     contains:Buttons
     names:hide
@@ -22,9 +25,6 @@ Layout
     contains:Resources
     header:Resources
     no tooltip
-   
-  *store
-    contains:upgrades, buildings
   
   *buildings
     contains:BulkDisplay, Buildings
