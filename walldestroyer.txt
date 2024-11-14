@@ -360,6 +360,7 @@ Buildings
   class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
   req:have handBrickUnlock
+  no buy
 
   *reset
   on click:
@@ -391,6 +392,7 @@ Buildings
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
   class:textbutton
   req:have resetUnlock
+  no buy
   
   *damageConverter
   on click:
@@ -401,6 +403,7 @@ Buildings
   name:Convert all damage to cosmic knowledge
   class:textbutton
   req:have damageConvUnlock
+  no buy
 
   *destroyWall
   desc:"Destroy the wall and move on to a bigger one.</>Gives <b>25</b> bricks.</>Awards <b>250,000,000,000</b> cash.</>Worth <b>1</b> cosmic knowledge."
