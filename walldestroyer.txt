@@ -349,7 +349,7 @@ Buttons
   tag:clickable
   class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
-  req:have handBrickUnlock
+  req:1 handBrickUnlock
 
   *reset
   on click:
@@ -380,7 +380,7 @@ Buttons
   end
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
   class:textbutton
-  req:have resetUnlock
+  req:1 resetUnlock
   
   *damageConverter
   on click:
@@ -390,7 +390,7 @@ Buttons
   end
   name:Convert all damage to cosmic knowledge
   class:textbutton
-  req:have damageConvUnlock
+  req:1 damageConvUnlock
 
 Buildings
 
