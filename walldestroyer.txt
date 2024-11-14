@@ -414,7 +414,7 @@ Buildings
     hide this
   end
   name:Destroy wall
-  tag:loseonreset
+  tags:loseonreset wall
   class:plainwall wall
   shown
   *destroyBigWall
@@ -430,7 +430,7 @@ Buildings
   end
   name:Destroy 2nd wall
   req:1 destroyWall
-  tag:loseonreset
+  tags:loseonreset wall
   class:plainwall wall
   *destroyHugeWall
   desc:"Destroy the huge 3rd wall and move on to a bigger one.</>Gives <b>10,000</b> bricks.</>Awards <b>2,500,000,000,000,000</b> cash.</>Worth <b>1</b> cosmic knowledge."
@@ -445,7 +445,7 @@ Buildings
   end
   name:Destroy 3rd wall
   req:1 destroyBigWall
-  tag:loseonreset
+  tags:loseonreset wall
   class:plainwall wall
   *destroyMassiveWall
   desc:"Destroy the massive 4th wall and move on to the final one.</>Gives <b>250,000</b> bricks.</>Awards <b>250,000,000,000,000,000</b> cash.</>Worth <b>2</b> cosmic knowledge."
@@ -458,7 +458,7 @@ Buildings
     gain 2 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:massivewall wall
   name:Destroy 4th wall
   req:1 destroyHugeWall
@@ -474,7 +474,7 @@ Buildings
     gain 5 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalwall wall
   name:Destroy final wall
   req:1 destroyMassiveWall
@@ -489,7 +489,7 @@ Buildings
     gain 5 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall wall
   name:Destroy bonus wall #9
   req:1 destroyFinalWall
@@ -504,7 +504,7 @@ Buildings
     gain 5 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall wall
   name:Destroy bonus wall #8
   req:1 destroyBonusWall
@@ -519,7 +519,7 @@ Buildings
     gain 6 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall wall
   name:Destroy bonus wall #7
   req:1 destroyBonusWall2
@@ -534,7 +534,7 @@ Buildings
     gain 7 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall wall
   name:Destroy bonus wall #6
   req:1 destroyBonusWall3
@@ -549,7 +549,7 @@ Buildings
     gain 8 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall wall
   name:Destroy bonus wall #5
   req:1 destroyBonusWall4
@@ -564,7 +564,7 @@ Buildings
     gain 9 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall2 wall
   name:Destroy bonus wall #4
   req:1 destroyBonusWall5
@@ -579,7 +579,7 @@ Buildings
     gain 10 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall2 wall
   name:Destroy bonus wall #3
   req:1 destroyBonusWall6
@@ -594,7 +594,7 @@ Buildings
     gain 10 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall2 wall
   name:Destroy bonus wall #2
   req:1 destroyBonusWall7
@@ -609,7 +609,7 @@ Buildings
     gain 10 prePrestige
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswall2 wall
   name:Destroy bonus wall #1
   req:1 destroyBonusWall8
@@ -626,7 +626,7 @@ Buildings
     gain 1 bonusBossBrick
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:bonuswallboss wall
   name:Destroy boss bonus wall
   req:1 destroyBonusWall9
@@ -642,7 +642,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall wall
   name:Destroy space wall #9
   req:1 destroyBonusWall10
@@ -658,7 +658,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall wall
   name:Destroy space wall #8
   req:1 destroyBonusWall11
@@ -674,7 +674,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall wall
   name:Destroy space wall #7
   req:1 destroyBonusWall12
@@ -690,7 +690,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall wall
   name:Destroy space wall #6
   req:1 destroyBonusWall13
@@ -706,7 +706,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall wall
   name:Destroy space wall #5
   req:1 destroyBonusWall14
@@ -722,7 +722,7 @@ Buildings
     gain 10 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall2 wall
   name:Destroy space wall #4
   req:1 destroyBonusWall15
@@ -738,7 +738,7 @@ Buildings
     gain 15 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall2 wall
   name:Destroy space wall #3
   req:1 destroyBonusWall16
@@ -754,7 +754,7 @@ Buildings
     gain 15 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall2 wall
   name:Destroy space wall #2
   req:1 destroyBonusWall17
@@ -770,7 +770,7 @@ Buildings
     gain 20 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewall2 wall
   name:Destroy space wall #1
   req:1 destroyBonusWall18
@@ -788,7 +788,7 @@ Buildings
     gain 40 spaceBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:spacewallboss wall
   name:Destroy boss space wall
   req:1 destroyBonusWall19
@@ -805,7 +805,7 @@ Buildings
       gain 1 timeUpgradeProd
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #9
   req:1 destroyBonusWall20
@@ -821,7 +821,7 @@ Buildings
     gain 5 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #8
   req:1 destroyBonusWall21
@@ -837,7 +837,7 @@ Buildings
     gain 5 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #7
   req:1 destroyBonusWall22
@@ -853,7 +853,7 @@ Buildings
     gain 5 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #6
   req:1 destroyBonusWall23
@@ -869,7 +869,7 @@ Buildings
     gain 6 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #5
   req:1 destroyBonusWall24
@@ -885,7 +885,7 @@ Buildings
     gain 7 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall wall
   name:Destroy time wall #4
   req:1 destroyBonusWall25
@@ -901,7 +901,7 @@ Buildings
     gain 8 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall2 wall
   name:Destroy time wall #3
   req:1 destroyBonusWall26
@@ -917,7 +917,7 @@ Buildings
     gain 9 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall2 wall
   name:Destroy time wall #2
   req:1 destroyBonusWall27
@@ -933,7 +933,7 @@ Buildings
     gain 10 timeBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewall2 wall
   name:Destroy time wall #1
   req:1 destroyBonusWall28
@@ -951,7 +951,7 @@ Buildings
     gain 1 timeBossBrick
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:timewallboss wall
   name:Destroy boss time wall
   req:1 destroyBonusWall29
@@ -968,7 +968,7 @@ Buildings
     gain 2 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall wall
   name:Destroy End Wall #9
   req:1 destroyBonusWall30
@@ -985,7 +985,7 @@ Buildings
     gain 2 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall wall
   name:Destroy End Wall #8
   req:1 destroyBonusWall31
@@ -1002,7 +1002,7 @@ Buildings
     gain 2 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall wall
   name:Destroy End Wall #7
   req:1 destroyBonusWall32
@@ -1019,7 +1019,7 @@ Buildings
     gain 2 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall wall
   name:Destroy End Wall #6
   req:1 destroyBonusWall33
@@ -1036,7 +1036,7 @@ Buildings
     gain 2 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall wall
   name:Destroy End Wall #5
   req:1 destroyBonusWall34
@@ -1053,7 +1053,7 @@ Buildings
     gain 3 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall2 wall
   name:Destroy End Wall #4
   req:1 destroyBonusWall35
@@ -1070,7 +1070,7 @@ Buildings
     gain 3 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall2 wall
   name:Destroy End Wall #3
   req:1 destroyBonusWall36
@@ -1087,7 +1087,7 @@ Buildings
     gain 4 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall2 wall
   name:Destroy End Wall #2
   req:1 destroyBonusWall37
@@ -1104,7 +1104,7 @@ Buildings
     gain 4 endBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwall2 wall
   name:Destroy End Wall #1
   req:1 destroyBonusWall38
@@ -1123,7 +1123,7 @@ Buildings
     gain 1 endBossBrick
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:endwallboss wall
   name:Destroy Boss End Wall
   req:1 destroyBonusWall39
@@ -1142,7 +1142,7 @@ Buildings
       gain 1 timeUpgradeProd2
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalitywall wall
   name:Destroy Finality Wall Delta
   req:1 destroyBonusWall40
@@ -1159,7 +1159,7 @@ Buildings
     gain 1 finalityBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalitywall wall
   name:Destroy Finality Wall Gamma
   req:1 destroyBonusWall41
@@ -1176,7 +1176,7 @@ Buildings
     gain 1 finalityBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalitywall2 wall
   name:Destroy Finality Wall Beta
   req:1 destroyBonusWall42
@@ -1193,7 +1193,7 @@ Buildings
     gain 2 finalityBricks
     hide this
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalitywall3 wall
   name:Destroy Finality Wall Alpha
   req:1 destroyBonusWall43
@@ -1234,7 +1234,7 @@ Buildings
     show timeUpgrade19
     show timeUpgrade20
   end
-  tag:loseonreset
+  tags:loseonreset wall
   class:finalitywallboss wall
   name:Destroy Boss Finality Wall
   req:1 destroyBonusWall44
