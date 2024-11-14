@@ -15,7 +15,7 @@ Layout
     contains:buildings, clickables, resources, upgrades
   
   *clickables
-    contains:Buttons
+    contains:tag:clickable, tag:textbutton
     names:hide
 
   *resources
@@ -24,7 +24,7 @@ Layout
     no tooltip
   
   *buildings
-    contains:BulkDisplay, Buildings
+    contains:BulkDisplay, tag:wall, tag:building
     icons:hide
   
   *upgrades
@@ -339,8 +339,15 @@ Buttons
   tag:clickable
   icon:http://i.imgur.com/108BtPH.png
 
-  *TEMPLATE
-  hidden
+Buildings
+
+  *timeCounter
+  on tick:
+    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
+    gain 0.016666666666666666666666666666 timePlayed
+  end
+  always hidden
+  start with:1
 
   *makeBricks
   on click:
@@ -383,7 +390,6 @@ Buttons
   end
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
   class:textbutton
-  always hidden
   req:have resetUnlock
   
   *damageConverter
@@ -395,16 +401,6 @@ Buttons
   name:Convert all damage to cosmic knowledge
   class:textbutton
   req:have damageConvUnlock
-
-Buildings
-
-  *timeCounter
-  on tick:
-    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
-    gain 0.016666666666666666666666666666 timePlayed
-  end
-  always hidden
-  start with:1
 
   *destroyWall
   desc:"Destroy the wall and move on to a bigger one.</>Gives <b>25</b> bricks.</>Awards <b>250,000,000,000</b> cash.</>Worth <b>1</b> cosmic knowledge."
