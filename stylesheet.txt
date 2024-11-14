@@ -46,7 +46,8 @@
 	color:#304846;
 	height: auto;
 	padding-bottom: 200px;
-    width: 300px;}
+    width: 300px;
+    overflow-y: auto;}
 .upgrade
 	{margin: 1px;}
 .upgrade.owned
