@@ -398,9 +398,6 @@ Buildings
   on tick:
     if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
     gain 0.016666666666666666666666666666 timePlayed
-    if (!(have handBrickUnlock)) hide makeBricks
-    if (!(have resetUnlock)) hide reset
-    if (!(have damageConvUnlock)) hide damageConverter
   end
   always hidden
   start with:1
