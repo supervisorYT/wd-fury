@@ -339,6 +339,9 @@ Buttons
   tag:clickable
   icon:http://i.imgur.com/108BtPH.png
 
+  *TEMPLATE
+  hidden
+
   *makeBricks
   on click:
     gain 1 bricks
@@ -349,7 +352,6 @@ Buttons
   tag:clickable
   class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
-  hidden
   req:have handBrickUnlock
 
   *reset
@@ -381,7 +383,7 @@ Buttons
   end
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
   class:textbutton
-  hidden
+  always hidden
   req:have resetUnlock
   
   *damageConverter
@@ -392,7 +394,6 @@ Buttons
   end
   name:Convert all damage to cosmic knowledge
   class:textbutton
-  hidden
   req:have damageConvUnlock
 
 Buildings
