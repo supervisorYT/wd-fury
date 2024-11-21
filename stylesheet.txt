@@ -106,6 +106,10 @@
 	{width: 70px;
 	min-height: 55px;
 	float: left;}
+.cost.hasEnough
+		{
+			color:#304846;
+		}
 .plainwall
 	{background-image: url(http://i.imgur.com/KfG2xNP.png);}
 .massivewall {background-image: url(http://i.imgur.com/M88cRwn.png);}
