@@ -250,22 +250,6 @@ Resources
         text:Times reset: [this]
         hidden when 0
  
-        *menuItem4
-        text:─────────────Info─────────────
-        class:importantresource
-        shown
- 
-        *upgradeAmount
-        text: Total upgrades in the game: 477
-        shown
-        *achievementAmount
-        text:Total achievements in the game: 194
-        shown
- 
-        *versionNumber
-        shown
-        text:Version 3.1
- 
   //abstract stuff
 
   *bonusBossBrick
