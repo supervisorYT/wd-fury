@@ -6,6 +6,10 @@
 	{position: fixed;
 	width: 250px;
 	left: 320px;}
+.thing-icon
+   {
+	background-repeat: no-repeat;
+   }
 .box
    {position: inherit;
    margin: 5px;}

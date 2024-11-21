@@ -25,7 +25,6 @@ Layout
   
   *buildings
     contains:BulkDisplay, tag:wall, tag:building
-    icons:hide
   
   *upgrades
     contains:Upgrades
