@@ -102,25 +102,9 @@
 	{display: block;
 	font-size: 12px;
 	font-weight: normal;}
-.tag-building
-	{background-repeat: no-repeat;
-	background-position: 3px 3px;
-	padding-left: 70px;
+.tag-building .thing-icon
+	{width: 70px;
 	min-height: 55px;}
-.puncher {background-image: url(http://i.imgur.com/amBI8wT.png);}
-.clubber {background-image: url(http://i.imgur.com/HVaisVj.png);}
-.swordsman {background-image: url(http://i.imgur.com/aPQuEKp.png);}
-.gunner {background-image: url(http://i.imgur.com/gCp304H.png);}
-.grenade {background-image: url(http://i.imgur.com/qW3aKwb.png);}
-.wreckingball {background-image: url(http://i.imgur.com/KfckHOw.png);}
-.bulldozer {background-image: url(http://i.imgur.com/U0GNz9b.png);}
-.airstrike {background-image: url(http://i.imgur.com/lnlhkQA.png);}
-.necromancer {background-image: url(http://i.imgur.com/A5USN4I.png);}
-.giant {background-image: url(http://i.imgur.com/zGpqQjB.png);}
-.demon {background-image: url(http://i.imgur.com/vf31RkB.png);}
-.compromiser {background-image: url(http://i.imgur.com/QRg0cK4.png);}
-.lastbuilding {background-image: url(http://i.imgur.com/mSWDezW.png);}
-.brickfactory {background-image: url(http://i.imgur.com/tjOxaGs.png);}
 .plainwall
 	{background-image: url(http://i.imgur.com/KfG2xNP.png);}
 .massivewall {background-image: url(http://i.imgur.com/M88cRwn.png);}
