@@ -1269,6 +1269,7 @@ Buildings
   name:Puncher|Punchers
   tags:building loseonreset
   class:puncher
+  icon:http://i.imgur.com/amBI8wT.png
   shown
 
   *clubber
@@ -1284,6 +1285,7 @@ Buildings
   tags:building loseonreset
   name:Clubber|Clubbers
   class:clubber
+  icon:http://i.imgur.com/HVaisVj.png
   shown
 
   *swordsman
@@ -1299,6 +1301,7 @@ Buildings
   tags:building loseonreset
   name:Swordsman|Swordsmen
   class:swordsman
+  icon:http://i.imgur.com/aPQuEKp.png
   shown
 
     *gunner
@@ -1314,6 +1317,7 @@ Buildings
   tags:building loseonreset
   name:Gunshooter|Gunshooters
   class:gunner
+  icon:http://i.imgur.com/gCp304H.png
   shown
 
   *grenade
@@ -1329,6 +1333,7 @@ Buildings
   tags:building loseonreset
   name:Grenademan|Grenademen
   class:grenade
+  icon:http://i.imgur.com/qW3aKwb.png
   shown
 
   *wreckingBall
@@ -1344,6 +1349,7 @@ Buildings
   tags:building loseonreset
   name:Wrecking Ball|Wrecking Balls
   class:wreckingball
+  icon:http://i.imgur.com/KfckHOw.png
   shown
 
   *bulldozer
@@ -1359,6 +1365,7 @@ Buildings
   tags:building loseonreset
   name:Bulldozer|Bulldozers
   class:bulldozer
+  icon:http://i.imgur.com/U0GNz9b.png
   shown
 
   *airstrike
@@ -1374,6 +1381,7 @@ Buildings
   tags:building loseonreset
   name:Airstrike Caller|Airstrike Callers
   class:airstrike
+  icon:http://i.imgur.com/lnlhkQA.png
   shown
 
   *necromancer
@@ -1389,6 +1397,7 @@ Buildings
   tags:building loseonreset
   name:Necromancer|Necromancers
   class:necromancer
+  icon:http://i.imgur.com/A5USN4I.png
   req:magicUnlock
   
   *giant
@@ -1404,6 +1413,7 @@ Buildings
   tags:building loseonreset
   name:Titan|Titans
   class:giant
+  icon:http://i.imgur.com/zGpqQjB.png
   req:giantUnlock
 
   *demon
@@ -1419,6 +1429,7 @@ Buildings
   tags:building loseonreset
   name:Demon|Demons
   class:demon
+  icon:http://i.imgur.com/vf31RkB.png
   req:magicLevel3
 
   *compromiser
@@ -1436,6 +1447,7 @@ Buildings
   tags:building loseonreset
   class:compromiser
   name:Reality Compromiser|Reality Compromisers
+  icon:http://i.imgur.com/QRg0cK4.png
   req:fourthWallUnlock
 
   *lastBuilding
@@ -1451,6 +1463,7 @@ Buildings
   tags:building loseonreset
   name:Black Obliterator|Black Obliterators
   class:lastBuilding
+  icon:http://i.imgur.com/mSWDezW.png
   req:finalWallUnlock
 
   *brickFactory
@@ -1466,6 +1479,7 @@ Buildings
   name:Brick Factory|Brick Factories
   req:3 wallsDestroyed
   class:brickFactory
+  icon:http://i.imgur.com/tjOxaGs.png
   req:magicLevel2
 
 Upgrades
