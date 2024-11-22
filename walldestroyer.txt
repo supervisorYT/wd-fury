@@ -301,6 +301,10 @@ Resources
   always hidden
   tag:loseonreset
 
+  *resetToken
+  always hidden
+  start with:1
+
 Buttons
   *hitWall
   on click:
@@ -339,7 +343,7 @@ Buildings
   desc:Created <b>[handBricks] bricks</b> by hand
 
   *reset
-  on click:
+  on earn:
     gain prePrestige prestige
     gain goldBricks timesWon
     gain bonusBossBrick bonusBossPoint
@@ -354,13 +358,16 @@ Buildings
     gain wallsDestroyed totalWalls
     lose tag:loseonreset
     show destroyWall
+    lose this
+    gain 1 resetToken
     toast Time Rewound: Your cosmic knowledge has been converted into future knowledge capsules.
     toast The Time Bear is coming.
   end
+  cost:1 resetToken
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
   class:textbutton
-  req:have resetUnlock
-  no buy
+  tag:textbutton
+  req:resetUnlock
   
   *damageConverter
   on click:
@@ -369,6 +376,7 @@ Buildings
   end
   name:Convert all damage to cosmic knowledge
   class:textbutton
+  tag:textbutton
   req:have damageConvUnlock
   no buy
 
