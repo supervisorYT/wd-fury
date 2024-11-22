@@ -347,26 +347,18 @@ Buildings
 
   *reset
   on click:
-    $prestige = prePrestige
-    gain $prestige prestige
-    $won = goldBricks
-    gain $won timesWon
-    $bonus = bonusBossBrick
-    gain $bonus bonusBossPoint
-    $space = spaceBossBrick
-    gain $space spaceBossPoint
-    $time = timeBossBrick
-    gain $time timeBossPoint
-    $end = endBossBrick
-    gain $end endBossPoint
-    $win = winBricks
-    gain $win timesActuallyWon
+    gain prePrestige prestige
+    gain goldBricks timesWon
+    gain bonusBossBrick bonusBossPoint
+    gain spaceBossBrick spaceBossPoint
+    gain timeBossBrick timeBossPoint
+    gain endBossBrick endBossPoint
+    gain winBricks timesActuallyWon
     gain 1 resetTimes
     lose resetUnlock
     lose finalWallUnlock
     hide lastBuilding
-    $walls = wallsDestroyed
-    gain $walls totalWalls
+    gain wallsDestroyed totalWalls
     lose tag:loseonreset
     show destroyWall
     log Time Rewound: Your cosmic knowledge has been converted into future knowledge capsules.
@@ -379,8 +371,7 @@ Buildings
   
   *damageConverter
   on click:
-    $prestige = totalMoney * 0.0000000000000000000000000000000005
-    gain $prestige prePrestige
+    gain (totalMoney * 0.0000000000000000000000000000000005) prePrestige
     lose totalMoney
   end
   name:Convert all damage to cosmic knowledge
@@ -1490,9 +1481,8 @@ Upgrades
   req:1 winBricks
   name:The End
   passive:
-    $mult = (1 + (winBricks * 0.25))*(1 + (timesActuallyWon*0.2))
-    multiply yield of tag:clickable by $mult
-    multiply yield of tag:building by $mult
+    multiply yield of tag:clickable by ((1 + (winBricks * 0.25))*(1 + (timesActuallyWon*0.2)))
+    multiply yield of tag:building by ((1 + (winBricks * 0.25))*(1 + (timesActuallyWon*0.2)))
   end
   icon:http://i.imgur.com/nLIn2uJ.png
 
@@ -1640,9 +1630,8 @@ Upgrades
   desc:Brick factories and manual bricks are <b>5%</b> more efficient <b>per wall destroyed</b>.<q>The power within the walls' bricks is worth an incredible amount of fake bricks, and the space bricks are the secret to pulling that power out and putting it to use!</q>
   cost:20 spaceBricks
   passive:
-    $mult = (1+(0.05 * wallsDestroyed))
-    multiply yield of brickFactory by $mult
-    multiply yield of makeBricks by $mult
+    multiply yield of brickFactory by (1+(0.05 * wallsDestroyed))
+    multiply yield of makeBricks by (1+(0.05 * wallsDestroyed))
   end
   name:Morphing Tech
   icon:http://i.imgur.com/2bgyPye.png
@@ -1651,9 +1640,8 @@ Upgrades
   desc:Everything is <b>0.005%</b> more efficient <b>per building owned</b>.<q>Weight is tied to its associated objects, so all we have to do is dislodge the anchor and move it over to more important stuff. Wall destroying stuff.</q>
   cost:35 spaceBricks
   passive:
-    $mult = (1 + (0.00005 * building))
-    multiply yield of tag:clikable by $mult
-    multiply yield of tag:building by $mult
+    multiply yield of tag:clickable by (1 + (0.00005 * building))
+    multiply yield of tag:building by (1 + (0.00005 * building))
   end
   name:Weight Relocation
   icon:http://i.imgur.com/frFPqZn.png
@@ -2352,10 +2340,9 @@ Upgrades
   *wallMultiplier
   desc:Everything is <b>5%</b> more efficient for each wall you've destroyed.<q>Let's compile our knowledge of wall destroying in a book so we can learn from our past mistakes.</>CEO EDIT: the RUC does not make mistakes.</q>
   cost:250000000000 money
-  on earn:
-    $mult = (1 + (0.05 * wallsDestroyed))
-    multiply yield of tag:clickable by $mult
-    multiply yield of tag:building by $mult
+  passive:
+    multiply yield of tag:clickable by (1 + 0.05 * wallsDestroyed)
+    multiply yield of tag:building by (1 + 0.05 * wallsDestroyed)
   end
   name:The Chronicle
   icon:http://i.imgur.com/zqNeRti.png
