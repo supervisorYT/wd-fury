@@ -43,6 +43,7 @@ Resources
  
   *totalMoney
   name:damage
+  tag:loseonreset
   shown
   class:veryimportantresource
  
