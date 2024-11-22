@@ -110,7 +110,7 @@ Resources
         *puncherDamage
         name:puncher damage
         tag:loseonreset
-        hidden when 0
+        always hidden
         *clubberDamage
         name:clubber damage
         tag:loseonreset
@@ -1249,7 +1249,7 @@ Buildings
   passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
   *puncher
-    desc:Melee building</>Does <b>0.1</b> base damage.<q>Punches the wall for you.</q>Made <b>[puncherDamage] damage</b> ([puncherDamage:ps]/s)
+    desc:Melee building</>Does <b>0.1</b> base damage.</><i>Did <b>[puncherDamage] damage</b> (+[puncherDamage:ps]/s)</i><q>Punches the wall for you.</q> 
   cost:20 money
   on tick:
     gain 0.1 money
