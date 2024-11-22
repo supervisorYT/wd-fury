@@ -1249,7 +1249,7 @@ Buildings
   passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
   *puncher
-    desc:Melee building</>Does <b>0.1</b> base damage.</>Made <b>[puncherDamage] damage<b> ([puncherDamage:ps]/s)<q>Punches the wall for you.</q> 
+    desc:Melee building</>Does <b>0.1</b> base damage.<q>Punches the wall for you.</q>Made <b>[puncherDamage] damage</b> ([puncherDamage:ps]/s)
   cost:20 money
   on tick:
     gain 0.1 money
