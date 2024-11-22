@@ -1455,7 +1455,7 @@ Buildings
   name:Black Obliterator|Black Obliterators
   class:lastBuilding
   icon:http://i.imgur.com/mSWDezW.png
-  req:finalWallUnlock
+  req:have finalWallUnlock
 
   *brickFactory
   desc:Special building</>Creates <b>0.05</b> base bricks.<q>Creates artificial bricks with dark magic. The wizards will never know.</q>
@@ -1468,10 +1468,9 @@ Buildings
   on earn:do update with building
   tags:building loseonreset
   name:Brick Factory|Brick Factories
-  req:3 wallsDestroyed
   class:brickFactory
   icon:http://i.imgur.com/tjOxaGs.png
-  req:magicLevel2
+  req:have magicLevel2
 
 Upgrades
   *win
