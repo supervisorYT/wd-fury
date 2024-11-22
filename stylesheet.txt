@@ -62,7 +62,7 @@
     {display: block;}
 .upgrade .thing-text
 	{font-weight: bold;}
-.upgrade.owned .thing-text, .upgrade.owned .thing-cost
+.upgrade.owned .thing-text, .upgrade.owned .thing-costs
     {display: none;}
 #box-buildings
 	{width: 290px;
