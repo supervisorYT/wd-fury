@@ -170,3 +170,5 @@ q::before, q::after
     {content: "“";
 	display: inline-block;
 	}
+#tooltip .desc
+    {clear:left;}
