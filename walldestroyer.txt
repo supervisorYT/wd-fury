@@ -316,7 +316,7 @@ Buttons
   shown
   name:Punch wall
   class:hitwall
-  tag:clickable
+  tags:clickable damager
   icon:http://i.imgur.com/108BtPH.png
   desc:Made <b>[handDamage] damage</b> by hand
 
@@ -1260,7 +1260,7 @@ Buildings
   on earn:do update with building
   on earn:do update with building
   name:Puncher|Punchers
-  tags:building loseonreset
+  tags:building loseonreset damager
   class:puncher
   icon:http://i.imgur.com/amBI8wT.png
   shown
@@ -1275,7 +1275,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Clubber|Clubbers
   class:clubber
   icon:http://i.imgur.com/HVaisVj.png
@@ -1291,7 +1291,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Swordsman|Swordsmen
   class:swordsman
   icon:http://i.imgur.com/aPQuEKp.png
@@ -1307,7 +1307,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Gunshooter|Gunshooters
   class:gunner
   icon:http://i.imgur.com/gCp304H.png
@@ -1323,7 +1323,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Grenademan|Grenademen
   class:grenade
   icon:http://i.imgur.com/qW3aKwb.png
@@ -1339,7 +1339,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Wrecking Ball|Wrecking Balls
   class:wreckingball
   icon:http://i.imgur.com/KfckHOw.png
@@ -1355,7 +1355,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Bulldozer|Bulldozers
   class:bulldozer
   icon:http://i.imgur.com/U0GNz9b.png
@@ -1371,7 +1371,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Airstrike Caller|Airstrike Callers
   class:airstrike
   icon:http://i.imgur.com/lnlhkQA.png
@@ -1387,7 +1387,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Necromancer|Necromancers
   class:necromancer
   icon:http://i.imgur.com/A5USN4I.png
@@ -1403,7 +1403,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Titan|Titans
   class:giant
   icon:http://i.imgur.com/zGpqQjB.png
@@ -1419,7 +1419,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Demon|Demons
   class:demon
   icon:http://i.imgur.com/vf31RkB.png
@@ -1437,7 +1437,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   class:compromiser
   name:Reality Compromiser|Reality Compromisers
   icon:http://i.imgur.com/QRg0cK4.png
@@ -1453,7 +1453,7 @@ Buildings
   end
   on earn:do update with building
   on earn:do update with building
-  tags:building loseonreset
+  tags:building loseonreset damager
   name:Black Obliterator|Black Obliterators
   class:lastBuilding
   icon:http://i.imgur.com/mSWDezW.png
