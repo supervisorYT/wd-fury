@@ -2352,7 +2352,7 @@ Upgrades
   *wallMultiplier
   desc:Everything is <b>5%</b> more efficient for each wall you've destroyed.<q>Let's compile our knowledge of wall destroying in a book so we can learn from our past mistakes.</>CEO EDIT: the RUC does not make mistakes.</q>
   cost:250000000000 money
-  passive:
+  on earn:
     $mult = (1 + (0.05 * wallsDestroyed))
     multiply yield of tag:clickable by $mult
     multiply yield of tag:building by $mult
