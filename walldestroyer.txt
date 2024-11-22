@@ -88,6 +88,10 @@ Resources
         name:total bricks
         tag:loseonreset
         hidden when 0
+        *handBricks
+        name:hand made bricks
+        tag:loseonreset
+        always hidden
  
         *total4thWallMatter
         name:total fourth wall bricks
@@ -101,7 +105,7 @@ Resources
         *handDamage
         name:hand damage
         tag:loseonreset
-        hidden when 0
+        always hidden
  
         *puncherDamage
         name:puncher damage
@@ -317,6 +321,7 @@ Buttons
   class:hitwall
   tag:clickable
   icon:http://i.imgur.com/108BtPH.png
+  desc:Made <b>[handDamage] damage</b> by hand
 
 Buildings
 
@@ -330,14 +335,16 @@ Buildings
 
   *makeBricks
   on earn:
+    gain 1 handBricks
     gain 1 bricks
     gain 1 totalBricks
   end
   name:Create Bricks
-  tag:clickable
+  tags:clickable loseonreset
   class:makebricks
   icon:http://i.imgur.com/Tdh80P1.png
   req:have handBrickUnlock
+  desc:Created <b>[handBricks] bricks</b> by hand
 
   *reset
   on click:
@@ -355,7 +362,7 @@ Buildings
     gain wallsDestroyed totalWalls
     lose tag:loseonreset
     show destroyWall
-    log Time Rewound: Your cosmic knowledge has been converted into future knowledge capsules.
+    toast Time Rewound: Your cosmic knowledge has been converted into future knowledge capsules.
     toast The Time Bear is coming.
   end
   name:Rewind time (Removes all buildings & resources, converts cosmic knowledge into prestige)
@@ -1242,7 +1249,7 @@ Buildings
   passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
   *puncher
-    desc:Melee building</>Does <b>0.1</b> base damage.<q>Punches the wall for you.</q> 
+    desc:Melee building</>Does <b>0.1</b> base damage.</>Made <b>[puncherDamage] damage<b> ([puncherDamage:ps]/s)<q>Punches the wall for you.</q> 
   cost:20 money
   on tick:
     gain 0.1 money
@@ -2832,63 +2839,63 @@ Upgrades
   *handBrickUpgrade
   desc:Manual brick creation creates <b>three times</b> as many bricks.<q>To find out why you and the dark magic tablets aren't getting along.</q>
   cost:6777777777777777 money, 1000 bricks
-  req:1000 makeBricks
+  req:1000 handBricks
   passive:multiply yield of makeBricks by 3
   name:Psychiatrists
   icon:http://i.imgur.com/BLAoizu.png
   *handBrickUpgrade2
   desc:Manual brick creation creates <b>1.5%</b> as many bricks per <b>necromancer</b>.<q>They can give you lessons in dark magic, and as a bonus, being an asshole.</q>
   cost:37777777777777777 money, 100000 bricks
-  req:100000 makeBricks
+  req:100000 handBricks
   passive:multiply yield of makeBricks by (1+ (0.015 * necromancer))
   name:Necromancer Lessons
   icon:http://i.imgur.com/vZmmM5e.png
   *handBrickUpgrade3
   desc:Manual brick creation creates <b>1.5%</b> more bricks <b>per demon</b>.<q>Much better at dark magic and at being assholes than the necromancers.</q>
   cost:377777777777777777 money, 10000000 bricks
-  req:10000000 makeBricks
+  req:10000000 handBricks
   passive:multiply yield of makeBricks by (1+ (0.015 * demon))
   name:Demon Lessons
   icon:http://i.imgur.com/WohZpox.png
   *handBrickUpgrade4
   desc:Manual brick creation creates <b>four times</b> as many bricks.<q>They fight a lot, but you somehow learn best when they teach at the same time.</q>
   cost:37777777777777777777 money, 1000000000 bricks
-  req:1000000000 makeBricks
+  req:1000000000 handBricks
   passive:multiply yield of makeBricks by 4
   name:Joint Necromancer-Demon Lessons
   icon:http://i.imgur.com/1n3yBA4.png
   *handBrickUpgrade5
   desc:Manual brick creation creates <b>1%</b> more bricks <b>per titan</b>.<q>After smashing the walls a ton, they have learned a lot about the inner workings of bricks.</q>
   cost:3777777777777777777777 money, 100000000000 bricks
-  req:100000000000 makeBricks
+  req:100000000000 handBricks
   passive:multiply yield of makeBricks by (1 + (0.01 * giant))
   name:Wisdom of The Titans
   icon:http://i.imgur.com/mLO2JCX.png
   *handBrickUpgrade6
   desc:Manual brick creation creates <b>0.8%</b> more bricks <b>per titan</b>.<q>Now with the added benefit of actually being able to understand the titans.</q>
   cost:3777777777777777777777777 money, 10000000000000 bricks
-  req:10000000000000 makeBricks
+  req:10000000000000 handBricks
   passive:multiply yield of makeBricks by (1 + (0.008 * giant))
   name:Necromancer Translators
   icon:http://i.imgur.com/m5peORa.png
   *handBrickUpgrade7
   desc:Manual brick creation creates <b>0.8%</b> more bricks <b>per titan</b>.<q>They know the tablets very well, so they innately know what the titans are talking about.</q>
   cost:377777777777777777777777777 money, 1000000000000000 bricks
-  req:1000000000000000 makeBricks
+  req:1000000000000000 handBricks
   passive:multiply yield of makeBricks by (1 + (0.008 * giant))
   name:Demon Translators
   icon:http://i.imgur.com/3vgirnY.png
   *handBrickUpgrade8
   desc:Manual brick creation creates <b>four times</b> as many bricks.<q>It's an assembly line in your palm and a conveyor belt in your wrist! Perfect!" ~CEO, RUC</q>"
   cost:37777777777777777777777777777 money, 100000000000000000 bricks
-  req:100000000000000000 makeBricks
+  req:100000000000000000 handBricks
   passive:multiply yield of makeBricks by 4
   name:Factory Hand
   icon:http://i.imgur.com/FDoBvUl.png
   *handBrickUpgrade9
   desc:Manual brick creation creates <b>five times</b> as many bricks.<q>i call hax" ~1337 sn1p3r #10</q>"
   cost:3777777777777777777777777777777 money, 10000000000000000000 bricks
-  req:10000000000000000000 makeBricks
+  req:10000000000000000000 handBricks
   passive:multiply yield of makeBricks by 5
   name:Omnimagic
   icon:http://i.imgur.com/IDv4G9r.png
