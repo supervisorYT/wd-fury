@@ -25,7 +25,6 @@ Layout
   
   *buildings
     contains:BulkDisplay, tag:wall, tag:building
-    ps:show
   
   *upgrades
     contains:Upgrades
@@ -37,218 +36,210 @@ Layout
 Resources
 
   *money
-        name:cash
-        tag:loseonreset
-        shown
-        class:money
+  name:cash
+  tag:loseonreset
+  shown
+  class:money
  
-        *totalMoney
-        name:damage
-        shown
-        class:veryimportantresource
+  *totalMoney
+  name:damage
+  shown
+  class:veryimportantresource
  
-        *bricks
-        name:brick|bricks
-        tag:loseonreset
-        hidden when 0
-        class:veryimportantresource
+  *bricks
+  name:brick|bricks
+  tag:loseonreset
+  hidden when 0
+  class:veryimportantresource
  
-        *fourthWallMatter
-        name:fourth wall bricks
-        tag:loseonreset
-        hidden when 0
-        class:veryimportantresource
+  *fourthWallMatter
+  name:fourth wall bricks
+  tag:loseonreset
+  hidden when 0
+  class:veryimportantresource
  
-        *spaceBricks
-        name:space bricks
-        tag:loseonreset
-        hidden when 0
-        class:importantresource
-        *timeBricks
-        name:time bricks
-        tag:loseonreset
-        hidden when 0
-        class:importantresource
-        *endBricks
-        name:End bricks
-        tag:loseonreset
-        hidden when 0
-        class:importantresource
-        *finalityBricks
-        name:Finality Bricks
-        tag:loseonreset
-        hidden when 0
-        class:importantresource
+  *spaceBricks
+  name:space bricks
+  tag:loseonreset
+  hidden when 0
+  class:importantresource
+  *timeBricks
+  name:time bricks
+  tag:loseonreset
+  hidden when 0
+  class:importantresource
+  *endBricks
+  name:End bricks
+  tag:loseonreset
+  hidden when 0
+  class:importantresource
+  *finalityBricks
+  name:Finality Bricks
+  tag:loseonreset
+  hidden when 0
+  class:importantresource
  
-        *menuItem2
-        text:─────────────Stats─────────────
-        class:importantresource
-        shown
+  *menuItem2
+  text:─────────────Stats─────────────
+  class:importantresource
+  shown
  
-        *totalBricks
-        name:total bricks
-        tag:loseonreset
-        hidden when 0
-        *handBricks
-        name:hand made bricks
-        tag:loseonreset
-        always hidden
+  *totalBricks
+  name:total bricks
+  tag:loseonreset
+  hidden when 0
+  *handBricks
+  name:hand made bricks
+  tag:loseonreset
+  always hidden
  
-        *total4thWallMatter
-        name:total fourth wall bricks
-        tag:loseonreset
-        hidden when 0
+  *total4thWallMatter
+  name:total fourth wall bricks
+  tag:loseonreset
+  hidden when 0
  
-        *damageDivider1
-        text:────────────────────
-        shown
+  *handDamage
+  name:hand damage
+  tag:loseonreset
+  always hidden
  
-        *handDamage
-        name:hand damage
-        tag:loseonreset
-        always hidden
+  *puncherDamage
+  name:puncher damage
+  tag:loseonreset
+  always hidden
+  *clubberDamage
+  name:clubber damage
+  tag:loseonreset
+  always hidden
+  *swordsmanDamage
+  name:swordsman damage
+  tag:loseonreset
+  always hidden
+  *gunnerDamage
+  name:gunshooter damage
+  tag:loseonreset
+  always hidden
+  *grenadeDamage
+  name:grenademan damage
+  tag:loseonreset
+  always hidden
+  *wreckingBallDamage
+  name:wrecking ball damage
+  tag:loseonreset
+  always hidden
+  *bulldozerDamage
+  name:bulldozer damage
+  tag:loseonreset
+  always hidden
+  *airstrikeDamage
+  name:airstrike caller damage
+  tag:loseonreset
+  always hidden
+  *necromancerDamage
+  name:necromancer damage
+  tag:loseonreset
+  always hidden
+  *giantDamage
+  name:titan damage
+  tag:loseonreset
+  always hidden
+  *demonDamage
+  name:demon damnage
+  tag:loseonreset
+  always hidden
+  *compromiserDamage
+  name:reality compromiser damage
+  tag:loseonreset
+  always hidden
+  *lastDamage
+  name:black obliterator damage
+  tag:loseonreset
+  always hidden
  
-        *puncherDamage
-        name:puncher damage
-        tag:loseonreset
-        always hidden
-        *clubberDamage
-        name:clubber damage
-        tag:loseonreset
-        hidden when 0
-        *swordsmanDamage
-        name:swordsman damage
-        tag:loseonreset
-        hidden when 0
-        *gunnerDamage
-        name:gunshooter damage
-        tag:loseonreset
-        hidden when 0
-        *grenadeDamage
-        name:grenademan damage
-        tag:loseonreset
-        hidden when 0
-        *wreckingBallDamage
-        name:wrecking ball damage
-        tag:loseonreset
-        hidden when 0
-        *bulldozerDamage
-        name:bulldozer damage
-        tag:loseonreset
-        hidden when 0
-        *airstrikeDamage
-        name:airstrike caller damage
-        tag:loseonreset
-        hidden when 0
-        *necromancerDamage
-        name:necromancer damage
-        tag:loseonreset
-        hidden when 0
-        *giantDamage
-        name:titan damage
-        tag:loseonreset
-        hidden when 0
-        *demonDamage
-        name:demon damnage
-        tag:loseonreset
-        hidden when 0
-        *compromiserDamage
-        name:reality compromiser damage
-        tag:loseonreset
-        hidden when 0
-        *lastDamage
-        name:black obliterator damage
-        tag:loseonreset
-        hidden when 0
+  *timeUpgradeRes13
+  name:random bonus punching point|random bonus punching points
+  hidden when 0
+  *timeUpgradeRes14
+  name:random bonus melee point|random bonus melee points
+  hidden when 0
+  *timeUpgradeRes15
+  name:random bonus ranged point|random bonus ranged points
+  hidden when 0
+  *timeUpgradeRes16
+  name:random bonus heavy point|random bonus heavy points
+  hidden when 0
+  *timeUpgradeRes17
+  name:random bonus magic point|random bonus magic points
+  hidden when 0
+  *timeUpgradeRes18
+  name:random bonus brick point|random bonus brick points
+  hidden when 0
+  *timeUpgradeRes21
+  name:random bonus dream point|random bonus dream points
+  hidden when 0
  
-        *damageDivider2
-        text:────────────────────
-        shown
- 
-        *timeUpgradeRes13
-        name:random bonus punching point|random bonus punching points
-        hidden when 0
-        *timeUpgradeRes14
-        name:random bonus melee point|random bonus melee points
-        hidden when 0
-        *timeUpgradeRes15
-        name:random bonus ranged point|random bonus ranged points
-        hidden when 0
-        *timeUpgradeRes16
-        name:random bonus heavy point|random bonus heavy points
-        hidden when 0
-        *timeUpgradeRes17
-        name:random bonus magic point|random bonus magic points
-        hidden when 0
-        *timeUpgradeRes18
-        name:random bonus brick point|random bonus brick points
-        hidden when 0
-    *timeUpgradeRes21
-        name:random bonus dream point|random bonus dream points
-        hidden when 0
- 
-        *divider3
-        text:────────────────────
-        shown
+  *divider3
+  text:────────────────────
+  shown
 
-        *wallsDestroyed
-        name:wall destroyed|walls destroyed
-        tag:loseonreset
-        hidden when 0
-    *totalWalls
-    name:total walls destroyed
-        hidden when 0
+  *wallsDestroyed
+  name:wall destroyed|walls destroyed
+  tag:loseonreset
+  hidden when 0
+  *totalWalls
+  name:total walls destroyed
+  hidden when 0
  
-        *building
-        text:Buildings: [this]
-        tag:loseonreset
-        on update:this is puncher + clubber + swordsman + gunner + grenade + wreckingBall + bulldozer + airstrike + necromancer + giant + demon + compromiser + lastBuilding + brickFactory
-        shown
+  *building
+  text:Buildings: [this]
+  tag:loseonreset
+  on update:this is puncher + clubber + swordsman + gunner + grenade + wreckingBall + bulldozer + airstrike + necromancer + giant + demon + compromiser + lastBuilding + brickFactory
+  shown
  
-        *timeSinceReset
-        text:Last reset: [this] minutes ago
-        tag:loseonreset
-        hidden when 0
-        *timePlayed
-        text:Total minutes played: [this]
-        always hidden
+  *timeSinceReset
+  text:Last reset: [this] minutes ago
+  tag:loseonreset
+  hidden when 0
+  *timePlayed
+  text:Total minutes played: [this]
+  always hidden
  
-        *menuItem3
-        text:────────────Prestige────────────
-        class:importantresource
-        shown
+  *menuItem3
+  text:────────────Prestige────────────
+  class:importantresource
+  shown
  
-    *prePrestige
-    name:cosmic knowledge
-        tag:loseonreset
-        hidden when 0
-        *goldBricks
-        name:boss brick|boss bricks
-        tag:loseonreset
-        hidden when 0
-        *winBricks
-        name:pure brick
-        tag:loseonreset
-        hidden when 0
+  *prePrestige
+  name:cosmic knowledge
+  tag:loseonreset
+  hidden when 0
+  *goldBricks
+  name:boss brick|boss bricks
+  tag:loseonreset
+  hidden when 0
+  *winBricks
+  name:pure brick
+  tag:loseonreset
+  hidden when 0
  
-        *divider4
-        text:────────────────────
-        shown
+  *divider4
+  text:────────────────────
+  shown
  
-        *prestige
-        name:future knowledge capsules
-        hidden when 0
-        *timesWon
-        name:boss point|boss points
-        hidden when 0
-        *timesActuallyWon
-        name:true victory point|true victory points
-        hidden when 0
+  *prestige
+  name:future knowledge capsules
+  hidden when 0
+  *timesWon
+  name:boss point|boss points
+  hidden when 0
+  *timesActuallyWon
+  name:true victory point|true victory points
+  hidden when 0
  
-        *resetTimes
-        name:times reset
-        text:Times reset: [this]
-        hidden when 0
+  *resetTimes
+  name:times reset
+  text:Times reset: [this]
+  hidden when 0
  
   //abstract stuff
 
@@ -269,46 +260,46 @@ Resources
   *endBossPoint
   always hidden
  
-        *timeUpgradeRes2
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes3
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes4
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes5
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes6
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes7
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes8
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes9
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes10
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes11
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes12
-        always hidden
-        tag:loseonreset
+  *timeUpgradeRes2
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes3
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes4
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes5
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes6
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes7
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes8
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes9
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes10
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes11
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes12
+  always hidden
+  tag:loseonreset
        
-        *timeUpgradeRes19
-        always hidden
-        tag:loseonreset
-        *timeUpgradeRes20
-        always hidden
-        tag:loseonreset
+  *timeUpgradeRes19
+  always hidden
+  tag:loseonreset
+  *timeUpgradeRes20
+  always hidden
+  tag:loseonreset
 
 Buttons
   *hitWall
@@ -1250,7 +1241,7 @@ Buildings
   passive:if (chance(0.005%)) gain 1 timeUpgradeRes21
 
   *puncher
-    desc:Melee building</>Does <b>0.1</b> base damage.</><i>Did <b>[puncherDamage] damage</b> (+[puncherDamage:ps]/s)</i><q>Punches the wall for you.</q> 
+    desc:Melee building</>Does <b>0.1</b> base damage.<q>Punches the wall for you.</q><.>Your punchers do <b>[puncherDamage:ps] damage per second</b>.<.>They did <b>[puncherDamage] damage</b> in total.
   cost:20 money
   on tick:
     gain 0.1 money
@@ -1266,7 +1257,7 @@ Buildings
   shown
 
   *clubber
-  desc:Melee building</>Does <b>0.5</b> base damage.<q>Not to be confused with the other kind of clubbing.</q>
+  desc:Melee building</>Does <b>0.5</b> base damage.<q>Not to be confused with the other kind of clubbing.</q><.>Your clubbers do <b>[clubberDamage:ps] damage per second</b>.<.>They did <b>[clubberDamage] damage</b> in total.
   cost:150 money
   on tick:
     gain 0.5 money
@@ -1282,7 +1273,7 @@ Buildings
   shown
 
   *swordsman
-  desc:Melee building</>Does <b>2.5</b> base damage.<q>Some question the use of swords on a brick wall. Those guys are lame.</q>
+  desc:Melee building</>Does <b>2.5</b> base damage.<q>Some question the use of swords on a brick wall. Those guys are lame.</q><.>Your swordsmen do <b>[swordsmanDamage:ps] damage per second</b>.<.>They did <b>[swordsmanDamage] damage</b> in total.
   cost:1100 money
   on tick:
     gain 2.5 money
@@ -1298,7 +1289,7 @@ Buildings
   shown
 
     *gunner
-  desc:Ranged building</>Does <b>30</b> base damage.<q>Shoots his gun.</q>
+  desc:Ranged building</>Does <b>30</b> base damage.<q>Shoots his gun.</q><.>Your gunshooters do <b>[gunnerDamage:ps] damage per second</b>.<.>They did <b>[gunnerDamage] damage</b> in total.
   cost:16000 money
   on tick:
     gain 30 money
@@ -1314,7 +1305,7 @@ Buildings
   shown
 
   *grenade
-  desc:Ranged building</>Does <b>500</b> base damage.<q>A man with grenades. I am a master of descriptions.</q>
+  desc:Ranged building</>Does <b>500</b> base damage.<q>A man with grenades. I am a master of descriptions.</q><.>Your grenadmen do <b>[grenadeDamage:ps] damage per second</b>.<.>They did <b>[grenadeDamage] damage</b> in total.
   cost:400000 money
   on tick:
     gain 500 money
@@ -1330,7 +1321,7 @@ Buildings
   shown
 
   *wreckingBall
-  desc:Heavy duty building</>Does <b>7,000</b> base damage.<q>Something actually meant for destroying walls.</q>
+  desc:Heavy duty building</>Does <b>7,000</b> base damage.<q>Something actually meant for destroying walls.</q><.>Your wrecking balls do <b>[wreckingBallDamage:ps] damage per second</b>.<.>They did <b>[wreckingBallDamage] damage</b> in total.
   cost:8000000 money
   on tick:
     gain 7000 money
@@ -1346,7 +1337,7 @@ Buildings
   shown
 
   *bulldozer
-  desc:Heavy duty building</>Does <b>80,000</b> base damage.<q>Rams the wall. So good.</q>
+  desc:Heavy duty building</>Does <b>80,000</b> base damage.<q>Rams the wall. So good.</q><.>Your bulldozers do <b>[bulldozerDamage:ps] damage per second</b>.<.>They did <b>[bulldozerDamage] damage</b> in total.
   cost:120000000 money
   on tick:
     gain 80000 money
@@ -1362,7 +1353,7 @@ Buildings
   shown
 
   *airstrike
-  desc:Heavy duty building</>Does <b>2,500,000</b> base damage.<q>You know, the guy that calls airstrikes.</q>
+  desc:Heavy duty building</>Does <b>2,500,000</b> base damage.<q>You know, the guy that calls airstrikes.</q><.>Your airstrike callers do <b>[airstrikeDamage:ps] damage per second</b>.<.>They did <b>[airstrikeDamage] damage</b> in total.
   cost:5000000000 money
   on tick:
     gain 2500000 money
@@ -1378,7 +1369,7 @@ Buildings
   shown
 
   *necromancer
-  desc:Magic building</>Does <b>33,333,333</b> base damage.<q>Raises dead wizards to destroy the wall with their dark magic. Requires bricks.</q>
+  desc:Magic building</>Does <b>33,333,333</b> base damage.<q>Raises dead wizards to destroy the wall with their dark magic. Requires bricks.</q><.>Your necromancers do <b>[necromancerDamage:ps] damage per second</b>.<.>They did <b>[necromancerDamage] damage</b> in total.
   cost:66666666666 money, 1 bricks
   on tick:
     gain 33333333 money
@@ -1394,7 +1385,7 @@ Buildings
   req:magicUnlock
   
   *giant
-  desc:Magic building</>Does <b>250,000,000</b> base damage.<q>The prime inhabitants of the Old World, back from the dead. They smash the wall with their giant fists.</q>
+  desc:Magic building</>Does <b>250,000,000</b> base damage.<q>The prime inhabitants of the Old World, back from the dead. They smash the wall with their giant fists.</q><.>Your titans do <b>[giantDamage:ps] damage per second</b>.<.>They did <b>[giantDamage] damage</b> in total.
   cost:888888888888 money
   on tick:
     gain 250000000 money
@@ -1410,7 +1401,7 @@ Buildings
   req:giantUnlock
 
   *demon
-  desc:Magic building</>Does <b>3,666,666,666</b> base damnage.<q>Defiles the wall with the darkest magic of all.</q>
+  desc:Magic building</>Does <b>3,666,666,666</b> base damnage.<q>Defiles the wall with the darkest magic of all.</q><.>Your demons do <b>[demonDamage:ps] damnage per second</b>.<.>They did <b>[demonDamage] damnage</b> in total.
   cost:666 bricks
   on tick:
     gain 3666666666 money
@@ -1426,7 +1417,7 @@ Buildings
   req:magicLevel3
 
   *compromiser
-  desc:Dream building</>Does <b>40,000,000,000</b> base damage.</>Gives <b>0.1</b> fourth wall bricks.<q>Enters reality code and removes the wall from existence.</q>
+  desc:Dream building</>Does <b>40,000,000,000</b> base damage.</>Gives <b>0.1</b> fourth wall bricks.<q>Enters reality code and removes the wall from existence.</q><.>Your reality compromisers do <b>[compromiserDamage:ps] damage per second</b>.<.>They did <b>[compromiserDamage] damage</b> in total.
   cost:100101001011010 money
   on tick:
     gain 40000000000 money
@@ -1444,7 +1435,7 @@ Buildings
   req:fourthWallUnlock
 
   *lastBuilding
-  desc:Dream building</>Does <b>1,000,000,000,000,000</b> base damage.<q>Robots covered in The Black. They're really cool, so no one questions mixing the most dangerous & evil thing ever with cold, unfeeling robots.</q>
+  desc:Dream building</>Does <b>1,000,000,000,000,000</b> base damage.<q>Robots covered in The Black. They're really cool, so no one questions mixing the most dangerous & evil thing ever with cold, unfeeling robots.</q><.>Your black obliterators do <b>[lastDamage:ps] damage per second</b>.<.>They did <b>[lastDamage] damage</b> in total.
   cost:52000000000000000000 money, 52000 fourthWallMatter
   on tick:
     gain 1000000000000000 money
@@ -1460,7 +1451,7 @@ Buildings
   req:have finalWallUnlock
 
   *brickFactory
-  desc:Special building</>Creates <b>0.05</b> base bricks.<q>Creates artificial bricks with dark magic. The wizards will never know.</q>
+  desc:Special building</>Creates <b>0.05</b> base bricks.<q>Creates artificial bricks with dark magic. The wizards will never know.</q><.>Your brick factories produce <b>[bricks:ps] bricks per second</b>.<.>They produced <b>[bricks - handBricks] bricks</b> in total.
   cost:16666666666666 money
   on tick:
     gain 0.05 bricks
