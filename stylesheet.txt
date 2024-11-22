@@ -164,3 +164,9 @@
 	height: 15px;
 	position: fixed;
 	bottom: 10px;}
+.desc > div
+    {text-indent: inherit;}
+q::before, q::after
+    {content: "“";
+	display: inline-block;
+	}

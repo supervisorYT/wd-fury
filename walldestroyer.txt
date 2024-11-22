@@ -316,6 +316,7 @@ Buttons
   shown
   name:Punch wall
   class:hitwall
+  show clicks
   tags:clickable damager
   icon:http://i.imgur.com/108BtPH.png
   desc:Made <b>[handDamage] damage</b> by hand
@@ -405,7 +406,7 @@ Buildings
     gain 100 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-    hide this
+    lose destroyWall
   end
   name:Destroy 2nd wall
   req:1 destroyWall
@@ -420,7 +421,7 @@ Buildings
     gain 10000 totalBricks
     gain 1 wallsDestroyed
     gain 1 prePrestige
-    hide this
+    lose destroyBigWall
   end
   name:Destroy 3rd wall
   req:1 destroyBigWall
@@ -435,7 +436,7 @@ Buildings
     gain 250000 totalBricks
     gain 1 wallsDestroyed
     gain 2 prePrestige
-    hide this
+    lose destroyHugeWall
   end
   tags:loseonreset wall
   class:massivewall wall
@@ -451,7 +452,7 @@ Buildings
     gain 1 goldBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    hide this
+    lose destroyMassiveWall
   end
   tags:loseonreset wall
   class:finalwall wall
@@ -466,7 +467,7 @@ Buildings
     gain 100000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    hide this
+    lose destroyFinalWall
   end
   tags:loseonreset wall
   class:bonuswall wall
@@ -481,7 +482,7 @@ Buildings
     gain 250000000 totalBricks
     gain 1 wallsDestroyed
     gain 5 prePrestige
-    hide this
+    lose destroyBonusWall
   end
   tags:loseonreset wall
   class:bonuswall wall
@@ -496,7 +497,7 @@ Buildings
     gain 500000000 totalBricks
     gain 1 wallsDestroyed
     gain 6 prePrestige
-    hide this
+    lose destroyBonusWall2
   end
   tags:loseonreset wall
   class:bonuswall wall
@@ -511,7 +512,7 @@ Buildings
     gain 1000000000 totalBricks
     gain 1 wallsDestroyed
     gain 7 prePrestige
-    hide this
+    lose destroyBonusWall3
   end
   tags:loseonreset wall
   class:bonuswall wall
@@ -526,7 +527,7 @@ Buildings
     gain 2000000000 totalBricks
     gain 1 wallsDestroyed
     gain 8 prePrestige
-    hide this
+    lose destroyBonusWall4
   end
   tags:loseonreset wall
   class:bonuswall wall
@@ -541,7 +542,7 @@ Buildings
     gain 4000000000 totalBricks
     gain 1 wallsDestroyed
     gain 9 prePrestige
-    hide this
+    lose destroyBonusWall5
   end
   tags:loseonreset wall
   class:bonuswall2 wall
@@ -556,7 +557,7 @@ Buildings
     gain 8000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    hide this
+    lose destroyBonusWall6
   end
   tags:loseonreset wall
   class:bonuswall2 wall
@@ -571,7 +572,7 @@ Buildings
     gain 16000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    hide this
+    lose destroyBonusWall7
   end
   tags:loseonreset wall
   class:bonuswall2 wall
@@ -586,7 +587,7 @@ Buildings
     gain 32000000000 totalBricks
     gain 1 wallsDestroyed
     gain 10 prePrestige
-    hide this
+    lose destroyBonusWall8
   end
   tags:loseonreset wall
   class:bonuswall2 wall
@@ -603,7 +604,7 @@ Buildings
     gain 20 prePrestige
     gain 1 goldBricks
     gain 1 bonusBossBrick
-    hide this
+    lose destroyBonusWall9
   end
   tags:loseonreset wall
   class:bonuswallboss wall
@@ -619,7 +620,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall10
   end
   tags:loseonreset wall
   class:spacewall wall
@@ -635,7 +636,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 25 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall11
   end
   tags:loseonreset wall
   class:spacewall wall
@@ -651,7 +652,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall12
   end
   tags:loseonreset wall
   class:spacewall wall
@@ -667,7 +668,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 50 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall13
   end
   tags:loseonreset wall
   class:spacewall wall
@@ -683,7 +684,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall14
   end
   tags:loseonreset wall
   class:spacewall wall
@@ -699,7 +700,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 75 prePrestige
     gain 10 spaceBricks
-    hide this
+    lose destroyBonusWall15
   end
   tags:loseonreset wall
   class:spacewall2 wall
@@ -715,7 +716,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-    hide this
+    lose destroyBonusWall16
   end
   tags:loseonreset wall
   class:spacewall2 wall
@@ -731,7 +732,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 100 prePrestige
     gain 15 spaceBricks
-    hide this
+    lose destroyBonusWall17
   end
   tags:loseonreset wall
   class:spacewall2 wall
@@ -747,7 +748,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 150 prePrestige
     gain 20 spaceBricks
-    hide this
+    lose destroyBonusWall18
   end
   tags:loseonreset wall
   class:spacewall2 wall
@@ -765,7 +766,7 @@ Buildings
     gain 1 goldBricks
     gain 1 spaceBossBrick
     gain 40 spaceBricks
-    hide this
+    lose destroyBonusWall19
   end
   tags:loseonreset wall
   class:spacewallboss wall
@@ -781,8 +782,8 @@ Buildings
     gain 1 wallsDestroyed
     gain 250 prePrestige
     gain 5 timeBricks
-      gain 1 timeUpgradeProd
-    hide this
+    gain 1 timeUpgradeProd
+    lose destroyBonusWall20
   end
   tags:loseonreset wall
   class:timewall wall
@@ -798,7 +799,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 250 prePrestige
     gain 5 timeBricks
-    hide this
+    lose destroyBonusWall21
   end
   tags:loseonreset wall
   class:timewall wall
@@ -814,7 +815,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-    hide this
+    lose destroyBonusWall22
   end
   tags:loseonreset wall
   class:timewall wall
@@ -830,7 +831,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 500 prePrestige
     gain 5 timeBricks
-    hide this
+    lose destroyBonusWall23
   end
   tags:loseonreset wall
   class:timewall wall
@@ -846,7 +847,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 6 timeBricks
-    hide this
+    lose destroyBonusWall24
   end
   tags:loseonreset wall
   class:timewall wall
@@ -862,7 +863,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 750 prePrestige
     gain 7 timeBricks
-    hide this
+    lose destroyBonusWall25
   end
   tags:loseonreset wall
   class:timewall wall
@@ -878,7 +879,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 8 timeBricks
-    hide this
+    lose destroyBonusWall26
   end
   tags:loseonreset wall
   class:timewall2 wall
@@ -894,7 +895,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1000 prePrestige
     gain 9 timeBricks
-    hide this
+    lose destroyBonusWall27
   end
   tags:loseonreset wall
   class:timewall2 wall
@@ -910,7 +911,7 @@ Buildings
     gain 1 wallsDestroyed
     gain 1500 prePrestige
     gain 10 timeBricks
-    hide this
+    lose destroyBonusWall28
   end
   tags:loseonreset wall
   class:timewall2 wall
@@ -928,7 +929,7 @@ Buildings
     gain 15 timeBricks
     gain 1 goldBricks
     gain 1 timeBossBrick
-    hide this
+    lose destroyBonusWall29
   end
   tags:loseonreset wall
   class:timewallboss wall
@@ -945,7 +946,7 @@ Buildings
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    hide this
+    lose destroyBonusWall30
   end
   tags:loseonreset wall
   class:endwall wall
@@ -962,7 +963,7 @@ Buildings
     gain 2500 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    hide this
+    lose destroyBonusWall31
   end
   tags:loseonreset wall
   class:endwall wall
@@ -979,7 +980,7 @@ Buildings
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    hide this
+    lose destroyBonusWall32
   end
   tags:loseonreset wall
   class:endwall wall
@@ -996,7 +997,7 @@ Buildings
     gain 5000 prePrestige
     gain 100 spaceBricks
     gain 2 endBricks
-    hide this
+    lose destroyBonusWall33
   end
   tags:loseonreset wall
   class:endwall wall
@@ -1013,7 +1014,7 @@ Buildings
     gain 7500 prePrestige
     gain 150 spaceBricks
     gain 2 endBricks
-    hide this
+    lose destroyBonusWall34
   end
   tags:loseonreset wall
   class:endwall wall
@@ -1030,7 +1031,7 @@ Buildings
     gain 10000 prePrestige
     gain 150 spaceBricks
     gain 3 endBricks
-    hide this
+    lose destroyBonusWall35
   end
   tags:loseonreset wall
   class:endwall2 wall
@@ -1047,7 +1048,7 @@ Buildings
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 3 endBricks
-    hide this
+    lose destroyBonusWall36
   end
   tags:loseonreset wall
   class:endwall2 wall
@@ -1064,7 +1065,7 @@ Buildings
     gain 10000 prePrestige
     gain 200 spaceBricks
     gain 4 endBricks
-    hide this
+    lose destroyBonusWall37
   end
   tags:loseonreset wall
   class:endwall2 wall
@@ -1081,7 +1082,7 @@ Buildings
     gain 12500 prePrestige
     gain 250 spaceBricks
     gain 4 endBricks
-    hide this
+    lose destroyBonusWall38
   end
   tags:loseonreset wall
   class:endwall2 wall
@@ -1100,7 +1101,7 @@ Buildings
     gain 9 endBricks
     gain 1 goldBricks
     gain 1 endBossBrick
-    hide this
+    lose destroyBonusWall39
   end
   tags:loseonreset wall
   class:endwallboss wall
@@ -1118,8 +1119,8 @@ Buildings
     gain 50 timeBricks
     gain 1 finalityBricks
     gain 1 endBossBrick
-      gain 1 timeUpgradeProd2
-    hide this
+    gain 1 timeUpgradeProd2
+    lose destroyBonusWall40
   end
   tags:loseonreset wall
   class:finalitywall wall
@@ -1136,7 +1137,7 @@ Buildings
     gain 50000 prePrestige
     gain 75 timeBricks
     gain 1 finalityBricks
-    hide this
+    lose destroyBonusWall41
   end
   tags:loseonreset wall
   class:finalitywall wall
@@ -1153,7 +1154,7 @@ Buildings
     gain 75000 prePrestige
     gain 125 timeBricks
     gain 1 finalityBricks
-    hide this
+    lose destroyBonusWall42
   end
   tags:loseonreset wall
   class:finalitywall2 wall
@@ -1170,7 +1171,7 @@ Buildings
     gain 150000 prePrestige
     gain 175 timeBricks
     gain 2 finalityBricks
-    hide this
+    lose destroyBonusWall43
   end
   tags:loseonreset wall
   class:finalitywall3 wall
@@ -1192,7 +1193,7 @@ Buildings
     gain 1 goldBricks
     gain 1 winBricks
       if (timesActuallyWon > 0) gain 1 timeUpgradeProd3
-    hide this
+    lose destroyBonusWall44
     show timeUpgrade2
     show timeUpgrade3
     show timeUpgrade4
