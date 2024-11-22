@@ -74,7 +74,7 @@
 	overflow-y: auto;}
 .wall .amount
 	{font-size: 0px;}
-.building, .box, .upgrade.notOwned, .textbutton
+.tag-building, .tag-wall, .box, .upgrade.notOwned, .textbutton
 	{  border: 1px solid #000;
 		box-shadow: 0px 1px 0px #fff inset,0px -1px 0px rgba(0,0,0,0.25) inset,0px 0px 6px rgba(255,255,255,0.2) inset,0px 0px 6px rgba(0,0,0,0.2);
 		margin: -1px;}
