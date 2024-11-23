@@ -356,7 +356,6 @@ Buildings
     gain 1 resetTimes
     lose resetUnlock
     lose finalWallUnlock
-    hide lastBuilding
     gain wallsDestroyed totalWalls
     lose tag:loseonreset
     show destroyWall
