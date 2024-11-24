@@ -171,8 +171,10 @@ q::before, q::after
 	display: inline-block;
 	}
 q + i
-    {display: inline-block;
-	text-align: right;}
+    {display: block;
+	text-align: right;
+	font-style: normal;
+	font-size: smaller;}
 q + i::before
     {content: "- ";
 	display: "inline-block";}

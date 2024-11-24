@@ -1057,7 +1057,7 @@ Buildings
   name:Destroy End Wall #4
   req:1 destroyBonusWall35
   *destroyBonusWall37
-  desc:<q>If you think about it, everything is unfinished. Nothing is truly left without questions.</i>~Lord Reaefsek</q><//>Destroy End Wall #3 and move on to the next one.</>Gives <b>51 quintillion</b> bricks and <b>25 nonillion</b> cash.</>Gives <b>3</b> End bricks and <b>200</b> space bricks.</>Worth <b>10,000</b> cosmic knowledge.
+  desc:<q>If you think about it, everything is unfinished. Nothing is truly left without questions.</q><i>Lord Reaefsek</i><//>Destroy End Wall #3 and move on to the next one.</>Gives <b>51 quintillion</b> bricks and <b>25 nonillion</b> cash.</>Gives <b>3</b> End bricks and <b>200</b> space bricks.</>Worth <b>10,000</b> cosmic knowledge.
   cost:102400000000000000000000000000000 totalMoney
   on earn:
     gain 25600000000000000000000000000000 money
@@ -1543,7 +1543,7 @@ Upgrades
   icon: http://i.imgur.com/YYCAyYr.png
   req:1 destroyBigWall
   *fourthWallUnlock
-  desc:Unlocks <b>reality compromisers</b>.</>Unlocks the <b>4th wall upgrade tier</b>.</>We have discovered with the breaking of the 4th wall that we are all inside a stupid idle game. Not even a <q>real</q> game! But we can use this knowledge to our advantage...
+  desc:Unlocks <b>reality compromisers</b>.</>Unlocks the <b>4th wall upgrade tier</b>.<q>We have discovered with the breaking of the 4th wall that we are all inside a stupid idle game. Not even a <i>real</i> game! But we can use this knowledge to our advantage...</q>
   cost:404400040440040440 money, 4004404 bricks
   name:Reality Research
   icon: http://i.imgur.com/RH7gkh2.png
@@ -1801,14 +1801,14 @@ Upgrades
   name:Past Magic Residue
   icon:http://i.imgur.com/O5SW3NU.png
   *timeUpgrade4
-  desc:Gunners do <b>4%</b> more damage <b>per reality compromiser</b>.<q>We've always wanted to shoot hundreds of bullets with each shot, but never had the bullets for it.</q><i> Gunner Project Leader in the ATB proposal</i>
+  desc:Gunners do <b>4%</b> more damage <b>per reality compromiser</b>.<q>We've always wanted to shoot hundreds of bullets with each shot, but never had the bullets for it.</q><i>Gunner Project Leader in the ATB proposal</i>
   cost:5 timeBricks
   req:1 timeUpgradeRes4
   passive:multiply yield of gunner by (1 + (0.04 * compromiser))
   name:All The Bullets
   icon:http://i.imgur.com/HKL2QpN.png
   *timeUpgrade5
-  desc:Grenademen do <b>1.5%</b> more damage <b>per wrecking ball</b>.<q>I approve any proposal with a really boss name, of course.</q><i> RUC CEO on the proposal process</i>
+  desc:Grenademen do <b>1.5%</b> more damage <b>per wrecking ball</b>.<q>I approve any proposal with a really boss name, of course.</q><i>RUC CEO on the proposal process</i>
   cost:5 timeBricks
   req:1 timeUpgradeRes5
   passive:multiply yield of grenade by (1 + (0.015 * wreckingBall))
@@ -1847,7 +1847,7 @@ Upgrades
   name:Demons From The Past
   icon:http://i.imgur.com/cESUAsi.png
   *timeUpgrade10
-  desc:Dream buildings are <b>10%</b> more efficient <b>per boss brick</b>.<q>If we explore into the past, each boss brick has a ton of reality secrets stored in it. It's like whoever constructed the walls is trying to help us destroy them!</q><i> RC Project Leader</i>
+  desc:Dream buildings are <b>10%</b> more efficient <b>per boss brick</b>.<q>If we explore into the past, each boss brick has a ton of reality secrets stored in it. It's like whoever constructed the walls is trying to help us destroy them!</q><i>RC Project Leader</i>
   cost:10 timeBricks
   req:1 timeUpgradeRes10
   passive:
@@ -1885,7 +1885,7 @@ Upgrades
   name:Random Punching Bonus
   icon:http://i.imgur.com/6WTh07Z.png
   *timeUpgrade14
-  desc:Melee buildings do <b>40%</b> more damage <b>per random bonus melee point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>The demons are kind of like Agent Johnson, only even bigger assholes.</q><i> ~Agent Connor</i>
+  desc:Melee buildings do <b>40%</b> more damage <b>per random bonus melee point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>The demons are kind of like Agent Johnson, only even bigger assholes.</q><i>Agent Connor</i>
   cost:50 timeBricks
   req:1 timeUpgradeRes14
   passive:
@@ -1906,7 +1906,7 @@ Upgrades
   name:Random Ranged Bonus
   icon:http://i.imgur.com/C0FN0FI.png
   *timeUpgrade16
-  desc:Heavy duty buildings do <b>35%</b> more damage <b>per random bonus heavy point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>I was watching TV, and a demon jumps through the window and starts dishing out advanced time knowledge! I had to scramble for a pen with my greasy chip fingers because the assholes never repeat it. He then told me which characters die that season, took my chips, and left.</q><i> Agent Carter</i><q>I am so done.</q><i> Head of Demon Relations</i>
+  desc:Heavy duty buildings do <b>35%</b> more damage <b>per random bonus heavy point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>I was watching TV, and a demon jumps through the window and starts dishing out advanced time knowledge! I had to scramble for a pen with my greasy chip fingers because the assholes never repeat it. He then told me which characters die that season, took my chips, and left.</q><i>Agent Carter</i><q>I am so done.</q><i>Head of Demon Relations</i>
   cost:75 timeBricks
   req:1 timeUpgradeRes16
   passive:
@@ -1917,7 +1917,7 @@ Upgrades
   name:Random Heavy Duty Bonus
   icon:http://i.imgur.com/kzkBClB.png
   *timeUpgrade17
-  desc:Magic buildings do <b>25%</b> more damage <b>per random bonus magic point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>I need to step up my game. The demons are freaking MASTERS.</q><i> Agent Johnson</i>
+  desc:Magic buildings do <b>25%</b> more damage <b>per random bonus magic point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>I need to step up my game. The demons are freaking MASTERS.</q><i>Agent Johnson</i>
   cost:100 timeBricks
   req:1 timeUpgradeRes17
   passive:
@@ -1928,7 +1928,7 @@ Upgrades
   name:Random Magic Bonus
   icon:http://i.imgur.com/y3XeTNm.png
   *timeUpgrade18
-  desc:Brick factories and manual brick creation are <b>30%</b> more efficient <b>per random bonus brick point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>The worst part is that you can't complain that much, because they are giving you super useful info. Even if they tie a tape that repeats it only once to a brick and throw it through your window while you're taking a shower.</q><i> Brick Factory Project Leader</i>
+  desc:Brick factories and manual brick creation are <b>30%</b> more efficient <b>per random bonus brick point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>The worst part is that you can't complain that much, because they are giving you super useful info. Even if they tie a tape that repeats it only once to a brick and throw it through your window while you're taking a shower.</q><i>Brick Factory Project Leader</i>
   cost:150 timeBricks
   req:1 timeUpgradeRes18
   passive:multiply yield of tag:clickable by (1 + (0.3 * timeUpgradeRes18))
@@ -1948,7 +1948,7 @@ Upgrades
   name:Temporal Power Extraction
   icon:http://i.imgur.com/QV85c3k.png
   *timeUpgrade20
-  desc:Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><q>The deep time theories involved in this project are pretty dense. HAHAHAHAHAHA</q><i> Agent Johnson's only comment on the DTS proposal</i>
+  desc:Everything is <b>0.2%</b> more efficient <b>per 100 minutes since reset.</b><q>The deep time theories involved in this project are pretty dense. HAHAHAHAHAHA</q><i>Agent Johnson's only comment on the DTS proposal</i>
   cost:300 timeBricks
   req:1 timeUpgradeRes20
   passive:
@@ -1958,7 +1958,7 @@ Upgrades
   name:Density Timestacking
   icon:http://i.imgur.com/Q6oG66i.png
   *timeUpgrade21
-  desc:Dream buildings are <b>20%</b> more efficient <b>per random bonus dream point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>Okay, so there was a bonus to giving them The Amsora. IT WASN'T FUCKING WORTH IT.</q><i> RC Project Leader, seconded by basically everyone</i><q> </>The demons are hilarious, you guys all need to chill.</q><i> Agent Johnson</i><q>My problem with the demons is this: They are horrible, garnished with awful, with a Satan on top.</q><i> Agent Connor</i>
+  desc:Dream buildings are <b>20%</b> more efficient <b>per random bonus dream point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>Okay, so there was a bonus to giving them The Amsora. IT WASN'T FUCKING WORTH IT.</q><i>RC Project Leader, seconded by basically everyone</i><q> </>The demons are hilarious, you guys all need to chill.</q><i>Agent Johnson</i><q>My problem with the demons is this: They are horrible, garnished with awful, with a Satan on top.</q><i>Agent Connor</i>
   cost:1000 timeBricks, 1.23456789e37 money 
   req:1 timeUpgradeRes21, 1 timesActuallyWon
   passive:
@@ -1969,7 +1969,7 @@ Upgrades
   icon:http://i.imgur.com/zq20OLd.png
   
   *specialBrickBonus
-  desc:Everything is <b>0.001%</b> more efficient per <b>space brick</b> and <b>0.007%</b> per <b>time brick</b>.<q>I can barely contain my excitement.</q><i> Agent Johnson</i><q>There's something about the massive concentration of sarcasm in your voice that makes me think otherwise.</q><i> Agent Lawrence</i><q>Look, I just want more interesting upgrades, okay?</q><i> Agent Johnson</i>
+  desc:Everything is <b>0.001%</b> more efficient per <b>space brick</b> and <b>0.007%</b> per <b>time brick</b>.<q>I can barely contain my excitement.</q><i>Agent Johnson</i><q>There's something about the massive concentration of sarcasm in your voice that makes me think otherwise.</q><i>Agent Lawrence</i><q>Look, I just want more interesting upgrades, okay?</q><i>Agent Johnson</i>
   cost:8e24 bricks
   req:1 timesActuallyWon, 1 winBricks
   passive:
@@ -2005,7 +2005,7 @@ Upgrades
   icon:http://i.imgur.com/oH8QPgZ.png
   req:1 destroyBonusWall31
   *endStory2
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Cascada</b></>When The End comes we will all feel it, we will know it has arrived. The End <i>will</i> come, as nothing can truly halt The Harbinger.<//>The End is not an end of us, or anything material. It is an end of ignorance, for The End will reveal what - or who - has hid behind the curtain the entire time.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Cascada</b></>When The End comes we will all feel it, we will know it has arrived. The End <i>will</i> come, as nothing can truly halt The Harbinger.<//>The End is not an end of us, or anything material. It is an end of ignorance, for The End will reveal what - or who - has hid behind the curtain the entire time.</q>
   cost:2 endBricks
   req:1 destroyBonusWall32
   passive:
@@ -2016,7 +2016,7 @@ Upgrades
   name:Scroll B-8
   icon:http://i.imgur.com/q3LakAy.png
   *endStory3
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Foreshadowing</b></>The previous verse was information not entirely accurate; the curtain seen behind in The End will only explain partially. I will draw the full curtain in the scrolls labelled 'C'.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Foreshadowing</b></>The previous verse was information not entirely accurate; the curtain seen behind in The End will only explain partially. I will draw the full curtain in the scrolls labelled 'C'.</q>
   cost:2 endBricks
   req:1 destroyBonusWall33
   passive:
@@ -2027,7 +2027,7 @@ Upgrades
   name:Scroll B-9
   icon:http://i.imgur.com/q3LakAy.png
   *endStory4
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Infinity & Eternity</b></>There are two absolute powers in this universe: The Black, and the Time Bear. The former, a mistake; the latter, a failsafe. Both were never intended to be encountered.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Infinity & Eternity</b></>There are two absolute powers in this universe: The Black, and the Time Bear. The former, a mistake; the latter, a failsafe. Both were never intended to be encountered.</q>
   cost:2 endBricks
   req:1 destroyBonusWall34
   passive:
@@ -2038,7 +2038,7 @@ Upgrades
   name:Scroll A-3
   icon:http://i.imgur.com/q3LakAy.png
   *endStory5
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Standing on The Edge</b></>When I first saw The Black, I could tell it was not meant to exist, let alone be called upon. I did not understand how such a thing could be controlled, but I did not often understand what The King spoke of.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Standing on The Edge</b></>When I first saw The Black, I could tell it was not meant to exist, let alone be called upon. I did not understand how such a thing could be controlled, but I did not often understand what The King spoke of.</q>
   cost:2 endBricks
   req:1 destroyBonusWall35
   passive:
@@ -2049,7 +2049,7 @@ Upgrades
   name:Scroll A-4
   icon:http://i.imgur.com/q3LakAy.png
   *endStory6
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>The Eternal Guardian</b></>The first and only time I felt the direct power of the Time Bear, I did not know what it was; I had not been told of its existence. When the Time Bear is near, it feels as if there is simply no hope; as if you are already dead.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>The Eternal Guardian</b></>The first and only time I felt the direct power of the Time Bear, I did not know what it was; I had not been told of its existence. When the Time Bear is near, it feels as if there is simply no hope; as if you are already dead.</q>
   cost:3 endBricks
   req:1 destroyBonusWall36
   passive:
@@ -2060,7 +2060,7 @@ Upgrades
   name:Scroll A-8
   icon:http://i.imgur.com/q3LakAy.png
   *endStory7
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Closing The Curtain</b></>In the 38th, The King made a choice. He declared that The Army never be revealed, but work in shadow; for no one must know the truth.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Closing The Curtain</b></>In the 38th, The King made a choice. He declared that The Army never be revealed, but work in shadow; for no one must know the truth.</q>
   cost:3 endBricks
   req:1 destroyBonusWall37
   passive:
@@ -2071,7 +2071,7 @@ Upgrades
   name:Scroll C-4
   icon:http://i.imgur.com/q3LakAy.png
   *endStory8
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>The Levee</b></>The first time I began to question our actions was when I witnessed #5's return from The Edge. Traversing The Edge is cheating reality, you're simply <i>not allowed</i> to do it. But The King does not care about the rules.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>The Levee</b></>The first time I began to question our actions was when I witnessed #5's return from The Edge. Traversing The Edge is cheating reality, you're simply <i>not allowed</i> to do it. But The King does not care about the rules.</q>
   cost:4 endBricks
   req:1 destroyBonusWall38
   passive:
@@ -2082,7 +2082,7 @@ Upgrades
   req:have endStory7
   icon:http://i.imgur.com/q3LakAy.png
   *endStory9
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>The Long Game</b></>In the 44th, The King appointed me Keeper of The Black. He said he found it too much to take care of along with his other duties. Looking back, this move is interesting; he has made no other large mistakes in his long reign.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>The Long Game</b></>In the 44th, The King appointed me Keeper of The Black. He said he found it too much to take care of along with his other duties. Looking back, this move is interesting; he has made no other large mistakes in his long reign.</q>
   cost:4 endBricks
   req:1 destroyBonusWall39
   passive:
@@ -2093,7 +2093,7 @@ Upgrades
   name:Scroll C-37
   icon:http://i.imgur.com/q3LakAy.png
   *endStory10
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Framework</b></>The End is more of a beginning - of an enlightened age; and a reminder that all things come to an end. But life will not come to an end when the sun burns out; it will end with The Finality.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Framework</b></>The End is more of a beginning - of an enlightened age; and a reminder that all things come to an end. But life will not come to an end when the sun burns out; it will end with The Finality.</q>
   cost:4 endBricks
   req:1 destroyBonusWall40
   passive:
@@ -2104,7 +2104,7 @@ Upgrades
   name:Scroll B-20
   icon:http://i.imgur.com/q3LakAy.png
   *endStory11
-  desc:Everything is <b>5%</b> more efficient.</> <q><b>Two Paths</b></>I received messages from powers I cannot understand; They spoke of The King, and his wrongs against reality itself. That is why I am writing this. I have betrayed The Army, for what I believe to be the greater good.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q><b>Two Paths</b></>I received messages from powers I cannot understand; They spoke of The King, and his wrongs against reality itself. That is why I am writing this. I have betrayed The Army, for what I believe to be the greater good.</q>
   cost:5 endBricks
   req:1 destroyBonusWall41
   passive:
@@ -2115,7 +2115,7 @@ Upgrades
   icon:http://i.imgur.com/q3LakAy.png
   req:have endStory10
   *finalityUnlock
-  desc:Unlocks <b>The Finality Scrolls</b>.</>Everything is <b>10%</b> more efficient.<q>These ones are even more old and dusty.</q><i> Agent Carter</i><q>Ooh, that means they're more important!</q><i> Agent Johnson</i>
+  desc:Unlocks <b>The Finality Scrolls</b>.</>Everything is <b>10%</b> more efficient.<q>These ones are even more old and dusty.</q><i>Agent Carter</i><q>Ooh, that means they're more important!</q><i>Agent Johnson</i>
   cost:1 finalityBricks
   passive:
     multiply yield of tag:building by 1.1
@@ -2125,7 +2125,7 @@ Upgrades
   icon:http://i.imgur.com/ZDjMvWn.png
   req:1 destroyBonusWall41
   *endStory12
-  desc:Everything is <b>10%</b> more efficient.</> <q><b>The Revelation & The Remedy</b></>There is another similarity The Black and the Time Bear have. They both exist because of The King.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q><b>The Revelation & The Remedy</b></>There is another similarity The Black and the Time Bear have. They both exist because of The King.</q>
   cost:1 finalityBricks
   req:1 destroyBonusWall42
   passive:
@@ -2136,7 +2136,7 @@ Upgrades
   name:Scroll A-10
   icon:http://i.imgur.com/OG0I0gs.png
   *endStory13
-  desc:Everything is <b>10%</b> more efficient.</> <q><b>Balance</b></>He caused Infinity, and to prevent reality from being further defiled, They created Eternity.<//>Should these two powers collide, I believe it could very well cause The Finality.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q><b>Balance</b></>He caused Infinity, and to prevent reality from being further defiled, They created Eternity.<//>Should these two powers collide, I believe it could very well cause The Finality.</q>
   cost:1 finalityBricks
   req:1 destroyBonusWall43
   passive:
@@ -2147,7 +2147,7 @@ Upgrades
   name:Scroll A-11
   icon:http://i.imgur.com/OG0I0gs.png
   *endStory14
-  desc:Everything is <b>10%</b> more efficient.</> <q><b>The Odyssey</b></>I am - or was - #1, the highest ranking member of The Army. I am writing this in the hope that someone will find it and discover the truth, for it is all true, kept secret for time beyond count by The King.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q><b>The Odyssey</b></>I am - or was - #1, the highest ranking member of The Army. I am writing this in the hope that someone will find it and discover the truth, for it is all true, kept secret for time beyond count by The King.</q>
   cost:2 finalityBricks
   req:1 destroyBonusWall44
   passive:
@@ -2158,7 +2158,7 @@ Upgrades
   name:Scroll A-1
   icon:http://i.imgur.com/OG0I0gs.png
   *endStory15
-  desc:Everything is <b>10%</b> more efficient.</> <q><b>Mirrorage</b></>I am no longer a member of The Army, the first member to ever leave. I am now simply The Keeper of The Black, for I must keep this infinite power away from The King.<//>The title of this verse may be important to the cause; after writing the previous, I found an Edge message that had materialized on my temple saying only that word.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q><b>Mirrorage</b></>I am no longer a member of The Army, the first member to ever leave. I am now simply The Keeper of The Black, for I must keep this infinite power away from The King.<//>The title of this verse may be important to the cause; after writing the previous, I found an Edge message that had materialized on my temple saying only that word.</q>
   cost:2 finalityBricks
   req:1 destroyBonusWall45
   passive:
@@ -2169,7 +2169,7 @@ Upgrades
   name:Scroll A-50
   icon:http://i.imgur.com/OG0I0gs.png
   *endStory16
-  desc:Everything is <b>10%</b> more efficient.</> <q><b>The Legacy</b></>In the 42nd, The King created the Walls. He has recreated them for every Incarnation since. I still do not understand their purpose, but if there is one thing I know about The King, it's that he always has a reason.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q><b>The Legacy</b></>In the 42nd, The King created the Walls. He has recreated them for every Incarnation since. I still do not understand their purpose, but if there is one thing I know about The King, it's that he always has a reason.</q>
   cost:2 finalityBricks
   passive:
     multiply yield of tag:building by 1.1
@@ -2179,7 +2179,7 @@ Upgrades
   icon:http://i.imgur.com/OG0I0gs.png
   req:have endStory15
   *endStory17
-  desc:Everything is <b>16%</b> more efficient.</> <q><b>The Infuser</b></>The Army has attempted to create more substances with power similar to The Black. One of their attempts resulted in a strange volatile acid of which #21 said had no name, for it was a mistake. I saved the only sample of it in existence, and it is currently in possession of the Wizards. This unnamed substance is much less dangerous than The Black, and could be utilized safely by those outside of The Army.</q>
+  desc:Everything is <b>16%</b> more efficient.</><q><b>The Infuser</b></>The Army has attempted to create more substances with power similar to The Black. One of their attempts resulted in a strange volatile acid of which #21 said had no name, for it was a mistake. I saved the only sample of it in existence, and it is currently in possession of the Wizards. This unnamed substance is much less dangerous than The Black, and could be utilized safely by those outside of The Army.</q>
   cost:7.3e36 money, 7.3e21 fourthwallmatter, 73 endBricks, 9 finalityBricks
   req:1 timesActuallyWon, 1 winBricks
   passive:
@@ -2189,7 +2189,7 @@ Upgrades
   name:Scroll D-10
   icon:http://i.imgur.com/skLNAG0.png
   *endStory18
-  desc:Everything is <b>16%</b> more efficient.</> <q><b>Words of Warning III</b></>If there is one member of The Army you must avoid speaking with, it is #17. While the lower numbers wield more power, they are rarely malicious in intent. If you see #17 at all, it may be too late.</q>
+  desc:Everything is <b>16%</b> more efficient.</><q><b>Words of Warning III</b></>If there is one member of The Army you must avoid speaking with, it is #17. While the lower numbers wield more power, they are rarely malicious in intent. If you see #17 at all, it may be too late.</q>
   cost:2.6e37 money, 2.6e22 fourthwallmatter, 73 endBricks, 9 finalityBricks
   req:2 timesActuallyWon, 1 winBricks
   passive:
@@ -2199,7 +2199,7 @@ Upgrades
   name:Scroll A-33
   icon:http://i.imgur.com/skLNAG0.png
   *endStory19
-  desc:Everything is <b>16%</b> more efficient.</> <q><b>Method in Madness</b></>In an inscrutable move, The King has decided to leave his chess set on the A1 prime planet. Sometimes I feel that his only goal is to confuse everyone.</q>
+  desc:Everything is <b>16%</b> more efficient.</><q><b>Method in Madness</b></>In an inscrutable move, The King has decided to leave his chess set on the A1 prime planet. Sometimes I feel that his only goal is to confuse everyone.</q>
   cost:7.3e37 money, 7.3e22 fourthwallmatter, 73 endBricks, 9 finalityBricks
   req:3 timesActuallyWon, 1 winBricks
   passive:
@@ -2209,7 +2209,7 @@ Upgrades
   name:Scroll D-4
   icon:http://i.imgur.com/skLNAG0.png
   *endStory20
-  desc:Everything is <b>16%</b> more efficient.</> <q><b>Forbidden Techniques</b></>On the subject of how he came to create The Army, The King is entirely silent. I have... A <i>theory</i> of what he may have done, but I am only jumping to conclusions based on the magical power he wields. It is likely that there is a less implausible and absolutely insane way of acquiring such power.</q>
+  desc:Everything is <b>16%</b> more efficient.</><q><b>Forbidden Techniques</b></>On the subject of how he came to create The Army, The King is entirely silent. I have... A <i>theory</i> of what he may have done, but I am only jumping to conclusions based on the magical power he wields. It is likely that there is a less implausible and absolutely insane way of acquiring such power.</q>
   cost:4.44e38 money, 4.44e23 fourthwallmatter, 73 endBricks, 9 finalityBricks
   req:4 timesActuallyWon, 1 winBricks
   passive:
@@ -2271,7 +2271,7 @@ Upgrades
   name:Ruby Time Bear Ward
   icon:http://i.imgur.com/GArKzmU.png
   *timeBearWard6
-  desc:Everything is <b>6%</b> more efficient.<q>Found graffiti on the side of RUC headquarters saying "THE TIME BEAR IS COMING". Reports of irrational feelings of fear when looking at it. Requesting termination of the Time Rewinder project.</q><i> Agent Lawrence</i>
+  desc:Everything is <b>6%</b> more efficient.<q>Found graffiti on the side of RUC headquarters saying "THE TIME BEAR IS COMING". Reports of irrational feelings of fear when looking at it. Requesting termination of the Time Rewinder project.</q><i>Agent Lawrence</i>
   cost:987654321012 fourthWallMatter, 98765432101234 bricks
   req:1250 prestige, 6 resetTimes
   passive:
@@ -2281,7 +2281,7 @@ Upgrades
   name:Emerald Time Bear Ward
   icon:http://i.imgur.com/wY0iwY4.png
   *timeBearWard7
-  desc:Everything is <b>6%</b> more efficient.<q>The graffiti is everywhere now. On all of our facilities. It seems to appear overnight, after the cameras strangely go offline. Requesting immediate termination of the Time Rewinder project. ~Chief of Security, RUC</q>
+  desc:Everything is <b>6%</b> more efficient.<q>The graffiti is everywhere now. On all of our facilities. It seems to appear overnight, after the cameras strangely go offline. Requesting immediate termination of the Time Rewinder project.</q><i>Chief of Security, RUC</i>
   cost:9876543210123 fourthWallMatter, 987654321012345 bricks
   req:4000 prestige, 7 resetTimes
   passive:
@@ -2291,7 +2291,7 @@ Upgrades
   name:Sapphire Time Bear Ward
   icon:http://i.imgur.com/k4IRYqQ.png
   *timeBearWard8
-  desc:Everything is <b>6%</b> more efficient.<q>dude this is some creepy shit just cut the time crap</q><i> 1337 sn1p3r #73</i>
+  desc:Everything is <b>6%</b> more efficient.<q>dude this is some creepy shit just cut the time crap</q><i>1337 sn1p3r #73</i>
   cost:98765432101234 fourthWallMatter, 9876543210123456 bricks
   req:15000 prestige, 8 resetTimes
   passive:
@@ -2331,7 +2331,7 @@ Upgrades
   name:Rainbow Time Bear Ward
   icon:http://i.imgur.com/yZXIZw9.png
   *timeBearWard12
-  desc:Everything is <b>7%</b> more efficient.<q>This is the last ward the wizards can make. I do not know where we should go from this. I am going to remove myself from anywhere that could be associated with time travel. This is a farewell message. The Time Bear is coming.</q><i> CEO, RUC</i>
+  desc:Everything is <b>7%</b> more efficient.<q>This is the last ward the wizards can make. I do not know where we should go from this. I am going to remove myself from anywhere that could be associated with time travel. This is a farewell message. The Time Bear is coming.</q><i>CEO, RUC</i>
   cost:9876543210123456789 fourthWallMatter, 987654321012345678900 bricks
   req:1500000 prestige, 11 resetTimes
   passive:
@@ -2414,7 +2414,7 @@ Upgrades
  
 
   *productionMultMagic
-  desc:Everything is <b>20%</b> more efficient.<q>Yeah.</q><i> The MEE proposal </i>
+  desc:Everything is <b>20%</b> more efficient.<q>Yeah.</q><i>The MEE proposal </i>
   cost:1000000000000000000000 money
   passive:
     multiply yield of tag:building by 1.2
@@ -2504,7 +2504,7 @@ Upgrades
   icon:http://i.imgur.com/bN8UwLa.png
   req:1 destroyBonusWall45
   *productionMult8
-  desc:Everything is <b>30%</b> more efficient.<q>Locked in a Sgapang vault that we could only manage to get open by using the compromisers. It's like he wrote it just for us!</>EDIT: The first page translation is "Thanks to #17 for the idea". That might be worth noting.</q><i> >Agent Taylor</i>
+  desc:Everything is <b>30%</b> more efficient.<q>Locked in a Sgapang vault that we could only manage to get open by using the compromisers. It's like he wrote it just for us!</>EDIT: The first page translation is "Thanks to #17 for the idea". That might be worth noting.</q><i>>Agent Taylor</i>
   cost:6.66e36 money
   req:1 timesActuallyWon, 1 winBricks
   passive:
@@ -2514,7 +2514,7 @@ Upgrades
   name:Lord Reaefsek's Guide To Destruction
   icon:http://i.imgur.com/M4nj67A.png
   *productionMultArmy
-  desc:Everything is <b>35%</b> more efficient.<q>Found locked in Sauthir Castle's vault.</>Author: #3, as ordered by "The King".</>Dimensions: 10" by 12".</>Pages: 873.</>Age: ~35,000 years.</>Language: Old World.</>Binding: Scaly striped black and white hide, unknown creature of origin.</>Reality code enhancement(s): Indestructability.</>Usefulness: INTENSE EXTREME.<//>"...Intense extreme?"</q><i> Agent Brown</i><q>"You're intense extreme-LY STUPID. ABSOLUTELY DEVESTATED."</q><i> Agent Johnson</i>
+  desc:Everything is <b>35%</b> more efficient.<q>Found locked in Sauthir Castle's vault.</>Author: #3, as ordered by "The King".</>Dimensions: 10" by 12".</>Pages: 873.</>Age: ~35,000 years.</>Language: Old World.</>Binding: Scaly striped black and white hide, unknown creature of origin.</>Reality code enhancement(s): Indestructability.</>Usefulness: INTENSE EXTREME.<//>"...Intense extreme?"</q><i>Agent Brown</i><q>"You're intense extreme-LY STUPID. ABSOLUTELY DEVESTATED."</q><i>Agent Johnson</i>
   cost:3.7e37 money
   req:2 timesActuallyWon, 1 winBricks
   passive:
@@ -2534,7 +2534,7 @@ Upgrades
   name:Finality Tree Extract
   icon:http://i.imgur.com/xvVrdJg.png
   *productionMult10
-  desc:Everything is <b>50%</b> more efficient.<q>I'm surprised we can get it, given Johnson's bitching. ~Agent Connor</>You know you hate self-inserts too. <i>You know it deep in your heart</i>. ~Agent Johnson</q>
+  desc:Everything is <b>50%</b> more efficient.<q>I'm surprised we can get it, given Johnson's bitching.</q><i>Agent Connor</i><q>You know you hate self-inserts too. <i>You know it deep in your heart</i>.</q><i>Agent Johnson</i>
   cost:5.2e38 money
   req:4 timesActuallyWon, 1 winBricks
   passive:
@@ -2547,7 +2547,7 @@ Upgrades
 
 //legend of the fourth wall written by MasterSparky
   *fourthWallLegend1
-  desc:Everything is <b>5%</b> more efficient.</> <q>Read the epic tale of a hero who ventured into the unknown, past the fourth wall, for a very important purpose.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>Read the epic tale of a hero who ventured into the unknown, past the fourth wall, for a very important purpose.</q>
   cost:404 fourthWallMatter
   name:The Legend of The Fourth Wall
   passive:
@@ -2557,7 +2557,7 @@ Upgrades
   icon:http://i.imgur.com/04PTUqi.png
   req:1 destroyMassiveWall
   *fourthWallLegend2
-  desc:Everything is <b>5%</b> more efficient.</> <q>It was an ordinary day on the Forum, when the Fourth Wall was broken by the basketofpuppies, who did doth disappear after this feat most great.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>It was an ordinary day on the Forum, when the Fourth Wall was broken by the basketofpuppies, who did doth disappear after this feat most great.</q>
   cost:404 fourthWallMatter
   name:Story Page One
   passive:
@@ -2568,7 +2568,7 @@ Upgrades
   icon: http://i.imgur.com/B6IdD2m.png
 
   *fourthWallLegend3
-  desc:Everything is <b>5%</b> more efficient.</> <q>And thus, after many anxious days, a user MasterSparky of the Forum resolveth to find this most esteemed Member, and he destroyed the Fourth Wall soon after.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>And thus, after many anxious days, a user MasterSparky of the Forum resolveth to find this most esteemed Member, and he destroyed the Fourth Wall soon after.</q>
   cost:4004 fourthWallMatter
   name:Story Page Two
   passive:
@@ -2578,7 +2578,7 @@ Upgrades
   req:have fourthWallLegend2
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend4
-  desc:Everything is <b>5%</b> more efficient.</> <q>Entereth he into a portal most peculiar, and he doth found himself in a strange place with skies of purple. He met a man who doth decree, 'this is the Arcane Rift.'</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>Entereth he into a portal most peculiar, and he doth found himself in a strange place with skies of purple. He met a man who doth decree, 'this is the Arcane Rift.'</q>
   cost:40004 fourthWallMatter
   name:Story Page Three
   passive:
@@ -2588,7 +2588,7 @@ Upgrades
   req:have fourthWallLegend3
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend5
-  desc:Everything is <b>5%</b> more efficient.</> <q>The man did speaketh of the dangers ahead: of the Descent, the Depths, and the Inner Heart. He sayeth, 'you may earn Infinite Knowability.'</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>The man did speaketh of the dangers ahead: of the Descent, the Depths, and the Inner Heart. He sayeth, 'you may earn Infinite Knowability.'</q>
   cost:400004 fourthWallMatter
   name:Story Page Four
   passive:
@@ -2598,7 +2598,7 @@ Upgrades
   req:have fourthWallLegend4
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend6
-  desc:Everything is <b>5%</b> more efficient.</> <q>MasterSparky ventured forth, battling unspeakably horrific beasts. And he doth realize: 'I senseth the basketofpuppies's life signal.'</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>MasterSparky ventured forth, battling unspeakably horrific beasts. And he doth realize: 'I senseth the basketofpuppies's life signal.'</q>
   cost:1000001 fourthWallMatter
   name:Story Page Five
   passive:
@@ -2608,7 +2608,7 @@ Upgrades
   req:have fourthWallLegend5
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend7
-  desc:Everything is <b>5%</b> more efficient.</> <q>Hurry he did among the levels of the Rift, and in the Depths findeth the basketofpuppies, in the grip of Death, but still living.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>Hurry he did among the levels of the Rift, and in the Depths findeth the basketofpuppies, in the grip of Death, but still living.</q>
   cost:4000004 fourthWallMatter
   name:Story Page Six
   passive:
@@ -2618,7 +2618,7 @@ Upgrades
   req:have fourthWallLegend6
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend8
-  desc:Everything is <b>5%</b> more efficient.</> <q>And so he did forget the allure of Infinite Knowability, and rusheth back among the Rift, but could not exit; the monsters did move in front of the exit.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>And so he did forget the allure of Infinite Knowability, and rusheth back among the Rift, but could not exit; the monsters did move in front of the exit.</q>
   cost:10000001 fourthWallMatter
   name:Story Page Seven
   passive:
@@ -2628,7 +2628,7 @@ Upgrades
   req:have fourthWallLegend7
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend9
-  desc:Everything is <b>5%</b> more efficient.</> <q>A shield he called over them, and missiles down from the heavens to smiteth the creatures, while the basketofpuppies lay with life fading away.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>A shield he called over them, and missiles down from the heavens to smiteth the creatures, while the basketofpuppies lay with life fading away.</q>
   cost:40000004 fourthWallMatter
   name:Story Page Eight
   passive:
@@ -2638,7 +2638,7 @@ Upgrades
   req:have fourthWallLegend8
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend10
-  desc:Everything is <b>5%</b> more efficient.</> <q>The life signal of the esteemed Member doth fade away, and MasterSparky ran to the lifedock most renowned; and the doctor reassureth: 'the basketofpuppies shall returneth when ready.'</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>The life signal of the esteemed Member doth fade away, and MasterSparky ran to the lifedock most renowned; and the doctor reassureth: 'the basketofpuppies shall returneth when ready.'</q>
   cost:100000001 fourthWallMatter
   name:Story Page Nine
   passive:
@@ -2648,7 +2648,7 @@ Upgrades
   req:have fourthWallLegend9
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend11
-  desc:Everything is <b>5%</b> more efficient.</> <q>MasterSparky soon doth recalleth himself in full to the Forum, and reporteth his deeds.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>MasterSparky soon doth recalleth himself in full to the Forum, and reporteth his deeds.</q>
   cost:400000004 fourthWallMatter
   name:Story Page Ten
   passive:
@@ -2658,7 +2658,7 @@ Upgrades
   req:have fourthWallLegend10
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend12
-  desc:Everything is <b>5%</b> more efficient.</> <q>The Members of the Forum doth wait in anxiety until the basketofpuppies came back to the Forum, and all was well for a long while.</q>
+  desc:Everything is <b>5%</b> more efficient.</><q>The Members of the Forum doth wait in anxiety until the basketofpuppies came back to the Forum, and all was well for a long while.</q>
   cost:1000000001 fourthWallMatter
   name:Story Page Eleven
   passive:
@@ -2668,7 +2668,7 @@ Upgrades
   req:have fourthWallLegend11
   icon:http://i.imgur.com/B6IdD2m.png
   *fourthWallLegend13
-  desc:Everything is <b>10%</b> more efficient.</> <q>The End.</q>
+  desc:Everything is <b>10%</b> more efficient.</><q>The End.</q>
   cost:4000000004 fourthWallMatter
   name:The Essence of The Basket
   passive:
@@ -2910,14 +2910,14 @@ Upgrades
   name:Demon Translators
   icon:http://i.imgur.com/3vgirnY.png
   *handBrickUpgrade8
-  desc:Manual brick creation creates <b>four times</b> as many bricks.<q>It's an assembly line in your palm and a conveyor belt in your wrist! Perfect!</q><i> CEO, RUC</i>
+  desc:Manual brick creation creates <b>four times</b> as many bricks.<q>It's an assembly line in your palm and a conveyor belt in your wrist! Perfect!</q><i>CEO, RUC</i>
   cost:37777777777777777777777777777 money, 100000000000000000 bricks
   req:100000000000000000 handBricks
   passive:multiply yield of makeBricks by 4
   name:Factory Hand
   icon:http://i.imgur.com/FDoBvUl.png
   *handBrickUpgrade9
-  desc:Manual brick creation creates <b>five times</b> as many bricks.<q>i call hax</q><i> 1337 sn1p3r #10</i>
+  desc:Manual brick creation creates <b>five times</b> as many bricks.<q>i call hax</q><i>1337 sn1p3r #10</i>
   cost:3777777777777777777777777777777 money, 10000000000000000000 bricks
   req:10000000000000000000 handBricks
   passive:multiply yield of makeBricks by 5
@@ -3010,21 +3010,21 @@ Upgrades
   name:The Mighty Fist of Reaefsek
   icon:http://i.imgur.com/XSPPdpX.png
   *handUpgrade13
-  desc:Hand punches do <b>three times</b> as much damage.<q>Reaefsek's wrist had traces of something on the cut. It's hard to describe exactly what it is... it's like magic that has been perfectly optimised. There's so little of it that we could only use it to improve one object.</q><i> Head of R&D</i><q>We tried to examine it in reality code to see if we could replicate it, but its code is even more incomprehensible than other magic code. It almost seems like its creator made it confusing on purpose.</q><i> RC Project Leader</i>
+  desc:Hand punches do <b>three times</b> as much damage.<q>Reaefsek's wrist had traces of something on the cut. It's hard to describe exactly what it is... it's like magic that has been perfectly optimised. There's so little of it that we could only use it to improve one object.</q><i>Head of R&D</i><q>We tried to examine it in reality code to see if we could replicate it, but its code is even more incomprehensible than other magic code. It almost seems like its creator made it confusing on purpose.</q><i>RC Project Leader</i>
   cost:11111111111111111111111111111 money
   req:1000000000000000000000000000 handDamage
   passive:multiply yield of hitWall by 3
   name:Proposal #731
   icon:http://i.imgur.com/QJ6t0uF.png
   *handUpgrade14
-  desc:Hand punches do <b>three times</b> as much damage.<q>Upon the mountainous plateaus of a land afar lies a grove of silver leafless trees. Their power is equal to their mystery, and they symbolize The Finality.</q><i> A wall dating back to the time of the first titan king</i><q> </>We found them. The power surrounding their presence is so ridiculous that just by chilling next to them for a while you will be thrice as strong. But we could only take you, because getting there is just horrible.</q>
+  desc:Hand punches do <b>three times</b> as much damage.<q>Upon the mountainous plateaus of a land afar lies a grove of silver leafless trees. Their power is equal to their mystery, and they symbolize The Finality.</q><i>A wall dating back to the time of the first titan king</i><q> </>We found them. The power surrounding their presence is so ridiculous that just by chilling next to them for a while you will be thrice as strong. But we could only take you, because getting there is just horrible.</q>
   cost:1111111111111111111111111111111 money
   req:100000000000000000000000000000 handDamage
   passive:multiply yield of hitWall by 3
   name:The Finality Trees
   icon:http://i.imgur.com/uCnJqSI.png
   *handUpgrade15
-  desc:Hand punches do <b>four times</b> as much damage.<q>Did he seriously put himself in as the last tier? Oh my god. Oh my fucking god. <i>Disgusting.</i> ~Agent Johnson</q>
+  desc:Hand punches do <b>four times</b> as much damage.<q>Did he seriously put himself in as the last tier? Oh my god. Oh my fucking god. <i>Disgusting.</i></q><i>Agent Johnson</i>
   cost:11111111111111111111111111111111111 money
   req:1000000000000000000000000000000000 handDamage
   passive:multiply yield of hitWall by 4
@@ -3143,7 +3143,7 @@ Upgrades
   name:Eternity Gloves
   icon:http://i.imgur.com/wxsTySo.png
   *puncherupgrade12
-  desc:Punchers do <b>five times</b> as much damage.</>Hand punches do <b>twice</b> as much damage.<q>The nickname for Lord Reaefsek's terrifying... punching... thing. How do I describe it without having to describe it?</q><i> Agent Carter in the 1,000,000 proposal</i>
+  desc:Punchers do <b>five times</b> as much damage.</>Hand punches do <b>twice</b> as much damage.<q>The nickname for Lord Reaefsek's terrifying... punching... thing. How do I describe it without having to describe it?</q><i>Agent Carter in the 1,000,000 proposal</i>
   cost:20000000000000000000000000000000 money
   req:700 puncher
   passive:
@@ -3184,7 +3184,7 @@ Upgrades
   name:Maganium Gauntlets
   icon:http://i.imgur.com/PjH1TTm.png
   *puncherUpgradeMag3
-  desc:Punchers do <b>five times</b> as much damage.</>Hand punches do <b>50%</b> more damage.<q>These may end up killing us all, but at least they'll take that damn wall down with us.</q><i> CEO, RUC</i>
+  desc:Punchers do <b>five times</b> as much damage.</>Hand punches do <b>50%</b> more damage.<q>These may end up killing us all, but at least they'll take that damn wall down with us.</q><i>CEO, RUC</i>
   cost:202020202020202020 money, 200000 bricks
   req:350 puncher
   passive:
@@ -3204,7 +3204,7 @@ Upgrades
   name:Black-Dipped Gloves
   icon:http://i.imgur.com/hIw2jGW.png
   *puncherUpgradeArmy
-  desc:Punchers do <b>four times</b> as much damage.</>Hand punches are <b>twice</b> as efficient.<q>Okay, let's review: You find a chess set. Shrouded in mystery, indestructible and incredibly powerful with reality editing, dating back to before Optuqui's time. You make... CHESS KNUCKLES.</q><i> Agent Taylor</i><q>I don't understand your problem with this.</q><i> Puncher Project Leader</i>
+  desc:Punchers do <b>four times</b> as much damage.</>Hand punches are <b>twice</b> as efficient.<q>Okay, let's review: You find a chess set. Shrouded in mystery, indestructible and incredibly powerful with reality editing, dating back to before Optuqui's time. You make... CHESS KNUCKLES.</q><i>Agent Taylor</i><q>I don't understand your problem with this.</q><i>Puncher Project Leader</i>
   cost:2e35 money, 2e24 bricks, 2e21 fourthwallmatter
   req:800 puncher
   passive:
@@ -3339,7 +3339,7 @@ Upgrades
   name:Black-Infested Clubs
   icon:http://i.imgur.com/ofHYvwo.png
   *clubberUpgradeArmy
-  desc:Clubbers do <b>four times</b> as much damage.<q>Are you serious?</q><i> Agent Lawrence</i><q>Oh yes. We did it. Mission complete. Project finished. Clubs over.</q><i> Head of R&D</i>
+  desc:Clubbers do <b>four times</b> as much damage.<q>Are you serious?</q><i>Agent Lawrence</i><q>Oh yes. We did it. Mission complete. Project finished. Clubs over.</q><i>Head of R&D</i>
   cost:1.5e36 money, 1.5e25 bricks, 1.5e21 fourthwallmatter
   req:800 clubber
   passive:multiply yield of clubber by 4
@@ -3390,7 +3390,7 @@ Upgrades
   name:Dual Katanas
   icon:http://i.imgur.com/RtatyPV.png
   *swordsmanUpgrade6
-  desc:Swordsmen do <b>three times</b> as much damage.<q>If something isn't effective enough, light it on fire.</q><i> CEO of Realistic Upgrades Corporation(RUC)</i>
+  desc:Swordsmen do <b>three times</b> as much damage.<q>If something isn't effective enough, light it on fire.</q><i>CEO of Realistic Upgrades Corporation(RUC)</i>
   cost:1100000000 money
   req:100 swordsman
   passive:multiply yield of swordsman by 3
@@ -3432,7 +3432,7 @@ Upgrades
   name:The Finality Swords
   icon:http://i.imgur.com/iPTUQJx.png
   *swordsmanUpgrade12
-  desc:Swordsmen do <b>five times</b> as much damage.<q>The Blade was Lord Reaefsek's favorite weapon. It was his first magical artifact, and he kept upgrading it to the point where it's just ridiculously powerful.</q><i> Agent Taylor</i><q>The name's pretty cliché though.</q><i> Agent Johnson</i>
+  desc:Swordsmen do <b>five times</b> as much damage.<q>The Blade was Lord Reaefsek's favorite weapon. It was his first magical artifact, and he kept upgrading it to the point where it's just ridiculously powerful.</q><i>Agent Taylor</i><q>The name's pretty cliché though.</q><i>Agent Johnson</i>
   cost:1100000000000000000000000000000000 money
   req:700 swordsman
   passive:multiply yield of swordsman by 5
@@ -3462,7 +3462,7 @@ Upgrades
   name:Oblivion Blades
   icon:http://i.imgur.com/BVw5a9o.png
   *swordsUpgradeBlack
-  desc:Swordsmen do <b>six times</b> as much damage.<q>All those complainers who said hiring someone to make a really cool sword design for these was stupid 'cause The Black would eat through and destroy them eventually were being dumb. Look at these things.</q><i> CEO, RUC</i>
+  desc:Swordsmen do <b>six times</b> as much damage.<q>All those complainers who said hiring someone to make a really cool sword design for these was stupid 'cause The Black would eat through and destroy them eventually were being dumb. Look at these things.</q><i>CEO, RUC</i>
   cost:66006600660066006600660066006 money, 6600660066006600660 bricks
   req:600 swordsman
   passive:multiply yield of swordsman by 6
@@ -3535,7 +3535,7 @@ Upgrades
   name:Bayonets
   icon:http://i.imgur.com/Mus5GU4.png
   *clubSwordUpgrade6
-  desc:Clubbers do <b>1%</b> more damage per swordsman.</>Swordsmen do <b>1%</b> more damage per clubber.<q>It is said that Hyzem's Blades are unrecognizable as any one melee weapon; they are all at once.</q> 
+  desc:Clubbers do <b>1%</b> more damage per swordsman.</>Swordsmen do <b>1%</b> more damage per clubber.<q>It is said that Hyzem's Blades are unrecognizable as any one melee weapon; they are all at once.</q>
   cost:6044000000000000000000000 money
   passive:
     multiply yield of clubber by (1 + (0.01 * swordsman))
@@ -3591,7 +3591,7 @@ Upgrades
   name:Snipers
   icon:http://i.imgur.com/r4ii51b.png
   *gunnerUpgrade6
-  desc:Gunshooters do <b>three times</b> as much damage.<q>pistols r 4 overnabz</q><i> 1337 NoScOp3 sn1p3r #33</i>
+  desc:Gunshooters do <b>three times</b> as much damage.<q>pistols r 4 overnabz</q><i>1337 NoScOp3 sn1p3r #33</i>
   cost:8000000000 money
   req:100 gunner
   passive:multiply yield of gunner by 3
@@ -3619,7 +3619,7 @@ Upgrades
   name:Unstoppable Bullets
   icon:http://i.imgur.com/1QXsFlH.png
   *gunnerUpgrade10
-  desc:Gunshooters do <b>five times</b> as much damage.<q>gg</q><i> 1337 sn1p3r #52</i>
+  desc:Gunshooters do <b>five times</b> as much damage.<q>gg</q><i>1337 sn1p3r #52</i>
   cost:3200000000000000000000 money
   req:400 gunner
   passive:multiply yield of gunner by 5
@@ -3663,7 +3663,7 @@ Upgrades
   name:The Best Gun
   icon:http://i.imgur.com/pTa1WAu.png
   *gunnerUpgradeBlack
-  desc:Gunshooters do <b>six times</b> as much damage.<q>I support this because then I will be able to tell people that we're destroying the walls with BB guns and actually be telling the truth.</q><i> Agent Johnson</i>
+  desc:Gunshooters do <b>six times</b> as much damage.<q>I support this because then I will be able to tell people that we're destroying the walls with BB guns and actually be telling the truth.</q><i>Agent Johnson</i>
   cost:960009600096000960009600096000 money, 960009600096000960 bricks
   req:600 gunner
   passive:multiply yield of gunner by 6
@@ -3714,7 +3714,7 @@ Upgrades
   name:Flame Grenades
   icon:http://i.imgur.com/4Ro8woi.png
   *grenadeUpgrade5
-  desc:Grenademen do <b>twice</b> as much damage.<q>get shrapped</q><i> 1337 sn1p3r #73</i>
+  desc:Grenademen do <b>twice</b> as much damage.<q>get shrapped</q><i>1337 sn1p3r #73</i>
   cost:20000000000 money
   req:75 grenade
   passive:multiply yield of grenade by 2
@@ -3749,7 +3749,7 @@ Upgrades
   name:Time-Splitting Grenades
   icon:http://i.imgur.com/fMBo2SN.png
   *grenadeUpgrade10
-  desc:Grenademen do <b>five times</b> as much damage.<q>dude just lob the whole bucket</q><i> 1337 sn1p3r #73, before being promoted</i>
+  desc:Grenademen do <b>five times</b> as much damage.<q>dude just lob the whole bucket</q><i>1337 sn1p3r #73, before being promoted</i>
   cost:80000000000000000000000 money
   req:400 grenade
   passive:multiply yield of grenade by 5
@@ -3763,7 +3763,7 @@ Upgrades
   name:Holy Hand Grenades
   icon:http://i.imgur.com/FzLeFau.png
   *grenadeUpgrade12
-  desc:Grenademen do <b>five times</b> as much damage.<q>What a boring upgrade.</q><i> Agent Johnson</i><q>I don't believe interesting names are the priority when upgrading things.</q><i> Agent Lawrence</i><q>That's factually incorrect.</q><i> Agent Johnson</i>
+  desc:Grenademen do <b>five times</b> as much damage.<q>What a boring upgrade.</q><i>Agent Johnson</i><q>I don't believe interesting names are the priority when upgrading things.</q><i>Agent Lawrence</i><q>That's factually incorrect.</q><i>Agent Johnson</i>
   cost:4e35 money
   req:700 grenade
   passive:multiply yield of grenade by 5
@@ -3792,14 +3792,14 @@ Upgrades
   name:Oblivion Grenades
   icon:http://i.imgur.com/pUkQa2G.png
   *grenadeUpgradeBlack
-  desc:Grenademen do <b>six times</b> as much damage.<q>I support this because its acronym is 'BIG'.</q><i> Agent Johnson</i>
+  desc:Grenademen do <b>six times</b> as much damage.<q>I support this because its acronym is 'BIG'.</q><i>Agent Johnson</i>
   cost:30003000300030003000300030003000 money, 3000300030003000300 bricks
   req:600 grenade
   passive:multiply yield of grenade by 6
   name:Black-Infused Grenades
   icon:http://i.imgur.com/J7oP3HO.png
   *grenadeUpgradeArmy
-  desc:Grenademen do <b>four times</b> as much damage.<q>We've hit critical.</q><i> Head of R&D</i>
+  desc:Grenademen do <b>four times</b> as much damage.<q>We've hit critical.</q><i>Head of R&D</i>
   cost:4e39 money, 4e28 bricks, 4e24 fourthwallmatter
   req:800 grenade
   passive:multiply yield of grenade by 4
@@ -3855,7 +3855,7 @@ Upgrades
   name:Grenade Guns
   icon:http://i.imgur.com/S4dXGCa.png
   *gunGrenadeUpgrade5
-  desc:Gunshooters do <b>0.8%</b> more damage per grenademan.</>Grenademen do <b>0.8%</b> more damage per Gunshooter.<q>We just threw a bunch of space-age crap together and whaddya know, it works!</q><i> Chief of R&D, RUC</i>
+  desc:Gunshooters do <b>0.8%</b> more damage per grenademan.</>Grenademen do <b>0.8%</b> more damage per Gunshooter.<q>We just threw a bunch of space-age crap together and whaddya know, it works!</q><i>Chief of R&D, RUC</i>
   cost:83200000000000000000000 money
   passive:
     multiply yield of gunner by (1 + (0.008 * grenade))
@@ -3875,7 +3875,7 @@ Upgrades
   name:The Turrets of Bextic
   icon:http://i.imgur.com/K34d64L.png
   *gunGrenadeUpgrade7
-  desc:Gunshooters do <b>0.4%</b> more damage per grenademan.</>Grenademen do <b>0.4%</b> more damage per Gunshooter.<q>I'm impressed by their ability to even find movies this absolutely terrible. ~Agent Connor</>Quality is different from <i>inspirational level</i>. ~Gunner Project Leader</q>
+  desc:Gunshooters do <b>0.4%</b> more damage per grenademan.</>Grenademen do <b>0.4%</b> more damage per Gunshooter.<q>I'm impressed by their ability to even find movies this absolutely terrible.</q><i>Agent Connor</i><q>Quality is different from <i>inspirational level</i>.</q><i>Gunner Project Leader</i>
   cost:3.28e35 money
   passive:
     multiply yield of gunner by (1 + (0.004 * grenade))
@@ -3963,7 +3963,7 @@ Upgrades
   name:The Sgapang Ball
   icon:http://i.imgur.com/3OYp1g4.png
   *wreckingUpgrade12
-  desc:Wrecking balls do <b>five times</b> as much damage.<q>Couldn't we use this thing's crazy magic power to like, do something, instead of just smashing it into the wall?</q><i> Agent Carter</i><q>Hah, good one.</q><i> Wrecking Ball Project Leader</i>
+  desc:Wrecking balls do <b>five times</b> as much damage.<q>Couldn't we use this thing's crazy magic power to like, do something, instead of just smashing it into the wall?</q><i>Agent Carter</i><q>Hah, good one.</q><i>Wrecking Ball Project Leader</i>
   cost:8e36 money
   req:700 wreckingBall
   passive:multiply yield of wreckingBall by 5
@@ -3992,7 +3992,7 @@ Upgrades
   name:Hellfire Balls
   icon:http://i.imgur.com/E8N1BEF.png
   *wreckUpgradeBlack
-  desc:Wrecking balls do <b>seven times</b> as much damage.<q>I support this because Agent Johnson doesn't.</q><i> Agent Connor</i>
+  desc:Wrecking balls do <b>seven times</b> as much damage.<q>I support this because Agent Johnson doesn't.</q><i>Agent Connor</i>
   cost:480004800048000480004800048000480 money, 48000480004800048000 bricks
   req:600 wreckingBall
   passive:multiply yield of wreckingBall by 6
@@ -4048,7 +4048,7 @@ Upgrades
   name:Ultimate Fist Balls
   icon:http://i.imgur.com/WMAG1Bb.png
   *punchWreckUpgrade5
-  desc:Punchers do <b>0.8%</b> more damage for each wrecking ball.</>Wrecking balls do <b>0.7%</b> more damage for each puncher.<q>Should have done this the first time.</q><i> Puncher Project Leader, RUC</i>
+  desc:Punchers do <b>0.8%</b> more damage for each wrecking ball.</>Wrecking balls do <b>0.7%</b> more damage for each puncher.<q>Should have done this the first time.</q><i>Puncher Project Leader, RUC</i>
   cost:2800000000000000000000000 money
   passive:
     multiply yield of puncher by (1 + (0.008 * wreckingBall))
@@ -4058,7 +4058,7 @@ Upgrades
   name:Literal Wrecking Ball Fists
   icon:http://i.imgur.com/u74hjiG.png
   *punchWreckUpgrade6
-  desc:Punchers do <b>0.8%</b> more damage per wrecking ball.</>Wrecking balls do <b>0.6%</b> more damage per puncher.<q>Many a man has asked what the Wrecking Fists are.</q><i> Wrecking Ball Project Leader</i>
+  desc:Punchers do <b>0.8%</b> more damage per wrecking ball.</>Wrecking balls do <b>0.6%</b> more damage per puncher.<q>Many a man has asked what the Wrecking Fists are.</q><i>Wrecking Ball Project Leader</i>
   cost:28000000000000000000000000000 money
   passive:
     multiply yield of puncher by (1 + (0.008 * wreckingBall))
@@ -4068,7 +4068,7 @@ Upgrades
   name:Wrecking Fists
   icon:http://i.imgur.com/WAEGG3I.png
   *punchWreckUpgrade7
-  desc:Punchers do <b>0.4%</b> more damage per wrecking ball.</>Wrecking balls do <b>0.4%</b> more damage per puncher.<q>Our mission is to create the most experimental, absurd, ridiculous, out-of-left-field upgrade we can.</q><i> Head of R&D</i><q>THE GAME IS ON.</q><i> Agent Johnson</i>
+  desc:Punchers do <b>0.4%</b> more damage per wrecking ball.</>Wrecking balls do <b>0.4%</b> more damage per puncher.<q>Our mission is to create the most experimental, absurd, ridiculous, out-of-left-field upgrade we can.</q><i>Head of R&D</i><q>THE GAME IS ON.</q><i>Agent Johnson</i>
   cost:8.2e36 money
   passive:
     multiply yield of puncher by (1 + (0.004 * wreckingBall))
@@ -4100,7 +4100,7 @@ Upgrades
   name:Double Blades
   icon:http://i.imgur.com/HH6K4Vq.png
   *bulldozerUpgrade4
-  desc:Bulldozers do <b>twice</b> as much damage.<q>Gotta go fast.</q><i> Sonic</i>
+  desc:Bulldozers do <b>twice</b> as much damage.<q>Gotta go fast.</q><i>Sonic</i>
   cost:300000000000 money
   req:50 bulldozer
   passive:multiply yield of bulldozer by 2
@@ -4114,7 +4114,7 @@ Upgrades
   name:Blades With Blades
   icon:http://i.imgur.com/XKWl4gL.png
   *bulldozerUpgrade6
-  desc:Bulldozers do <b>three times</b> as much damage.<q>Why yes, we are one of the world's richest corporations. Why do you ask?</q><i> RUC Head of Finance</i>
+  desc:Bulldozers do <b>three times</b> as much damage.<q>Why yes, we are one of the world's richest corporations. Why do you ask?</q><i>RUC Head of Finance</i>
   cost:30000000000000 money
   req:100 bulldozer
   passive:multiply yield of bulldozer by 3
@@ -4142,7 +4142,7 @@ Upgrades
   name:Gravity-Altering Engines
   icon:http://i.imgur.com/F68kWwp.png
   *bulldozerUpgrade10
-  desc:Bulldozers do <b>five times</b> as much damage.<q>No, it's not just bombs tied to the blades. That was an early prototype.</q><i> Bulldozer Project Leader, RUC</i>
+  desc:Bulldozers do <b>five times</b> as much damage.<q>No, it's not just bombs tied to the blades. That was an early prototype.</q><i>Bulldozer Project Leader, RUC</i>
   cost:24000000000000000000000000 money
   req:400 bulldozer
   passive:multiply yield of bulldozer by 5
@@ -4156,7 +4156,7 @@ Upgrades
   name:Hyzem's Tablet 
   icon:http://i.imgur.com/wzJXciZ.png
   *bulldozerUpgrade12
-  desc:Bulldozers do <b>five times</b> as much damage.<q>DESTROY WALL. DESTROY WALL.</q><i> Bulldozer #21</i><q>As you can see, we've created the perfect worker.</q><i> Head of R&D</i><q>...Can you turn off the constant robot voice announcements?</q><i> Agent Carter</i><q>Nope.</q>
+  desc:Bulldozers do <b>five times</b> as much damage.<q>DESTROY WALL. DESTROY WALL.</q><i>Bulldozer #21</i><q>As you can see, we've created the perfect worker.</q><i>Head of R&D</i><q>...Can you turn off the constant robot voice announcements?</q><i>Agent Carter</i><q>Nope.</q>
   cost:1.2e38 money
   req:700 bulldozer
   passive:multiply yield of bulldozer by 5
@@ -4185,7 +4185,7 @@ Upgrades
   name:The Unstoppable Force
   icon:http://i.imgur.com/lKRKuaD.png
   *bulldozUpgradeBlack
-  desc:Bulldozers do <b>six times</b> as much damage.<q>How long until we run out of verbs?</q><i> Agent Carter</i><q>Our best agents are browsing the thesaurus as we speak.</q><i> Agent Connor</i>
+  desc:Bulldozers do <b>six times</b> as much damage.<q>How long until we run out of verbs?</q><i>Agent Carter</i><q>Our best agents are browsing the thesaurus as we speak.</q><i>Agent Connor</i>
   cost:7200072000720007200072000720007200 money, 720007200072000720007 bricks
   req:600 bulldozer
   passive:multiply yield of bulldozer by 6
@@ -4264,7 +4264,7 @@ Upgrades
   name:Astral Magnets
   icon:http://i.imgur.com/gXHS6sy.png
   *airstrikeUpgrade10
-  desc:Airstrikes do <b>five times</b> as much damage.<q>Bigger = More Damage</q><i> The entire BE proposal</i>
+  desc:Airstrikes do <b>five times</b> as much damage.<q>Bigger = More Damage</q><i>The entire BE proposal</i>
   cost:1500000000000000000000000000 money
   req:400 airstrike
   passive:multiply yield of airstrike by 5
@@ -4307,7 +4307,7 @@ Upgrades
   name:???
   icon:http://i.imgur.com/2ySbj27.png
   *airstrkUpgradeBlack
-  desc:Airstrikes do <b>six times</b> as much damage.<q>Is it time to buff the anvils? The answer is yes, always, forever.</q><i> Agent Connor, in the BMA proposal</i><q>Finally, we agree.</q><i> Agent Johnson</i>
+  desc:Airstrikes do <b>six times</b> as much damage.<q>Is it time to buff the anvils? The answer is yes, always, forever.</q><i>Agent Connor, in the BMA proposal</i><q>Finally, we agree.</q><i>Agent Johnson</i>
   cost:300030003000300000000000000000000000 money, 30003000300030003000300 bricks
   req:600 airstrike
   passive:multiply yield of airstrike by 6
@@ -4363,7 +4363,7 @@ Upgrades
   name:Ultimate Bulldozer Drop
   icon:http://i.imgur.com/2oO31SH.png
   *bulldozeAirstrikUp5
-  desc:Bulldozers do <b>0.8%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.8%</b> more damage for each bulldozer.<q>More like epic FAIL.</q><i> The walls, before getting wrecked with this</i>
+  desc:Bulldozers do <b>0.8%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.8%</b> more damage for each bulldozer.<q>More like epic FAIL.</q><i>The walls, before getting wrecked with this</i>
   cost:1260000000000000000000000000 money
   passive:
     multiply yield of bulldozer by (1 + (0.008 * airstrike))
@@ -4373,7 +4373,7 @@ Upgrades
   name:Epic Bulldozer Drop
   icon:http://i.imgur.com/4vt1A6Q.png
   *bulldozeAirstrikUp6
-  desc:Bulldozers do <b>0.6%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.6%</b> more damage for each bulldozer.<q>Basically we went with the most badass thing we could think of.</q><i> Head of R&D, on the process</i>
+  desc:Bulldozers do <b>0.6%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.6%</b> more damage for each bulldozer.<q>Basically we went with the most badass thing we could think of.</q><i>Head of R&D, on the process</i>
   cost:12600000000000000000000000000000 money
   passive:
     multiply yield of bulldozer by (1 + (0.006 * airstrike))
@@ -4383,7 +4383,7 @@ Upgrades
   name:Bulldozer Planes
   icon:http://i.imgur.com/jIhkyDF.png
   *bulldozeAirstrikUp7
-  desc:Bulldozers do <b>0.5%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.5%</b> more damage for each bulldozer.<q>A set of spells devised by a famous evil wizard. Cast them on two objects or beings and they are bound to each other, their strength becomes entwined and increases massively through some sort of mutual copying reality exploit.</>Planes and bulldozers, anyone? No one? Whatever, we're doing it anyway.</q><i> Head of R&D</i>
+  desc:Bulldozers do <b>0.5%</b> more damage for each airstrike caller.</>Airstrike callers do <b>0.5%</b> more damage for each bulldozer.<q>A set of spells devised by a famous evil wizard. Cast them on two objects or beings and they are bound to each other, their strength becomes entwined and increases massively through some sort of mutual copying reality exploit.</>Planes and bulldozers, anyone? No one? Whatever, we're doing it anyway.</q><i>Head of R&D</i>
   cost:6.12e39 money
   passive:
     multiply yield of bulldozer by (1 + (0.005 * airstrike))
@@ -4457,14 +4457,14 @@ Upgrades
   name:Duplication Spells
   icon:http://i.imgur.com/OZnAMmh.png
   *necromanceUpgrade10
-  desc:Necromancers do <b>five times</b> as much damage.<q>All ancient tombs have tons of useful magical stuff and only the highest quality corpses. We've never really thought why; it's just a fact.</q><i> A necromancer</i>
+  desc:Necromancers do <b>five times</b> as much damage.<q>All ancient tombs have tons of useful magical stuff and only the highest quality corpses. We've never really thought why; it's just a fact.</q><i>A necromancer</i>
   cost:33333333333333333333333333333 money, 333333333333333333 bricks
   req:400 necromancer
   passive:multiply yield of necromancer by 5
   name:Ancient Tombs
   icon:http://i.imgur.com/Q42Qlh5.png
   *necromanceUpgrade11
-  desc:Necromancers do <b>seven times</b> as much damage.<q>A few centuries ago, some demons snuck into the Great Wizard Library, took all the First Wizards' scrolls, and sent the wizards on the greatest treasure hunt ever constructed to get them back. The scrolls were never found. We're just going to cheat and use the compromisers to hunt them down.<//>I propose we send everyone we have out on the hunt instead of cheating.</q><i> Agent Johnson</i><q>No.</q><i> Everyone</i>
+  desc:Necromancers do <b>seven times</b> as much damage.<q>A few centuries ago, some demons snuck into the Great Wizard Library, took all the First Wizards' scrolls, and sent the wizards on the greatest treasure hunt ever constructed to get them back. The scrolls were never found. We're just going to cheat and use the compromisers to hunt them down.<//>I propose we send everyone we have out on the hunt instead of cheating.</q><i>Agent Johnson</i><q>No.</q><i>Everyone</i>
   cost:333333333333333333333333333333333 money, 3333333333333333333333 bricks
   req:500 necromancer
   passive:multiply yield of necromancer by 7
@@ -4574,7 +4574,7 @@ Upgrades
   name:Vwynido's Guide to Hand Combat
   icon:http://i.imgur.com/1VqgNdS.png
   *giantUpgrade11
-  desc:Titans do <b>seven times</b> as much damage.<q>What took so long?</q><i> Head of Titan Relations</i><q>None of us wanted to attempt to get all the ones that the demons had. We temporarily lifted Agent Johnson's ban from the demons and he managed to get them to fork 'em over for only a few sacrifices.</q><i> Agent Connor</i><q>On what grounds?</>He didn't... Oh god damn it.</q>
+  desc:Titans do <b>seven times</b> as much damage.<q>What took so long?</q><i>Head of Titan Relations</i><q>None of us wanted to attempt to get all the ones that the demons had. We temporarily lifted Agent Johnson's ban from the demons and he managed to get them to fork 'em over for only a few sacrifices.</q><i>Agent Connor</i><q>On what grounds?</>He didn't... Oh god damn it.</q>
   cost:8888888888888888888888888888888888 money
   req:500 giant
   passive:multiply yield of giant by 7
@@ -4603,7 +4603,7 @@ Upgrades
   name:Baths in The Pits of Ahnsquall
   icon:http://i.imgur.com/vmq6vME.png
   *giantUpgradeBlack
-  desc:Titans do <b>six times</b> as much damage.<q>This kills more titans than walls.</q><i> Agent Lawrence</i><q>What are we gonna do, not have a Black titan upgrade?</q><i> Head of R&D</i>
+  desc:Titans do <b>six times</b> as much damage.<q>This kills more titans than walls.</q><i>Agent Lawrence</i><q>What are we gonna do, not have a Black titan upgrade?</q><i>Head of R&D</i>
   cost:6.6666666666666666e37 money, 6.6666666666666666e25 bricks
   req:600 giant
   passive:multiply yield of giant by 6
@@ -4641,7 +4641,7 @@ Upgrades
   name:Merge Form
   icon:http://i.imgur.com/Zp3cflT.png
   *necromanceTitanUp4
-  desc:Necromancers do <b>1.5%</b> more damage per titan.</>Titans do <b>1%</b> more damage per necromancer.<q>|REDACTED, REDACTED SO HARD|</>NEVER AGAIN.</q><i> Head of Demon Relations, RUC</i>
+  desc:Necromancers do <b>1.5%</b> more damage per titan.</>Titans do <b>1%</b> more damage per necromancer.<q>|REDACTED, REDACTED SO HARD|</>NEVER AGAIN.</q><i>Head of Demon Relations, RUC</i>
   cost:17777777777777777777777777 money, 17777777777777 bricks
   passive:
     multiply yield of necromancer by (1 + (0.015 * giant))
@@ -4728,7 +4728,7 @@ Upgrades
   name:Nuclear Launch Codes
   icon:http://i.imgur.com/MKqt6OB.png
   *demonUpgrade9
-  desc:Demons do <b>five times</b> as much damage.<q>Okay, maybe giving them all of those things was not a good idea.</q><i> CEO, RUC</i>
+  desc:Demons do <b>five times</b> as much damage.<q>Okay, maybe giving them all of those things was not a good idea.</q><i>CEO, RUC</i>
   cost:13333333333333333 bricks
   req:300 demon
   passive:multiply yield of demon by 5
@@ -4742,7 +4742,7 @@ Upgrades
   name:Lord Reaefsek's Journal
   icon:http://i.imgur.com/FmFQPoJ.png
   *demonUpgrade11
-  desc:Demons do <b>seven times</b> as much damage.<q>Oh please tell me you removed The Amsora first.</q><i> Agent Taylor</i><q>Yes... So we can give it to them as a seperate upgrade.</q><i> Agent Connor</i><q>NOOOOOOOO.</q><i> Head of Demon Relations</i>
+  desc:Demons do <b>seven times</b> as much damage.<q>Oh please tell me you removed The Amsora first.</q><i>Agent Taylor</i><q>Yes... So we can give it to them as a seperate upgrade.</q><i>Agent Connor</i><q>NOOOOOOOO.</q><i>Head of Demon Relations</i>
   cost:3333333333333333333333333 bricks
   req:500 demon
   passive:multiply yield of demon by 7
@@ -4757,21 +4757,21 @@ Upgrades
   name:Illusion Spells
   icon:http://i.imgur.com/SyYTebW.png
   *demonMagicUpgrade2
-  desc:Demons do <b>four times</b> as much damage.<q>Whatever you do, NEVER give them the ability to actually bend reality instead of just look like they can.</q><i> Demon Relations Department Chief, RUC</i>
+  desc:Demons do <b>four times</b> as much damage.<q>Whatever you do, NEVER give them the ability to actually bend reality instead of just look like they can.</q><i>Demon Relations Department Chief, RUC</i>
   cost:66666666666666 bricks, 6666666666666666666666666 money
   req:250 demon
   passive:multiply yield of demon by 4
   name:Reality-Bending Magic
   icon:http://i.imgur.com/wkLzlig.png
   *demonMagicUpgrade3
-  desc:Demons do <b>five times</b> as much damage.<q>You have to be joking.</q><i> All the wizards (paraphrased)</i>
+  desc:Demons do <b>five times</b> as much damage.<q>You have to be joking.</q><i>All the wizards (paraphrased)</i>
   cost:666666666666666666 bricks, 66666666666666666666666666666 money
   req:350 demon
   passive:multiply yield of demon by 5
   name:All The Most Powerful Spell Scrolls
   icon:http://i.imgur.com/nIT1FkW.png
   *demonUpgradeBlack
-  desc:Demons do <b>six times</b> as much damage.<q>The demons request their own Black-themed upgrade, mostly "for style points".<//>Wait, didn't the Devil himself say not to use this stuff?</q><i> Agent Carter</i><q>I've learned to just not question them at this point.</q><i> Agent Connor</i>
+  desc:Demons do <b>six times</b> as much damage.<q>The demons request their own Black-themed upgrade, mostly "for style points".<//>Wait, didn't the Devil himself say not to use this stuff?</q><i>Agent Carter</i><q>I've learned to just not question them at this point.</q><i>Agent Connor</i>
   cost:3.333333333333333e28 bricks, 3.333333333333333e39 money
   req:600 demon
   passive:multiply yield of demon by 6
@@ -4800,7 +4800,7 @@ Upgrades
   name:TV Hackers
   icon:http://i.imgur.com/s0e1Pk1.png
   *compromiseUpgrade4
-  desc:Reality compromisers do <b>twice</b> as much damage.<q>More gears! More pistons!</q><i> RC project leader</i>
+  desc:Reality compromisers do <b>twice</b> as much damage.<q>More gears! More pistons!</q><i>RC project leader</i>
   cost:500005550500550550 money, 50000 fourthWallMatter
   req:50 compromiser
   passive:multiply yield of compromiser by 2
@@ -4828,7 +4828,7 @@ Upgrades
   name:Thought-to-Text Translators
   icon:http://i.imgur.com/3QMurit.png
   *compromiseUpgrade8
-  desc:Reality compromisers do <b>four times</b> as much damage.<q>If the hugely important machines aren't as big as a small city, you're doing it wrong.</q><i> Head of Tech, RUC</i>
+  desc:Reality compromisers do <b>four times</b> as much damage.<q>If the hugely important machines aren't as big as a small city, you're doing it wrong.</q><i>Head of Tech, RUC</i>
   cost:110100010100110110001010 money, 50000000000 fourthwallMatter
   req:200 compromiser
   passive:multiply yield of compromiser by 4
@@ -4842,7 +4842,7 @@ Upgrades
   name:Way Better Interface
   icon:http://i.imgur.com/NFNQ3zk.png
   *compromiseUpgrade10
-  desc:Reality compromisers do <b>five times</b> as much damage.<q>Investigating the Sgapang Ball with the compromisers has led to a discovery... It was made by editing reality code.<//>80,000 years ago.<//>Let's be safe.</q><i> Hacker #21 in the Firewall proposal</i>
+  desc:Reality compromisers do <b>five times</b> as much damage.<q>Investigating the Sgapang Ball with the compromisers has led to a discovery... It was made by editing reality code.<//>80,000 years ago.<//>Let's be safe.</q><i>Hacker #21 in the Firewall proposal</i>
   cost:20020222020022022200002002022020 money, 10000000000000000 fourthWallMatter
   req:400 compromiser
   passive:multiply yield of compromiser by 5
@@ -4878,7 +4878,7 @@ Upgrades
   name:???
   icon:http://i.imgur.com/rCKPdfD.png
   *compromiseUpBlack
-  desc:Reality compromisers do <b>six times</b> as much damage.<q>I thought they said mixing the Black with reality editing was a terrible idea.</q><i> Agent Carter</i><q>Clearly you do not understand upgrade themes.</q><i> Head of R&D</i>
+  desc:Reality compromisers do <b>six times</b> as much damage.<q>I thought they said mixing the Black with reality editing was a terrible idea.</q><i>Agent Carter</i><q>Clearly you do not understand upgrade themes.</q><i>Head of R&D</i>
   cost:5.005050550505550e39 money, 5.005050550505550e28 bricks, 500000000000000000000000000 fourthWallMatter
   req:600 compromiser
   passive:multiply yield of compromiser by 6
@@ -4893,7 +4893,7 @@ Upgrades
   name:The Rules
   icon:http://i.imgur.com/PqwDNQa.png
   *lastBuildingUp2
-  desc:Black obliterators do <b>50%</b> more damage.<q>Way, way, waaaaay more.</q><i> Agent Lawrence, in the WMS proposal</i>
+  desc:Black obliterators do <b>50%</b> more damage.<q>Way, way, waaaaay more.</q><i>Agent Lawrence, in the WMS proposal</i>
   cost:520000000000000000000 money, 520000 fourthWallMatter
   req:5 lastBuilding
   passive:multiply yield of lastBuilding by 1.5
@@ -4935,21 +4935,21 @@ Upgrades
   name:Wizard Bribes
   icon:http://i.imgur.com/A056Mob.png
   *lastBuildingUp8
-  desc:Black obliterators do <b>three times</b> as much damage.<q>The Black's power is unspeakable... The amount you have been using is only scratching the surface. It is so absolute, in fact, that The Boss is requesting you not use it, as it could very possibly obliterate all of existence if you misuse it.</q><i> The Head Demon</i>
+  desc:Black obliterators do <b>three times</b> as much damage.<q>The Black's power is unspeakable... The amount you have been using is only scratching the surface. It is so absolute, in fact, that The Boss is requesting you not use it, as it could very possibly obliterate all of existence if you misuse it.</q><i>The Head Demon</i>
   cost:52000000000000000000000000000 money, 52000000000000 fourthWallMatter
   req:200 lastBuilding
   passive:multiply yield of lastBuilding by 3
   name:Demon Bribes
   icon:http://i.imgur.com/zQpS4F8.png
   *lastBuildingUp9
-  desc:Black obliterators do <b>four times</b> as much damage.<q>We took an expedition back to |REDACTED|, and guess what we found in the temple? You'll be just as surprised as we were...</q><i> Agent Connor</i>
+  desc:Black obliterators do <b>four times</b> as much damage.<q>We took an expedition back to |REDACTED|, and guess what we found in the temple? You'll be just as surprised as we were...</q><i>Agent Connor</i>
   cost:520000000000000000000000000000000 money, 520000000000000000 fourthWallMatter
   req:300 lastBuilding
   passive:multiply yield of lastBuilding by 4
   name:Guide To Properly Handling The Black
   icon:http://i.imgur.com/jFpYzHt.png
   *lastBuildingUp10
-  desc:Black obliterators do <b>four times</b> as much damage.<q>More complex metal parts we have to replace every day? UGH. UUUUUGGGGHHHHH.</q><i> Head of Maintanence</i>
+  desc:Black obliterators do <b>four times</b> as much damage.<q>More complex metal parts we have to replace every day? UGH. UUUUUGGGGHHHHH.</q><i>Head of Maintanence</i>
   cost:26000000000000000000000000000000000000 money, 26000000000000000000000 fourthwallmatter
   req:400 lastBuilding
   passive:multiply yield of lastBuilding by 4
@@ -4971,7 +4971,7 @@ Upgrades
   name:Pure Magic Robots
   icon:http://i.imgur.com/5vGNs1i.png
   *lastBuildingUpMag3
-  desc:Black obliterators do <b>three times</b> as much damage.<q>We may be making the robots last longer, but it really just makes the replacements even more expensive.</q><i> Head of Finance</i><q>MONEY IS NO CONCERN FOR THE RUC</q><i> Automated RUC complaint responder</i>
+  desc:Black obliterators do <b>three times</b> as much damage.<q>We may be making the robots last longer, but it really just makes the replacements even more expensive.</q><i>Head of Finance</i><q>MONEY IS NO CONCERN FOR THE RUC</q><i>Automated RUC complaint responder</i>
   cost:52000520005200052000520005200052000 money, 52000520005200052000 fourthWallMatter, 520000000000000000000000 bricks
   req:350 lastBuilding
   passive:multiply yield of lastBuilding by 3
@@ -4999,7 +4999,7 @@ Upgrades
   name:Working Together
   icon:http://i.imgur.com/7BosjQJ.png
   *compromiseLastUp3
-  desc:Reality compromisers do <b>1.5%</b> more damage per black obliterator.</>Black obliterators do <b>0.3%</b> more damage per reality compromiser.<q>So, mixing The Black with reality code is like... Mixing The Black with anything, really: A TERRIBLE IDEA.</q><i> RC Project Leader, in the NWT proposal</i>
+  desc:Reality compromisers do <b>1.5%</b> more damage per black obliterator.</>Black obliterators do <b>0.3%</b> more damage per reality compromiser.<q>So, mixing The Black with reality code is like... Mixing The Black with anything, really: A TERRIBLE IDEA.</q><i>RC Project Leader, in the NWT proposal</i>
   cost:52600000000000000000000000000 money, 52600000000000 fourthWallMatter
   req:300 compromiser, 200 lastBuilding
   passive:
@@ -5009,7 +5009,7 @@ Upgrades
   name:Not Working Together
   icon:http://i.imgur.com/n7blHpS.png
   *compromiseLastUp4
-  desc:Reality compromisers do <b>1%</b> more damage per black obliterator.</>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<q>why dont you just give them god mode</q><i> 1337 sn1p3r #73, before being assigned Co-Head of R&D</i>
+  desc:Reality compromisers do <b>1%</b> more damage per black obliterator.</>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<q>why dont you just give them god mode</q><i>1337 sn1p3r #73, before being assigned Co-Head of R&D</i>
   cost:526000000000000000000000000000000 money, 526000000000000000 fourthWallMatter
   req:400 compromiser, 300 lastBuilding
   passive:
@@ -5019,7 +5019,7 @@ Upgrades
   name:Indestructible Robots
   icon:http://i.imgur.com/sphsdEU.png
   *compromiseLastUp5
-  desc:Reality compromisers do <b>1%</b> more damage per black obliterator.</>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<q>The ones before weren't really, just as strong as we could possibly make them; The Black took a few days to finish them off. We didn't know how to make something 100% indestructible, but the Divine Instructions conveniently contained the indestructibility script!<//>I'm throwing in a joke to make this description more interesting.</q><i> Agent Johnson</i><q>Pointing out the lack of a joke isn't a joke.</q><i> Agent Connor</i>
+  desc:Reality compromisers do <b>1%</b> more damage per black obliterator.</>Black obliterators do <b>0.2%</b> more damage per reality compromiser.<q>The ones before weren't really, just as strong as we could possibly make them; The Black took a few days to finish them off. We didn't know how to make something 100% indestructible, but the Divine Instructions conveniently contained the indestructibility script!<//>I'm throwing in a joke to make this description more interesting.</q><i>Agent Johnson</i><q>Pointing out the lack of a joke isn't a joke.</q><i>Agent Connor</i>
   cost:15200000000000000000000000000000000000 money, 15200000000000000000000 fourthwallmatter
   req:500 compromiser, 400 lastBuilding
   passive:
@@ -5121,7 +5121,7 @@ Upgrades
   name:Evil-Proof Suits
   icon:http://i.imgur.com/v1FFhA9.png
   *brickFactoryUp11
-  desc:Brick factories and manual brick creation produce <b>seven times</b> as many bricks.<q>Said to be blessed by the gods, the Holy Brick was first found 37,000 years ago on Vywheir, an uninhabited island.<//>It doesn't look anything like a brick.</q><i> BF Project Leader</i><q>Would you want a magical artifact called 'The Big White Cube' or 'The Holy Brick of Vywheir'?</q><i> Agent Connor</i>
+  desc:Brick factories and manual brick creation produce <b>seven times</b> as many bricks.<q>Said to be blessed by the gods, the Holy Brick was first found 37,000 years ago on Vywheir, an uninhabited island.<//>It doesn't look anything like a brick.</q><i>BF Project Leader</i><q>Would you want a magical artifact called 'The Big White Cube' or 'The Holy Brick of Vywheir'?</q><i>Agent Connor</i>
   cost:86666666666666666666666666666666666 money
   req:500 brickFactory
   passive:
@@ -5223,7 +5223,7 @@ Upgrades
   name:Giant Portals to Hell
   icon:http://i.imgur.com/5VX1Hgp.png
   *brickFactorDemonUp6
-  desc:Brick factories produce <b>0.6%</b> more bricks per demon.</>Demons do <b>0.4%</b> more damage per brick factory.<q>Nooo. Don't give it to them. For all that is holy, don't let the demons near that thing. WE DON'T WANT TO KNOW WHAT THEIR DREAMS LOOK LIKE.</q><i> Head of Demon Relations</i>
+  desc:Brick factories produce <b>0.6%</b> more bricks per demon.</>Demons do <b>0.4%</b> more damage per brick factory.<q>Nooo. Don't give it to them. For all that is holy, don't let the demons near that thing. WE DON'T WANT TO KNOW WHAT THEIR DREAMS LOOK LIKE.</q><i>Head of Demon Relations</i>
   cost:79999999999999999999999999999999999 money, 3333333333333333333333333 bricks
   passive:
     multiply yield of brickFactory by (1 + (0.006 * demon))
@@ -5258,7 +5258,7 @@ Upgrades
   name:Swordsman Trophy
   icon:http://i.imgur.com/RDO3AWy.png
   *buildingTrophy4
-  desc:Gunshooters do <b>2%</b> more damage per gunshooter.<q>im the king</q><i> 1337 sn1p3r #33</i><//>Grenademan Trophy: <b>1,500</b> capsules
+  desc:Gunshooters do <b>2%</b> more damage per gunshooter.<q>im the king</q><i>1337 sn1p3r #33</i><//>Grenademan Trophy: <b>1,500</b> capsules
   cost:61616161616161616161616 money
   req:600 prestige
   passive:multiply yield of gunner by (1 + (0.02 * gunner))
@@ -5272,14 +5272,14 @@ Upgrades
   name:Grenademan Trophy
   icon:http://i.imgur.com/6iJV1vD.png
   *buildingTrophy6
-  desc:Wrecking balls do <b>2%</b> more damage per wrecking ball.<q>Note: You are NOT allowed to use this as a wrecking ball. That means you, Agent Johnson. ~Agent Lawrence</q><//>Bulldozer Trophy: <b>6,000</b> capsules
+  desc:Wrecking balls do <b>2%</b> more damage per wrecking ball.<q>Note: You are NOT allowed to use this as a wrecking ball. That means you, Agent Johnson.</q><i>Agent Lawrence</i><//>Bulldozer Trophy: <b>6,000</b> capsules
   cost:8888888888888888888888888 money
   req:3000 prestige
   passive:multiply yield of wreckingBall by (1 + (0.02 * wreckingBall))
   name:Wrecking Ball Trophy
   icon:http://i.imgur.com/ZFPZc5b.png
   *buildingTrophy7
-  desc:Bulldozers do <b>2%</b> more damage per bulldozer.<q>Found Agent Johnson tying a Bulldozer Trophy to a bulldozer blade. Why haven't we fired him yet?</q><i> Agent Lawrence</i><q>I'm scared of what would happen if we did.</q><i> Agent Connor</i><//>Airstike Caller Trophy: <b>30,000</b> capsules
+  desc:Bulldozers do <b>2%</b> more damage per bulldozer.<q>Found Agent Johnson tying a Bulldozer Trophy to a bulldozer blade. Why haven't we fired him yet?</q><i>Agent Lawrence</i><q>I'm scared of what would happen if we did.</q><i>Agent Connor</i><//>Airstike Caller Trophy: <b>30,000</b> capsules
   cost:12121212121212121212121212 money
   req:6000 prestige
   passive:multiply yield of bulldozer by (1 + (0.02 * bulldozer))
@@ -5300,7 +5300,7 @@ Upgrades
   name:Necromancer Trophy
   icon:http://i.imgur.com/4YlmwTN.png
   *buildingTrophy10
-  desc:Titans do <b>2%</b> more damage per titan.<q>Requesting firing of whoever didn't make this trophy bigger than the others. ~Agent Johnson</q><//>Demon Trophy: <b>600,000</b> capsules
+  desc:Titans do <b>2%</b> more damage per titan.<q>Requesting firing of whoever didn't make this trophy bigger than the others.</q><i>Agent Johnson</i><//>Demon Trophy: <b>600,000</b> capsules
   cost:88888888888888888888888888888 money
   req:300000 prestige
   passive:multiply yield of giant by (1 + (0.02 * giant))
@@ -5426,7 +5426,7 @@ Upgrades
   name:Silver-Tier Trophy
   icon:http://i.imgur.com/KtHhoDv.png
   *trophy10
-  desc:Damage and brick production multipliers <b>+15%</b>.<q>1st place, scrubs<//>wait</q><i> 1337 sn1p3r #66, before ragequitting</i><//>Next trophy: <b>7,500</b> capsules
+  desc:Damage and brick production multipliers <b>+15%</b>.<q>1st place, scrubs<//>wait</q><i>1337 sn1p3r #66, before ragequitting</i><//>Next trophy: <b>7,500</b> capsules
   cost:7.777777777777777e26 money, 77777777777777 bricks, 777777777777 fourthWallMatter
   req:5000 prestige, 1 spaceBossPoint
   passive:
@@ -5446,7 +5446,7 @@ Upgrades
   name:Platinum-Tier Trophy
   icon:http://i.imgur.com/c8KNa5T.png
   *trophy12
-  desc:Damage and brick production multipliers <b>+20%</b>.<q>I'm going to RUBy this in all of your faces!</q><i> CEO, RUC</i><//>Next trophy: <b>20,000</b> capsules
+  desc:Damage and brick production multipliers <b>+20%</b>.<q>I'm going to RUBy this in all of your faces!</q><i>CEO, RUC</i><//>Next trophy: <b>20,000</b> capsules
   cost:7.777777777777777e28 money, 7777777777777777 bricks, 77777777777777 fourthWallMatter
   req:10000 prestige, 1 spaceBossPoint
   passive:
@@ -5456,7 +5456,7 @@ Upgrades
   name:Ruby-Tier Trophy
   icon:http://i.imgur.com/6cCAFNV.png
   *trophy13
-  desc:Damage and brick production multipliers <b>+20%</b>.<q>I have all the others... this one is emerOLD.</q><i> CEO, RUC</i><//>Next trophy: <b>50,000</b> capsules, defeat of the <b>Boss Time Wall</b>
+  desc:Damage and brick production multipliers <b>+20%</b>.<q>I have all the others... this one is emerOLD.</q><i>CEO, RUC</i><//>Next trophy: <b>50,000</b> capsules, defeat of the <b>Boss Time Wall</b>
   cost:7.777777777777777e28 money, 7777777777777777 bricks, 77777777777777 fourthWallMatter
   req:20000 prestige, 1 spaceBossPoint 
   passive:
@@ -5466,7 +5466,7 @@ Upgrades
   name:Emerald-Tier Trophy
   icon:http://i.imgur.com/RLyHljs.png
   *trophy14
-  desc:Damage and brick production multipliers <b>+20%</b>.<q>I'll sapPHIRE you if you don't like my puns!</q><i> CEO, RUC</i><//>Next trophy: <b>75,000</b> capsules
+  desc:Damage and brick production multipliers <b>+20%</b>.<q>I'll sapPHIRE you if you don't like my puns!</q><i>CEO, RUC</i><//>Next trophy: <b>75,000</b> capsules
   cost:7.777777777777777e28 money, 7777777777777777 bricks, 77777777777777 fourthWallMatter
   req:50000 prestige, 1 timeBossPoint 
   passive:
@@ -5476,7 +5476,7 @@ Upgrades
   name:Sapphire-Tier Trophy
   icon:http://i.imgur.com/marXWoC.png
   *trophy15
-  desc:Damage and brick production multipliers <b>+20%</b>.<q>If you question my puns you're going to DIEmond!</q><i> CEO, RUC</i><q>I'm pretty sure the Chief of Puns comes up with with all your puns.</q><i> >Agent Connor</i><//>Next trophy: <b>100,000</b> capsules
+  desc:Damage and brick production multipliers <b>+20%</b>.<q>If you question my puns you're going to DIEmond!</q><i>CEO, RUC</i><q>I'm pretty sure the Chief of Puns comes up with with all your puns.</q><i>>Agent Connor</i><//>Next trophy: <b>100,000</b> capsules
   cost:7.777777777777777e29 money, 77777777777777777 bricks, 777777777777777 fourthWallMatter
   req:75000 prestige, 1 timeBossPoint 
   passive:
@@ -5486,7 +5486,7 @@ Upgrades
   name:Diamond-Tier Trophy
   icon:http://i.imgur.com/QaDvbmF.png
   *trophy16
-  desc:Damage and brick production multipliers <b>+25%</b>.<q>more like BADamantium........ OWNED</q><i> 1337 sn1p3r #33</i><//>Next trophy: <b>200,000</b> capsules
+  desc:Damage and brick production multipliers <b>+25%</b>.<q>more like BADamantium........ OWNED</q><i>1337 sn1p3r #33</i><//>Next trophy: <b>200,000</b> capsules
   cost:7.777777777777777e30 money, 777777777777777777 bricks, 7777777777777777 fourthWallMatter
   req:100000 prestige, 1 timeBossPoint 
   passive:
@@ -5496,7 +5496,7 @@ Upgrades
   name:Adamantium-Tier Trophy
   icon:http://i.imgur.com/K48TdKj.png
   *trophy17
-  desc:Damage and brick production multipliers <b>+25%</b>.<q>WHY DID WE USE THIS FOR A TROPHY!?</q><i> Head of Mining, AKA Whiny Whinerson</i><//>Next trophy: <b>500,000</b> capsules, defeat of the <b>Boss End Wall</b>
+  desc:Damage and brick production multipliers <b>+25%</b>.<q>WHY DID WE USE THIS FOR A TROPHY!?</q><i>Head of Mining, AKA Whiny Whinerson</i><//>Next trophy: <b>500,000</b> capsules, defeat of the <b>Boss End Wall</b>
   cost:7.777777777777777e31 money, 7777777777777777777 bricks, 77777777777777777 fourthWallMatter
   req:200000 prestige, 1 timeBossPoint
   passive:
@@ -5566,7 +5566,7 @@ Upgrades
   name:Finality-Tier Trophy
   icon:http://i.imgur.com/ySJTkaS.png
    *trophy24
-  desc:Everything is <b>0.005%</b> more efficient <b>per 1,000 future knowledge capsules.</b><q>God. What an egotist.</q><i> Agent Johnson</i>
+  desc:Everything is <b>0.005%</b> more efficient <b>per 1,000 future knowledge capsules.</b><q>God. What an egotist.</q><i>Agent Johnson</i>
   cost:7.777777777777777e38 money, 7.777777777777777e25 bricks, 7.777777777777777e23 fourthWallMatter
   req:10000000 prestige, 5 timesActuallyWon
   passive:
@@ -5631,7 +5631,7 @@ Achievements
   name:Wall Destroyer
   icon:http://i.imgur.com/9ura7DM.png
   *wallDestroyer2
-  desc:Destroy the big second wall.<q>gettin sum slays</q><i> 1337 sn1p3r #108</i>
+  desc:Destroy the big second wall.<q>gettin sum slays</q><i>1337 sn1p3r #108</i>
   req:2 wallsDestroyed
   icon:http://i.imgur.com/2JuJIGw.png
   name:Wall Slayer
@@ -5681,7 +5681,7 @@ Achievements
   icon:http://i.imgur.com/V5T9rJ7.png
   req:1 destroyBonusWall45
   *wallDestroyer12
-  desc:Destroy all the walls <b>5</b> times.<q>The air in here is dense with tryhardiness, I can feel it. It's horrible.</q><i> Agent Johnson</i>
+  desc:Destroy all the walls <b>5</b> times.<q>The air in here is dense with tryhardiness, I can feel it. It's horrible.</q><i>Agent Johnson</i>
   name:Tryhard
   req:4 timesActuallyWon, 1 winBricks
   icon:http://i.imgur.com/LTSmDOx.png
@@ -5692,13 +5692,13 @@ Achievements
   icon:http://i.imgur.com/DSMRgWX.png
   req:have timeBearWard1
   *timeBearAchieve2
-  desc:Ward against the Time Bear for the last time.<q>The Time Bear is upon us. Run, hide, but you will only delay the inevitable. All involved in time-defiling experiments will be purged.</q><i> The head demon, before retreating into the underworld</i>
+  desc:Ward against the Time Bear for the last time.<q>The Time Bear is upon us. Run, hide, but you will only delay the inevitable. All involved in time-defiling experiments will be purged.</q><i>The head demon, before retreating into the underworld</i>
   name:This Is Our End
   icon:http://i.imgur.com/pBrcGq5.png
   req:have timeBearWard12
 
   *thropyAchieve
-  desc:Achieve <b>22nd</b> place.<q>wow</q><i> 1337 sn1p3r #37</i>
+  desc:Achieve <b>22nd</b> place.<q>wow</q><i>1337 sn1p3r #37</i>
   name:Dirtlord
   icon:http://i.imgur.com/01o3S8e.png
   req:have trophy2
@@ -5708,22 +5708,22 @@ Achievements
   icon:http://i.imgur.com/Uo7wAgm.png
   req: have trophy6
   *thropyAchieve3
-  desc:Achieve <b>12th</b> place.<q>I couldn't think of any good gem puns.</q><i> RUC Chief of Puns</i>
+  desc:Achieve <b>12th</b> place.<q>I couldn't think of any good gem puns.</q><i>RUC Chief of Puns</i>
   name:Gemeration
   icon:http://i.imgur.com/6cCAFNV.png
   req:have trophy12
   *thropyAchieve4
-  desc:Achieve <b>8th</b> place.<q>These tiers are so good the materials don't even exist in real life.<//>Wait, but some of them do.</q><i> Agent Taylor</i><q>THE DESCRIPTIONS DO NOT GIVE TO QUESTIONING</q><i> Automated RUC complaint responder</i>
+  desc:Achieve <b>8th</b> place.<q>These tiers are so good the materials don't even exist in real life.<//>Wait, but some of them do.</q><i>Agent Taylor</i><q>THE DESCRIPTIONS DO NOT GIVE TO QUESTIONING</q><i>Automated RUC complaint responder</i>
   name:The Fantasy Zone
   icon:http://i.imgur.com/K48TdKj.png
   req:have trophy16
   *thropyAchieve5
-  desc:Achieve <b>3rd</b> place.<q>This title isn't correct in any capacity.</q><i> Agent Lawrence</i><q>Why would you quote a negative comment?</> Agent Lawrence</>CEO EDIT: Agent Johnson is no longer allowed to write titles or descriptions.</q>
+  desc:Achieve <b>3rd</b> place.<q>This title isn't correct in any capacity.</q><i>Agent Lawrence</i><q>Why would you quote a negative comment?</q><i>Agent Lawrence</i><q>CEO EDIT: Agent Johnson is no longer allowed to write titles or descriptions.</q>
   name:Literally God
   icon:http://i.imgur.com/iCvoC54.png
   req:have trophy21
   *thropyAchieve6
-  desc:Achieve <b>1st</b> place.<q>tryhard</q><i> 1337 sn1p3r #21</i>
+  desc:Achieve <b>1st</b> place.<q>tryhard</q><i>1337 sn1p3r #21</i>
   name:Congratulations
   icon:http://i.imgur.com/ySJTkaS.png
   req:have trophy23
@@ -5734,7 +5734,7 @@ Achievements
   req:have trophy24
 
   *bookworm
-  desc:Read the Legend of The Fourth Wall in its entirety.<q>cool story bro</q><i> 1337 sn1p3r #52</i>
+  desc:Read the Legend of The Fourth Wall in its entirety.<q>cool story bro</q><i>1337 sn1p3r #52</i>
   name:Bookworm
   icon:http://i.imgur.com/04PTUqi.png
   req:have fourthWallLegend13
@@ -5801,7 +5801,7 @@ Achievements
   name:Agent of The Devil
   icon:http://i.imgur.com/XSPPdpX.png
   *handDamage13
-  desc:Deal <b>100 septillion</b> damage by hand.<q>Pff, as if we weren't past <i>that</i> years ago. ~Head of R&D</q>
+  desc:Deal <b>100 septillion</b> damage by hand.<q>Pff, as if we weren't past <i>that</i> years ago.</q><i>Head of R&D</i>
   req:100000000000000000000000000 handDamage
   name:Beyond Reality
   icon:http://i.imgur.com/QJ6t0uF.png
@@ -5971,7 +5971,7 @@ Achievements
   req:400 swordsman
   icon:http://i.imgur.com/vtFhIQk.png
   *swordsmanAchieve9
-  desc:Hire <b>500</b> swordsmen.<q>As if we weren't already am I right?</q><i> Swordsman Project Leader</i>
+  desc:Hire <b>500</b> swordsmen.<q>As if we weren't already am I right?</q><i>Swordsman Project Leader</i>
   name:The Conquerors of The World
   req:500 swordsman
   icon:http://i.imgur.com/iPTUQJx.png
@@ -6032,7 +6032,7 @@ Achievements
   req:500 gunner
   icon:http://i.imgur.com/V95QmIo.png
   *gunnerAchieve10
-  desc:Hire <b>700</b> gunshooters.<q>ALL. ALL GUN. AAAAAAALLL.</q><i> Automated RUC complaint responder</i>
+  desc:Hire <b>700</b> gunshooters.<q>ALL. ALL GUN. AAAAAAALLL.</q><i>Automated RUC complaint responder</i>
   name:All Are Gun & Gun Is All
   req:700 gunner
   icon:http://i.imgur.com/zZXuikn.png
@@ -6088,7 +6088,7 @@ Achievements
   req:500 grenade
   icon:http://i.imgur.com/FzLeFau.png
   *grenadeAchieve10
-  desc:Hire <b>700</b> grenademen.<q>I quit.</q><i> Chief of Puns</i>
+  desc:Hire <b>700</b> grenademen.<q>I quit.</q><i>Chief of Puns</i>
   name:Grenademan Achievement #10
   req:700 grenade
   icon:http://i.imgur.com/8EFEm0M.png
@@ -6144,7 +6144,7 @@ Achievements
   req:500 wreckingBall
   icon:http://i.imgur.com/3OYp1g4.png
   *wreckingAchieve10
-  desc:Hire <b>700</b> wrecking balls.<q>I think you ran out of fitting ones.</q><i> Agent Carter</i><q>Round this wreck of the woods, we don't question my puns.</q><i> Chief of Puns</i>
+  desc:Hire <b>700</b> wrecking balls.<q>I think you ran out of fitting ones.</q><i>Agent Carter</i><q>Round this wreck of the woods, we don't question my puns.</q><i>Chief of Puns</i>
   name:Round This Wreck of The Woods
   req:700 wreckingBall
   icon:http://i.imgur.com/LmISELN.png
@@ -6200,7 +6200,7 @@ Achievements
   req:500 bulldozer
   icon:http://i.imgur.com/wzJXciZ.png
   *bulldozerAchieve10
-  desc:Hire <b>700</b> bulldozers.<q>Could it be... The only accurately named thing in the entire game?</q><i> Agent Connor</i>
+  desc:Hire <b>700</b> bulldozers.<q>Could it be... The only accurately named thing in the entire game?</q><i>Agent Connor</i>
   name:Bullshit
   req:700 bulldozer
   icon:http://i.imgur.com/taZMkYw.png
@@ -6262,7 +6262,7 @@ Achievements
   icon:http://i.imgur.com/ziKked6.png
 
   *necromancerAchieve1
-  desc:Hire <b>1</b> necromancer.<q>The biggest possible.</q><i> Head of Wizard Relations</i>
+  desc:Hire <b>1</b> necromancer.<q>The biggest possible.</q><i>Head of Wizard Relations</i>
   name:Bring In The Hats
   req:1 necromancer
   icon:http://i.imgur.com/v1AK3rT.png
@@ -6389,12 +6389,12 @@ Achievements
   req:300 brickFactory
   icon:http://i.imgur.com/kEcAqB6.png
   *brickFactorAchieve8
-  desc:Build <b>400</b> brick factories.<q>I regret writing that last description. Now the demons dress up as St. Brick every Christmas and act the part.</q><i> Agent Connor</i>
+  desc:Build <b>400</b> brick factories.<q>I regret writing that last description. Now the demons dress up as St. Brick every Christmas and act the part.</q><i>Agent Connor</i>
   name:Brickrolled
   req:400 brickFactory
   icon:http://i.imgur.com/v1FFhA9.png
   *brickFactorAchieve9
-  desc:Build <b>500</b> brick fatories.<q>Did we run out of fitting ones?</q><i> Agent Carter</i><q>If you had a brick of sense in you, you wouldn't question my puns.</q><i> Chief of Puns</i>
+  desc:Build <b>500</b> brick fatories.<q>Did we run out of fitting ones?</q><i>Agent Carter</i><q>If you had a brick of sense in you, you wouldn't question my puns.</q><i>Chief of Puns</i>
   name:A Brick of Sense
   req:500 brickFactory
   icon:http://i.imgur.com/CVVcmHj.png
@@ -6410,22 +6410,22 @@ Achievements
   req:10 demon
   icon:http://i.imgur.com/SxcztPw.png
   *DemonAchieve3
-  desc:Hire <b>50</b> demons.<q>The only actual fire here is the fire coming from MY ANGER.</q><i> Head of Tech</i><q>There's also the bonfire they built over some box they buried in my yard. They said it was part of a treasure hunt.</q><i> RC Project Leader</i><q>THOSE ARE ALL MY OLD FLOPPY DISKS.</q><i> Head of Tech</i>
+  desc:Hire <b>50</b> demons.<q>The only actual fire here is the fire coming from MY ANGER.</q><i>Head of Tech</i><q>There's also the bonfire they built over some box they buried in my yard. They said it was part of a treasure hunt.</q><i>RC Project Leader</i><q>THOSE ARE ALL MY OLD FLOPPY DISKS.</q><i>Head of Tech</i>
   name:Fire & Brimstone
   req:50 demon
   icon:http://i.imgur.com/8r38suM.png
   *DemonAchieve4
-  desc:Hire <b>100</b> demons.<q>You've got THAT right.</q><i> Everyone except Agent Johnson</i>
+  desc:Hire <b>100</b> demons.<q>You've got THAT right.</q><i>Everyone except Agent Johnson</i>
   name:Hell On Earth
   req:100 demon
   icon:http://i.imgur.com/zpaA3Yo.png
   *DemonAchieve5
-  desc:Hire <b>150</b> demons.<q>Dominance over NOT BEING ANNOYED ALL THE TIME.</q><i> Head of Demon Relations</i>
+  desc:Hire <b>150</b> demons.<q>Dominance over NOT BEING ANNOYED ALL THE TIME.</q><i>Head of Demon Relations</i>
   name:Demonic Dominance
   req:150 demon
   icon:http://i.imgur.com/f9zhDkC.png
   *DemonAchieve6
-  desc:Hire <b>200</b> demons.<q>The only quarter they give is the quarter they used to jam the coffee maker in the lobby. We ended up inventing a coffee maker that requires a password so they would stop screwing with it.</q><i> Head of R&D</i>
+  desc:Hire <b>200</b> demons.<q>The only quarter they give is the quarter they used to jam the coffee maker in the lobby. We ended up inventing a coffee maker that requires a password so they would stop screwing with it.</q><i>Head of R&D</i>
   name:No Quarter
   req:200 demon
   icon:http://i.imgur.com/MKqt6OB.png
@@ -6435,12 +6435,12 @@ Achievements
   req:300 demon
   icon:http://i.imgur.com/92rYyAC.png
   *DemonAchieve8
-  desc:Hire <b>400</b> demons.<q>From all the demons being awful and trolling everyone maybe??</q><i> Agent Connor</i>
+  desc:Hire <b>400</b> demons.<q>From all the demons being awful and trolling everyone maybe??</q><i>Agent Connor</i>
   name:How Could You Hell
   req:400 demon
   icon:http://i.imgur.com/FmFQPoJ.png
   *demonAchieve9
-  desc:Hire <b>500</b> demons.<q>Say, isn't that an oxymoron?</q><i> Agent Carter</i><q><i>You're</i> an oxymoron.</q><i> Agent Johnson</i>
+  desc:Hire <b>500</b> demons.<q>Say, isn't that an oxymoron?</q><i>Agent Carter</i><q><i>You're</i> an oxymoron.</q><i>Agent Johnson</i>
   name:Holy Hell
   req:500 demon
   icon:http://i.imgur.com/msrmpyh.png
@@ -6451,12 +6451,12 @@ Achievements
   req:1 compromiser
   icon:http://i.imgur.com/gRgl3DR.png
   *compromiserAchieve2
-  desc:Build <b>10</b> reality compromisers.<q>You know the night divides the day, the day DESTROYS THE WALLS</q><i> Agent Johnson, before getting kicked out of karoke night</i>
+  desc:Build <b>10</b> reality compromisers.<q>You know the night divides the day, the day DESTROYS THE WALLS</q><i>Agent Johnson, before getting kicked out of karoke night</i>
   name:Break on Through to The Other Side
   req:10 compromiser
   icon:http://i.imgur.com/Au6TbeN.png
   *compromiserAchieve3
-  desc:Build <b>50</b> reality compromisers.<q>It's bullshit all the way down.</q><i> Agent Connnor</i>
+  desc:Build <b>50</b> reality compromisers.<q>It's bullshit all the way down.</q><i>Agent Connnor</i>
   name:I Can See Forever
   req:50 compromiser
   icon:http://i.imgur.com/s0e1Pk1.png
@@ -6481,7 +6481,7 @@ Achievements
   req:300 compromiser
   icon:http://i.imgur.com/NFNQ3zk.png
   *compromiserAchieve8
-  desc:Build <b>400</b> reality compromisers.<q>Pretty late for using that analogy.</q><i> Agent Connor</i>
+  desc:Build <b>400</b> reality compromisers.<q>Pretty late for using that analogy.</q><i>Agent Connor</i>
   name:Pandora's Box
   req:400 compromiser
   icon:http://i.imgur.com/DJUqiov.png
