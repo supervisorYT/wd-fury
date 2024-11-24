@@ -170,5 +170,11 @@ q::before, q::after
     {content: "“";
 	display: inline-block;
 	}
+q + i
+    {display: inline-block;
+	text-align: right;}
+q + i::before
+    {content: "- ";
+	display: "inline-block";}
 #tooltip .desc
     {clear:left;}
