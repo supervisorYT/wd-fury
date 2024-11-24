@@ -19,7 +19,7 @@ Layout
     names:hide
 
   *resources
-    contains:Resources:notTag:upgradeHeader
+    contains:tag:resources
     header:Resources
     no tooltip
   
@@ -36,66 +36,67 @@ Resources
 
   *money
   name:cash
-  tag:loseonreset
+  tags:loseonreset resources
   shown
   class:money
  
   *totalMoney
   name:damage
-  tag:loseonreset
+  tags:loseonreset resources
   shown
   class:veryimportantresource
  
   *bricks
   name:brick|bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:veryimportantresource
  
   *fourthWallMatter
   name:fourth wall bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:veryimportantresource
  
   *spaceBricks
   name:space bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
   *timeBricks
   name:time bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
   *endBricks
   name:End bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
   *finalityBricks
   name:Finality Bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
  
   *menuItem2
   text:─────────────Stats─────────────
   class:importantresource
+  tag:resources
   shown
  
   *totalBricks
   name:total bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   *handBricks
   name:hand made bricks
-  tag:loseonreset
+  tags:loseonreset resources
   always hidden
  
   *total4thWallMatter
   name:total fourth wall bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
  
   *handDamage
@@ -158,47 +159,56 @@ Resources
  
   *timeUpgradeRes13
   name:random bonus punching point|random bonus punching points
+  tag:resources
   hidden when 0
   *timeUpgradeRes14
   name:random bonus melee point|random bonus melee points
+  tag:resources
   hidden when 0
   *timeUpgradeRes15
   name:random bonus ranged point|random bonus ranged points
+  tag:resources
   hidden when 0
   *timeUpgradeRes16
   name:random bonus heavy point|random bonus heavy points
+  tag:resources
   hidden when 0
   *timeUpgradeRes17
   name:random bonus magic point|random bonus magic points
+  tag:resources
   hidden when 0
   *timeUpgradeRes18
   name:random bonus brick point|random bonus brick points
+  tag:resources
   hidden when 0
   *timeUpgradeRes21
   name:random bonus dream point|random bonus dream points
+  tag:resources
   hidden when 0
  
   *divider3
   text:────────────────────
+  tag:resources
   shown
 
   *wallsDestroyed
   name:wall destroyed|walls destroyed
-  tag:loseonreset
+  tag:loseonreset resources
   hidden when 0
   *totalWalls
   name:total walls destroyed
+  tag:resources
   hidden when 0
  
   *building
   text:Buildings: [this]
-  tag:loseonreset
+  tags:loseonreset resources
   on update:this is puncher + clubber + swordsman + gunner + grenade + wreckingBall + bulldozer + airstrike + necromancer + giant + demon + compromiser + lastBuilding + brickFactory
   shown
  
   *timeSinceReset
   text:Last reset: [this] minutes ago
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   *timePlayed
   text:Total minutes played: [this]
@@ -207,40 +217,51 @@ Resources
   *menuItem3
   text:────────────Prestige────────────
   class:importantresource
+  tag:resources
   shown
  
   *prePrestige
   name:cosmic knowledge
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   *goldBricks
   name:boss brick|boss bricks
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
   *winBricks
   name:pure brick
-  tag:loseonreset
+  tags:loseonreset resources
   hidden when 0
  
   *divider4
   text:────────────────────
+  tag:resources
   shown
  
   *prestige
   name:future knowledge capsules
+  tag:resources
   hidden when 0
   *timesWon
   name:boss point|boss points
+  tag:resources
   hidden when 0
   *timesActuallyWon
   name:true victory point|true victory points
+  tag:resources
   hidden when 0
  
   *resetTimes
   name:times reset
   text:Times reset: [this]
+  tag:resources
   hidden when 0
  
+  *upgradeCounter
+  tag:upgradeHeader
+  text:Upgrades [this]/477 ([floor(this*1000/477)/10]%)
+  no tooltip
+
   //abstract stuff
 
   *bonusBossBrick
@@ -304,9 +325,6 @@ Resources
   *resetToken
   always hidden
   start with:1
-  *upgradeCounter
-  tag:upgradeHeader
-  text:Upgrades [this]/477 ([floor(this*1000/477)/10]%)
 
 Buttons
   *hitWall
