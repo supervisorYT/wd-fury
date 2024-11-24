@@ -28,7 +28,7 @@ Layout
   
   *upgrades
     contains:Upgrades
-    header:Upgrades
+    header:Upgrades [upgradeCounter]/477 ([floor(upgradeCounter*1000/477)/10]%)
 
   *log
     contains:Log
@@ -305,6 +305,8 @@ Resources
   *resetToken
   always hidden
   start with:1
+  *upgradeCounter
+  always hidden
 
 Buttons
   *hitWall
@@ -1475,6 +1477,9 @@ Buildings
   req:have magicLevel2
 
 Upgrades
+  *TEMPLATE
+  passive: grant 1 upgradeCounter
+
   *win
   desc:Everything is <b>25%</b> more efficient if you have the pure brick. Everything is <b>20%</b> more efficient per true victory point.</b><q>It's time to go home.</q>
   req:800 puncher, 800 clubber, 700 swordsman, 700 gunner, 700 grenade, 700 wreckingBall, 600 bulldozer, 600 airstrike, 600 necromancer, 500 giant, 500 demon, 500 compromiser, 350 lastBuilding, 500 brickFactory
