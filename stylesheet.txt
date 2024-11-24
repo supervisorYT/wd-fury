@@ -52,8 +52,6 @@
 	padding-bottom: 200px;
     width: 300px;
     overflow-y: auto;}
-.tag-upgradeHeader
-    {padding: 8px;}
 .upgrade
 	{margin: 1px;}
 .upgrade.owned
