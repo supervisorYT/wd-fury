@@ -1478,7 +1478,7 @@ Buildings
 
 Upgrades
   *TEMPLATE
-  passive: grant 1 upgradeCounter
+  passive:grant 1 upgradeCounter
 
   *win
   desc:Everything is <b>25%</b> more efficient if you have the pure brick. Everything is <b>20%</b> more efficient per true victory point.</b><q>It's time to go home.</q>
