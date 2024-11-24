@@ -19,7 +19,7 @@ Layout
     names:hide
 
   *resources
-    contains:Resources
+    contains:Resources:notTag:upgradeHeader
     header:Resources
     no tooltip
   
@@ -27,8 +27,7 @@ Layout
     contains:BulkDisplay, tag:wall, tag:building
   
   *upgrades
-    contains:Upgrades
-    header:Upgrades [upgradeCounter]/477 ([floor(upgradeCounter*1000/477)/10]%)
+    contains:tag:upgradeHeader, Upgrades
 
   *log
     contains:Log
@@ -306,7 +305,8 @@ Resources
   always hidden
   start with:1
   *upgradeCounter
-  always hidden
+  tag:upgradeHeader
+  text:Upgrades [this]/477 ([floor(this*1000/477)/10]%)
 
 Buttons
   *hitWall
