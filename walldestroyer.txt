@@ -471,6 +471,8 @@ Buildings
     gain 1 resetTimes
     lose resetUnlock
     lose finalWallUnlock
+    lose begginingUnlock
+    lose edgeBeingUnlock
     gain building lostBuildings
     gain totalMoney tesseractDamage
     gain wallsDestroyed totalWalls
@@ -2009,7 +2011,7 @@ Buildings
   tags:building loseonreset damager
   name:Singularity|Singularities
   icon:http://i.imgur.com/f617iwl.png
-  req:have begginingUpgrade
+  req:have begginingUnlock
 
   *edgeBeing
   desc:Purifier building</>Does <b>1.2 sextillion</b> base damage.</>Gives <b>1</b> base Time Bricks/<b>50</b> days.<q>Sentient beings of the energy of all realities, living on the edge of the reality.</q><.>Your Edge Beings do <b>[edgeBeingDamage:ps] damage per second</b>.<.>They did <b>[edgeBeingDamage] damage</b> in total.
@@ -2418,7 +2420,7 @@ Upgrades
   icon:http://i.imgur.com/Pewjyq5.png
   req:1 destroyFinalWall
 
-  *begginingUpgrade
+  *begginingUnlock
   desc:Unlocks the ultimate power. <b>In particular, the Singularity.</b><q>Not the ordinary chess we will be playing tonight.</q>
   cost:10 timeBricks, 5e26 money
   name:Play Chess
