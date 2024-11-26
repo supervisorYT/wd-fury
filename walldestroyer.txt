@@ -24,7 +24,7 @@ Layout
     header:Wall Destroyer by Tellurium et al.
   
   *progress
-    contains:resources, stats, prestige
+    contains:resources, stats, prestigeInfo
 
   *resources
     contains:tag:resources
@@ -34,7 +34,7 @@ Layout
     contains:tag:stats
     header:Stats
   
-  *prestige
+  *prestigeInfo
     contains:tag:prestige
     header:Prestige
   

@@ -37,7 +37,7 @@
 	background:#a2cfc4;
 	color:#304846;
 	flex-grow: 1;}
-#box-resources, #box-stats, #box-prestige
+#box-resources, #box-stats, #box-prestigeInfo
 	{overflow: auto;
 	height: auto;
 	}
