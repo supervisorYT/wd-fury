@@ -28,14 +28,19 @@
 .makebricks .thing-icon
     {width: 100%;
 	height: 96px;}
-#box-resources
+#box-progress
 	{
-	bottom: 48%;
+	display: flex;
+	align-items: stretch;
+	gap: 10px;
 	font-size: 14px;
 	background:#a2cfc4;
 	color:#304846;
-	flex-grow: 1;
-	overflow: auto;}
+	flex-grow: 1;}
+#box-resources, #box-stats, #box-prestige
+	{overflow: auto;
+	height: auto;
+	}
 .money
 	{font-size: 20px;}
 .veryimportantresource

@@ -22,11 +22,21 @@ Layout
     contains:tag:clickable, tag:textbutton
     names:hide
     header:Wall Destroyer by Tellurium et al.
+  
+  *progress
+    contains:resources, stats, prestige
 
   *resources
     contains:tag:resources
     header:Resources
-    no tooltip
+  
+  *stats
+    contains:tag:stats
+    header:Stats
+  
+  *prestige
+    contains:tag:prestige
+    header:Prestige
   
   *upgrades
     contains:tag:upgradeHeader, Upgrades
@@ -64,11 +74,13 @@ Resources
 
   *artSpaceBricks
   name:artificial space bricks
+  tags:loseonreset resources
   hidden when 0
   class:veryimportantresource
 
   *artTimeBricks
   name:artificial time bricks
+  tags:loseonreset resources
   hidden when 0
   class:veryimportantresource
  
@@ -94,48 +106,53 @@ Resources
   class:importantresource
   *winSpendable
   name:Pure Bricks
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
   *meshSpendable
   name:Mesh Bricks
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
   *fifthBricks
   name:Fifth Dimension Bricks
+  tag:resources
   hidden when 0
   class:importantresource
   *alphaBricks
   name:Alpha Bricks
+  tag:resources
   hidden when 0
   class:importantresource
   *dreamycoins
   name:Dreamy Coins
+  tags:loseonreset resources
   hidden when 0
   class:importantresource
 
   *omniverseBrick
   name:Omniverse Bricks
+  tag:resources
   hidden when 0
   class:veryimportantresource
  
   *menuItem2
   text:─────────────Stats─────────────
   class:importantresource
-  tag:resources
-  shown
+  always hidden
  
   *totalBricks
   name:total bricks
-  tags:loseonreset resources
+  tags:loseonreset stats
   hidden when 0
   *handBricks
   name:hand made bricks
-  tags:loseonreset resources
+  tags:loseonreset stats
   always hidden
  
   *total4thWallMatter
   name:total fourth wall bricks
-  tags:loseonreset resources
+  tags:loseonreset stats
   hidden when 0
  
   *handDamage
@@ -214,64 +231,65 @@ Resources
  
   *timeUpgradeRes13
   name:random bonus punching point|random bonus punching points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes14
   name:random bonus melee point|random bonus melee points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes15
   name:random bonus ranged point|random bonus ranged points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes16
   name:random bonus heavy point|random bonus heavy points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes17
   name:random bonus magic point|random bonus magic points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes18
   name:random bonus brick point|random bonus brick points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes21
   name:random bonus dream point|random bonus dream points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
   *timeUpgradeRes22
   name:random bonus purifier point|random bonus purifier points
-  tag:resources
+  tags:loseonreset stats
   hidden when 0
  
   *divider3
   text:────────────────────
-  tag:resources
+  tag:stats
   shown
 
   *wallsDestroyed
   name:wall destroyed|walls destroyed
-  tag:loseonreset resources
+  tag:loseonreset stats
   hidden when 0
   *totalWalls
   name:total walls destroyed
-  tag:resources
+  tag:stats
   hidden when 0
  
   *building
   text:Buildings: [this]
-  tags:loseonreset resources
+  tags:loseonreset stats
   on update:this is puncher + clubber + swordsman + gunner + grenade + wreckingBall + bulldozer + airstrike + necromancer + giant + demon + compromiser + lastBuilding + singularityBuilding + edgeBeing + strangeGlitch + dreammachine + brickFactory
   shown
 
   *lostBuildings
   text:Buildings sacrificed: [this]
+  tag:stats
   hidden when 0
  
   *timeSinceReset
   text:Last reset: [this] minutes ago
-  tags:loseonreset resources
+  tags:loseonreset stats
   hidden when 0
   *timePlayed
   text:Total minutes played: [this]
@@ -280,40 +298,39 @@ Resources
   *menuItem3
   text:────────────Prestige────────────
   class:importantresource
-  tag:resources
-  shown
+  always hidden
  
   *prePrestige
   name:cosmic knowledge
-  tags:loseonreset resources
+  tags:loseonreset prestige
   hidden when 0
   *goldBricks
   name:boss brick|boss bricks
-  tags:loseonreset resources
+  tags:loseonreset prestige
   hidden when 0
  
   *divider4
   text:────────────────────
-  tag:resources
+  tag:prestige
   shown
  
   *prestige
   name:future knowledge capsules
-  tag:resources
+  tag:prestige
   hidden when 0
   *timesWon
   name:boss point|boss points
-  tag:resources
+  tag:prestige
   hidden when 0
   *timesActuallyWon
   name:true victory point|true victory points
-  tag:resources
+  tag:prestige
   hidden when 0
  
   *resetTimes
   name:times reset
   text:Times reset: [this]
-  tag:resources
+  tag:prestige
   hidden when 0
  
   *upgradeCounter
