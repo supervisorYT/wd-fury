@@ -31,6 +31,7 @@
 #box-progress
 	{
 	display: flex;
+	flex-direction: column;
 	align-items: stretch;
 	gap: 10px;
 	font-size: 14px;
@@ -40,7 +41,7 @@
 #box-resources, #box-stats, #box-prestigeInfo
 	{overflow: auto;
 	height: auto;
-	}
+	flex-grow: 1;}
 .money
 	{font-size: 20px;}
 .veryimportantresource
