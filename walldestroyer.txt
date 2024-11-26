@@ -13,7 +13,7 @@ Settings
 
 Layout
   *main
-    contains:buildings, clickables, resources, upgrades
+    contains:buildings, clickables, progress, upgrades
   
   *buildings
     contains:BulkDisplay, tag:wall, tag:building
