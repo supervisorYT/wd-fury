@@ -41,7 +41,8 @@
 #box-resources, #box-stats, #box-prestigeInfo
 	{overflow: auto;
 	height: auto;
-	flex-grow: 1;}
+	flex-grow: 1;
+    resize: vertical;}
 .money
 	{font-size: 20px;}
 .veryimportantresource

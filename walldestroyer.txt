@@ -29,14 +29,17 @@ Layout
   *resources
     contains:tag:resources
     header:Resources
+    no tooltip
   
   *stats
     contains:tag:stats
     header:Stats
+    no tooltip
   
   *prestigeInfo
     contains:tag:prestige
     header:Prestige
+    no tooltip
   
   *upgrades
     contains:tag:upgradeHeader, Upgrades
@@ -136,10 +139,7 @@ Resources
   hidden when 0
   class:veryimportantresource
  
-  *menuItem2
-  text:─────────────Stats─────────────
-  class:importantresource
-  always hidden
+  //Stats
  
   *totalBricks
   name:total bricks
@@ -261,11 +261,6 @@ Resources
   name:random bonus purifier point|random bonus purifier points
   tags:loseonreset stats
   hidden when 0
- 
-  *divider3
-  text:────────────────────
-  tag:stats
-  shown
 
   *wallsDestroyed
   name:wall destroyed|walls destroyed
@@ -295,10 +290,7 @@ Resources
   text:Total minutes played: [this]
   always hidden
  
-  *menuItem3
-  text:────────────Prestige────────────
-  class:importantresource
-  always hidden
+  // Prestige
  
   *prePrestige
   name:cosmic knowledge
@@ -308,11 +300,6 @@ Resources
   name:boss brick|boss bricks
   tags:loseonreset prestige
   hidden when 0
- 
-  *divider4
-  text:────────────────────
-  tag:prestige
-  shown
  
   *prestige
   name:future knowledge capsules
