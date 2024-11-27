@@ -1951,7 +1951,7 @@ Buildings
   req:magicLevel3
 
   *compromiser
-  desc:Dream building</>Does <b>40,000,000,000</b> base damage.</>Gives <b>0.1</b> fourth wall bricks.<q>Enters reality code and removes the wall from existence.</q><.>Your reality compromisers do <b>[compromiserDamage:ps] damage per second</b>.<.>They did <b>[compromiserDamage] damage</b> in total.
+  desc:Dream building</>Does <b>40,000,000,000</b> base damage.</>Gives <b>0.1</b> fourth wall bricks.<q>Enters reality code and removes the wall from existence.</q><.>Your reality compromisers do <b>[compromiserDamage:ps] damage per second</b>.<.>They did <b>[compromiserDamage] damage</b> in total.<.>They give you <b>[fourthWallMatter:ps] fourth wall bricks per second</b>.
   cost:100101001011010 money
   on tick:
     gain 40000000000 money
@@ -1985,7 +1985,7 @@ Buildings
   req:have finalWallUnlock
 
   *singularityBuilding
-  desc:Purifier building</>Does <b>11 quintillion</b> base damage.</>Gives <b>1</b> base Space Bricks/<b>20</b> days.<q>Nothing will be left after this one. Nothing.</q><.>Your singularities do <b>[singularityDamage:ps] damage per second</b>.<.>They did <b>[singularityDamage] damage</b> in total.
+  desc:Purifier building</>Does <b>11 quintillion</b> base damage.</>Gives <b>1</b> base Space Bricks/<b>20</b> days.<q>Nothing will be left after this one. Nothing.</q><.>Your singularities do <b>[singularityDamage:ps] damage per second</b>.<.>They did <b>[singularityDamage] damage</b> in total.<.>They give you <b>[artSpaceBricks:ps] artificial space bricks per second</b>.
   cost:150000000000000000000000000 money
   on tick:
     gain 11000000000000000000 money
@@ -2001,7 +2001,7 @@ Buildings
   req:have begginingUnlock
 
   *edgeBeing
-  desc:Purifier building</>Does <b>1.2 sextillion</b> base damage.</>Gives <b>1</b> base Time Bricks/<b>50</b> days.<q>Sentient beings of the energy of all realities, living on the edge of the reality.</q><.>Your Edge Beings do <b>[edgeBeingDamage:ps] damage per second</b>.<.>They did <b>[edgeBeingDamage] damage</b> in total.
+  desc:Purifier building</>Does <b>1.2 sextillion</b> base damage.</>Gives <b>1</b> base Time Bricks/<b>50</b> days.<q>Sentient beings of the energy of all realities, living on the edge of the reality.</q><.>Your Edge Beings deal <b>[edgeBeingDamage:ps] damage per second</b>.<.>They dealt <b>[edgeBeingDamage] damage</b> in total.<.>They give you <b>[artTimeBricks:ps] artificial time bricks per second</b>.
   cost:123456789011121314151617181920 money, 50000000000000000 bricks
   on tick:
     gain 1200000000000000000000 money
@@ -2018,7 +2018,7 @@ Buildings
   req:have edgeBeingUnlock
 
   *strangeGlitch
-  desc:Strange building</>Deals <b>50 septillion</b> base damage.<q>For some reason, you find the manipulative property of an oversight to be well worth exploiting. Let's hope this doesn't bite us.</q><.>Your glitches do <b>[glitchDamage:ps] damage per second</b>.<.>They did <b>[glitchDamage] damage</b> in total.
+  desc:Strange building</>Deals <b>50 septillion</b> base damage.<q>For some reason, you find the manipulative property of an oversight to be well worth exploiting. Let's hope this doesn't bite us.</q><.>Your glitches deal <b>[glitchDamage:ps] damage per second</b>.<.>They dealt <b>[glitchDamage] damage</b> in total.
   cost:1000000000000000000000000000000 money
   on tick:
     gain 50000000000000000000000000 money
@@ -2032,7 +2032,7 @@ Buildings
   req:300 totalWalls
 
   *dreammachine
-  desc:Fanatical building</>Deals <b>6.75 nonillion</b> base damage.</>Mines 0.001 base dreamy coins.<q>Manipulates minds in dreams to mine Dreamy Coins. Oh, and unleashes the wrath of the unrealistic fantasy.</q><.>Your Dream Machines do <b>[dreamMachineDamage:ps] damage per second</b>.<.>They did <b>[dreamMachineDamage] damage</b> in total.
+  desc:Fanatical building</>Deals <b>6.75 nonillion</b> base damage.</>Mines 0.001 base dreamy coins.<q>Manipulates minds in dreams to mine Dreamy Coins. Oh, and unleashes the wrath of the unrealistic fantasy.</q><.>Your Dream Machines deal <b>[dreamMachineDamage:ps] damage per second</b>.<.>They dealt <b>[dreamMachineDamage] damage</b> in total.
   cost:1836547290108126144162180198216234252 money
   on tick:
     gain 6750000000000000000000000000000 money
