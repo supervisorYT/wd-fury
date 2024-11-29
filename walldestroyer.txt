@@ -7525,7 +7525,7 @@ Achievements
   req:1e45 money
   icon:http://i.imgur.com/lZaWfwJ.png
   *moneyAchieve12
-  desc:Gain <b>1 Quindecillion</b> dollars from wall damaging. Well, maybe not as priceless... as your life.
+  desc:Gain <b>1 Quindecillion</b> dollars from wall damaging.<q>Well, maybe not as priceless... as your life.</q>
   name:Priceless
   req:1e48 money
   icon:http://i.imgur.com/ynoLa6v.png
@@ -7603,12 +7603,12 @@ Achievements
   req:15 timePlayed
   icon:http://i.imgur.com/h3ee0tJ.png
   *tellIsLameAchieve2
-  desc:Play for <b>30 minutes.</b> Lunch can also be eaten while playing this game, you know.
+  desc:Play for <b>30 minutes.</b><q>Lunch can also be eaten while playing this game, you know.</q>
   name:Lunch Break
   req:30 timePlayed
   icon:http://imgur.com/41rYk3A.png
   *tellIsLameAchieve3
-  desc:Play for <b>1 hour.</b> You had fun with that hour, right?
+  desc:Play for <b>1 hour.</b><q>You had fun with that hour, right?</q>
   name:The Wasted Hour
   req:60 timePlayed
   icon:http://i.imgur.com/8VwF5Vl.png
@@ -7643,22 +7643,22 @@ Achievements
   req:1080 timePlayed
   icon:http://imgur.com/Du1OSfD.png
   *tellIsLameAchieve10
-  desc:Play for <b>1 day.</b> Would you trade that for a day of punching real walls in real life?
+  desc:Play for <b>1 day.</b><q>Would you trade that for a day of punching real walls in real life?</q>
   name:Another Day Down the Drain
   req:1440 timePlayed
   icon:http://imgur.com/9WXZmxI.png
   *tellIsLameAchieve11
-  desc:Play for <b>3 days.</b> You should take a break.
+  desc:Play for <b>3 days.</b><q>You should take a break.</q>
   name:Hardcore Player
   req:4320 timePlayed
   icon:http://imgur.com/Cv7FDSP.png
   *tellIsLameAchieve12
-  desc:Play for <b>5 days.</b> Now you probably have an addiction.
+  desc:Play for <b>5 days.</b><q>Now you probably have an addiction.</q>
   name:Coming Back for More
   req:7200 timePlayed
   icon:http://i.imgur.com/PcY222f.png
   *tellIsLameAchieve13
-  desc:Play for <b>1 week.</b> You can stop soon or right now, if you want. Just don't say I didn't warn you.
+  desc:Play for <b>1 week.</b><q>You can stop soon or right now, if you want. Just don't say I didn't warn you.</q>
   name:Mark Your Calendars
   req:10080 timePlayed
   icon:http://imgur.com/rz39KsC.png
@@ -7678,12 +7678,12 @@ Achievements
   req:40320 timePlayed
   icon:http://imgur.com/bWRjWlv.png
   *tellIsLameAchieve16
-  desc:Play for <b>6 weeks.</b>They said, once you come in, you can never come out. ...Maybe not.
+  desc:Play for <b>6 weeks.</b><q>They said, once you come in, you can never come out. ...Maybe not.</q>
   name:No Way Out
   req:60480 timePlayed
   icon:http://i.imgur.com/D1IuKeT.png
   *tellIsLameAchieve17
-  desc:Play for <b>8 weeks.</b>That's about 2 months.
+  desc:Play for <b>8 weeks.</b><q>That's about 2 months.</q>
   name:Lord Idler
   req:80640 timePlayed
   icon:http://i.imgur.com/qqUiR6b.png
@@ -7698,17 +7698,17 @@ Achievements
   req:151200 timePlayed
   icon:http://i.imgur.com/L8h6CHD.png
   *tellIsLameAchieve20
-  desc:Play for <b>half a year</b>. You should've backtracked while you had the chance. For your information, there's 2 time achievements left.
+  desc:Play for <b>half a year</b>.<q>You should've backtracked while you had the chance. For your information, there's 2 time achievements left.</q>
   name:Timeless Tick Tocking
   req:262800 timePlayed
   icon:http://i.imgur.com/YCYFJFn.png
   *tellIsLameAchieve21
-  desc:Play for <b>Two thirds a year</b>. I don't know if the contents made this game was even made to last this long.
+  desc:Play for <b>Two thirds a year</b>.<q>I don't know if the contents made this game was even made to last this long.</q>
   name:T-ioioioioioioio-ck
   req:350400 timePlayed
   icon:http://i.imgur.com/Xrr0euS.png
   *tellIsLameAchieve22
-  desc:Play for <b>a year</b>. Well. Did you win?
+  desc:Play for <b>a year</b>.<q>Well. Did you win?</q>
   name:Hours, Days and Nights
   req:525600 timePlayed
   icon:http://i.imgur.com/1Gh7frq.png
