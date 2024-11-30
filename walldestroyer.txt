@@ -2029,6 +2029,7 @@ Buildings
   on earn:do update with building
   tags:building loseonreset damager
   name:glitch|glitch
+  icon:https://i.imgur.com/pLVddEa.png
   req:300 totalWalls
 
   *dreammachine
@@ -2377,13 +2378,13 @@ Upgrades
   desc:The wizards are willing to raise titans from the dead to help destroy the walls. This is a good idea.
   cost:16 bricks
   name:Summon Titans
-  icon: http://i.imgur.com/YYCAyYr.png
+  icon:http://i.imgur.com/YYCAyYr.png
   req:1 destroyBigWall
   *fourthWallUnlock
   desc:Unlocks <b>reality compromisers</b>.</>Unlocks the <b>4th wall upgrade tier</b>.<q>We have discovered with the breaking of the 4th wall that we are all inside a stupid idle game. Not even a <i>real</i> game! But we can use this knowledge to our advantage...</q>
   cost:404400040440040440 money, 4004404 bricks
   name:Reality Research
-  icon: http://i.imgur.com/RH7gkh2.png
+  icon:http://i.imgur.com/RH7gkh2.png
   req:1 destroyMassiveWall
 
   *resetUnlock
@@ -2398,7 +2399,7 @@ Upgrades
   cost:1e100 money
   req:1 winBricks
   name:Prestige Hacker
-  icon: http://i.imgur.com/bkEkr5p.png
+  icon:http://i.imgur.com/bkEkr5p.png
 
   *finalWallUnlock
   desc:Unlocks <b>Black Obliterators</b>.<q>We have discovered a substance in |REDACTED| that holds more power than anything we have ever encountered. We call it The Black because it is pitch black.</q>
@@ -2471,7 +2472,7 @@ Upgrades
     multiply yield of airstrike by 2
   end
   name:Extreme Telekinetics
-  icon: http://i.imgur.com/WyJyF4U.png
+  icon:http://i.imgur.com/WyJyF4U.png
   req:have spaceResearch
   *spaceUpgrade6
   desc:Everything is <b>8%</b> more efficient.<q>Using our new knowledge of space with the compromisers, pretty much everything can be made better. Mostly consists of making things bigger, of course.</q>
@@ -2829,7 +2830,7 @@ Upgrades
 
   *timeUpgrade22
   desc:Purifier buildings are <b>20%</b> more efficient <b>per random bonus dream point</b>, which the demons have a 1/20,000 chance of giving you every second, no matter how many you have.<q>#6 Would be proud</q>
-  cost: 1000 timeBricks, 9.8979695949392919e39 money
+  cost:1000 timeBricks, 9.8979695949392919e39 money
   req:1 timeUpgradeRes22
   req:4 timesActuallyWon
   req:1 meshBossPoint
@@ -3637,7 +3638,7 @@ Upgrades
     multiply yield of tag:clickable by 1.05
   end
   req:have fourthWallLegend1
-  icon: http://i.imgur.com/B6IdD2m.png
+  icon:http://i.imgur.com/B6IdD2m.png
 
   *fourthWallLegend3
   desc:Everything is <b>5%</b> more efficient.</><q>And thus, after many anxious days, a user MasterSparky of the Forum resolveth to find this most esteemed Member, and he destroyed the Fourth Wall soon after.</q>
@@ -3756,7 +3757,7 @@ Upgrades
   passive:multiply yield of hitWall by (1 + (0.04 * puncher))
   req:50 puncher
   name:Team Up
-  icon: http://i.imgur.com/K4S6bwX.png
+  icon:http://i.imgur.com/K4S6bwX.png
 
   *handPuncherUpgrade2
   desc:Hand punches do <b>2%</b> more damage per puncher.</>Punchers do <b>50%</b> more damage.<q>The weak become strong(er).</q>
@@ -7250,17 +7251,17 @@ Achievements
   desc:Damage the wall.
   req:1 totalMoney
   name:Overnab
-  icon: http://i.imgur.com/OasIKlg.png
+  icon:http://i.imgur.com/OasIKlg.png
   *Scrub
   desc:Deal <b>100</b> damage to the wall.
   req:100 totalMoney
   name:Scrub
-  icon: http://i.imgur.com/YU4cmkc.png
+  icon:http://i.imgur.com/YU4cmkc.png
   *LessScrub
   desc:Deal <b>1,000</b> damage to the wall.
   req:1000 totalMoney
   name:Less of a Scrub
-  icon: http://i.imgur.com/PIqpwX7.png
+  icon:http://i.imgur.com/PIqpwX7.png
   *WallTapper
   desc:Deal <b>10,000</b> damage to the wall.
   req:10000 totalMoney
@@ -7738,7 +7739,7 @@ Achievements
   desc:Achieve <b>18th</b> place.<q>Entering the tiers of trophies that you can actually be proud to earn.</q>
   name:So Metal
   icon:http://i.imgur.com/Uo7wAgm.png
-  req: have trophy6
+  req:have trophy6
   *thropyAchieve3
   desc:Achieve <b>12th</b> place.<q>I couldn't think of any good gem puns.</q><i>RUC Chief of Puns</i>
   name:Gemeration
@@ -9293,7 +9294,7 @@ Achievements
   req:5e44 edgeBeingDamage
   icon:http://i.imgur.com/g3jFU02.png
   *glitchAchieve1
-  desc:Hire <b>1</b> glitch. ... wait, hold up, that sounds wrong. How'd <i>you</i> hire a glitch!? Where'd it come from?
+  desc:Hire <b>1</b> glitch.<q>... wait, hold up, that sounds wrong. How'd <i>you</i> hire a glitch!? Where'd it come from?</q>
   name:The Illogical
   req:1 strangeGlitch
   icon:http://i.imgur.com/Gtg8P7F.png
