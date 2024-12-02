@@ -60,6 +60,7 @@ Resources
 
   *tesseractDamage
   name:fourth dimension damage
+  tags:resources
   hidden when 0
   class:veryimportantresource
  
