@@ -1516,7 +1516,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Fantasy Wall #5 (The Pawn)
   req:1 destroyFantasyWall04
   *destroyFantasyWall06
@@ -1531,7 +1531,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Fantasy Wall #4 (The Knight)
   req:1 destroyFantasyWall05
   *destroyFantasyWall07
@@ -1546,7 +1546,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Fantasy Wall #3 (The Bishop)
   req:1 destroyFantasyWall06
   *destroyFantasyWall08
@@ -1561,7 +1561,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Fantasy Wall #2 (The Rook)
   req:1 destroyFantasyWall07
   *destroyFantasyWall09
@@ -1576,7 +1576,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Fantasy Wall #1 (The Queen)
   req:1 destroyFantasyWall08
   *destroyFantasyWall10
@@ -1592,7 +1592,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy Boss Fantasy Wall (The King)
   req:1 destroyFantasyWall09
 
@@ -1627,7 +1627,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy an Aleph-0 Infinity Wall
   req:1 destroyInfWall01
   *destroyInfWall03
@@ -1645,7 +1645,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy a High Rank Infinity Wall
   req:1 destroyInfWall02
   *destroyInfWall04
@@ -1663,7 +1663,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy a Elite Infinity Wall
   req:1 destroyInfWall03
   *destroyInfWall05
@@ -1681,7 +1681,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy a Temmie Infinity Wall
   req:1 destroyInfWall04
   *destroyInfWall06
@@ -1699,7 +1699,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy a Important Infinity Wall
   req:1 destroyInfWall05
   *destroyInfWall07
@@ -1717,7 +1717,7 @@ Buildings
     hide this
   end
   tags:loseonreset wall
-  class:bonuswallboss wall
+  class:bonuswallboss wall smallwalltext
   name:Destroy an Advanced Elite Infinity Wall
   req:1 destroyInfWall06
 

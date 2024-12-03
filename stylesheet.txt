@@ -180,6 +180,8 @@
 	{font-size: 20px;
 	font-weight: bold;
 	padding-left: 4px;}
+.wall.smallwalltext .thing-text
+	{font-size: 15px;}
 .desc > div
     {text-indent: inherit;}
 q::before, q::after
