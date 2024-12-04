@@ -2045,6 +2045,7 @@ Buildings
   on earn:do update with building
   tags:building loseonreset damager
   name:Dream Machine|Dream Machines
+  icon:https://i.imgur.com/MA4uTYl.png
   req:have victoryPointUpgrade2
 
   *brickFactory
