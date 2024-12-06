@@ -1520,7 +1520,7 @@ Buildings
   name:Destroy Fantasy Wall #5 (The Pawn)
   req:1 destroyFantasyWall04
   *destroyFantasyWall06
-  desc:<i>|insert lore description lol|</i></>Destroy The Knight and move to the next.</>Gives <b>6</b> Alpha bricks and <b>1</b> Fifth Dimension brick.</>Worth <b>300,000</b> cosmic knowledge.
+  desc:<i>(insert lore description lol)</i></>Destroy The Knight and move to the next.</>Gives <b>6</b> Alpha bricks and <b>1</b> Fifth Dimension brick.</>Worth <b>300,000</b> cosmic knowledge.
   cost:3.5e45 tesseractDamage, 1 wallRequirement
   on earn:
     gain 6 alphaBricks
@@ -1535,7 +1535,7 @@ Buildings
   name:Destroy Fantasy Wall #4 (The Knight)
   req:1 destroyFantasyWall05
   *destroyFantasyWall07
-  desc:<i>|insert lore description lol|</i></>Destroy The Bishop and move to the next.</>Gives <b>7</b> Alpha bricks and <b>1</b> Fifth Dimension brick</>Worth <b>400,000</b> cosmic knowledge.
+  desc:<i>(insert lore description lol)</i></>Destroy The Bishop and move to the next.</>Gives <b>7</b> Alpha bricks and <b>1</b> Fifth Dimension brick</>Worth <b>400,000</b> cosmic knowledge.
   cost:3e45 tesseractDamage, 1 wallRequirement
   on earn:
     gain 7 alphaBricks
@@ -1550,7 +1550,7 @@ Buildings
   name:Destroy Fantasy Wall #3 (The Bishop)
   req:1 destroyFantasyWall06
   *destroyFantasyWall08
-  desc:<i>|insert lore description lol|</i></>Destroy The Rook and move to the next.</>Gives <b>8</b> Alpha bricks and <b>1</b> Fifth Dimension brick</>Worth <b>400,000</b> cosmic knowledge.
+  desc:<i>(insert lore description lol)</i></>Destroy The Rook and move to the next.</>Gives <b>8</b> Alpha bricks and <b>1</b> Fifth Dimension brick</>Worth <b>400,000</b> cosmic knowledge.
   cost:8.8e45 tesseractDamage, 1 wallRequirement
   on earn:
     gain 8 alphaBricks
@@ -1565,7 +1565,7 @@ Buildings
   name:Destroy Fantasy Wall #2 (The Rook)
   req:1 destroyFantasyWall07
   *destroyFantasyWall09
-  desc:<i>|insert lore description lol|</i></>Destroy The Queen and move to the next.</>Gives <b>9</b> Alpha bricks and <b>3</b> Fifth Dimension brick</>Worth <b>500,000</b> cosmic knowledge.
+  desc:<i>(insert lore description lol)</i></>Destroy The Queen and move to the next.</>Gives <b>9</b> Alpha bricks and <b>3</b> Fifth Dimension brick</>Worth <b>500,000</b> cosmic knowledge.
   cost:2.5e46 tesseractDamage, 1 wallRequirement
   on earn:
     gain 9 alphaBricks
@@ -1580,7 +1580,7 @@ Buildings
   name:Destroy Fantasy Wall #1 (The Queen)
   req:1 destroyFantasyWall08
   *destroyFantasyWall10
-  desc:<i>|insert lore description lol|</i></>Destroy The King.</>Gives <b>10</b> Alpha bricks, <b>5</b> Fifth Dimension bricks and <b>1</b> gold brick.</>Worth <b>1,000,000</b> cosmic knowledge.
+  desc:<i>(insert lore description lol)</i></>Destroy The King.</>Gives <b>10</b> Alpha bricks, <b>5</b> Fifth Dimension bricks and <b>1</b> gold brick.</>Worth <b>1,000,000</b> cosmic knowledge.
   cost:1e47 tesseractDamage, 1 wallRequirement
   on earn:
     gain 1 goldBricks
@@ -2404,7 +2404,7 @@ Upgrades
   icon:http://i.imgur.com/bkEkr5p.png
 
   *finalWallUnlock
-  desc:Unlocks <b>Black Obliterators</b>.<q>We have discovered a substance in |REDACTED| that holds more power than anything we have ever encountered. We call it The Black because it is pitch black.</q>
+  desc:Unlocks <b>Black Obliterators</b>.<q>We have discovered a substance in (REDACTED) that holds more power than anything we have ever encountered. We call it The Black because it is pitch black.</q>
   cost:42000000000000000000 money
   name:Black Research
   icon:http://i.imgur.com/Pewjyq5.png
@@ -2546,7 +2546,7 @@ Upgrades
   icon:http://i.imgur.com/uILIfAo.png
   req:have deepSpaceResearch
   *spaceUpgrade12
-  desc:Ranged buildings do <b>1.5%</b> more damage <b>per brick factory</b>.<q>A lost project we managed to recover. We don't know how it works, and our only documentation on it is the planned flavor text:</>Why does this require deep space knowledge, you ask? Well, |DATA CORRUPTED|</q>
+  desc:Ranged buildings do <b>1.5%</b> more damage <b>per brick factory</b>.<q>A lost project we managed to recover. We don't know how it works, and our only documentation on it is the planned flavor text:</>Why does this require deep space knowledge, you ask? Well, (DATA CORRUPTED)</q>
   cost:100 spaceBricks
   passive:
     multiply yield of gunner by (1 + (0.015 * brickFactory))
@@ -4230,14 +4230,14 @@ Upgrades
   name:Adamantium Gauntlets
   icon:http://i.imgur.com/ZWHQHkW.png
   *puncherUpgrade8
-  desc:Punchers do <b>four times</b> as much damage.</>Hand punches do <b>50%</b> more damage.<q>We brought back an old experiment to make gloves made out of |REDACTED|.</>CHIEF OF R&D EDIT: that's top secret, you idiot.</q>
+  desc:Punchers do <b>four times</b> as much damage.</>Hand punches do <b>50%</b> more damage.<q>We brought back an old experiment to make gloves made out of (REDACTED).</>CHIEF OF R&D EDIT: that's top secret, you idiot.</q>
   cost:200000000000 money
   req:200 puncher
   passive:
     multiply yield of puncher by 4
     multiply yield of hitWall by 1.5
   end
-  name:|REDACTED| Gloves
+  name:(REDACTED) Gloves
   icon:http://i.imgur.com/rVykEWs.png
   *puncherUpgrade9
   desc:Punchers do <b>five times</b> as much damage.</>Hand punches do <b>50%</b> more damage.<q>The RUC is not responsible for any deaths/implosions caused by the Antimatter Gauntlets(TM).</q>
@@ -4682,7 +4682,7 @@ Upgrades
   name:The Perfect Combination
   icon:http://i.imgur.com/EYhxJLA.png
   *clubSwordUpgrade5
-  desc:Clubbers do <b>1.2%</b> more damage per swordsman.</>Swordsmen do <b>1.2%</b> more damage per clubber.<q>Now our technology is up to par with the 17th century! |applause|</q>
+  desc:Clubbers do <b>1.2%</b> more damage per swordsman.</>Swordsmen do <b>1.2%</b> more damage per clubber.<q>Now our technology is up to par with the 17th century! (applause)</q>
   cost:302200000000000000000 money
   passive:
     multiply yield of clubber by (1 + (0.012 * swordsman))
@@ -5106,7 +5106,7 @@ Upgrades
   name:Singularity Balls
   icon:http://i.imgur.com/tWgYnpW.png
   *wreckingUpgrade10
-  desc:Wrecking balls do <b>five times</b> as much damage.<q>|REDACTED|</>CHIEF OF R&D EDIT: Agent Johnson is no longer allowed near the demons.</q>
+  desc:Wrecking balls do <b>five times</b> as much damage.<q>(REDACTED)</>CHIEF OF R&D EDIT: Agent Johnson is no longer allowed near the demons.</q>
   cost:1600000000000000000000000 money
   req:400 wreckingBall
   passive:multiply yield of wreckingBall by 5
@@ -5819,7 +5819,7 @@ Upgrades
   name:Merge Form
   icon:http://i.imgur.com/Zp3cflT.png
   *necromanceTitanUp4
-  desc:Necromancers do <b>1.5%</b> more damage per titan.</>Titans do <b>1%</b> more damage per necromancer.<q>|REDACTED, REDACTED SO HARD|</>NEVER AGAIN.</q><i>Head of Demon Relations, RUC</i>
+  desc:Necromancers do <b>1.5%</b> more damage per titan.</>Titans do <b>1%</b> more damage per necromancer.<q>(REDACTED, REDACTED SO HARD)</>NEVER AGAIN.</q><i>Head of Demon Relations, RUC</i>
   cost:17777777777777777777777777 money, 17777777777777 bricks
   passive:
     multiply yield of necromancer by (1 + (0.015 * giant))
@@ -6144,7 +6144,7 @@ Upgrades
   name:Demon Bribes
   icon:http://i.imgur.com/zQpS4F8.png
   *lastBuildingUp9
-  desc:Black obliterators do <b>four times</b> as much damage.<q>We took an expedition back to |REDACTED|, and guess what we found in the temple? You'll be just as surprised as we were...</q><i>Agent Connor</i>
+  desc:Black obliterators do <b>four times</b> as much damage.<q>We took an expedition back to (REDACTED), and guess what we found in the temple? You'll be just as surprised as we were...</q><i>Agent Connor</i>
   cost:520000000000000000000000000000000 money, 520000000000000000 fourthWallMatter
   req:300 lastBuilding
   passive:multiply yield of lastBuilding by 4
@@ -6413,7 +6413,7 @@ Upgrades
   cost:254.003e42 money, 1000 endBricks
   req:400 edgeBeing
   passive:multiply yield of edgeBeing by 4
-  name:|REDACTED| Beings
+  name:(REDACTED) Beings
   icon:http://i.imgur.com/R60jUAD.png
 
   *edgeUpgradeMagic
@@ -6511,7 +6511,7 @@ Upgrades
   name:Glitch Scroll III
   icon:http://i.imgur.com/q3LakAy.png
   *glitchscroll4
-  desc:Glitches are <b>twice</b> as efficient.<q>|B|</q>
+  desc:Glitches are <b>twice</b> as efficient.<q>(B)</q>
   cost:4.4444e34 money, 30000 prePrestige, 3500 spacebricks
   req:50 strangeGlitch
   passive:multiply yield of strangeGlitch by 2
@@ -6525,11 +6525,11 @@ Upgrades
   name:Glitch Scroll V
   icon:http://i.imgur.com/OG0I0gs.png
   *glitchscroll6
-  desc:Glitches are <b>2.5 times</b> as efficient.<q>insert |REDACTED| description here, although the |REDACTED| description is blocked by the government</q>
+  desc:Glitches are <b>2.5 times</b> as efficient.<q>insert (REDACTED) description here, although the (REDACTED) description is blocked by the government</q>
   cost:1.234567890e36 money, 66666 prePrestige, 6666 spacebricks
   req:100 strangeGlitch
   passive:multiply yield of strangeGlitch by 2.5
-  name:|REDACTED| Scroll VI
+  name:(REDACTED) Scroll VI
   icon:http://i.imgur.com/OG0I0gs.png
   *glitchscroll7
   desc:Glitches are <b>2.5 times</b> as efficient.<q>Infused with malicious lines of binary.</q>
@@ -7023,7 +7023,7 @@ Upgrades
   name:Wood-Tier Trophy
   icon:http://i.imgur.com/IAzM4cM.png
   *trophy5
-  desc:Damage and brick production multipliers <b>+10%</b>.<q>|Insert joke about being stoned here|</q><//>Next trophy: <b>200</b> capsules
+  desc:Damage and brick production multipliers <b>+10%</b>.<q>(Insert joke about being stoned here)</q><//>Next trophy: <b>200</b> capsules
   cost:7.777777777777777e21 money, 777777777 bricks, 7777777 fourthWallMatter
   req:100 prestige
   passive:
