@@ -2078,7 +2078,7 @@ Buildings
 Upgrades
   *TEMPLATE
   on count:
-    if (this):gain 1 upgradeCounter
+    if (this)gain 1 upgradeCounter
   end
   on earn:do recount with upgradeCounter
   on lose:do recount with upgradeCounter
