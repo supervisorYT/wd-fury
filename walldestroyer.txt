@@ -325,10 +325,11 @@ Resources
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on recount:
+    lose this
     $upgrades=0
     do count with :Upgrades:owned
     toast You now own [$upgrades] Upgrades!
-    upgradeCounter=$upgrades
+    earn $upgrades upgradeCounter
   end
   no tooltip
 
