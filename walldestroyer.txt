@@ -2069,7 +2069,7 @@ Buildings
 
 Upgrades
   *TEMPLATE
-  on count:gain 1 upgradeCounter
+  on count:yield 1 upgradeCounter
 
   *win
   desc:The shattering of the omniversal wall leaves behind absolutely nothing.
