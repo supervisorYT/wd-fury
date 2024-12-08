@@ -324,7 +324,7 @@ Resources
   *upgradeCounter
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
-  on tick:
+  on recount:
     $upgrades = 0
     do count with :Upgrades:owned
     this is $upgrades
@@ -2071,6 +2071,8 @@ Buildings
 Upgrades
   *TEMPLATE
   on count:$upgrades = $upgrades + 1
+  on earn:do recount with upgradeCounter
+  on lose:do recount with upgradeCounter
 
   *win
   desc:The shattering of the omniversal wall leaves behind absolutely nothing.
