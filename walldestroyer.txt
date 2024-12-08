@@ -329,7 +329,7 @@ Resources
     $upgrades=0
     do count with :Upgrades:owned
     toast You now own [$upgrades] Upgrades!
-    earn $upgrades upgradeCounter
+    gain $upgrades upgradeCounter
   end
   no tooltip
 
