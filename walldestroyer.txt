@@ -326,10 +326,8 @@ Resources
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on recount:
     lose this
-    $upgrades=0
     do count with :Upgrades:owned
-    toast You now own [$upgrades] Upgrades!
-    gain $upgrades upgradeCounter
+    toast You now own [this] Upgrades!
   end
   no tooltip
 
@@ -2072,7 +2070,7 @@ Buildings
 
 Upgrades
   *TEMPLATE
-  on count:$upgrades = $upgrades + 1
+  on count:gain 1 upgradeCounter
   on earn:do recount with upgradeCounter
   on lose:do recount with upgradeCounter
 
