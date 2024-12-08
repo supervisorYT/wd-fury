@@ -13,7 +13,7 @@ Settings
 
 Layout
   *main
-    contains:buildings, clickables, progress, upgrades, log
+    contains:buildings, clickables, progress, upgrades
   
   *buildings
     contains:BulkDisplay, tag:wall, tag:building
@@ -43,9 +43,6 @@ Layout
   
   *upgrades
     contains:tag:upgradeHeader, Upgrades
-  
-  *log
-    contains:Log
 
 Resources
 
@@ -328,13 +325,8 @@ Resources
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on recount:
-    log start recount
     lose this
-    log set to 0
     do count with :Upgrades
-    log all counts done
-    log Owned Upgrades: [this]
-    toast You now own [this] Upgrades!
   end
   no tooltip
 
