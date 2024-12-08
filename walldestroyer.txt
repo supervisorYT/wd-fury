@@ -327,6 +327,7 @@ Resources
   on recount:
     $upgrades = 0
     do count with :Upgrades:owned
+    toast You now own [$upgrades] Upgrades!
     this is $upgrades
   end
   no tooltip
