@@ -4,7 +4,7 @@ Let's make a game!
   desc:This was originally made by Tellurium with the legacy/vintage version of Idle Game Maker. It was later extended with more content by 100lol/weirdoverse and usavictor2(10). And even later ported over to Idle Game Maker 2 by Qjuh. Which is the version you're playing right now.
   created:04/21/2014
   updated:11/26/2024
-  version:3.2
+  version:3.3
 
 Settings
   building cost increase:110%
