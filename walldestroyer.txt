@@ -328,9 +328,13 @@ Resources
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on recount:
+    log start recount
     lose this
+    log set to 0
     $countUpgrades=0
+    log var init
     do count with :Upgrades:owned
+    log all counts done
     log Owned Upgrades: [$countUpgrades]
     toast You now own [this] Upgrades!
   end
@@ -2077,6 +2081,7 @@ Upgrades
   *TEMPLATE
   on count:
     gain 1 upgradeCounter
+    log gained one for [this]
     $countUpgrades=$countUpgrades + 1
   end
   on earn:do recount with upgradeCounter
