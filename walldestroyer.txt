@@ -331,11 +331,9 @@ Resources
     log start recount
     lose this
     log set to 0
-    $countUpgrades=0
-    log var init
-    do count with :Upgrades:owned
+    do count with :Upgrades
     log all counts done
-    log Owned Upgrades: [$countUpgrades]
+    log Owned Upgrades: [this]
     toast You now own [this] Upgrades!
   end
   no tooltip
@@ -2080,9 +2078,7 @@ Buildings
 Upgrades
   *TEMPLATE
   on count:
-    gain 1 upgradeCounter
-    log gained one for [this]
-    $countUpgrades=$countUpgrades + 1
+    if (this):gain 1 upgradeCounter
   end
   on earn:do recount with upgradeCounter
   on lose:do recount with upgradeCounter
