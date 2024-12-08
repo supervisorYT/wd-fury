@@ -324,7 +324,10 @@ Resources
   *upgradeCounter
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
-  on load: this is 0
+  on tick:
+    this is 0
+    do count with Uprades:owned
+  end
   no tooltip
 
   //abstract stuff
@@ -2066,7 +2069,7 @@ Buildings
 
 Upgrades
   *TEMPLATE
-  passive:grant 1 upgradeCounter
+  on count:gain 1 upgradeCounter
 
   *win
   desc:The shattering of the omniversal wall leaves behind absolutely nothing.
