@@ -326,7 +326,7 @@ Resources
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on tick:
     this is 0
-    do count with :Uprades:owned
+    do count with :Upgrades:owned
   end
   no tooltip
 
