@@ -7239,6 +7239,7 @@ Upgrades
     multiply yield of tag:clickable by 1.5
   end
   name:Fantasy Trophy
+  icon:http://i.imgur.com/hfmclY6.png
   *trophy26
   desc:Damage and brick production multipliers <b>+55%</b><q>(image pending, seriously - usavictor)</q>
   cost:1.44e41 money, 2.147483647e27 bricks, 3e25 fourthWallMatter
@@ -7248,6 +7249,7 @@ Upgrades
     multiply yield of tag:clickable by 1.55
   end
   name:Infinity Trophy
+  icon:http://i.imgur.com/hfmclY6.png
 
 
 Achievements
