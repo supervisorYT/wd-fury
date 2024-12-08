@@ -324,6 +324,7 @@ Resources
   *upgradeCounter
   tag:upgradeHeader
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
+  on load: this is 0
   no tooltip
 
   //abstract stuff
