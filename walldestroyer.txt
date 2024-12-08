@@ -13,7 +13,7 @@ Settings
 
 Layout
   *main
-    contains:buildings, clickables, progress, upgrades
+    contains:buildings, clickables, progress, upgrades, log
   
   *buildings
     contains:BulkDisplay, tag:wall, tag:building
@@ -43,6 +43,9 @@ Layout
   
   *upgrades
     contains:tag:upgradeHeader, Upgrades
+  
+  *log
+    contains:Log
 
 Resources
 
@@ -326,7 +329,9 @@ Resources
   text:Upgrades [this]/591 ([floor(this*100/591)]%)
   on recount:
     lose this
+    $countUpgrades=0
     do count with :Upgrades:owned
+    log Owned Upgrades: [$countUpgrades]
     toast You now own [this] Upgrades!
   end
   no tooltip
@@ -2070,7 +2075,10 @@ Buildings
 
 Upgrades
   *TEMPLATE
-  on count:gain 1 upgradeCounter
+  on count:
+    gain 1 upgradeCounter
+    $countUpgrades=$countUpgrades + 1
+  end
   on earn:do recount with upgradeCounter
   on lose:do recount with upgradeCounter
 
