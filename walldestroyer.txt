@@ -3117,7 +3117,7 @@ Upgrades
   icon:http://i.imgur.com/skLNAG0.png
 
   *meshScroll1
-  desc:Everything is <b>+5%</b> more efficient if you have Pure brick.<q>*It's a mirror, and in the mirror you see yourself.*</q>
+  desc:Everything is <b>+5%</b> more efficient if you have Pure brick.<q>It's a mirror, and in the mirror you see yourself.</q>
   cost:1.2e40 money, 1000000000000 artSpaceBricks, 1 meshSpendable, 8 winSpendable, 1053 endBricks
   req:4 timesActuallyWon, 1 winBricks, 1 meshBossPoint, 1 meshBricks
   passive:
@@ -3130,7 +3130,7 @@ Upgrades
   icon:http://i.imgur.com/ZmJ8hqf.png
  
   *meshScroll2
-  desc:Everything is <b>+10%</b> more efficient.<q>Our civilization is in danger, send help! Albert! Tell my wife I love he- *the text is missing*</q>
+  desc:Everything is <b>+10%</b> more efficient.<q>Our civilization is in danger, send help! Albert! Tell my wife I love he- <i>the text is missing</i></q>
   cost:1.22e42 money, 2000000000000 artSpaceBricks, 1 meshSpendable, 8 winSpendable, 1053 endBricks
   req:5 meshBossPoint, 1 meshBricks
   passive:
@@ -3141,7 +3141,7 @@ Upgrades
   icon:http://i.imgur.com/ZmJ8hqf.png
  
   *meshScroll3
-  desc:Everything is <b>+10%</b> more efficient.<q>*It's a blueprint of a refrigerator.*</q>
+  desc:Everything is <b>+10%</b> more efficient.<q>It's a blueprint of a refrigerator.</q>
   cost:9.66e42 money, 500e12 artSpaceBricks, 1 meshSpendable, 8 winSpendable, 1053 endBricks
   req:6 meshBossPoint, 1 meshBricks
   passive:
@@ -3152,7 +3152,7 @@ Upgrades
   icon:http://i.imgur.com/ZmJ8hqf.png
  
   *meshScroll4
-  desc:Everything is <b>+10%</b> more efficient.<q>*It marks where a lot of extraterrestial paintings are hidden..*</q>
+  desc:Everything is <b>+10%</b> more efficient.<q>It marks where a lot of extraterrestial paintings are hidden..</q>
   cost:14.557e42 money, 1.5e15 artSpaceBricks, 1 meshSpendable, 8 winSpendable, 1053 endBricks
   req:7 meshBossPoint, 1 meshBricks
   passive:
@@ -3185,7 +3185,7 @@ Upgrades
   icon:http://i.imgur.com/ZmJ8hqf.png
  
   *meshScroll7
-  desc:Damage and Brick production is <b>+10%</b> more efficient<q>*It's an empty piece of paper with a marker attached to it. What significance is this?*</q>
+  desc:Damage and Brick production is <b>+10%</b> more efficient<q>It's an empty piece of paper with a marker attached to it. What significance is this?</q>
   cost:51.997e42 money, 3e15 artSpaceBricks, 1 meshSpendable, 8 winSpendable, 1053 endBricks
   req:8 meshBossPoint, 1 meshBricks
   passive:
@@ -6969,7 +6969,7 @@ Upgrades
   name:Reality Compromiser Trophy
   icon:http://i.imgur.com/dxzVoyz.png
   *buildingTrophy14
-  desc:Black obliterators do <b>2%</b> more damage per black obliterator.<q>The 'worst ideas ever suggested' poster in the HQ meeting room has been updated with "make the BO trophy out of The Black".</q><//>Singularit< Trophy: <b>12,000,000</b> capsules
+  desc:Black obliterators do <b>2%</b> more damage per black obliterator.<q>The 'worst ideas ever suggested' poster in the HQ meeting room has been updated with "make the BO trophy out of The Black".</q><//>Singularity Trophy: <b>12,000,000</b> capsules
   cost:52525252525252525252525252525252 money
   req:8000000 prestige
   passive:multiply yield of lastBuilding by (1 + (0.02 * lastBuilding))
@@ -7321,7 +7321,7 @@ Achievements
   name:Sudden Awareness
   icon:http://i.imgur.com/CZZmh2H.png
   *wallDestroyer5
-  desc:Destroy the final wall.<q>*sounds of incredibly crappy 8-bit horns*</q>
+  desc:Destroy the final wall.<q>sounds of incredibly crappy 8-bit horns</q>
   req:5 wallsDestroyed
   name:You're Winner!
   icon:http://i.imgur.com/XYrRLkX.png
@@ -7351,12 +7351,12 @@ Achievements
   icon:http://i.imgur.com/nLIn2uJ.png
   req:destroyBonusWall40
   *wallDestroyer11
-  desc:Destroy <b>Finality Boss Wall</b>.<q>*sounds of beautiful majestic high-definition horns*</q>
+  desc:Destroy <b>Finality Boss Wall</b>.<q>sounds of beautiful majestic high-definition horns</q>
   name:Actual Winner
   icon:http://i.imgur.com/V5T9rJ7.png
   req:1 destroyBonusWall45
   *wallDestroyer12
-  desc:Destroy <b>Mesh Finality Wall</b>.</><i>*majestic nutshack remix*</i></>What do you feel?
+  desc:Destroy <b>Mesh Finality Wall</b>.</><i>majestic nutshack remix</i></>What do you feel?
   name:Fluoroantimonic acid
   icon:http://i.imgur.com/O6Pmv2A.png
   req:1 destroyBonusWall48
@@ -8760,7 +8760,7 @@ Achievements
   req:200 necromancer
   icon:http://i.imgur.com/RnCc5dn.png
   *necromancerAchieve7
-  desc:Hire <b>300</b> necromancers.<q>*thats it. im getting the dead.</q>
+  desc:Hire <b>300</b> necromancers.<q>thats it. im getting the dead.</q>
   name:That's It. I'm Getting The Dead.
   req:300 necromancer
   icon:http://i.imgur.com/OZnAMmh.png
