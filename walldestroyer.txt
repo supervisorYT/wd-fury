@@ -3,8 +3,8 @@ Let's make a game!
   by:Tellurium
   desc:This was originally made by Tellurium with the legacy/vintage version of Idle Game Maker. It was later extended with more content by 100lol/weirdoverse and usavictor2(10). And even later ported over to Idle Game Maker 2 by Qjuh. Which is the version you're playing right now.
   created:04/21/2014
-  updated:11/26/2024
-  version:3.3
+  updated:03/13/2025
+  version:998112
 
 Settings
   building cost increase:110%
@@ -415,9 +415,9 @@ Buttons
 // credit to 100lol/weirdoverse/usavictor2 for their stuff
   *hitWall
   on click:
-    gain 1 money
-    gain 1 totalMoney
-    gain 1 handDamage
+    gain 1000 money
+    gain 1000 totalMoney
+    gain 1000 handDamage
   end
   shown
   name:Punch wall
@@ -431,17 +431,17 @@ Buildings
 
   *timeCounter
   on tick:
-    if (resetTimes >= 1) gain 0.016666666666666666666666666666 timeSinceReset
-    gain 0.016666666666666666666666666666 timePlayed
+    if (resetTimes >= 1) gain 5 timeSinceReset
+    gain 5 timePlayed
   end
   always hidden
   start with:1
 
   *makeBricks
   on earn:
-    gain 1 handBricks
-    gain 1 bricks
-    gain 1 totalBricks
+    gain 15 handBricks
+    gain 15 bricks
+    gain 15 totalBricks
   end
   name:Create Bricks
   tags:clickable loseonreset
@@ -1783,9 +1783,9 @@ Buildings
   desc:Melee building</>Does <b>0.1</b> base damage.<q>Punches the wall for you.</q><.>Your punchers do <b>[puncherDamage:ps] damage per second</b>.<.>They did <b>[puncherDamage] damage</b> in total.
   cost:20 money
   on tick:
-    gain 0.1 money
-    gain 0.1 totalMoney
-    gain 0.1 puncherDamage
+    gain 3 money
+    gain 3 totalMoney
+    gain 3 puncherDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1799,9 +1799,9 @@ Buildings
   desc:Melee building</>Does <b>0.5</b> base damage.<q>Not to be confused with the other kind of clubbing.</q><.>Your clubbers do <b>[clubberDamage:ps] damage per second</b>.<.>They did <b>[clubberDamage] damage</b> in total.
   cost:150 money
   on tick:
-    gain 0.5 money
-    gain 0.5 totalMoney
-    gain 0.5 clubberDamage
+    gain 12 money
+    gain 12 totalMoney
+    gain 12 clubberDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1815,9 +1815,9 @@ Buildings
   desc:Melee building</>Does <b>2.5</b> base damage.<q>Some question the use of swords on a brick wall. Those guys are lame.</q><.>Your swordsmen do <b>[swordsmanDamage:ps] damage per second</b>.<.>They did <b>[swordsmanDamage] damage</b> in total.
   cost:1100 money
   on tick:
-    gain 2.5 money
-    gain 2.5 totalMoney
-    gain 2.5 swordsmanDamage
+    gain 50 money
+    gain 50 totalMoney
+    gain 50 swordsmanDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1831,9 +1831,9 @@ Buildings
   desc:Ranged building</>Does <b>30</b> base damage.<q>Shoots his gun.</q><.>Your gunshooters do <b>[gunnerDamage:ps] damage per second</b>.<.>They did <b>[gunnerDamage] damage</b> in total.
   cost:16000 money
   on tick:
-    gain 30 money
-    gain 30 totalMoney
-    gain 30 gunnerDamage
+    gain 400 money
+    gain 400 totalMoney
+    gain 400 gunnerDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1847,9 +1847,9 @@ Buildings
   desc:Ranged building</>Does <b>500</b> base damage.<q>A man with grenades. I am a master of descriptions.</q><.>Your grenadmen do <b>[grenadeDamage:ps] damage per second</b>.<.>They did <b>[grenadeDamage] damage</b> in total.
   cost:400000 money
   on tick:
-    gain 500 money
-    gain 500 totalMoney
-    gain 500 grenadeDamage
+    gain 12500 money
+    gain 12500 totalMoney
+    gain 12500 grenadeDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1863,9 +1863,9 @@ Buildings
   desc:Heavy duty building</>Does <b>7,000</b> base damage.<q>Something actually meant for destroying walls.</q><.>Your wrecking balls do <b>[wreckingBallDamage:ps] damage per second</b>.<.>They did <b>[wreckingBallDamage] damage</b> in total.
   cost:8000000 money
   on tick:
-    gain 7000 money
-    gain 7000 totalMoney
-    gain 7000 wreckingBallDamage
+    gain 207000 money
+    gain 207000 totalMoney
+    gain 207000 wreckingBallDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1879,9 +1879,9 @@ Buildings
   desc:Heavy duty building</>Does <b>80,000</b> base damage.<q>Rams the wall. So good.</q><.>Your bulldozers do <b>[bulldozerDamage:ps] damage per second</b>.<.>They did <b>[bulldozerDamage] damage</b> in total.
   cost:120000000 money
   on tick:
-    gain 80000 money
-    gain 80000 totalMoney
-    gain 80000 bulldozerDamage
+    gain 2380000 money
+    gain 2380000 totalMoney
+    gain 2380000 bulldozerDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1895,9 +1895,9 @@ Buildings
   desc:Heavy duty building</>Does <b>2,500,000</b> base damage.<q>You know, the guy that calls airstrikes.</q><.>Your airstrike callers do <b>[airstrikeDamage:ps] damage per second</b>.<.>They did <b>[airstrikeDamage] damage</b> in total.
   cost:5000000000 money
   on tick:
-    gain 2500000 money
-    gain 2500000 totalMoney
-    gain 2500000 airstrikeDamage
+    gain 92500000 money
+    gain 92500000 totalMoney
+    gain 92500000 airstrikeDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1911,9 +1911,9 @@ Buildings
   desc:Magic building</>Does <b>33,333,333</b> base damage.<q>Raises dead wizards to destroy the wall with their dark magic. Requires bricks.</q><.>Your necromancers do <b>[necromancerDamage:ps] damage per second</b>.<.>They did <b>[necromancerDamage] damage</b> in total.
   cost:66666666666 money, 1 bricks
   on tick:
-    gain 33333333 money
-    gain 33333333 totalMoney
-    gain 33333333 necromancerDamage
+    gain 1133333333 money
+    gain 1133333333 totalMoney
+    gain 1123333333 necromancerDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1927,9 +1927,9 @@ Buildings
   desc:Magic building</>Does <b>250,000,000</b> base damage.<q>The prime inhabitants of the Old World, back from the dead. They smash the wall with their giant fists.</q><.>Your titans do <b>[giantDamage:ps] damage per second</b>.<.>They did <b>[giantDamage] damage</b> in total.
   cost:888888888888 money
   on tick:
-    gain 250000000 money
-    gain 250000000 totalMoney
-    gain 250000000 giantDamage
+    gain 6250000000 money
+    gain 6250000000 totalMoney
+    gain 6250000000 giantDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1943,9 +1943,9 @@ Buildings
   desc:Magic building</>Does <b>3,666,666,666</b> base damnage.<q>Defiles the wall with the darkest magic of all.</q><.>Your demons do <b>[demonDamage:ps] damnage per second</b>.<.>They did <b>[demonDamage] damnage</b> in total.
   cost:666 bricks
   on tick:
-    gain 3666666666 money
-    gain 3666666666 totalMoney
-    gain 3666666666 demonDamage
+    gain 66666666666 money
+    gain 66666666666 totalMoney
+    gain 66666666666 demonDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1959,9 +1959,9 @@ Buildings
   desc:Dream building</>Does <b>40,000,000,000</b> base damage.</>Gives <b>0.1</b> fourth wall bricks.<q>Enters reality code and removes the wall from existence.</q><.>Your reality compromisers do <b>[compromiserDamage:ps] damage per second</b>.<.>They did <b>[compromiserDamage] damage</b> in total.<.>They give you <b>[fourthWallMatter:ps] fourth wall bricks per second</b>.
   cost:100101001011010 money
   on tick:
-    gain 40000000000 money
-    gain 40000000000 totalMoney
-    gain 40000000000 compromiserDamage
+    gain 400000000000 money
+    gain 400000000000 totalMoney
+    gain 400000000000 compromiserDamage
     gain 0.1 fourthWallMatter
     gain 0.1 total4thWallMatter
   end
@@ -1977,9 +1977,9 @@ Buildings
   desc:Dream building</>Does <b>1,000,000,000,000,000</b> base damage.<q>Robots covered in The Black. They're really cool, so no one questions mixing the most dangerous & evil thing ever with cold, unfeeling robots.</q><.>Your black obliterators do <b>[lastDamage:ps] damage per second</b>.<.>They did <b>[lastDamage] damage</b> in total.
   cost:52000000000000000000 money, 52000 fourthWallMatter
   on tick:
-    gain 1000000000000000 money
-    gain 1000000000000000 totalMoney
-    gain 1000000000000000 lastDamage
+    gain 10000000000000000 money
+    gain 10000000000000000 totalMoney
+    gain 10000000000000000 lastDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -1993,10 +1993,10 @@ Buildings
   desc:Purifier building</>Does <b>11 quintillion</b> base damage.</>Gives <b>1</b> base Space Bricks/<b>20</b> days.<q>Nothing will be left after this one. Nothing.</q><.>Your singularities do <b>[singularityDamage:ps] damage per second</b>.<.>They did <b>[singularityDamage] damage</b> in total.<.>They give you <b>[artSpaceBricks:ps] artificial space bricks per second</b>.
   cost:150000000000000000000000000 money
   on tick:
-    gain 11000000000000000000 money
-    gain 0.0000005787035 artSpaceBricks
-    gain 11000000000000000000 totalMoney
-    gain 11000000000000000000 singularityDamage
+    gain 400000000000000000000 money
+    gain 0.0002405787035 artSpaceBricks
+    gain 400000000000000000000 totalMoney
+    gain 400000000000000000000 singularityDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -2009,10 +2009,10 @@ Buildings
   desc:Purifier building</>Does <b>1.2 sextillion</b> base damage.</>Gives <b>1</b> base Time Bricks/<b>50</b> days.<q>Sentient beings of the energy of all realities, living on the edge of the reality.</q><.>Your Edge Beings deal <b>[edgeBeingDamage:ps] damage per second</b>.<.>They dealt <b>[edgeBeingDamage] damage</b> in total.<.>They give you <b>[artTimeBricks:ps] artificial time bricks per second</b>.
   cost:123456789011121314151617181920 money, 50000000000000000 bricks
   on tick:
-    gain 1200000000000000000000 money
+    gain 120000000000000000000000 money
     gain 0.0000002314813998 artTimeBricks
-    gain 1200000000000000000000 totalMoney
-    gain 1200000000000000000000 edgeBeingDamage
+    gain 120000000000000000000000 totalMoney
+    gain 120000000000000000000000 edgeBeingDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -2026,9 +2026,9 @@ Buildings
   desc:Strange building</>Deals <b>50 septillion</b> base damage.<q>For some reason, you find the manipulative property of an oversight to be well worth exploiting. Let's hope this doesn't bite us.</q><.>Your glitches deal <b>[glitchDamage:ps] damage per second</b>.<.>They dealt <b>[glitchDamage] damage</b> in total.
   cost:1000000000000000000000000000000 money
   on tick:
-    gain 50000000000000000000000000 money
-    gain 50000000000000000000000000 totalMoney
-    gain 50000000000000000000000000 glitchDamage
+    gain 5000000000000000000000000000 money
+    gain 5000000000000000000000000000 totalMoney
+    gain 5000000000000000000000000000 glitchDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -2041,9 +2041,9 @@ Buildings
   desc:Fanatical building</>Deals <b>6.75 nonillion</b> base damage.</>Mines 0.001 base dreamy coins.<q>Manipulates minds in dreams to mine Dreamy Coins. Oh, and unleashes the wrath of the unrealistic fantasy.</q><.>Your Dream Machines deal <b>[dreamMachineDamage:ps] damage per second</b>.<.>They dealt <b>[dreamMachineDamage] damage</b> in total.
   cost:1836547290108126144162180198216234252 money
   on tick:
-    gain 6750000000000000000000000000000 money
-    gain 6750000000000000000000000000000 totalMoney
-    gain 6750000000000000000000000000000 dreamMachineDamage
+    gain 675000000000000000000000000000000 money
+    gain 675000000000000000000000000000000 totalMoney
+    gain 675000000000000000000000000000000 dreamMachineDamage
   end
   on earn:do update with building
   on lose:do update with building
@@ -2056,8 +2056,8 @@ Buildings
   desc:Special building</>Creates <b>0.05</b> base bricks.<q>Creates artificial bricks with dark magic. The wizards will never know.</q><.>Your brick factories produce <b>[bricks:ps] bricks per second</b>.<.>They produced <b>[bricks - handBricks] bricks</b> in total.
   cost:16666666666666 money
   on tick:
-    gain 0.05 bricks
-    gain 0.05 totalBricks
+    gain 15.05 bricks
+    gain 15.05 totalBricks
   end
   on earn:do update with building
   on lose:do update with building
